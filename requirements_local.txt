@@ -1,0 +1,2 @@
+-e ../vulyk/
+-e ../vulyk-declaration/

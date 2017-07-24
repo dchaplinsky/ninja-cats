@@ -1,0 +1,2 @@
+-e git+https://github.com/mrgambal/vulyk.git#egg=vulyk-master
+-e git+https://github.com/hotsyk/vulyk-declaration#egg=declaration-master

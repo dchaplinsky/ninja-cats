@@ -1,0 +1,2513 @@
+/* line 2, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_reboot.scss */
+a:focus {
+  outline: none; }
+
+/* line 2, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_type.scss */
+.font-small-1 {
+  font-size: 0.7rem !important; }
+
+/* line 5, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_type.scss */
+.font-small-2 {
+  font-size: 0.8rem !important; }
+
+/* line 8, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_type.scss */
+.font-small-3 {
+  font-size: 0.9rem !important; }
+
+/* line 12, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_type.scss */
+.font-medium-1 {
+  font-size: 1.1rem !important; }
+
+/* line 15, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_type.scss */
+.font-medium-2 {
+  font-size: 1.2rem !important; }
+
+/* line 18, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_type.scss */
+.font-medium-3 {
+  font-size: 1.3rem !important; }
+
+/* line 21, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_type.scss */
+.font-medium-4 {
+  font-size: 1.4rem !important; }
+
+/* line 24, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_type.scss */
+.font-medium-5 {
+  font-size: 1.5rem !important; }
+
+/* line 28, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_type.scss */
+.font-large-1 {
+  font-size: 2rem !important; }
+
+/* line 31, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_type.scss */
+.font-large-2 {
+  font-size: 3rem !important; }
+
+/* line 34, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_type.scss */
+.font-large-3 {
+  font-size: 4rem !important; }
+
+/* line 37, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_type.scss */
+.font-large-4 {
+  font-size: 5rem !important; }
+
+/* line 40, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_type.scss */
+.font-large-5 {
+  font-size: 6rem !important; }
+
+/* line 49, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_type.scss */
+.text-bold-300 {
+  font-weight: 300; }
+
+/* line 52, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_type.scss */
+.text-bold-400 {
+  font-weight: 400; }
+
+/* line 55, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_type.scss */
+.text-bold-500 {
+  font-weight: 500; }
+
+/* line 58, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_type.scss */
+.text-bold-600 {
+  font-weight: 600; }
+
+/* line 61, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_type.scss */
+.text-bold-700 {
+  font-weight: 700; }
+
+/* line 66, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_type.scss */
+.text-italic {
+  font-style: italic; }
+
+/* line 69, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_type.scss */
+.text-highlight {
+  padding: 4px 6px; }
+
+/* line 75, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_type.scss */
+ol li, ul li, dl li {
+  line-height: 1.8; }
+
+/* line 3, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_code.scss */
+code {
+  padding: .2rem .4rem;
+  font-size: 90%;
+  color: #F74B5C;
+  background-color: rgba(237, 85, 100, 0.07);
+  border-radius: 0.25rem; }
+
+/* line 2, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_grid.scss */
+.bs-example [class^="col-"] {
+  margin-bottom: 1rem; }
+  /* line 3, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_grid.scss */
+  .bs-example [class^="col-"] span {
+    padding: .75rem;
+    background-color: rgba(86, 61, 124, 0.15);
+    border: 1px solid rgba(86, 61, 124, 0.2);
+    display: block; }
+
+/* line 11, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_grid.scss */
+.bs-example .row + .row {
+  margin-top: 1rem; }
+
+/* line 2, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_tables.scss */
+.table-white-space th, .table-white-space td {
+  white-space: nowrap; }
+
+/* line 8, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_tables.scss */
+.table-borderless td, .table-borderless th {
+  border: none; }
+
+/* line 13, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_tables.scss */
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #e3ebf3;
+  border-top: 1px solid #e3ebf3; }
+
+/* line 20, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_tables.scss */
+.table-bordered th, .table-bordered td {
+  border: 1px solid #e3ebf3; }
+
+/* line 26, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_tables.scss */
+.table th, .table td {
+  border-bottom: 1px solid #e3ebf3; }
+
+/* line 31, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_tables.scss */
+.table-bordered {
+  border: 1px solid #e3ebf3; }
+
+/* line 35, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_tables.scss */
+.table-inverse {
+  color: #eceeef;
+  background-color: #00A5A8; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_tables.scss */
+.table.table-column th, .table.table-column td {
+  border: none;
+  border-left: 1px solid #e3ebf3; }
+
+/* line 46, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_tables.scss */
+.table.table-column th:first-child, .table.table-column td:first-child {
+  border-left: none; }
+
+/* line 50, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_tables.scss */
+.table th, .table td {
+  border-top: table-borderless; }
+
+/* line 53, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_tables.scss */
+.table th, .table td {
+  padding: 0.75rem 2rem; }
+
+/* line 57, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_tables.scss */
+.table.table-xl th, .table.table-xl td {
+  padding: 1.25rem 2rem; }
+
+/* line 62, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_tables.scss */
+.table.table-lg th, .table.table-lg td {
+  padding: 0.9rem 2rem; }
+
+/* line 67, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_tables.scss */
+.table.table-de th, .table.table-de td {
+  padding: 0.75rem 2rem; }
+
+/* line 72, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_tables.scss */
+.table.table-sm th, .table.table-sm td {
+  padding: 0.6rem 2rem; }
+
+/* line 77, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_tables.scss */
+.table.table-xs th, .table.table-xs td {
+  padding: 0.4rem 2rem; }
+
+/*
+* Table sizing
+*/
+/* line 90, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_tables.scss */
+.table-borderless thead th {
+  border-top: 1px solid #e3ebf3; }
+
+/* line 94, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_tables.scss */
+.table-borderless > tbody > tr > td, .table-borderless > tbody > tr > th {
+  border: 0; }
+
+/* line 104, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_tables.scss */
+.table > thead > tr.border-solid > th {
+  border-bottom-width: 2px; }
+
+/* line 107, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_tables.scss */
+.table > thead > tr.border-double > th {
+  border-bottom-width: 4px;
+  border-bottom-style: double; }
+
+/* line 112, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_tables.scss */
+.table > tbody > tr.border-dashed > td {
+  border-top-style: dashed; }
+
+/* line 121, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_tables.scss */
+.border-custom-color td {
+  border-top: inherit;
+  border-bottom: inherit; }
+
+/* line 2, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_forms.scss */
+form label {
+  color: #2e405c; }
+
+/* line 5, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_forms.scss */
+form .form-group {
+  margin-bottom: 1.5rem; }
+
+/* line 9, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_forms.scss */
+form .form-control {
+  border: 1px solid #ccd6e6;
+  color: #3f587e; }
+  /* line 13, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_forms.scss */
+  form .form-control::-webkit-input-placeholder {
+    color: #b1c1d8; }
+  /* line 17, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_forms.scss */
+  form .form-control:-moz-placeholder {
+    /* Firefox 18- */
+    color: #b1c1d8; }
+  /* line 21, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_forms.scss */
+  form .form-control::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #b1c1d8; }
+  /* line 25, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_forms.scss */
+  form .form-control:-ms-input-placeholder {
+    color: #b1c1d8; }
+
+/* line 29, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_forms.scss */
+form .form-section {
+  color: #404E67;
+  line-height: 3rem;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #404E67; }
+  /* line 35, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_forms.scss */
+  form .form-section i {
+    font-size: 20px;
+    margin-left: 5px;
+    margin-right: 10px; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_forms.scss */
+form .form-body {
+  overflow: hidden; }
+
+/* line 46, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_forms.scss */
+form .form-actions {
+  border-top: 1px solid #d3dce9;
+  padding: 20px 0;
+  margin-top: 20px; }
+  /* line 51, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_forms.scss */
+  form .form-actions.filled {
+    background-color: #F5F7FA; }
+  /* line 54, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_forms.scss */
+  form .form-actions.center {
+    text-align: center; }
+  /* line 57, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_forms.scss */
+  form .form-actions.right {
+    text-align: right; }
+  /* line 61, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_forms.scss */
+  form .form-actions.top {
+    border-top: 0;
+    border-bottom: 1px solid #d3dce9;
+    margin-top: 0;
+    margin-bottom: 20px; }
+  @media (max-width: 767px) {
+    /* line 69, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_forms.scss */
+    form .form-actions .buttons-group {
+      float: left !important;
+      margin-bottom: 10px; } }
+
+@media (min-width: 544px) {
+  /* line 79, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_forms.scss */
+  form.form-horizontal .form-group .label-control {
+    text-align: right; } }
+
+/* line 87, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_forms.scss */
+form.row-separator .form-group {
+  margin: 0;
+  border-bottom: 1px solid #ebeff5; }
+  /* line 90, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_forms.scss */
+  form.row-separator .form-group .label-control {
+    padding-top: 1.5rem; }
+  /* line 93, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_forms.scss */
+  form.row-separator .form-group > div {
+    padding: 1.2rem;
+    padding-right: 0; }
+  /* line 97, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_forms.scss */
+  form.row-separator .form-group.last {
+    border-bottom: 0; }
+
+/* line 104, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_forms.scss */
+form.form-bordered .form-group {
+  margin: 0;
+  border-bottom: 1px solid #ebeff5; }
+  /* line 107, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_forms.scss */
+  form.form-bordered .form-group .label-control {
+    padding-top: 1.5rem; }
+  /* line 110, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_forms.scss */
+  form.form-bordered .form-group > div {
+    padding: 1.2rem;
+    padding-right: 0;
+    border-left: 1px solid #ebeff5; }
+  /* line 115, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_forms.scss */
+  form.form-bordered .form-group.last {
+    border-bottom: 0; }
+
+/* line 122, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_forms.scss */
+form.striped-rows .form-group {
+  margin: 0; }
+  /* line 125, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_forms.scss */
+  form.striped-rows .form-group .label-control {
+    padding-top: 1.5rem; }
+  /* line 129, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_forms.scss */
+  form.striped-rows .form-group > div {
+    padding: 1.2rem;
+    padding-right: 0; }
+  /* line 134, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_forms.scss */
+  form.striped-rows .form-group:nth-child(even) {
+    background-color: #F5F7FA; }
+
+/* line 141, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_forms.scss */
+form.striped-labels .form-group {
+  margin: 0; }
+  /* line 144, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_forms.scss */
+  form.striped-labels .form-group .label-control {
+    padding-top: 1.5rem; }
+  /* line 148, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_forms.scss */
+  form.striped-labels .form-group > div {
+    padding: 1.2rem;
+    padding-right: 0;
+    background-color: white; }
+  /* line 154, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_forms.scss */
+  form.striped-labels .form-group:nth-child(even) {
+    background-color: #F5F7FA; }
+
+/* line 161, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_forms.scss */
+select.form-control {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important; }
+
+/* 
+TODO:M: To check with latest bootstrap version and remove it. 
+Bootstrap Enhance */
+/* line 171, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_forms.scss */
+.custom-control {
+  display: block; }
+  /* line 173, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_forms.scss */
+  .custom-control.inline {
+    display: inline; }
+
+/* line 177, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_forms.scss */
+.custom-checkbox input:disabled:checked ~ .custom-control-indicator {
+  opacity: 0.5; }
+
+/* line 180, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_forms.scss */
+.custom-checkbox input:disabled ~ .custom-control-indicator {
+  cursor: not-allowed; }
+
+/* line 183, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_forms.scss */
+.custom-control-input > input:focus ~ .custom-control-indicator {
+  padding: 0.51rem; }
+
+/* line 186, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_forms.scss */
+.custom-control-indicator {
+  width: 1.1rem;
+  height: 1.075rem;
+  line-height: 1.05rem;
+  top: 0.085rem; }
+  /* line 191, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_forms.scss */
+  .custom-control-indicator + .custom-control-description {
+    margin-left: 1rem; }
+
+/* line 196, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_forms.scss */
+.form-control:disabled, .form-control[readonly] {
+  background-color: #ECEFF1; }
+
+/* line 201, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_forms.scss */
+.input-group-addon {
+  background-color: #ECEFF1; }
+
+/* line 3, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_buttons.scss */
+.btn:focus, .btn.focus {
+  outline: none; }
+
+/* line 10, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_buttons.scss */
+.btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus {
+  outline: none; }
+
+/* line 16, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_buttons.scss */
+.btn.btn-icon i {
+  font-size: 1.1rem; }
+
+/* line 19, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_buttons.scss */
+.btn.btn-icon.btn-pure {
+  background-color: transparent;
+  border-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+  /* line 24, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_buttons.scss */
+  .btn.btn-icon.btn-pure i {
+    font-size: 1.25rem; }
+
+/* line 29, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_buttons.scss */
+.btn.btn-social {
+  padding: 0.7rem 0.25rem 0.85rem 3.75rem; }
+
+/* line 34, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_buttons.scss */
+.btn-min-width {
+  min-width: 8.5rem; }
+
+/* line 37, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_buttons.scss */
+.btn-default.active, .btn-default:hover:active, .open > .dropdown-toggle.btn-default {
+  background-color: #ccd5db;
+  border-color: #ccd5db; }
+
+/* line 41, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_buttons.scss */
+.btn-default.focus, .btn-default:focus, .btn-default:hover {
+  background-color: #f3f7f9;
+  border-color: #f3f7f9; }
+
+/* line 45, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_buttons.scss */
+.color-box {
+  width: 100%;
+  height: 2.75rem;
+  border-radius: 0.25rem; }
+
+/* line 50, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_buttons.scss */
+.btn-float {
+  padding: 15px;
+  white-space: normal;
+  -webkit-box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); }
+  /* line 55, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_buttons.scss */
+  .btn-float.btn-link {
+    padding: 10px; }
+  /* line 58, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_buttons.scss */
+  .btn-float i {
+    display: block;
+    margin: 0;
+    top: 0; }
+  /* line 63, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_buttons.scss */
+  .btn-float.btn-float-lg i, .btn-float.btn-float-lg span {
+    font-size: 2rem; }
+  /* line 66, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_buttons.scss */
+  .btn-float.btn-float-lg i + span {
+    font-size: 1.1rem; }
+  /* line 69, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_buttons.scss */
+  .btn-float > i + span {
+    display: block;
+    padding-top: 10px;
+    margin-bottom: -6px; }
+
+/* line 5, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_display.scss */
+.d-none {
+  display: none !important; }
+
+/* line 2, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_animation.scss */
+.collapse-icon .card-header {
+  position: relative; }
+
+/* line 6, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_animation.scss */
+.collapse-icon a[data-toggle="collapse"]:after {
+  position: absolute;
+  top: 40%;
+  right: 20px;
+  margin-top: -8px;
+  font-family: 'feather';
+  content: "\e950";
+  transition: all 300ms linear 0s; }
+
+/* line 15, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_animation.scss */
+.collapse-icon a[data-toggle="collapse"]:before {
+  position: absolute;
+  top: 40%;
+  right: 20px;
+  margin-top: -8px;
+  font-family: 'feather';
+  content: "\e962";
+  transition: all 300ms linear 0s; }
+
+/* line 26, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_animation.scss */
+.collapse-icon.left a {
+  padding-left: 28px; }
+  /* line 28, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_animation.scss */
+  .collapse-icon.left a:before, .collapse-icon.left a:after {
+    left: 20px;
+    right: auto; }
+
+/* line 35, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_animation.scss */
+.collapse-icon a[aria-expanded="true"]:before {
+  opacity: 0; }
+
+/* line 40, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_animation.scss */
+.collapse-icon a[aria-expanded="false"]:after {
+  opacity: 0; }
+
+/* line 46, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_animation.scss */
+.collapse-icon.accordion-icon-rotate a[aria-expanded="true"]:before {
+  transform: rotate(180deg); }
+
+/* line 51, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_animation.scss */
+.collapse-icon.accordion-icon-rotate a[aria-expanded="false"]:after {
+  transform: rotate(-180deg); }
+
+/* line 3, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_dropdown.scss */
+.dropdown .dropdown-menu {
+  display: block;
+  min-width: 160px;
+  border: 1px solid #E6E6E6;
+  opacity: 0.3;
+  border-radius: 0 0 0.25rem 0.25rem;
+  transform-origin: top;
+  animation-fill-mode: forwards;
+  transform: scale(1, 0);
+  transition: all 0.2s linear;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); }
+  /* line 15, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_dropdown.scss */
+  .dropdown .dropdown-menu .dropdown-header {
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    color: #626E82; }
+  /* line 21, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_dropdown.scss */
+  .dropdown .dropdown-menu .dropdown-item {
+    padding: 10px 20px;
+    width: auto; }
+
+/* line 26, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_dropdown.scss */
+.dropdown i {
+  margin-right: 0.5rem; }
+
+/* line 31, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_dropdown.scss */
+.nav-item i {
+  margin-right: 0.5rem; }
+
+/* line 37, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_dropdown.scss */
+.open > .dropdown-menu {
+  transform: scale(1, 1);
+  opacity: 1; }
+
+/* line 46, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_dropdown.scss */
+.dropdown-toggle::after {
+  font-family: 'FontAwesome';
+  content: "\f107";
+  border: none !important;
+  position: relative;
+  top: -8px;
+  right: 0px;
+  padding: 0 2px 0 6px;
+  margin: 0 0.3em 0 0; }
+
+/* line 58, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_dropdown.scss */
+.dropdown-toggle.nav-hide-arrow::after {
+  display: none; }
+
+/* line 64, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_dropdown.scss */
+.dropdown-toggle:focus {
+  outline: 0; }
+
+/* line 70, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_dropdown.scss */
+.navbar-horizontal .dropdown-toggle::after {
+  top: -9px !important; }
+
+/* line 77, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_dropdown.scss */
+.dropdown-menu-right {
+  left: auto !important;
+  right: 0; }
+
+/* line 85, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_dropdown.scss */
+.dropdown-menu .dropdown-submenu {
+  position: relative; }
+  /* line 88, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_dropdown.scss */
+  .dropdown-menu .dropdown-submenu:hover .dropdown-menu {
+    display: block; }
+  /* line 92, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_dropdown.scss */
+  .dropdown-menu .dropdown-submenu > .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px; }
+    /* line 97, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_dropdown.scss */
+    .dropdown-menu .dropdown-submenu > .dropdown-menu.open-left {
+      left: auto;
+      right: 100%; }
+  /* line 102, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_dropdown.scss */
+  .dropdown-menu .dropdown-submenu > a:after, .dropdown-menu .dropdown-submenu > button:after {
+    font-family: 'FontAwesome';
+    content: "\f105";
+    right: 8px;
+    top: -15px;
+    font-size: 1.2rem;
+    float: right;
+    border: none;
+    margin-top: 1.15rem;
+    position: absolute; }
+  /* line 114, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_dropdown.scss */
+  .dropdown-menu .dropdown-submenu :hover > a:after, .dropdown-menu .dropdown-submenu :hover > button:after {
+    border-left-color: #555; }
+  /* line 118, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_dropdown.scss */
+  .dropdown-menu .dropdown-submenu .pull-left {
+    float: none; }
+    /* line 120, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_dropdown.scss */
+    .dropdown-menu .dropdown-submenu .pull-left > .dropdown-menu {
+      left: -100%;
+      margin-left: 10px; }
+
+/* line 129, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_dropdown.scss */
+.dropdown-header {
+  text-transform: uppercase; }
+  /* line 131, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_dropdown.scss */
+  .dropdown-header.highlight {
+    color: #2b2d2f;
+    text-decoration: none;
+    background-color: #f5f5f5; }
+
+/* line 140, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_dropdown.scss */
+.btn-secondary ~ .dropdown-menu .dropdown-item.active {
+  background-color: #cccccc; }
+
+/* line 145, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_dropdown.scss */
+.btn-primary ~ .dropdown-menu .dropdown-item.active {
+  background-color: #00B5B8; }
+
+/* line 151, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_dropdown.scss */
+.btn-success ~ .dropdown-menu .dropdown-item.active {
+  background-color: #16D39A; }
+
+/* line 157, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_dropdown.scss */
+.btn-danger ~ .dropdown-menu .dropdown-item.active {
+  background-color: #FF7588; }
+
+/* line 163, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_dropdown.scss */
+.btn-info ~ .dropdown-menu .dropdown-item.active {
+  background-color: #2DCEE3; }
+
+/* line 169, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_dropdown.scss */
+.btn-warning ~ .dropdown-menu .dropdown-item.active {
+  background-color: #FFA87D; }
+
+/* line 176, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_dropdown.scss */
+.dropdown-menu.arrow {
+  margin-top: 12px; }
+  /* line 178, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_dropdown.scss */
+  .dropdown-menu.arrow:after, .dropdown-menu.arrow:before {
+    position: absolute;
+    left: 10px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    content: '';
+    border: 7px solid transparent;
+    border-top-width: 0; }
+  /* line 188, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_dropdown.scss */
+  .dropdown-menu.arrow:before {
+    top: -7px;
+    border-bottom-color: #b3b3b3; }
+  /* line 192, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_dropdown.scss */
+  .dropdown-menu.arrow:after {
+    top: -6px;
+    border-bottom-color: #fff; }
+
+/* line 197, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_dropdown.scss */
+.dropdown-menu .arrow-left {
+  margin-left: 7px !important; }
+  /* line 199, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_dropdown.scss */
+  .dropdown-menu .arrow-left:after, .dropdown-menu .arrow-left:before {
+    position: absolute;
+    top: 10px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    content: '';
+    border: 7px solid transparent;
+    border-left-width: 0; }
+  /* line 209, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_dropdown.scss */
+  .dropdown-menu .arrow-left:before {
+    left: -8px;
+    border-right-color: #b3b3b3; }
+  /* line 213, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_dropdown.scss */
+  .dropdown-menu .arrow-left:after {
+    left: -7px;
+    border-right-color: #fff; }
+
+/* line 218, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_dropdown.scss */
+.dropdown-menu .arrow-right {
+  margin-right: 7px !important; }
+  /* line 220, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_dropdown.scss */
+  .dropdown-menu .arrow-right:after, .dropdown-menu .arrow-right:before {
+    position: absolute;
+    top: 10px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    content: '';
+    border: 7px solid transparent;
+    border-right-width: 0; }
+  /* line 230, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_dropdown.scss */
+  .dropdown-menu .arrow-right:before {
+    right: -7px;
+    border-left-color: #b3b3b3; }
+  /* line 234, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_dropdown.scss */
+  .dropdown-menu .arrow-right:after {
+    right: -6px;
+    border-left-color: #fff; }
+
+/* line 243, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_dropdown.scss */
+.dropup .dropdown-menu.arrow {
+  margin-bottom: 12px; }
+  /* line 245, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_dropdown.scss */
+  .dropup .dropdown-menu.arrow:after, .dropup .dropdown-menu.arrow:before {
+    top: auto;
+    border-top-width: 7px;
+    border-bottom-width: 0; }
+  /* line 250, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_dropdown.scss */
+  .dropup .dropdown-menu.arrow:before {
+    bottom: -8px;
+    border-top-color: #b3b3b3; }
+  /* line 254, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_dropdown.scss */
+  .dropup .dropdown-menu.arrow:after {
+    bottom: -6px;
+    border-top-color: #fff; }
+
+/* line 261, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_dropdown.scss */
+.dropup .dropdown-submenu .dropdown-menu {
+  bottom: auto;
+  top: 0; }
+
+/* line 270, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_dropdown.scss */
+.dropdown-menu-xl a,
+.dropdown-menu-xl button {
+  padding-top: 9px;
+  padding-bottom: 9px;
+  font-size: 1rem;
+  line-height: 1.43; }
+
+/* line 277, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_dropdown.scss */
+.dropdown-menu-lg a,
+.dropdown-menu-lg button {
+  padding-top: 6px;
+  padding-bottom: 6px; }
+
+/* line 282, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_dropdown.scss */
+.dropdown-menu-sm a,
+.dropdown-menu-sm button {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 0.86rem;
+  line-height: 1.67; }
+
+/* line 289, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_dropdown.scss */
+button:focus {
+  outline: none; }
+
+/* line 2, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+.navbar-dark .hamburger-inner, .navbar-dark .hamburger-inner::before, .navbar-dark .hamburger-inner::after {
+  background-color: #FFFFFF; }
+
+/* line 9, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+.header-navbar {
+  padding: 0px;
+  min-height: 4rem;
+  font-family: "Source Sans Pro";
+  transition: 300ms ease all;
+  /* For sm screen*/ }
+  /* line 18, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  .header-navbar.navbar-border {
+    border-bottom: 1px solid #E4E7ED; }
+  /* line 21, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  .header-navbar.navbar-dark.navbar-border {
+    border-bottom: 1px solid #8596B5; }
+  /* line 25, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  .header-navbar.navbar-shadow {
+    box-shadow: 2px 0px 20px rgba(0, 0, 0, 0.1); }
+  /* line 31, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  .header-navbar.navbar-without-dd-arrow .nav-link.dropdown-toggle::after {
+    display: none; }
+  /* line 38, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  .header-navbar.navbar-brand-center .navbar-header {
+    width: 150px;
+    position: absolute;
+    left: 50%;
+    padding: 0;
+    margin: 0;
+    transform: translate(-50%, 0); }
+  /* line 47, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  .header-navbar .navbar-header {
+    height: 100%;
+    width: 240px;
+    height: 4rem;
+    float: left;
+    position: relative;
+    padding: 0rem 1rem;
+    transition: 300ms ease all; }
+    /* line 55, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+    .header-navbar .navbar-header .navbar-brand {
+      padding: 14px 6px; }
+      /* line 57, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+      .header-navbar .navbar-header .navbar-brand .brand-logo {
+        vertical-align: sub; }
+      /* line 60, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+      .header-navbar .navbar-header .navbar-brand .brand-text {
+        display: inline;
+        padding-left: 10px;
+        font-weight: 500;
+        letter-spacing: 1px; }
+  /* line 68, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  .header-navbar .navbar-container {
+    padding: 0rem 18px;
+    height: 4rem;
+    transition: 300ms ease all;
+    background: inherit; }
+    /* line 75, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+    .header-navbar .navbar-container ul.nav li > a.nav-link {
+      padding: 1.5rem 0.6rem; }
+      /* line 77, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+      .header-navbar .navbar-container ul.nav li > a.nav-link i.flag-icon {
+        margin-right: 0.5rem; }
+    /* line 81, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+    .header-navbar .navbar-container ul.nav li a.dropdown-user-link {
+      padding: 0.9rem 0.6rem; }
+      /* line 83, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+      .header-navbar .navbar-container ul.nav li a.dropdown-user-link .user-name {
+        display: inline-block;
+        margin-bottom: 0.4rem;
+        margin-left: 0.2rem; }
+    /* line 89, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+    .header-navbar .navbar-container ul.nav li a.menu-toggle {
+      padding: 1.1rem 0.8rem 1rem 1rem; }
+      /* line 91, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+      .header-navbar .navbar-container ul.nav li a.menu-toggle i {
+        font-size: 1.6rem; }
+    /* line 95, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+    .header-navbar .navbar-container ul.nav li a.nav-link-label {
+      padding: 1.4rem 0rem 1rem 0.8rem; }
+    /* line 99, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+    .header-navbar .navbar-container ul.nav li a.dropdown-user-link .avatar {
+      margin-right: 0.5rem; }
+    /* line 103, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+    .header-navbar .navbar-container ul.nav li a.nav-link-search,
+    .header-navbar .navbar-container ul.nav li a.nav-link-expand {
+      padding: 1.4rem 1rem 1.3rem 1rem; }
+    /* line 107, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+    .header-navbar .navbar-container ul.nav li div.input-group {
+      padding: 0.7rem 1rem; }
+    /* line 110, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+    .header-navbar .navbar-container ul.nav li i.ficon {
+      font-size: 1.2rem; }
+    /* line 113, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+    .header-navbar .navbar-container ul.nav li .list-group {
+      max-height: 18.2rem; }
+    /* line 116, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+    .header-navbar .navbar-container ul.nav li .scrollable-container {
+      position: relative; }
+    /* line 122, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+    .header-navbar .navbar-container .dropdown-menu-media {
+      width: 24rem; }
+      /* line 125, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+      .header-navbar .navbar-container .dropdown-menu-media .list-group .list-group-item {
+        padding: 1rem;
+        border: none;
+        border-top: 1px solid #E6E6E6;
+        border-bottom: 1px solid #E6E6E6; }
+      /* line 132, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+      .header-navbar .navbar-container .dropdown-menu-media .dropdown-menu-header {
+        border-bottom: 1px solid #E6E6E6; }
+      /* line 136, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+      .header-navbar .navbar-container .dropdown-menu-media .dropdown-menu-footer a {
+        padding: 0.3rem;
+        border-top: 1px solid #E6E6E6; }
+  /* line 144, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  .header-navbar.navbar-without-menu .navbar-container {
+    margin-left: 0; }
+  /* line 151, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  .header-navbar .nav-item + .nav-item {
+    margin-left: 0rem; }
+  @media (max-width: 767px) {
+    /* line 156, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+    .header-navbar .navbar-header {
+      width: 100% !important;
+      padding: 0.5rem 1rem; }
+      /* line 159, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+      .header-navbar .navbar-header .menu-toggle {
+        top: 2px;
+        position: relative; }
+      /* line 163, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+      .header-navbar .navbar-header .open-navbar-container i {
+        font-size: 1.8rem; }
+      /* line 166, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+      .header-navbar .navbar-header .navbar-brand {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translate(-50%, 0); }
+    /* line 174, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+    .header-navbar.navbar-with-menu .navbar-container {
+      width: 100%;
+      display: table;
+      background: #fff;
+      padding: 0rem 1rem;
+      margin: 0;
+      height: auto; } }
+
+/* line 185, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+.navbar-light {
+  background: #FFFFFF; }
+  /* line 187, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  .navbar-light.navbar-horizontal {
+    background: #FFFFFF; }
+  /* line 191, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  .navbar-light .navbar-nav li {
+    line-height: 1; }
+  /* line 195, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  .navbar-light .navbar-nav .active.nav-link {
+    background-color: rgba(0, 0, 0, 0.03); }
+  /* line 200, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  .navbar-light .navbar-nav .disabled.nav-link {
+    color: #626E82; }
+
+/* line 206, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+.navbar-dark {
+  background: #404E67; }
+  /* line 208, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  .navbar-dark.navbar-horizontal {
+    background: #404E67; }
+  /* line 213, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  .navbar-dark .nav-search .form-control,
+  .navbar-dark .nav-search .btn-secondary {
+    color: #FFFFFF;
+    background: #404E67; }
+  /* line 220, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  .navbar-dark .navbar-nav li {
+    line-height: 1; }
+  /* line 224, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  .navbar-dark .navbar-nav .active.nav-link {
+    background-color: rgba(255, 255, 255, 0.05); }
+  /* line 229, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  .navbar-dark .navbar-nav .disabled.nav-link {
+    color: #98A4B8; }
+
+/* line 235, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+.navbar-semi-dark {
+  background: #FFFFFF; }
+  /* line 236, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  .navbar-semi-dark .navbar-header {
+    background: #404E67; }
+    /* line 238, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+    .navbar-semi-dark .navbar-header .brand-text {
+      color: #FFFFFF; }
+  /* line 244, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  .navbar-semi-dark .navbar-nav li {
+    line-height: 1; }
+  /* line 247, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  .navbar-semi-dark .navbar-nav .nav-link {
+    color: #404E67; }
+  /* line 251, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  .navbar-semi-dark .navbar-nav .active.nav-link {
+    background-color: rgba(0, 0, 0, 0.03); }
+  /* line 256, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  .navbar-semi-dark .navbar-nav .disabled.nav-link {
+    color: #626E82; }
+
+/* line 262, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+.navbar-semi-light {
+  background: #404E67; }
+  /* line 263, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  .navbar-semi-light .navbar-header {
+    background: #FFFFFF; }
+    /* line 265, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+    .navbar-semi-light .navbar-header .brand-text {
+      color: #404E67; }
+  /* line 271, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  .navbar-semi-light .navbar-nav li {
+    line-height: 1; }
+  /* line 274, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  .navbar-semi-light .navbar-nav .nav-link {
+    color: #FFFFFF; }
+  /* line 278, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  .navbar-semi-light .navbar-nav .active.nav-link {
+    background-color: rgba(0, 0, 0, 0.03); }
+  /* line 283, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  .navbar-semi-light .navbar-nav .disabled.nav-link {
+    color: #626E82; }
+
+/* line 292, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+.mega-dropdown {
+  position: static !important; }
+
+/* line 296, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+.navigation-main .mega-dropdown-menu, .navbar-nav .mega-dropdown-menu {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  width: calc(100% - 50px);
+  padding: 0.5rem 0;
+  /* fallback if needed */
+  margin: 0px 25px;
+  box-shadow: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  z-index: 9999; }
+  /* line 306, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  .navigation-main .mega-dropdown-menu ul, .navbar-nav .mega-dropdown-menu ul {
+    padding: 0;
+    margin: 0; }
+    /* line 309, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+    .navigation-main .mega-dropdown-menu ul li, .navbar-nav .mega-dropdown-menu ul li {
+      list-style: none; }
+      /* line 311, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+      .navigation-main .mega-dropdown-menu ul li a, .navbar-nav .mega-dropdown-menu ul li a {
+        display: block;
+        color: #1B2942; }
+        /* line 314, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+        .navigation-main .mega-dropdown-menu ul li a .children-in, .navbar-nav .mega-dropdown-menu ul li a .children-in {
+          float: right; }
+        /* line 317, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+        .navigation-main .mega-dropdown-menu ul li a:hover, .navbar-nav .mega-dropdown-menu ul li a:hover {
+          text-decoration: none;
+          color: #404E67; }
+        /* line 321, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+        .navigation-main .mega-dropdown-menu ul li a:focus, .navbar-nav .mega-dropdown-menu ul li a:focus {
+          text-decoration: none;
+          color: #404E67; }
+    /* line 327, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+    .navigation-main .mega-dropdown-menu ul a.dropdown-item, .navbar-nav .mega-dropdown-menu ul a.dropdown-item {
+      padding: 10px; }
+  /* line 331, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  .navigation-main .mega-dropdown-menu p.accordion-text, .navbar-nav .mega-dropdown-menu p.accordion-text {
+    line-height: 1.45; }
+  /* line 334, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  .navigation-main .mega-dropdown-menu .dropdown-menu-header, .navbar-nav .mega-dropdown-menu .dropdown-menu-header {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #E6E6E6; }
+
+/* line 342, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+.horizontal-top-icon-menu .mega-dropdown-menu {
+  margin: 0px 25px !important; }
+
+@media (min-width: 544px) {
+  /* line 349, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  .container .mega-dropdown-menu {
+    max-width: 576px;
+    margin: 0 calc((100% - 576px)/2); } }
+
+@media (min-width: 768px) {
+  /* line 349, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  .container .mega-dropdown-menu {
+    max-width: 720px;
+    margin: 0 calc((100% - 720px)/2); } }
+
+@media (min-width: 992px) {
+  /* line 349, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  .container .mega-dropdown-menu {
+    max-width: 940px;
+    margin: 0 calc((100% - 940px)/2); } }
+
+@media (min-width: 1200px) {
+  /* line 349, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  .container .mega-dropdown-menu {
+    max-width: 1140px;
+    margin: 0 calc((100% - 1140px)/2); } }
+
+@-moz-document url-prefix() {
+  /* line 358, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  ul li a .children-in {
+    position: relative;
+    right: 3px;
+    top: -14px; } }
+
+/* line 370, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+.menu-list {
+  list-style: none;
+  padding: 0;
+  overflow: hidden; }
+
+/* line 376, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+.menu-panel {
+  padding: 0; }
+
+/* line 380, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+.sliding-menu {
+  overflow: hidden;
+  position: relative; }
+  /* line 383, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  .sliding-menu ul {
+    float: left;
+    margin: 0;
+    padding: 0; }
+    /* line 387, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+    .sliding-menu ul li {
+      list-style: none;
+      margin: 0; }
+
+/* line 396, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+.navbar-menu-icon {
+  width: 24px;
+  margin: 16px 2px !important;
+  position: relative;
+  margin: 0px auto;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer; }
+
+/* line 407, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+.navbar-menu-icon span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #404E67;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out; }
+
+/* line 421, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+.navbar-menu-icon span:nth-child(1) {
+  top: 0px; }
+
+/* line 425, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+.navbar-menu-icon span:nth-child(2) {
+  top: 10px; }
+
+/* line 429, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+.navbar-menu-icon span:nth-child(3) {
+  top: 20px; }
+
+/* line 433, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+.navbar-menu-icon.open span:nth-child(1) {
+  top: 10px;
+  transform: rotate(135deg); }
+
+/* line 438, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+.navbar-menu-icon.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px; }
+
+/* line 443, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+.navbar-menu-icon.open span:nth-child(3) {
+  top: 10px;
+  transform: rotate(-135deg); }
+
+@media (max-width: 767px) {
+  /* line 454, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  .header-navbar .navbar-nav .open {
+    position: static; }
+  /* line 457, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  .header-navbar .navbar-nav .open-navbar-container {
+    padding-top: 0.625rem; }
+  /* line 463, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  .header-navbar .navbar-container .open .dropdown-menu {
+    right: 0;
+    left: 0;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    max-height: 400px;
+    overflow-x: hidden;
+    overflow-y: scroll; }
+  /* line 476, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  .header-navbar .navbar-container ul.nav li.nav-item i {
+    margin-right: 0.2rem; }
+  /* line 479, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  .header-navbar .navbar-container ul.nav li > a.nav-link {
+    padding: 1.2rem 0.4rem; }
+    /* line 481, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+    .header-navbar .navbar-container ul.nav li > a.nav-link i.flag-icon {
+      margin-right: 0.2rem; }
+  /* line 485, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  .header-navbar .navbar-container ul.nav li a.dropdown-user-link {
+    padding: 0.8rem 0.6rem; }
+  /* line 488, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  .header-navbar .navbar-container ul.nav li a.nav-link-label {
+    padding: 1.4rem 0rem 1rem 0.8rem; }
+  /* line 491, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  .header-navbar .navbar-container ul.nav li a.nav-link-search,
+  .header-navbar .navbar-container ul.nav li a.nav-link-expand {
+    padding: 1.4rem 1rem 1rem 1rem; }
+  /* line 495, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  .header-navbar .navbar-container ul.nav li .dropdown-toggle::after {
+    margin-right: 0;
+    margin-left: -2px; }
+  /* line 506, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  .navbar-dark .hamburger-inner,
+  .navbar-dark .hamburger-inner::before,
+  .navbar-dark .hamburger-inner::after,
+  .navbar-semi-dark .hamburger-inner,
+  .navbar-semi-dark .hamburger-inner::before,
+  .navbar-semi-dark .hamburger-inner::after {
+    background-color: #FFFFFF; }
+  /* line 513, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  .navbar-dark .navbar-header .navbar-nav .nav-link,
+  .navbar-semi-dark .navbar-header .navbar-nav .nav-link {
+    color: #FFFFFF; }
+  /* line 523, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  .navbar-dark .navbar-container .navbar-nav .nav-link,
+  .navbar-semi-dark .navbar-container .navbar-nav .nav-link {
+    color: #404E67; }
+  /* line 534, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  .navbar-light .navbar-header .navbar-nav .nav-link,
+  .navbar-semi-light .navbar-header .navbar-nav .nav-link {
+    color: #404E67; }
+  /* line 544, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  .navbar-light .navbar-container .navbar-nav .nav-link,
+  .navbar-semi-light .navbar-container .navbar-nav .nav-link {
+    color: #404E67; } }
+
+/* line 552, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+.headroom {
+  will-change: transform;
+  transition: transform 200ms linear; }
+
+/* line 557, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+.headroom--pinned-top {
+  transform: translateY(0%); }
+
+/* line 561, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+.headroom--unpinned-top {
+  transform: translateY(-100%); }
+
+/* line 565, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+.headroom--pinned-bottom {
+  transform: translateY(0%); }
+
+/* line 569, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+.headroom--unpinned-bottom {
+  transform: translateY(100%); }
+
+@media (max-width: 1199px) {
+  /* line 579, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  .header-navbar .navbar-container ul.nav li > a.nav-link {
+    padding: 1.4rem 0.4rem 0.8rem 0.4rem; }
+    /* line 581, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+    .header-navbar .navbar-container ul.nav li > a.nav-link i.flag-icon {
+      margin-right: 0.2rem; }
+  /* line 585, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  .header-navbar .navbar-container ul.nav li a.dropdown-user-link {
+    padding: 0.8rem 0.6rem; }
+  /* line 588, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  .header-navbar .navbar-container ul.nav li a.nav-link-label {
+    padding: 1.2rem 0rem 1rem 0.8rem; }
+  /* line 591, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  .header-navbar .navbar-container ul.nav li a.nav-link-search,
+  .header-navbar .navbar-container ul.nav li a.nav-link-expand {
+    padding: 1.5rem 1rem 1rem 1rem; }
+  /* line 595, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  .header-navbar .navbar-container ul.nav li .dropdown-toggle::after {
+    margin-right: 0;
+    margin-left: -2px; } }
+
+@media (max-width: 1199px) {
+  /* line 611, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  .header-navbar .navbar-container ul.nav li .selected-language {
+    display: none; }
+  /* line 615, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  .header-navbar .navbar-container ul.nav li a.dropdown-user-link .user-name {
+    display: none; } }
+
+@media (max-width: 767px) {
+  /* line 640, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  #navbar-mobile.navbar-toggleable-sm .navbar-nav {
+    margin: 0; }
+    /* line 642, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+    #navbar-mobile.navbar-toggleable-sm .navbar-nav .dropdown-menu {
+      position: absolute; }
+    /* line 645, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+    #navbar-mobile.navbar-toggleable-sm .navbar-nav .nav-item {
+      float: left; } }
+
+/* ----------- iPhone 5, 5S  iPhone 6----------- */
+/* Landscape */
+@media only screen and (min-device-width: 26.78em) and (max-device-width: 47.64em) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  /* line 629, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  .header-navbar .navbar-container .open .dropdown-menu {
+    max-height: 180px; } }
+
+/* ----------- iPhone 6+ ----------- */
+/* Landscape */
+@media only screen and (min-device-width: 29.57em) and (max-device-width: 52.57em) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  /* line 629, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+  .header-navbar .navbar-container .open .dropdown-menu {
+    max-height: 280px; } }
+
+/* line 674, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_navbar.scss */
+.menu-expanded .nav-usermenu .ft-user {
+  display: none; }
+
+/* line 1, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_card.scss */
+.card-group, .card-deck {
+  margin-bottom: 0.75rem; }
+
+/* line 4, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_card.scss */
+.card {
+  margin-bottom: 1.875rem;
+  border: none;
+  border-radius: 0; }
+  /* line 10, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_card.scss */
+  .card .card-title {
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+    font-size: 1.12rem; }
+  /* line 16, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_card.scss */
+  .card .card-bordered {
+    border: 1px solid rgba(0, 0, 0, 0.06); }
+  /* line 21, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_card.scss */
+  .card.card-fullscreen {
+    display: block;
+    z-index: 9999;
+    position: fixed;
+    width: 100% !important;
+    height: 100% !important;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    overflow: auto; }
+  /* line 33, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_card.scss */
+  .card .card-block[class*='border-bottom-'] {
+    border-bottom-width: 2px !important; }
+  /* line 37, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_card.scss */
+  .card .card-img-overlay.bg-overlay {
+    background: rgba(0, 0, 0, 0.45); }
+  /* line 40, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_card.scss */
+  .card .card-img-overlay .text-muted {
+    color: #1B2942 !important; }
+  /* line 44, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_card.scss */
+  .card.card-minimal {
+    border: none;
+    box-shadow: none; }
+
+/* line 52, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_card.scss */
+.card-moved .card, .card-moved .card-header {
+  background-color: #FFA87D;
+  color: #FFFFFF; }
+
+/* line 57, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_card.scss */
+.handle, .titleArea {
+  cursor: move; }
+
+/* line 61, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_card.scss */
+.card-header {
+  border-bottom: none; }
+  /* line 64, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_card.scss */
+  .card-header .card-title {
+    margin-bottom: 0; }
+  /* line 68, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_card.scss */
+  .card-header .heading-elements,
+  .card-header .heading-elements-toggle {
+    background-color: inherit;
+    position: absolute;
+    top: 14px;
+    right: 21px; }
+    /* line 74, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_card.scss */
+    .card-header .heading-elements.heading-top-elements,
+    .card-header .heading-elements-toggle.heading-top-elements {
+      top: 0px; }
+    /* line 78, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_card.scss */
+    .card-header .heading-elements i,
+    .card-header .heading-elements-toggle i {
+      color: #626E82; }
+    /* line 82, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_card.scss */
+    .card-header .heading-elements a,
+    .card-header .heading-elements-toggle a {
+      padding: 0 8px; }
+      /* line 84, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_card.scss */
+      .card-header .heading-elements a.btn,
+      .card-header .heading-elements-toggle a.btn {
+        padding-top: 6px;
+        padding-bottom: 6px; }
+
+/* line 91, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_card.scss */
+.card-footer {
+  border-top: 1px solid #EEEEEE; }
+
+/* line 95, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_card.scss */
+.card-inverse .card-text {
+  color: white; }
+
+/* line 100, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_card.scss */
+.card-inverse .card-img-overlay .text-muted {
+  color: #FFF !important; }
+
+/* line 104, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_card.scss */
+.card-inverse code {
+  background-color: white; }
+
+/* line 108, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_card.scss */
+.card-inverse .heading-elements i {
+  color: #FFF; }
+
+/* line 114, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_card.scss */
+.card-head-inverse {
+  color: #FFF; }
+  /* line 116, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_card.scss */
+  .card-head-inverse .heading-elements i {
+    color: #FFF; }
+
+/* line 122, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_card.scss */
+.card-transparent {
+  background-color: transparent; }
+
+@media (max-width: 991px) {
+  /* line 126, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_card.scss */
+  .heading-elements {
+    text-align: center; }
+    /* line 128, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_card.scss */
+    .heading-elements .list-inline {
+      display: none; }
+    /* line 131, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_card.scss */
+    .heading-elements.visible {
+      display: block;
+      margin-top: 0;
+      top: 100%;
+      top: 50px;
+      height: auto;
+      left: 0px;
+      padding: 10px;
+      border: 1px solid #eee;
+      z-index: 997;
+      position: absolute;
+      width: 100%; }
+      /* line 132, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_card.scss */
+      .heading-elements.visible .list-inline {
+        display: block; } }
+
+@media (min-width: 992px) {
+  /* line 150, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_card.scss */
+  .heading-elements-toggle {
+    display: none; } }
+
+/* line 1, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_breadcrumb.scss */
+.breadcrumb {
+  font-size: 0.9rem;
+  font-family: "Source Sans Pro";
+  text-transform: uppercase;
+  background-color: transparent;
+  padding: 0 0 0.75rem 0rem; }
+  /* line 8, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_breadcrumb.scss */
+  .breadcrumb > li + li::before {
+    padding-right: .6rem;
+    padding-left: .6rem; }
+
+/* Custom scss for page headers style */
+/* line 16, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_breadcrumb.scss */
+.breadcrumbs-right .breadcrumb {
+  float: right; }
+
+/* line 21, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_breadcrumb.scss */
+.breadcrumbs-top .breadcrumb {
+  margin: 0;
+  padding: 0; }
+
+/* line 2, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_tags.scss */
+.tag {
+  font-weight: 400; }
+  /* line 5, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_tags.scss */
+  .tag[class*='tag-'] [class*='icon-'] {
+    line-height: 1; }
+    /* line 7, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_tags.scss */
+    .tag[class*='tag-'] [class*='icon-'] ~ span {
+      position: relative;
+      bottom: 2px;
+      padding: 0 5px; }
+  /* line 13, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_tags.scss */
+  .tag[class*='tag-'] span {
+    position: relative;
+    bottom: 2px;
+    padding: 0 5px; }
+  /* line 18, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_tags.scss */
+  .tag[class*='tag-'] a {
+    color: #fff; }
+  /* line 21, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_tags.scss */
+  .tag[class*='tag-'] .dropdown-toggle::after, .tag[class*='tag-'].dropdown-toggle::after {
+    position: relative;
+    top: -10px;
+    right: 5px;
+    font-size: 1rem; }
+  /* line 29, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_tags.scss */
+  .tag[class*='tag-'] .dropdown-menu a {
+    color: #555; }
+  /* line 34, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_tags.scss */
+  .tag.tag-square {
+    border-radius: 0; }
+  /* line 37, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_tags.scss */
+  .tag.tag.float-xs-right {
+    margin-left: 0.5rem;
+    margin-top: 0.15rem; }
+
+/* line 45, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_tags.scss */
+.tag-xl {
+  font-size: 1.8rem; }
+
+/* line 48, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_tags.scss */
+.tag-lg {
+  font-size: 1.2rem; }
+
+/* line 51, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_tags.scss */
+.tag-md {
+  font-size: 1rem; }
+
+/* line 54, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_tags.scss */
+.tag-sm {
+  font-size: 0.8rem; }
+
+/* line 62, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_tags.scss */
+.tag-default {
+  background-color: #626E82; }
+  /* line 5, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/mixins/_label.scss */
+  .tag-default.tag-glow {
+    box-shadow: 0px 0px 10px #626E82; }
+  /* line 17, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap/mixins/_hover.scss */
+  .tag-default[href]:focus {
+    background-color: #4c5565; }
+  /* line 11, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap/mixins/_hover.scss */
+  .tag-default[href]:hover {
+    background-color: #4c5565; }
+
+/* line 66, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_tags.scss */
+.tag-primary {
+  background-color: #00B5B8; }
+  /* line 5, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/mixins/_label.scss */
+  .tag-primary.tag-glow {
+    box-shadow: 0px 0px 10px #00B5B8; }
+  /* line 17, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap/mixins/_hover.scss */
+  .tag-primary[href]:focus {
+    background-color: #008385; }
+  /* line 11, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap/mixins/_hover.scss */
+  .tag-primary[href]:hover {
+    background-color: #008385; }
+
+/* line 70, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_tags.scss */
+.tag-success {
+  background-color: #16D39A; }
+  /* line 5, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/mixins/_label.scss */
+  .tag-success.tag-glow {
+    box-shadow: 0px 0px 10px #16D39A; }
+  /* line 17, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap/mixins/_hover.scss */
+  .tag-success[href]:focus {
+    background-color: #11a578; }
+  /* line 11, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap/mixins/_hover.scss */
+  .tag-success[href]:hover {
+    background-color: #11a578; }
+
+/* line 74, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_tags.scss */
+.tag-info {
+  background-color: #2DCEE3; }
+  /* line 5, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/mixins/_label.scss */
+  .tag-info.tag-glow {
+    box-shadow: 0px 0px 10px #2DCEE3; }
+  /* line 17, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap/mixins/_hover.scss */
+  .tag-info[href]:focus {
+    background-color: #1ab0c3; }
+  /* line 11, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap/mixins/_hover.scss */
+  .tag-info[href]:hover {
+    background-color: #1ab0c3; }
+
+/* line 78, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_tags.scss */
+.tag-warning {
+  background-color: #FFA87D; }
+  /* line 5, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/mixins/_label.scss */
+  .tag-warning.tag-glow {
+    box-shadow: 0px 0px 10px #FFA87D; }
+  /* line 17, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap/mixins/_hover.scss */
+  .tag-warning[href]:focus {
+    background-color: #ff864a; }
+  /* line 11, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap/mixins/_hover.scss */
+  .tag-warning[href]:hover {
+    background-color: #ff864a; }
+
+/* line 82, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_tags.scss */
+.tag-danger {
+  background-color: #FF7588; }
+  /* line 5, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/mixins/_label.scss */
+  .tag-danger.tag-glow {
+    box-shadow: 0px 0px 10px #FF7588; }
+  /* line 17, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap/mixins/_hover.scss */
+  .tag-danger[href]:focus {
+    background-color: #ff425c; }
+  /* line 11, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap/mixins/_hover.scss */
+  .tag-danger[href]:hover {
+    background-color: #ff425c; }
+
+/* line 87, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_tags.scss */
+.tag-up {
+  position: relative;
+  top: -13px;
+  right: 14px; }
+
+/* line 93, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_tags.scss */
+.tag-icon i {
+  font-size: 100%;
+  margin-right: 5px; }
+
+/* line 99, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_tags.scss */
+.form-control + .block-tag {
+  display: block; }
+
+/* line 102, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_tags.scss */
+.block-tag {
+  margin-top: 0.5rem; }
+
+/* line 105, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_tags.scss */
+.block-area {
+  padding: 0.24rem 0.3rem; }
+
+/* line 110, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_tags.scss */
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #905;
+  font-size: 100%;
+  font-weight: 400;
+  padding: 0; }
+
+/* line 1, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+.nav {
+  border-radius: 0.25rem; }
+  /* line 4, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+  .nav.wrap-border {
+    border: 1px solid #ddd; }
+    /* line 6, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+    .nav.wrap-border li.nav-header {
+      margin: 0 0.5rem; }
+    /* line 9, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+    .nav.wrap-border li.nav-item, .nav.wrap-border div {
+      padding: 2px 10px; }
+  /* line 14, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+  .nav.no-hover-bg .nav-item:hover {
+    background-color: transparent; }
+  /* line 20, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+  .nav .dropdown .dropdown-item.active {
+    background-color: transparent;
+    color: #55595c; }
+    /* line 23, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+    .nav .dropdown .dropdown-item.active:focus {
+      background-color: transparent;
+      color: #55595c; }
+  /* line 31, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+  .nav.square-border {
+    border-radius: 0; }
+    /* line 34, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+    .nav.square-border .nav-item .nav-link.active {
+      border-radius: 0; }
+  /* line 40, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+  .nav .nav-item .nav-link {
+    display: block; }
+  /* line 44, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+  .nav .dropdown-divider {
+    margin: 0.5rem 0; }
+  /* line 53, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+  .nav.nav-pills .nav-item .nav-link i.float-xs-right:before {
+    position: relative;
+    top: 7px;
+    left: 7px; }
+  /* line 60, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+  .nav.nav-pills .nav-item .nav-link .tag.float-xs-right {
+    position: relative;
+    top: 1px;
+    left: 3px; }
+  /* line 66, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+  .nav.nav-pills .nav-item .nav-link.dropdown-toggle::after {
+    top: -15px; }
+  /* line 72, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+  .nav.nav-pills.nav-justified {
+    width: 100%; }
+    /* line 7, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/mixins/_navs.scss */
+    .nav.nav-pills.nav-justified .nav-item {
+      float: none; }
+    /* line 11, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/mixins/_navs.scss */
+    .nav.nav-pills.nav-justified .nav-link {
+      text-align: center;
+      margin-bottom: 5px; }
+    /* line 16, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/mixins/_navs.scss */
+    .nav.nav-pills.nav-justified > .dropdown .dropdown-menu {
+      top: auto;
+      left: auto; }
+    @media (min-width: 544px) {
+      /* line 22, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/mixins/_navs.scss */
+      .nav.nav-pills.nav-justified .nav-item {
+        display: table-cell;
+        width: 1%; }
+      /* line 26, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/mixins/_navs.scss */
+      .nav.nav-pills.nav-justified .nav-link {
+        margin-bottom: 0; } }
+    /* line 37, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/mixins/_navs.scss */
+    .nav.nav-pills.nav-justified .nav-link {
+      margin-right: 0;
+      border-radius: 0.25rem; }
+    @media (min-width: 544px) {
+      /* line 44, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/mixins/_navs.scss */
+      .nav.nav-pills.nav-justified .nav-link.active,
+      .nav.nav-pills.nav-justified .nav-link.active:hover,
+      .nav.nav-pills.nav-justified .nav-link.active:focus {
+        border-bottom-color: transparent; } }
+    /* line 76, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+    .nav.nav-pills.nav-justified .nav-link.active {
+      border: none; }
+      /* line 78, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+      .nav.nav-pills.nav-justified .nav-link.active:hover, .nav.nav-pills.nav-justified .nav-link.active:focus {
+        border: none; }
+  /* line 86, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+  .nav.nav-pills.nav-pill-bordered .nav-item {
+    border: 1px solid #d3d3d3;
+    border-radius: 0.25rem; }
+  /* line 94, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+  .nav.nav-pills.nav-pill-with-active-bordered .nav-item a.nav-link {
+    border: 1px solid #d3d3d3;
+    border-radius: 0.25rem;
+    background-color: #ffffff;
+    color: #55595c; }
+    /* line 99, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+    .nav.nav-pills.nav-pill-with-active-bordered .nav-item a.nav-link.active {
+      border: 1px solid #00B5B8;
+      color: #00B5B8; }
+  /* line 110, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+  .nav.nav-pills.nav-active-bordered-pill .nav-item a.nav-link {
+    color: #55595c; }
+    /* line 112, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+    .nav.nav-pills.nav-active-bordered-pill .nav-item a.nav-link.active {
+      border: 1px solid #00B5B8;
+      border-radius: 0.25rem;
+      color: #00B5B8;
+      background-color: #ffffff; }
+  /* line 127, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+  .nav.nav-pills.nav-pill-toolbar.nav-stacked .nav-item ~ .nav-item a.nav-link {
+    border-left: 1px solid #d3d3d3;
+    border-top: 0; }
+  /* line 135, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+  .nav.nav-pills.nav-pill-toolbar.nav-stacked .nav-item:first-child a.nav-link {
+    border-radius: 0.25rem 0.25rem 0 0; }
+  /* line 142, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+  .nav.nav-pills.nav-pill-toolbar.nav-stacked .nav-item:last-child a.nav-link {
+    border-radius: 0 0 0.25rem 0.25rem; }
+  /* line 149, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+  .nav.nav-pills.nav-pill-toolbar .nav-item {
+    margin-top: 0;
+    margin-left: 0; }
+    /* line 154, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+    .nav.nav-pills.nav-pill-toolbar .nav-item ~ .nav-item a.nav-link {
+      border-left: 0; }
+    /* line 161, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+    .nav.nav-pills.nav-pill-toolbar .nav-item:first-child a.nav-link {
+      border-radius: 0.25rem 0 0 0.25rem; }
+    /* line 168, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+    .nav.nav-pills.nav-pill-toolbar .nav-item:last-child a.nav-link {
+      border-radius: 0 0.25rem 0.25rem 0; }
+    /* line 174, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+    .nav.nav-pills.nav-pill-toolbar .nav-item a.nav-link {
+      border: 1px solid #d3d3d3;
+      border-radius: 0; }
+  /* line 186, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+  .nav.nav-tabs .nav-item .nav-link {
+    padding: 0.5rem 0.7rem;
+    display: block; }
+    /* line 192, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+    .nav.nav-tabs .nav-item .nav-link.active {
+      background-color: #fff;
+      border-radius: 0.25rem 0.25rem 0 0; }
+    /* line 197, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+    .nav.nav-tabs .nav-item .nav-link i.float-xs-right {
+      margin-left: 0.5rem; }
+    /* line 202, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+    .nav.nav-tabs .nav-item .nav-link.dropdown-toggle::after {
+      top: -15px; }
+  /* line 207, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+  .nav.nav-tabs .nav-item:hover {
+    color: #333; }
+  /* line 212, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+  .nav.nav-tabs.wrap-border {
+    border: 1px solid #ddd; }
+  /* line 216, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+  .nav.nav-tabs.no-hover-bg .nav-item:hover {
+    background-color: transparent; }
+  /* line 222, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+  .nav.nav-tabs .dropdown .dropdown-item.active {
+    background-color: transparent;
+    color: #55595c; }
+    /* line 225, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+    .nav.nav-tabs .dropdown .dropdown-item.active:focus {
+      background-color: transparent;
+      color: #55595c; }
+  /* line 234, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+  .nav.nav-tabs.square-border {
+    border-radius: 0; }
+    /* line 237, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+    .nav.nav-tabs.square-border .nav-item .nav-link.active {
+      border-radius: 0; }
+  /* line 243, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+  .nav.nav-tabs.nav-justified {
+    width: 100%; }
+    /* line 7, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/mixins/_navs.scss */
+    .nav.nav-tabs.nav-justified .nav-item {
+      float: none; }
+    /* line 11, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/mixins/_navs.scss */
+    .nav.nav-tabs.nav-justified .nav-link {
+      text-align: center;
+      margin-bottom: 5px; }
+    /* line 16, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/mixins/_navs.scss */
+    .nav.nav-tabs.nav-justified > .dropdown .dropdown-menu {
+      top: auto;
+      left: auto; }
+    @media (min-width: 544px) {
+      /* line 22, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/mixins/_navs.scss */
+      .nav.nav-tabs.nav-justified .nav-item {
+        display: table-cell;
+        width: 1%; }
+      /* line 26, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/mixins/_navs.scss */
+      .nav.nav-tabs.nav-justified .nav-link {
+        margin-bottom: 0; } }
+    /* line 37, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/mixins/_navs.scss */
+    .nav.nav-tabs.nav-justified .nav-link {
+      margin-right: 0;
+      border-radius: 0.25rem; }
+    @media (min-width: 544px) {
+      /* line 44, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/mixins/_navs.scss */
+      .nav.nav-tabs.nav-justified .nav-link.active,
+      .nav.nav-tabs.nav-justified .nav-link.active:hover,
+      .nav.nav-tabs.nav-justified .nav-link.active:focus {
+        border-bottom-color: transparent; } }
+    /* line 247, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+    .nav.nav-tabs.nav-justified .nav-item a.nav-link.active {
+      background-color: #fff; }
+  /* line 258, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+  .nav.nav-tabs.nav-top-border .nav-item a {
+    color: #16D39A; }
+    /* line 260, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+    .nav.nav-tabs.nav-top-border .nav-item a.nav-link.active {
+      border-top: 3px solid #16D39A;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      color: #555; }
+    /* line 266, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+    .nav.nav-tabs.nav-top-border .nav-item a:hover {
+      color: #084835; }
+  /* line 276, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+  .nav.nav-tabs.nav-topline {
+    border-bottom: none; }
+    /* line 279, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+    .nav.nav-tabs.nav-topline .nav-item:hover {
+      background-color: transparent; }
+    /* line 282, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+    .nav.nav-tabs.nav-topline .nav-item:not(:last-child) {
+      border-right: none; }
+    /* line 285, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+    .nav.nav-tabs.nav-topline .nav-item a {
+      border: 1px solid rgba(40, 44, 42, 0.1);
+      border-bottom: none; }
+      /* line 288, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+      .nav.nav-tabs.nav-topline .nav-item a.nav-link {
+        padding: 0.8rem 0.5rem;
+        background: rgba(40, 44, 42, 0.05);
+        color: #74777b;
+        line-height: 1;
+        -webkit-transition: color 0.2s;
+        transition: color 0.2s; }
+        /* line 295, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+        .nav.nav-tabs.nav-topline .nav-item a.nav-link.active {
+          background: none;
+          box-shadow: inset 0 3px 0 #FF7588;
+          color: #FF7588;
+          border-radius: 0;
+          border-top-color: #FF7588;
+          border-bottom: none; }
+        /* line 303, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+        .nav.nav-tabs.nav-topline .nav-item a.nav-link:hover, .nav.nav-tabs.nav-topline .nav-item a.nav-link:focus {
+          color: #FF7588; }
+        /* line 306, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+        .nav.nav-tabs.nav-topline .nav-item a.nav-link.dropdown-toggle::after {
+          top: -10px; }
+  /* line 317, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+  .nav.nav-tabs.nav-underline {
+    background: #fff;
+    position: relative;
+    border-bottom: 1px solid #2DCEE3; }
+    /* line 321, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+    .nav.nav-tabs.nav-underline .nav-item {
+      position: relative;
+      z-index: 1;
+      display: block;
+      text-align: center;
+      -webkit-flex: 1;
+      -moz-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      margin-left: 0; }
+      /* line 333, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+      .nav.nav-tabs.nav-underline .nav-item.open a .nav-link {
+        background-color: transparent; }
+        /* line 335, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+        .nav.nav-tabs.nav-underline .nav-item.open a .nav-link:focus, .nav.nav-tabs.nav-underline .nav-item.open a .nav-link:hover {
+          background-color: transparent;
+          color: #2DCEE3; }
+      /* line 343, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+      .nav.nav-tabs.nav-underline .nav-item a.nav-link {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        line-height: 2.5;
+        padding: 0.5rem 1rem;
+        -webkit-transition: color 0.2s;
+        transition: color 0.2s;
+        color: #2DCEE3;
+        border: none; }
+        /* line 355, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+        .nav.nav-tabs.nav-underline .nav-item a.nav-link.dropdown-toggle::after {
+          margin-top: -1rem; }
+        /* line 358, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+        .nav.nav-tabs.nav-underline .nav-item a.nav-link.active {
+          border: none;
+          background-color: transparent; }
+          /* line 361, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+          .nav.nav-tabs.nav-underline .nav-item a.nav-link.active:focus, .nav.nav-tabs.nav-underline .nav-item a.nav-link.active:hover {
+            color: #55595c;
+            background-color: transparent; }
+          /* line 365, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+          .nav.nav-tabs.nav-underline .nav-item a.nav-link.active:before {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); }
+        /* line 370, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+        .nav.nav-tabs.nav-underline .nav-item a.nav-link:hover, .nav.nav-tabs.nav-underline .nav-item a.nav-link:focus {
+          color: #2DCEE3; }
+        /* line 373, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+        .nav.nav-tabs.nav-underline .nav-item a.nav-link:before {
+          position: absolute;
+          bottom: -1px;
+          left: 0;
+          width: 100%;
+          height: 4px;
+          background: #2DCEE3;
+          content: '';
+          -webkit-transition: -webkit-transform 0.3s;
+          transition: transform 0.3s;
+          -webkit-transform: translate3d(0, 150%, 0);
+          transform: translate3d(0, 150%, 0); }
+  /* line 394, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+  .nav.nav-tabs.nav-linetriangle {
+    border-bottom-color: #FFA87D; }
+    /* line 396, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+    .nav.nav-tabs.nav-linetriangle .nav-item {
+      position: relative;
+      z-index: 1;
+      display: block;
+      text-align: center;
+      -webkit-flex: 1;
+      -moz-flex: 1;
+      -ms-flex: 1;
+      flex: 1; }
+      /* line 406, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+      .nav.nav-tabs.nav-linetriangle .nav-item a.nav-link {
+        position: relative;
+        display: block;
+        overflow: visible;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        line-height: 2.5;
+        border: none;
+        color: #55595c; }
+        /* line 415, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+        .nav.nav-tabs.nav-linetriangle .nav-item a.nav-link.active {
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+          border-bottom-color: #FFA87D;
+          color: #FFA87D; }
+          /* line 419, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+          .nav.nav-tabs.nav-linetriangle .nav-item a.nav-link.active:after, .nav.nav-tabs.nav-linetriangle .nav-item a.nav-link.active:before {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border: solid transparent;
+            content: '';
+            pointer-events: none; }
+          /* line 429, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+          .nav.nav-tabs.nav-linetriangle .nav-item a.nav-link.active:before {
+            margin-left: -11px;
+            border-width: 12px;
+            border-top-color: #FFA87D; }
+          /* line 434, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+          .nav.nav-tabs.nav-linetriangle .nav-item a.nav-link.active:after {
+            margin-left: -10px;
+            border-width: 10px;
+            border-top-color: #fff; }
+          /* line 439, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+          .nav.nav-tabs.nav-linetriangle .nav-item a.nav-link.active:focus {
+            color: #FFA87D; }
+        /* line 444, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+        .nav.nav-tabs.nav-linetriangle .nav-item a.nav-link.dropdown-toggle:after {
+          margin-top: -1rem; }
+        /* line 448, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+        .nav.nav-tabs.nav-linetriangle .nav-item a.nav-link.dropdown-toggle.active:after {
+          margin-top: 0; }
+    /* line 456, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+    .nav.nav-tabs.nav-linetriangle.nav-justified {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      border-bottom-color: #FFA87D; }
+      /* line 462, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+      .nav.nav-tabs.nav-linetriangle.nav-justified .nav-item a.nav-link.active {
+        top: 0px; }
+  /* line 474, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+  .nav.nav-tabs.nav-iconfall {
+    overflow: visible;
+    border-bottom: none; }
+    /* line 477, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+    .nav.nav-tabs.nav-iconfall .nav-item {
+      position: relative;
+      z-index: 1;
+      display: block;
+      text-align: center;
+      -webkit-flex: 1;
+      -moz-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      margin: 0.5rem 0.7rem 0; }
+      /* line 487, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+      .nav.nav-tabs.nav-iconfall .nav-item:hover, .nav.nav-tabs.nav-iconfall .nav-item:focus {
+        background-color: transparent; }
+      /* line 491, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+      .nav.nav-tabs.nav-iconfall .nav-item a.nav-link {
+        display: inline-block;
+        padding: 1em 0 2em;
+        color: #74777b;
+        position: relative;
+        line-height: 2.5;
+        width: 100%;
+        border: none;
+        -webkit-transition: color 0.3s cubic-bezier(0.7, 0, 0.3, 1);
+        transition: color 0.3s cubic-bezier(0.7, 0, 0.3, 1); }
+      /* line 502, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+      .nav.nav-tabs.nav-iconfall .nav-item a:hover, .nav.nav-tabs.nav-iconfall .nav-item a:focus {
+        color: #2CC185;
+        border: none; }
+      /* line 506, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+      .nav.nav-tabs.nav-iconfall .nav-item a.active {
+        color: #2CC185;
+        border: none;
+        background-color: transparent; }
+        /* line 511, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+        .nav.nav-tabs.nav-iconfall .nav-item a.active i:after {
+          opacity: 1;
+          -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1); }
+        /* line 516, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+        .nav.nav-tabs.nav-iconfall .nav-item a.active i:before {
+          opacity: 1;
+          -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0); }
+      /* line 523, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+      .nav.nav-tabs.nav-iconfall .nav-item a i {
+        display: block;
+        margin-right: 0; }
+        /* line 526, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+        .nav.nav-tabs.nav-iconfall .nav-item a i:after {
+          position: absolute;
+          bottom: 1em;
+          left: 50%;
+          margin-left: -20px;
+          width: 40px;
+          height: 4px;
+          background: #2CC185;
+          content: '';
+          opacity: 0;
+          -webkit-transition: -webkit-transform 0.2s ease-in;
+          transition: transform 0.2s ease-in;
+          -webkit-transform: scale3d(0, 1, 1);
+          transform: scale3d(0, 1, 1); }
+        /* line 541, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+        .nav.nav-tabs.nav-iconfall .nav-item a i:before {
+          display: block;
+          margin: 0 0 0.35em;
+          opacity: 0;
+          -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+          transition: transform 0.2s, opacity 0.2s;
+          -webkit-transform: translate3d(0, -100px, 0);
+          transform: translate3d(0, -100px, 0);
+          pointer-events: none; }
+      /* line 553, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+      .nav.nav-tabs.nav-iconfall .nav-item a.dropdown-toggle:after {
+        margin-top: -1rem; }
+  /* line 562, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+  .nav .nav-item .nav-link {
+    display: block; }
+  /* line 566, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+  .nav .dropdown-divider {
+    margin: 0.5rem 0; }
+
+@media (min-width: 544px) {
+  /* line 575, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+  .nav.nav-tabs.nav-linetriangle.nav-justified .nav-item,
+  .nav.nav-tabs.nav-iconfall.nav-justified .nav-item,
+  .nav.nav-tabs.nav-underline.nav-justified .nav-item {
+    display: table-cell !important; } }
+
+/* line 584, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+.nav-vertical .nav-left.nav-tabs {
+  float: left;
+  border-bottom: 0;
+  border-right: 1px solid #ddd;
+  border-radius: 0;
+  display: table; }
+  /* line 591, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+  .nav-vertical .nav-left.nav-tabs li.nav-item {
+    float: none;
+    margin: 0;
+    margin-right: -1px; }
+    /* line 595, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+    .nav-vertical .nav-left.nav-tabs li.nav-item a.nav-link.active {
+      border: 1px solid #ddd;
+      border-right: 0;
+      border-radius: 0.25rem 0 0 0.25rem; }
+  /* line 603, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+  .nav-vertical .nav-left.nav-tabs.nav-border-left li.nav-item a.nav-link {
+    color: #FF7588; }
+    /* line 605, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+    .nav-vertical .nav-left.nav-tabs.nav-border-left li.nav-item a.nav-link.active {
+      border-left: 3px solid #FF7588;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      color: #555; }
+
+/* line 615, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+.nav-vertical .nav-left ~ .tab-content {
+  margin-left: 45px; }
+  /* line 618, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+  .nav-vertical .nav-left ~ .tab-content .tab-pane {
+    display: none;
+    background-color: #fff;
+    padding: 0 0 0.6rem 1rem;
+    overflow-y: auto; }
+    /* line 623, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+    .nav-vertical .nav-left ~ .tab-content .tab-pane.active {
+      display: block; }
+
+/* line 628, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+.nav-vertical .nav-right.nav-tabs {
+  float: right;
+  border-bottom: 0;
+  border-left: 1px solid #ddd;
+  border-radius: 0;
+  display: table; }
+  /* line 635, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+  .nav-vertical .nav-right.nav-tabs li.nav-item {
+    float: none;
+    margin: 0;
+    margin-left: -1px; }
+    /* line 639, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+    .nav-vertical .nav-right.nav-tabs li.nav-item a.nav-link.active {
+      border: 1px solid #ddd;
+      border-left: 0;
+      border-radius: 0 0.25rem 0.25rem 0; }
+  /* line 647, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+  .nav-vertical .nav-right.nav-tabs.nav-border-right li.nav-item a.nav-link {
+    color: #FF7588; }
+    /* line 649, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+    .nav-vertical .nav-right.nav-tabs.nav-border-right li.nav-item a.nav-link.active {
+      border-right: 3px solid #FF7588;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      color: #555; }
+
+/* line 661, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+.nav-vertical .nav-right ~ .tab-content .tab-pane {
+  display: none;
+  background-color: #fff;
+  padding: 0 0 0.6rem 1rem;
+  overflow-y: auto; }
+  /* line 666, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+  .nav-vertical .nav-right ~ .tab-content .tab-pane.active {
+    display: block; }
+
+/* line 675, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+.nav.nav-tabs.nav-only-icon .nav-item .nav-link {
+  font-size: 1.25rem; }
+  /* line 677, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+  .nav.nav-tabs.nav-only-icon .nav-item .nav-link i {
+    margin-left: 0.5rem; }
+
+/* line 684, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_nav.scss */
+.nav.nav-tabs .nav-item.open .nav-link,
+.nav.nav-tabs .nav-item.open .nav-link:focus {
+  background-color: transparent; }
+
+/* line 1, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_alert.scss */
+.alert {
+  position: relative; }
+  /* line 3, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_alert.scss */
+  .alert .alert-link {
+    color: #fff; }
+    /* line 5, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_alert.scss */
+    .alert .alert-link:hover {
+      text-decoration: underline; }
+  /* line 9, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_alert.scss */
+  .alert.alert-icon-left {
+    border-left-width: 4rem; }
+  /* line 12, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_alert.scss */
+  .alert.alert-icon-right {
+    border-right-width: 4rem; }
+  /* line 15, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_alert.scss */
+  .alert.alert-icon-left[class*=bg-] {
+    border-left-color: rgba(0, 0, 0, 0.15) !important; }
+  /* line 18, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_alert.scss */
+  .alert.alert-icon-right[class*=bg-] {
+    border-right-color: rgba(0, 0, 0, 0.15) !important; }
+  /* line 21, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_alert.scss */
+  .alert[class*=alert-icon-]:after {
+    content: '\f006';
+    font-family: FontAwesome;
+    color: #fff;
+    width: 4rem;
+    left: -4rem;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+  /* line 37, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_alert.scss */
+  .alert .close {
+    font-size: 2rem;
+    line-height: 1rem; }
+  /* line 41, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_alert.scss */
+  .alert[class*=bg-] {
+    color: #fff; }
+    /* line 43, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_alert.scss */
+    .alert[class*=bg-] .close {
+      color: #fff;
+      opacity: 1;
+      text-shadow: none; }
+  /* line 49, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_alert.scss */
+  .alert[class*=alert-icon-].alert-primary:after, .alert[class*=alert-icon-][class*=alert-primary]:after, .alert[class*=alert-icon-][class*=bg-primary]:after {
+    content: '\f08a'; }
+  /* line 54, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_alert.scss */
+  .alert[class*=alert-icon-].alert-danger:after, .alert[class*=alert-icon-][class*=alert-danger]:after, .alert[class*=alert-icon-][class*=bg-danger]:after {
+    content: '\f088'; }
+  /* line 59, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_alert.scss */
+  .alert[class*=alert-icon-].alert-success:after, .alert[class*=alert-icon-][class*=alert-success]:after, .alert[class*=alert-icon-][class*=bg-success]:after {
+    content: '\f087'; }
+  /* line 64, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_alert.scss */
+  .alert[class*=alert-icon-].alert-warning:after, .alert[class*=alert-icon-][class*=alert-warning]:after, .alert[class*=alert-icon-][class*=bg-warning]:after {
+    content: '\f071'; }
+  /* line 69, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_alert.scss */
+  .alert[class*=alert-icon-].alert-info:after, .alert[class*=alert-icon-][class*=alert-info]:after, .alert[class*=alert-icon-][class*=bg-info]:after {
+    content: '\f129'; }
+  /* line 74, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_alert.scss */
+  .alert.alert-icon-right:after {
+    left: auto;
+    right: -4rem; }
+
+/* line 2, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_media.scss */
+.media-list .media {
+  padding: 1.25rem;
+  margin-top: 0; }
+  /* line 5, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_media.scss */
+  .media-list .media .media-left {
+    padding-right: 1rem; }
+  /* line 8, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_media.scss */
+  .media-list .media .media-right {
+    padding-left: 1rem; }
+  /* line 11, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_media.scss */
+  .media-list .media .media-head {
+    font-weight: 600; }
+  /* line 14, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_media.scss */
+  .media-list .media:first-child {
+    padding-top: 0; }
+  /* line 17, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_media.scss */
+  .media-list .media.list-group-item:first-child {
+    padding-top: 1.25rem; }
+  /* line 20, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_media.scss */
+  .media-list .media.list-group-item:last-child {
+    padding-bottom: 1.25rem; }
+  /* line 23, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_media.scss */
+  .media-list .media:last-child {
+    padding-bottom: 0; }
+  /* line 26, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_media.scss */
+  .media-list .media .media-notation {
+    color: #b1c1d8;
+    font-size: 0.666667rem;
+    margin-left: 5px; }
+    /* line 30, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_media.scss */
+    .media-list .media .media-notation a {
+      padding-right: 0.5rem; }
+    /* line 33, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_media.scss */
+    .media-list .media .media-notation i[class^="icon-"] {
+      font-size: 0.7rem;
+      margin-right: 0.3rem; }
+  /* line 38, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_media.scss */
+  .media-list .media [class*="avatar-"] {
+    position: relative;
+    padding-right: 0 !important;
+    margin-right: 0; }
+    /* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_media.scss */
+    .media-list .media [class*="avatar-"] i {
+      position: absolute;
+      right: 1px;
+      top: 1px;
+      width: 10px;
+      height: 10px;
+      border: 2px solid white;
+      border-radius: 100%; }
+
+/* line 54, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_media.scss */
+.media-list.media-bordered .media {
+  border-top: 1px solid #E4E7ED; }
+  /* line 56, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_media.scss */
+  .media-list.media-bordered .media:first-child {
+    border-top: 0; }
+
+/* line 4, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_progress.scss */
+.progress {
+  margin-bottom: 3rem; }
+  /* line 6, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_progress.scss */
+  .progress:last-child {
+    margin-bottom: 1rem; }
+  /* line 9, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_progress.scss */
+  .progress.progress-xl {
+    height: 2rem; }
+  /* line 12, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_progress.scss */
+  .progress.progress-lg {
+    height: 1.5rem; }
+  /* line 15, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_progress.scss */
+  .progress.progress-md {
+    height: 1rem; }
+  /* line 18, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_progress.scss */
+  .progress.progress-sm {
+    height: 0.5rem; }
+  /* line 21, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_progress.scss */
+  .progress.progress-xs {
+    height: 0.25rem; }
+
+/* line 4, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_list-group.scss */
+ul.list-inline li {
+  display: inline-block; }
+
+/* line 8, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_list-group.scss */
+ul.list-inline.list-inline-pipe > li + li:before {
+  content: ' | ';
+  color: #626E82; }
+
+/* line 1, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_modal.scss */
+.modal-sm {
+  max-width: 400px; }
+
+/* line 4, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_modal.scss */
+.modal-xs {
+  max-width: 300px; }
+
+/* line 7, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_modal.scss */
+.modal-xl {
+  max-width: 94%;
+  margin-left: 3%;
+  margin-right: 3%; }
+
+/* line 12, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_modal.scss */
+.icon-align {
+  margin-top: 0.6rem;
+  margin-left: 0.5rem; }
+
+/* line 3, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_popover.scss */
+.popover.popover-top:after, .popover.popover-top:before, .popover.bs-tether-element-attached-top:after, .popover.bs-tether-element-attached-top:before {
+  margin-left: -10px; }
+
+/* line 8, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_popover.scss */
+.popover.popover-right:after, .popover.popover-right:before, .popover.bs-tether-element-attached-right:after, .popover.bs-tether-element-attached-right:before {
+  margin-top: -10px; }
+
+/* line 13, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_popover.scss */
+.popover.popover-bottom:after, .popover.popover-bottom:before, .popover.bs-tether-element-attached-bottom:after, .popover.bs-tether-element-attached-bottom:before {
+  margin-left: -10px; }
+
+/* line 18, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_popover.scss */
+.popover.popover-left:after, .popover.popover-left:before, .popover.bs-tether-element-attached-left:after, .popover.bs-tether-element-attached-left:before {
+  margin-top: -10px; }
+
+/* line 1, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_utilities.scss */
+.icon-bg-circle {
+  color: #FFFFFF;
+  padding: 0.5rem;
+  border-radius: 50%; }
+
+/* line 6, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_utilities.scss */
+.icon-left {
+  margin-right: 0.5rem; }
+
+/* line 9, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_utilities.scss */
+.icon-right {
+  margin-right: 0.5rem; }
+
+/* line 12, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_utilities.scss */
+.icon-spin {
+  display: inline-block;
+  animation: spin 1s infinite linear; }
+
+/* line 17, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_utilities.scss */
+.blockOverlay {
+  z-index: 1050 !important; }
+
+/* line 20, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_utilities.scss */
+.blockElement, .blockPage {
+  z-index: 1051 !important; }
+
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg); }
+  to {
+    -moz-transform: rotate(360deg); } }
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg); } }
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+/* line 51, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_utilities.scss */
+.hidden {
+  display: none;
+  visibility: hidden; }
+
+/* line 61, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_utilities.scss */
+a:hover {
+  cursor: pointer; }
+
+/* line 66, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_utilities.scss */
+.round {
+  border-radius: 1.5rem; }
+
+/* line 67, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_utilities.scss */
+.square {
+  border-radius: 0; }
+
+/* line 71, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_utilities.scss */
+.accordion .panel-title {
+  line-height: 2.3rem; }
+  /* line 73, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_utilities.scss */
+  .accordion .panel-title:before, .accordion .panel-title:after {
+    position: absolute;
+    right: 20px;
+    font-family: 'icomoon';
+    transition: all 300ms linear 0s; }
+  /* line 80, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_utilities.scss */
+  .accordion .panel-title:before {
+    content: "\e114"; }
+  /* line 83, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_utilities.scss */
+  .accordion .panel-title:after {
+    content: "\e115"; }
+  /* line 86, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_utilities.scss */
+  .accordion .panel-title[aria-expanded="false"]:before {
+    opacity: .8; }
+  /* line 89, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_utilities.scss */
+  .accordion .panel-title[aria-expanded="false"]:after {
+    opacity: 0;
+    transform: rotate(-180deg); }
+  /* line 93, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_utilities.scss */
+  .accordion .panel-title[aria-expanded="true"]:before {
+    opacity: 0;
+    transform: rotate(180deg); }
+
+/* line 101, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_utilities.scss */
+.mega-dropdown-menu p.accordion-text {
+  line-height: 1.45; }
+
+/* line 104, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_utilities.scss */
+.mega-dropdown-menu a[aria-expanded="true"] {
+  padding-bottom: 1rem; }
+
+/* line 111, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_utilities.scss */
+.line-on-side {
+  border-bottom: 1px solid #dadada;
+  line-height: 0.1em;
+  margin: 10px 0 20px; }
+
+/* line 116, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_utilities.scss */
+.line-on-side span {
+  background: #fff;
+  padding: 0 10px; }
+
+/* line 121, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_utilities.scss */
+.icon-line-height {
+  line-height: 1.5rem !important; }
+
+/* line 128, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_utilities.scss */
+.table-middle td {
+  vertical-align: middle; }
+
+/* line 134, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/bootstrap-extended/_utilities.scss */
+.spinner {
+  display: inline-block;
+  -webkit-animation: spin 1s linear infinite;
+  -o-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite; }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }

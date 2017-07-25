@@ -1,0 +1,38 @@
+/* html body.horizontal-menu{
+	padding-top:0;
+} */
+/* line 26, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/menu/menu-types/horizontal-menu.scss */
+.horizontal-menu.menu-collapsed #main-menu-navigation .nav-item a span {
+  display: none; }
+
+/* line 32, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/menu/menu-types/horizontal-menu.scss */
+.horizontal-menu .navigation-header {
+  font-family: inherit;
+  color: #929292;
+  padding: 8px 20px;
+  font-size: 1rem;
+  text-transform: uppercase; }
+
+/* line 41, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/menu/menu-types/horizontal-menu.scss */
+.horizontal-menu .navbar-flipped .navbar-nav .nav-item {
+  float: right; }
+
+/* line 47, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/menu/menu-types/horizontal-menu.scss */
+.horizontal-menu .navbar-light ul#main-menu-navigation > li.active > a {
+  border-bottom: 2px solid #00B5B8;
+  background: #FFFFFF; }
+
+/* line 51, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/menu/menu-types/horizontal-menu.scss */
+.horizontal-menu .navbar-light .active > a {
+  background: whitesmoke;
+  font-weight: 500; }
+
+/* line 58, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/menu/menu-types/horizontal-menu.scss */
+.horizontal-menu .navbar-dark .nav-item.active > a {
+  border-bottom: 2px solid #00B5B8;
+  background-color: #313C50; }
+
+/* line 63, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/menu/menu-types/horizontal-menu.scss */
+.horizontal-menu .navbar-dark .active > a {
+  background: whitesmoke;
+  font-weight: 500; }

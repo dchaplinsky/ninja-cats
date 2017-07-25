@@ -1,0 +1,13 @@
+// Inline list style with pipeline seperator
+
+ul.list-inline{
+	li{
+		display: inline-block;
+	}
+	&.list-inline-pipe{
+		>li + li:before{
+			content: ' | ';
+		    color: $gray-light;
+		}
+	}
+}

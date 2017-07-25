@@ -1,0 +1,271 @@
+/* line 33, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-white .noUi-connect {
+  background: #FFFFFF !important; }
+
+/* line 36, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-white.noUi-connect {
+  background: #FFFFFF !important; }
+
+/* line 39, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-white .noUi-handle {
+  border-color: #FFFFFF !important; }
+
+/* line 43, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-white.circle-filled .noUi-handle, .slider-white.square .noUi-handle {
+  background: #FFFFFF !important; }
+
+/* line 33, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-black .noUi-connect {
+  background: #000000 !important; }
+
+/* line 36, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-black.noUi-connect {
+  background: #000000 !important; }
+
+/* line 39, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-black .noUi-handle {
+  border-color: #000000 !important; }
+
+/* line 43, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-black.circle-filled .noUi-handle, .slider-black.square .noUi-handle {
+  background: #000000 !important; }
+
+/* line 33, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-primary .noUi-connect {
+  background: #00B5B8 !important; }
+
+/* line 36, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-primary.noUi-connect {
+  background: #00B5B8 !important; }
+
+/* line 39, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-primary .noUi-handle {
+  border-color: #00B5B8 !important; }
+
+/* line 43, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-primary.circle-filled .noUi-handle, .slider-primary.square .noUi-handle {
+  background: #00B5B8 !important; }
+
+/* line 33, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-success .noUi-connect {
+  background: #16D39A !important; }
+
+/* line 36, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-success.noUi-connect {
+  background: #16D39A !important; }
+
+/* line 39, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-success .noUi-handle {
+  border-color: #16D39A !important; }
+
+/* line 43, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-success.circle-filled .noUi-handle, .slider-success.square .noUi-handle {
+  background: #16D39A !important; }
+
+/* line 33, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-info .noUi-connect {
+  background: #2DCEE3 !important; }
+
+/* line 36, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-info.noUi-connect {
+  background: #2DCEE3 !important; }
+
+/* line 39, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-info .noUi-handle {
+  border-color: #2DCEE3 !important; }
+
+/* line 43, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-info.circle-filled .noUi-handle, .slider-info.square .noUi-handle {
+  background: #2DCEE3 !important; }
+
+/* line 33, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-warning .noUi-connect {
+  background: #FFA87D !important; }
+
+/* line 36, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-warning.noUi-connect {
+  background: #FFA87D !important; }
+
+/* line 39, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-warning .noUi-handle {
+  border-color: #FFA87D !important; }
+
+/* line 43, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-warning.circle-filled .noUi-handle, .slider-warning.square .noUi-handle {
+  background: #FFA87D !important; }
+
+/* line 33, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-danger .noUi-connect {
+  background: #FF7588 !important; }
+
+/* line 36, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-danger.noUi-connect {
+  background: #FF7588 !important; }
+
+/* line 39, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-danger .noUi-handle {
+  border-color: #FF7588 !important; }
+
+/* line 43, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-danger.circle-filled .noUi-handle, .slider-danger.square .noUi-handle {
+  background: #FF7588 !important; }
+
+/* line 33, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-red .noUi-connect {
+  background: #F44336 !important; }
+
+/* line 36, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-red.noUi-connect {
+  background: #F44336 !important; }
+
+/* line 39, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-red .noUi-handle {
+  border-color: #F44336 !important; }
+
+/* line 43, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-red.circle-filled .noUi-handle, .slider-red.square .noUi-handle {
+  background: #F44336 !important; }
+
+/* line 33, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-pink .noUi-connect {
+  background: #E91E63 !important; }
+
+/* line 36, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-pink.noUi-connect {
+  background: #E91E63 !important; }
+
+/* line 39, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-pink .noUi-handle {
+  border-color: #E91E63 !important; }
+
+/* line 43, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-pink.circle-filled .noUi-handle, .slider-pink.square .noUi-handle {
+  background: #E91E63 !important; }
+
+/* line 33, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-purple .noUi-connect {
+  background: #9C27B0 !important; }
+
+/* line 36, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-purple.noUi-connect {
+  background: #9C27B0 !important; }
+
+/* line 39, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-purple .noUi-handle {
+  border-color: #9C27B0 !important; }
+
+/* line 43, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-purple.circle-filled .noUi-handle, .slider-purple.square .noUi-handle {
+  background: #9C27B0 !important; }
+
+/* line 33, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-blue .noUi-connect {
+  background: #2196F3 !important; }
+
+/* line 36, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-blue.noUi-connect {
+  background: #2196F3 !important; }
+
+/* line 39, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-blue .noUi-handle {
+  border-color: #2196F3 !important; }
+
+/* line 43, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-blue.circle-filled .noUi-handle, .slider-blue.square .noUi-handle {
+  background: #2196F3 !important; }
+
+/* line 33, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-cyan .noUi-connect {
+  background: #00BCD4 !important; }
+
+/* line 36, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-cyan.noUi-connect {
+  background: #00BCD4 !important; }
+
+/* line 39, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-cyan .noUi-handle {
+  border-color: #00BCD4 !important; }
+
+/* line 43, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-cyan.circle-filled .noUi-handle, .slider-cyan.square .noUi-handle {
+  background: #00BCD4 !important; }
+
+/* line 33, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-teal .noUi-connect {
+  background: #009688 !important; }
+
+/* line 36, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-teal.noUi-connect {
+  background: #009688 !important; }
+
+/* line 39, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-teal .noUi-handle {
+  border-color: #009688 !important; }
+
+/* line 43, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-teal.circle-filled .noUi-handle, .slider-teal.square .noUi-handle {
+  background: #009688 !important; }
+
+/* line 33, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-yellow .noUi-connect {
+  background: #FFEB3B !important; }
+
+/* line 36, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-yellow.noUi-connect {
+  background: #FFEB3B !important; }
+
+/* line 39, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-yellow .noUi-handle {
+  border-color: #FFEB3B !important; }
+
+/* line 43, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-yellow.circle-filled .noUi-handle, .slider-yellow.square .noUi-handle {
+  background: #FFEB3B !important; }
+
+/* line 33, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-amber .noUi-connect {
+  background: #FFC107 !important; }
+
+/* line 36, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-amber.noUi-connect {
+  background: #FFC107 !important; }
+
+/* line 39, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-amber .noUi-handle {
+  border-color: #FFC107 !important; }
+
+/* line 43, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-amber.circle-filled .noUi-handle, .slider-amber.square .noUi-handle {
+  background: #FFC107 !important; }
+
+/* line 33, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-blue-grey .noUi-connect {
+  background: #607D8B !important; }
+
+/* line 36, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-blue-grey.noUi-connect {
+  background: #607D8B !important; }
+
+/* line 39, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-blue-grey .noUi-handle {
+  border-color: #607D8B !important; }
+
+/* line 43, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-blue-grey.circle-filled .noUi-handle, .slider-blue-grey.square .noUi-handle {
+  background: #607D8B !important; }
+
+/* line 33, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-grey-blue .noUi-connect {
+  background: #1B2942 !important; }
+
+/* line 36, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-grey-blue.noUi-connect {
+  background: #1B2942 !important; }
+
+/* line 39, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-grey-blue .noUi-handle {
+  border-color: #1B2942 !important; }
+
+/* line 43, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-noui.scss */
+.slider-grey-blue.circle-filled .noUi-handle, .slider-grey-blue.square .noUi-handle {
+  background: #1B2942 !important; }

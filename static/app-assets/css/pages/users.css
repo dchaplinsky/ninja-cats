@@ -1,0 +1,50 @@
+/* line 9, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/pages/users.scss */
+.profile-card-with-stats .btn-float {
+  padding: 8px 14px 4px 14px; }
+
+/* line 15, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/pages/users.scss */
+.profile-with-cover .cover-shadow {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); }
+
+/* line 29, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/pages/users.scss */
+.profile-card-with-cover .card-profile-image {
+  position: absolute;
+  top: 130px;
+  width: 100%;
+  text-align: center; }
+  /* line 34, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/pages/users.scss */
+  .profile-card-with-cover .card-profile-image img.img-border {
+    border: 5px solid #fff; }
+
+/* line 38, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/pages/users.scss */
+.profile-card-with-cover .profile-card-with-cover-content {
+  padding-top: 4rem; }
+
+/* line 45, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/pages/users.scss */
+#user-profile .profile-with-cover .profil-cover-details {
+  position: absolute;
+  margin-top: -90px; }
+  /* line 49, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/pages/users.scss */
+  #user-profile .profile-with-cover .profil-cover-details .profile-image img.img-border {
+    border: 5px solid #fff; }
+  /* line 54, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/pages/users.scss */
+  #user-profile .profile-with-cover .profil-cover-details .media-left {
+    position: relative;
+    z-index: 9; }
+  /* line 59, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/pages/users.scss */
+  #user-profile .profile-with-cover .profil-cover-details .card-title {
+    color: #FFFFFF;
+    text-shadow: 1px 1px 4px #1B2942;
+    font-size: 2rem;
+    margin-top: -10px; }
+
+/* line 67, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/pages/users.scss */
+#user-profile .navbar-profile {
+  border-radius: 0; }

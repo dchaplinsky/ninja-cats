@@ -1,0 +1,85 @@
+/* line 21, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/menu/menu-types/vertical-overlay-menu.scss */
+.vertical-overlay-menu .content {
+  margin-left: 0; }
+
+/* line 26, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/menu/menu-types/vertical-overlay-menu.scss */
+.vertical-overlay-menu .navbar .navbar-header {
+  float: left;
+  width: 240px; }
+
+/* line 30, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/menu/menu-types/vertical-overlay-menu.scss */
+.vertical-overlay-menu .navbar.navbar-brand-center .navbar-container {
+  margin-left: 0; }
+
+/* line 33, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/menu/menu-types/vertical-overlay-menu.scss */
+.vertical-overlay-menu .navbar.navbar-brand-center .navbar-header {
+  float: left;
+  width: auto; }
+
+/* line 39, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/menu/menu-types/vertical-overlay-menu.scss */
+.vertical-overlay-menu .main-menu, .vertical-overlay-menu.menu-hide .main-menu {
+  opacity: 0;
+  transform: translate3d(0, 0, 0);
+  transition: width .25s,opacity .25s,transform .25s;
+  width: 240px;
+  left: -240px; }
+  /* line 48, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/menu/menu-types/vertical-overlay-menu.scss */
+  .vertical-overlay-menu .main-menu .navigation .navigation-header .ft-minus {
+    display: none; }
+  /* line 54, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/menu/menu-types/vertical-overlay-menu.scss */
+  .vertical-overlay-menu .main-menu .navigation > li > a > i {
+    font-size: 1.2rem;
+    margin-right: 12px;
+    float: left; }
+    /* line 58, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/menu/menu-types/vertical-overlay-menu.scss */
+    .vertical-overlay-menu .main-menu .navigation > li > a > i:before {
+      transition: 200ms ease all; }
+  /* line 40, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/mixins/main-menu-mixin.scss */
+  .vertical-overlay-menu .main-menu .navigation li.has-sub > a:not(.mm-next):after {
+    content: "\f105";
+    font-family: 'FontAwesome';
+    font-size: 1rem;
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    transform: rotate(0deg);
+    transition: -webkit-transform 0.2s ease-in-out; }
+  /* line 53, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/mixins/main-menu-mixin.scss */
+  .vertical-overlay-menu .main-menu .navigation li.open > a:not(.mm-next):after {
+    transform: rotate(90deg); }
+  /* line 68, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/menu/menu-types/vertical-overlay-menu.scss */
+  .vertical-overlay-menu .main-menu .main-menu-footer {
+    bottom: 55px; }
+  /* line 71, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/menu/menu-types/vertical-overlay-menu.scss */
+  .vertical-overlay-menu .main-menu .main-menu-footer {
+    width: 240px; }
+
+/* line 76, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/menu/menu-types/vertical-overlay-menu.scss */
+.vertical-overlay-menu.menu-open .main-menu {
+  opacity: 1;
+  transform: translate3d(240px, 0, 0);
+  transition: width .25s,opacity .25s,transform .25s; }
+
+/* line 91, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/menu/menu-types/vertical-overlay-menu.scss */
+.vertical-overlay-menu.menu-flipped .main-menu {
+  right: -240px;
+  left: inherit; }
+
+/* line 97, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/menu/menu-types/vertical-overlay-menu.scss */
+.vertical-overlay-menu.menu-flipped .navbar .navbar-container {
+  margin: 0;
+  margin-right: 240px; }
+
+/* line 100, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/menu/menu-types/vertical-overlay-menu.scss */
+.vertical-overlay-menu.menu-flipped .navbar .navbar-header {
+  float: right; }
+
+/* line 105, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/menu/menu-types/vertical-overlay-menu.scss */
+.vertical-overlay-menu.menu-flipped.menu-open .main-menu {
+  transform: translate3d(-240px, 0, 0); }
+
+@media (max-width: 991px) {
+  /* line 114, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/menu/menu-types/vertical-overlay-menu.scss */
+  .vertical-overlay-menu .main-menu .main-menu-footer {
+    bottom: 0px; } }

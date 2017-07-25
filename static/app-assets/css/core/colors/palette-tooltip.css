@@ -1,0 +1,186 @@
+/* line 32, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-tooltip.scss */
+.tooltip-bg-white .tooltip-inner {
+  background-color: #FFFFFF; }
+  /* line 34, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-tooltip.scss */
+  .tooltip-bg-white .tooltip-inner:before {
+    border-top-color: #FFFFFF !important; }
+
+/* line 40, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-tooltip.scss */
+.tooltip-text-white .tooltip-inner {
+  color: #FFFFFF; }
+
+/* line 32, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-tooltip.scss */
+.tooltip-bg-black .tooltip-inner {
+  background-color: #000000; }
+  /* line 34, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-tooltip.scss */
+  .tooltip-bg-black .tooltip-inner:before {
+    border-top-color: #000000 !important; }
+
+/* line 40, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-tooltip.scss */
+.tooltip-text-black .tooltip-inner {
+  color: #000000; }
+
+/* line 32, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-tooltip.scss */
+.tooltip-bg-primary .tooltip-inner {
+  background-color: #00B5B8; }
+  /* line 34, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-tooltip.scss */
+  .tooltip-bg-primary .tooltip-inner:before {
+    border-top-color: #00B5B8 !important; }
+
+/* line 40, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-tooltip.scss */
+.tooltip-text-primary .tooltip-inner {
+  color: #00B5B8; }
+
+/* line 32, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-tooltip.scss */
+.tooltip-bg-success .tooltip-inner {
+  background-color: #16D39A; }
+  /* line 34, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-tooltip.scss */
+  .tooltip-bg-success .tooltip-inner:before {
+    border-top-color: #16D39A !important; }
+
+/* line 40, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-tooltip.scss */
+.tooltip-text-success .tooltip-inner {
+  color: #16D39A; }
+
+/* line 32, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-tooltip.scss */
+.tooltip-bg-info .tooltip-inner {
+  background-color: #2DCEE3; }
+  /* line 34, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-tooltip.scss */
+  .tooltip-bg-info .tooltip-inner:before {
+    border-top-color: #2DCEE3 !important; }
+
+/* line 40, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-tooltip.scss */
+.tooltip-text-info .tooltip-inner {
+  color: #2DCEE3; }
+
+/* line 32, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-tooltip.scss */
+.tooltip-bg-warning .tooltip-inner {
+  background-color: #FFA87D; }
+  /* line 34, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-tooltip.scss */
+  .tooltip-bg-warning .tooltip-inner:before {
+    border-top-color: #FFA87D !important; }
+
+/* line 40, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-tooltip.scss */
+.tooltip-text-warning .tooltip-inner {
+  color: #FFA87D; }
+
+/* line 32, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-tooltip.scss */
+.tooltip-bg-danger .tooltip-inner {
+  background-color: #FF7588; }
+  /* line 34, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-tooltip.scss */
+  .tooltip-bg-danger .tooltip-inner:before {
+    border-top-color: #FF7588 !important; }
+
+/* line 40, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-tooltip.scss */
+.tooltip-text-danger .tooltip-inner {
+  color: #FF7588; }
+
+/* line 32, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-tooltip.scss */
+.tooltip-bg-red .tooltip-inner {
+  background-color: #F44336; }
+  /* line 34, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-tooltip.scss */
+  .tooltip-bg-red .tooltip-inner:before {
+    border-top-color: #F44336 !important; }
+
+/* line 40, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-tooltip.scss */
+.tooltip-text-red .tooltip-inner {
+  color: #F44336; }
+
+/* line 32, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-tooltip.scss */
+.tooltip-bg-pink .tooltip-inner {
+  background-color: #E91E63; }
+  /* line 34, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-tooltip.scss */
+  .tooltip-bg-pink .tooltip-inner:before {
+    border-top-color: #E91E63 !important; }
+
+/* line 40, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-tooltip.scss */
+.tooltip-text-pink .tooltip-inner {
+  color: #E91E63; }
+
+/* line 32, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-tooltip.scss */
+.tooltip-bg-purple .tooltip-inner {
+  background-color: #9C27B0; }
+  /* line 34, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-tooltip.scss */
+  .tooltip-bg-purple .tooltip-inner:before {
+    border-top-color: #9C27B0 !important; }
+
+/* line 40, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-tooltip.scss */
+.tooltip-text-purple .tooltip-inner {
+  color: #9C27B0; }
+
+/* line 32, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-tooltip.scss */
+.tooltip-bg-blue .tooltip-inner {
+  background-color: #2196F3; }
+  /* line 34, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-tooltip.scss */
+  .tooltip-bg-blue .tooltip-inner:before {
+    border-top-color: #2196F3 !important; }
+
+/* line 40, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-tooltip.scss */
+.tooltip-text-blue .tooltip-inner {
+  color: #2196F3; }
+
+/* line 32, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-tooltip.scss */
+.tooltip-bg-cyan .tooltip-inner {
+  background-color: #00BCD4; }
+  /* line 34, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-tooltip.scss */
+  .tooltip-bg-cyan .tooltip-inner:before {
+    border-top-color: #00BCD4 !important; }
+
+/* line 40, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-tooltip.scss */
+.tooltip-text-cyan .tooltip-inner {
+  color: #00BCD4; }
+
+/* line 32, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-tooltip.scss */
+.tooltip-bg-teal .tooltip-inner {
+  background-color: #009688; }
+  /* line 34, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-tooltip.scss */
+  .tooltip-bg-teal .tooltip-inner:before {
+    border-top-color: #009688 !important; }
+
+/* line 40, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-tooltip.scss */
+.tooltip-text-teal .tooltip-inner {
+  color: #009688; }
+
+/* line 32, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-tooltip.scss */
+.tooltip-bg-yellow .tooltip-inner {
+  background-color: #FFEB3B; }
+  /* line 34, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-tooltip.scss */
+  .tooltip-bg-yellow .tooltip-inner:before {
+    border-top-color: #FFEB3B !important; }
+
+/* line 40, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-tooltip.scss */
+.tooltip-text-yellow .tooltip-inner {
+  color: #FFEB3B; }
+
+/* line 32, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-tooltip.scss */
+.tooltip-bg-amber .tooltip-inner {
+  background-color: #FFC107; }
+  /* line 34, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-tooltip.scss */
+  .tooltip-bg-amber .tooltip-inner:before {
+    border-top-color: #FFC107 !important; }
+
+/* line 40, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-tooltip.scss */
+.tooltip-text-amber .tooltip-inner {
+  color: #FFC107; }
+
+/* line 32, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-tooltip.scss */
+.tooltip-bg-blue-grey .tooltip-inner {
+  background-color: #607D8B; }
+  /* line 34, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-tooltip.scss */
+  .tooltip-bg-blue-grey .tooltip-inner:before {
+    border-top-color: #607D8B !important; }
+
+/* line 40, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-tooltip.scss */
+.tooltip-text-blue-grey .tooltip-inner {
+  color: #607D8B; }
+
+/* line 32, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-tooltip.scss */
+.tooltip-bg-grey-blue .tooltip-inner {
+  background-color: #1B2942; }
+  /* line 34, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-tooltip.scss */
+  .tooltip-bg-grey-blue .tooltip-inner:before {
+    border-top-color: #1B2942 !important; }
+
+/* line 40, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-tooltip.scss */
+.tooltip-text-grey-blue .tooltip-inner {
+  color: #1B2942; }

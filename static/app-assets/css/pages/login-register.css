@@ -1,0 +1,27 @@
+/* line 1, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/pages/login-register.scss */
+.form-simple input[type="text"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0; }
+
+/* line 6, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/pages/login-register.scss */
+.form-simple input[type="mail"] {
+  margin-bottom: -1px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0; }
+
+/* line 13, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/pages/login-register.scss */
+.form-simple input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0; }
+
+/* line 20, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/pages/login-register.scss */
+.help-block ul {
+  margin: 0  !important;
+  padding: 0 !important; }
+  /* line 23, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/pages/login-register.scss */
+  .help-block ul li {
+    list-style: none; }

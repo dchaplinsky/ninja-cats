@@ -1,0 +1,887 @@
+/* line 32, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-white .climacon_component-stroke {
+  fill: #FFFFFF; }
+
+/* line 32, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-black .climacon_component-stroke {
+  fill: #000000; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-primary.climacon-lighten-5 .climacon_component-stroke {
+  fill: #E0F6F6; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-primary.climacon-lighten-4 .climacon_component-stroke {
+  fill: #B3E9EA; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-primary.climacon-lighten-3 .climacon_component-stroke {
+  fill: #80DADC; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-primary.climacon-lighten-2 .climacon_component-stroke {
+  fill: #4DCBCD; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-primary.climacon-lighten-1 .climacon_component-stroke {
+  fill: #26C0C3; }
+
+/* line 32, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-primary .climacon_component-stroke {
+  fill: #00B5B8; }
+
+/* line 35, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-primary .climacon_component-fill {
+  fill: #B3E9EA; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-primary.climacon-darken-1 .climacon_component-stroke {
+  fill: #00AEB1; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-primary.climacon-darken-2 .climacon_component-stroke {
+  fill: #00A5A8; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-primary.climacon-darken-3 .climacon_component-stroke {
+  fill: #009DA0; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-primary.climacon-darken-4 .climacon_component-stroke {
+  fill: #008D91; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-primary.climacon-accent-1 .climacon_component-stroke {
+  fill: #BDFDFF; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-primary.climacon-accent-2 .climacon_component-stroke {
+  fill: #8AFBFF; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-primary.climacon-accent-3 .climacon_component-stroke {
+  fill: #57FAFF; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-primary.climacon-accent-4 .climacon_component-stroke {
+  fill: #3DF9FF; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-success.climacon-lighten-5 .climacon_component-stroke {
+  fill: #E3FAF3; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-success.climacon-lighten-4 .climacon_component-stroke {
+  fill: #B9F2E1; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-success.climacon-lighten-3 .climacon_component-stroke {
+  fill: #8BE9CD; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-success.climacon-lighten-2 .climacon_component-stroke {
+  fill: #5CE0B8; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-success.climacon-lighten-1 .climacon_component-stroke {
+  fill: #39DAA9; }
+
+/* line 32, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-success .climacon_component-stroke {
+  fill: #16D39A; }
+
+/* line 35, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-success .climacon_component-fill {
+  fill: #B9F2E1; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-success.climacon-darken-1 .climacon_component-stroke {
+  fill: #13CE92; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-success.climacon-darken-2 .climacon_component-stroke {
+  fill: #10C888; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-success.climacon-darken-3 .climacon_component-stroke {
+  fill: #0CC27E; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-success.climacon-darken-4 .climacon_component-stroke {
+  fill: #06B76C; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-success.climacon-accent-1 .climacon_component-stroke {
+  fill: #E1FFF1; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-success.climacon-accent-2 .climacon_component-stroke {
+  fill: #AEFFD9; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-success.climacon-accent-3 .climacon_component-stroke {
+  fill: #7BFFC1; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-success.climacon-accent-4 .climacon_component-stroke {
+  fill: #62FFB5; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-info.climacon-lighten-5 .climacon_component-stroke {
+  fill: #E6F9FC; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-info.climacon-lighten-4 .climacon_component-stroke {
+  fill: #C0F0F7; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-info.climacon-lighten-3 .climacon_component-stroke {
+  fill: #96E7F1; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-info.climacon-lighten-2 .climacon_component-stroke {
+  fill: #6CDDEB; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-info.climacon-lighten-1 .climacon_component-stroke {
+  fill: #4DD5E7; }
+
+/* line 32, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-info .climacon_component-stroke {
+  fill: #2DCEE3; }
+
+/* line 35, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-info .climacon_component-fill {
+  fill: #C0F0F7; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-info.climacon-darken-1 .climacon_component-stroke {
+  fill: #28C9E0; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-info.climacon-darken-2 .climacon_component-stroke {
+  fill: #22C2DC; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-info.climacon-darken-3 .climacon_component-stroke {
+  fill: #1CBCD8; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-info.climacon-darken-4 .climacon_component-stroke {
+  fill: #11B0D0; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-info.climacon-accent-1 .climacon_component-stroke {
+  fill: #FEFFFF; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-info.climacon-accent-2 .climacon_component-stroke {
+  fill: #CBF5FF; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-info.climacon-accent-3 .climacon_component-stroke {
+  fill: #98ECFF; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-info.climacon-accent-4 .climacon_component-stroke {
+  fill: #7FE7FF; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-warning.climacon-lighten-5 .climacon_component-stroke {
+  fill: #FFF5EF; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-warning.climacon-lighten-4 .climacon_component-stroke {
+  fill: #FFE5D8; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-warning.climacon-lighten-3 .climacon_component-stroke {
+  fill: #FFD4BE; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-warning.climacon-lighten-2 .climacon_component-stroke {
+  fill: #FFC2A4; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-warning.climacon-lighten-1 .climacon_component-stroke {
+  fill: #FFB591; }
+
+/* line 32, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-warning .climacon_component-stroke {
+  fill: #FFA87D; }
+
+/* line 35, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-warning .climacon_component-fill {
+  fill: #FFE5D8; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-warning.climacon-darken-1 .climacon_component-stroke {
+  fill: #FFA075; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-warning.climacon-darken-2 .climacon_component-stroke {
+  fill: #FF976A; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-warning.climacon-darken-3 .climacon_component-stroke {
+  fill: #FF8D60; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-warning.climacon-darken-4 .climacon_component-stroke {
+  fill: #FF7D4D; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-warning.climacon-accent-1 .climacon_component-stroke {
+  fill: #FFF5EF; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-warning.climacon-accent-2 .climacon_component-stroke {
+  fill: #FFE5D8; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-warning.climacon-accent-3 .climacon_component-stroke {
+  fill: #FFF6F3; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-warning.climacon-accent-4 .climacon_component-stroke {
+  fill: #FFE3DA; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-danger.climacon-lighten-5 .climacon_component-stroke {
+  fill: #FFEEF1; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-danger.climacon-lighten-4 .climacon_component-stroke {
+  fill: #FFD6DB; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-danger.climacon-lighten-3 .climacon_component-stroke {
+  fill: #FFBAC4; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-danger.climacon-lighten-2 .climacon_component-stroke {
+  fill: #FF9EAC; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-danger.climacon-lighten-1 .climacon_component-stroke {
+  fill: #FF8A9A; }
+
+/* line 32, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-danger .climacon_component-stroke {
+  fill: #FF7588; }
+
+/* line 35, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-danger .climacon_component-fill {
+  fill: #FFD6DB; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-danger.climacon-darken-1 .climacon_component-stroke {
+  fill: #FF6D80; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-danger.climacon-darken-2 .climacon_component-stroke {
+  fill: #FF6275; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-danger.climacon-darken-3 .climacon_component-stroke {
+  fill: #FF586B; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-danger.climacon-darken-4 .climacon_component-stroke {
+  fill: #FF4558; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-danger.climacon-accent-1 .climacon_component-stroke {
+  fill: #FFEEF1; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-danger.climacon-accent-2 .climacon_component-stroke {
+  fill: #FFD6DB; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-danger.climacon-accent-3 .climacon_component-stroke {
+  fill: #FFECEE; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-danger.climacon-accent-4 .climacon_component-stroke {
+  fill: #FFD3D7; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-red.climacon-lighten-5 .climacon_component-stroke {
+  fill: #FFEBEE; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-red.climacon-lighten-4 .climacon_component-stroke {
+  fill: #FFCDD2; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-red.climacon-lighten-3 .climacon_component-stroke {
+  fill: #EF9A9A; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-red.climacon-lighten-2 .climacon_component-stroke {
+  fill: #E57373; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-red.climacon-lighten-1 .climacon_component-stroke {
+  fill: #EF5350; }
+
+/* line 32, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-red .climacon_component-stroke {
+  fill: #F44336; }
+
+/* line 35, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-red .climacon_component-fill {
+  fill: #FFCDD2; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-red.climacon-darken-1 .climacon_component-stroke {
+  fill: #E53935; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-red.climacon-darken-2 .climacon_component-stroke {
+  fill: #D32F2F; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-red.climacon-darken-3 .climacon_component-stroke {
+  fill: #C62828; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-red.climacon-darken-4 .climacon_component-stroke {
+  fill: #B71C1C; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-red.climacon-accent-1 .climacon_component-stroke {
+  fill: #FF8A80; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-red.climacon-accent-2 .climacon_component-stroke {
+  fill: #FF5252; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-red.climacon-accent-3 .climacon_component-stroke {
+  fill: #FF1744; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-red.climacon-accent-4 .climacon_component-stroke {
+  fill: #D50000; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-pink.climacon-lighten-5 .climacon_component-stroke {
+  fill: #FCE4EC; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-pink.climacon-lighten-4 .climacon_component-stroke {
+  fill: #F8BBD0; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-pink.climacon-lighten-3 .climacon_component-stroke {
+  fill: #F48FB1; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-pink.climacon-lighten-2 .climacon_component-stroke {
+  fill: #F06292; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-pink.climacon-lighten-1 .climacon_component-stroke {
+  fill: #EC407A; }
+
+/* line 32, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-pink .climacon_component-stroke {
+  fill: #E91E63; }
+
+/* line 35, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-pink .climacon_component-fill {
+  fill: #F8BBD0; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-pink.climacon-darken-1 .climacon_component-stroke {
+  fill: #D81B60; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-pink.climacon-darken-2 .climacon_component-stroke {
+  fill: #C2185B; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-pink.climacon-darken-3 .climacon_component-stroke {
+  fill: #AD1457; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-pink.climacon-darken-4 .climacon_component-stroke {
+  fill: #880E4F; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-pink.climacon-accent-1 .climacon_component-stroke {
+  fill: #FF80AB; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-pink.climacon-accent-2 .climacon_component-stroke {
+  fill: #FF4081; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-pink.climacon-accent-3 .climacon_component-stroke {
+  fill: #F50057; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-pink.climacon-accent-4 .climacon_component-stroke {
+  fill: #C51162; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-purple.climacon-lighten-5 .climacon_component-stroke {
+  fill: #F3E5F5; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-purple.climacon-lighten-4 .climacon_component-stroke {
+  fill: #E1BEE7; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-purple.climacon-lighten-3 .climacon_component-stroke {
+  fill: #CE93D8; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-purple.climacon-lighten-2 .climacon_component-stroke {
+  fill: #BA68C8; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-purple.climacon-lighten-1 .climacon_component-stroke {
+  fill: #AB47BC; }
+
+/* line 32, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-purple .climacon_component-stroke {
+  fill: #9C27B0; }
+
+/* line 35, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-purple .climacon_component-fill {
+  fill: #E1BEE7; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-purple.climacon-darken-1 .climacon_component-stroke {
+  fill: #8E24AA; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-purple.climacon-darken-2 .climacon_component-stroke {
+  fill: #7B1FA2; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-purple.climacon-darken-3 .climacon_component-stroke {
+  fill: #6A1B9A; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-purple.climacon-darken-4 .climacon_component-stroke {
+  fill: #4A148C; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-purple.climacon-accent-1 .climacon_component-stroke {
+  fill: #EA80FC; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-purple.climacon-accent-2 .climacon_component-stroke {
+  fill: #E040FB; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-purple.climacon-accent-3 .climacon_component-stroke {
+  fill: #D500F9; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-purple.climacon-accent-4 .climacon_component-stroke {
+  fill: #DD00FF; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-blue.climacon-lighten-5 .climacon_component-stroke {
+  fill: #E3F2FD; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-blue.climacon-lighten-4 .climacon_component-stroke {
+  fill: #BBDEFB; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-blue.climacon-lighten-3 .climacon_component-stroke {
+  fill: #90CAF9; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-blue.climacon-lighten-2 .climacon_component-stroke {
+  fill: #64B5F6; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-blue.climacon-lighten-1 .climacon_component-stroke {
+  fill: #42A5F5; }
+
+/* line 32, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-blue .climacon_component-stroke {
+  fill: #2196F3; }
+
+/* line 35, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-blue .climacon_component-fill {
+  fill: #BBDEFB; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-blue.climacon-darken-1 .climacon_component-stroke {
+  fill: #1E88E5; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-blue.climacon-darken-2 .climacon_component-stroke {
+  fill: #1976D2; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-blue.climacon-darken-3 .climacon_component-stroke {
+  fill: #1565C0; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-blue.climacon-darken-4 .climacon_component-stroke {
+  fill: #0D47A1; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-blue.climacon-accent-1 .climacon_component-stroke {
+  fill: #82B1FF; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-blue.climacon-accent-2 .climacon_component-stroke {
+  fill: #448AFF; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-blue.climacon-accent-3 .climacon_component-stroke {
+  fill: #2979FF; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-blue.climacon-accent-4 .climacon_component-stroke {
+  fill: #2962FF; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-cyan.climacon-lighten-5 .climacon_component-stroke {
+  fill: #E0F7FA; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-cyan.climacon-lighten-4 .climacon_component-stroke {
+  fill: #B2EBF2; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-cyan.climacon-lighten-3 .climacon_component-stroke {
+  fill: #80DEEA; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-cyan.climacon-lighten-2 .climacon_component-stroke {
+  fill: #4DD0E1; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-cyan.climacon-lighten-1 .climacon_component-stroke {
+  fill: #26C6DA; }
+
+/* line 32, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-cyan .climacon_component-stroke {
+  fill: #00BCD4; }
+
+/* line 35, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-cyan .climacon_component-fill {
+  fill: #B2EBF2; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-cyan.climacon-darken-1 .climacon_component-stroke {
+  fill: #00ACC1; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-cyan.climacon-darken-2 .climacon_component-stroke {
+  fill: #0097A7; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-cyan.climacon-darken-3 .climacon_component-stroke {
+  fill: #00838F; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-cyan.climacon-darken-4 .climacon_component-stroke {
+  fill: #006064; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-cyan.climacon-accent-1 .climacon_component-stroke {
+  fill: #84FFFF; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-cyan.climacon-accent-2 .climacon_component-stroke {
+  fill: #18FFFF; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-cyan.climacon-accent-3 .climacon_component-stroke {
+  fill: #00E5FF; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-cyan.climacon-accent-4 .climacon_component-stroke {
+  fill: #00B8D4; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-teal.climacon-lighten-5 .climacon_component-stroke {
+  fill: #E0F2F1; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-teal.climacon-lighten-4 .climacon_component-stroke {
+  fill: #B2DFDB; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-teal.climacon-lighten-3 .climacon_component-stroke {
+  fill: #80CBC4; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-teal.climacon-lighten-2 .climacon_component-stroke {
+  fill: #4DB6AC; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-teal.climacon-lighten-1 .climacon_component-stroke {
+  fill: #26A69A; }
+
+/* line 32, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-teal .climacon_component-stroke {
+  fill: #009688; }
+
+/* line 35, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-teal .climacon_component-fill {
+  fill: #B2DFDB; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-teal.climacon-darken-1 .climacon_component-stroke {
+  fill: #00897B; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-teal.climacon-darken-2 .climacon_component-stroke {
+  fill: #00796B; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-teal.climacon-darken-3 .climacon_component-stroke {
+  fill: #00695C; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-teal.climacon-darken-4 .climacon_component-stroke {
+  fill: #004D40; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-teal.climacon-accent-1 .climacon_component-stroke {
+  fill: #A7FFEB; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-teal.climacon-accent-2 .climacon_component-stroke {
+  fill: #64FFDA; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-teal.climacon-accent-3 .climacon_component-stroke {
+  fill: #1DE9B6; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-teal.climacon-accent-4 .climacon_component-stroke {
+  fill: #00BFA5; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-yellow.climacon-lighten-5 .climacon_component-stroke {
+  fill: #FFFDE7; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-yellow.climacon-lighten-4 .climacon_component-stroke {
+  fill: #FFF9C4; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-yellow.climacon-lighten-3 .climacon_component-stroke {
+  fill: #FFF59D; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-yellow.climacon-lighten-2 .climacon_component-stroke {
+  fill: #FFF176; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-yellow.climacon-lighten-1 .climacon_component-stroke {
+  fill: #FFEE58; }
+
+/* line 32, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-yellow .climacon_component-stroke {
+  fill: #FFEB3B; }
+
+/* line 35, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-yellow .climacon_component-fill {
+  fill: #FFF9C4; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-yellow.climacon-darken-1 .climacon_component-stroke {
+  fill: #FDD835; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-yellow.climacon-darken-2 .climacon_component-stroke {
+  fill: #FBC02D; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-yellow.climacon-darken-3 .climacon_component-stroke {
+  fill: #F9A825; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-yellow.climacon-darken-4 .climacon_component-stroke {
+  fill: #F57F17; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-yellow.climacon-accent-1 .climacon_component-stroke {
+  fill: #FFFF8D; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-yellow.climacon-accent-2 .climacon_component-stroke {
+  fill: #FFFF00; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-yellow.climacon-accent-3 .climacon_component-stroke {
+  fill: #FFEA00; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-yellow.climacon-accent-4 .climacon_component-stroke {
+  fill: #FFD600; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-amber.climacon-lighten-5 .climacon_component-stroke {
+  fill: #FFF8E1; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-amber.climacon-lighten-4 .climacon_component-stroke {
+  fill: #FFECB3; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-amber.climacon-lighten-3 .climacon_component-stroke {
+  fill: #FFE082; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-amber.climacon-lighten-2 .climacon_component-stroke {
+  fill: #FFD54F; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-amber.climacon-lighten-1 .climacon_component-stroke {
+  fill: #FFCA28; }
+
+/* line 32, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-amber .climacon_component-stroke {
+  fill: #FFC107; }
+
+/* line 35, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-amber .climacon_component-fill {
+  fill: #FFECB3; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-amber.climacon-darken-1 .climacon_component-stroke {
+  fill: #FFB300; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-amber.climacon-darken-2 .climacon_component-stroke {
+  fill: #FFA000; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-amber.climacon-darken-3 .climacon_component-stroke {
+  fill: #FF8F00; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-amber.climacon-darken-4 .climacon_component-stroke {
+  fill: #FF6F00; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-amber.climacon-accent-1 .climacon_component-stroke {
+  fill: #FFE57F; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-amber.climacon-accent-2 .climacon_component-stroke {
+  fill: #FFD740; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-amber.climacon-accent-3 .climacon_component-stroke {
+  fill: #FFC400; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-amber.climacon-accent-4 .climacon_component-stroke {
+  fill: #FFAB00; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-blue-grey.climacon-lighten-5 .climacon_component-stroke {
+  fill: #ECEFF1; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-blue-grey.climacon-lighten-4 .climacon_component-stroke {
+  fill: #CFD8DC; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-blue-grey.climacon-lighten-3 .climacon_component-stroke {
+  fill: #B0BEC5; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-blue-grey.climacon-lighten-2 .climacon_component-stroke {
+  fill: #90A4AE; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-blue-grey.climacon-lighten-1 .climacon_component-stroke {
+  fill: #78909C; }
+
+/* line 32, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-blue-grey .climacon_component-stroke {
+  fill: #607D8B; }
+
+/* line 35, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-blue-grey .climacon_component-fill {
+  fill: #CFD8DC; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-blue-grey.climacon-darken-1 .climacon_component-stroke {
+  fill: #546E7A; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-blue-grey.climacon-darken-2 .climacon_component-stroke {
+  fill: #455A64; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-blue-grey.climacon-darken-3 .climacon_component-stroke {
+  fill: #37474F; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-blue-grey.climacon-darken-4 .climacon_component-stroke {
+  fill: #263238; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-grey-blue.climacon-lighten-5 .climacon_component-stroke {
+  fill: #ECEFF1; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-grey-blue.climacon-lighten-4 .climacon_component-stroke {
+  fill: #CFD8DC; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-grey-blue.climacon-lighten-3 .climacon_component-stroke {
+  fill: #B0BEC5; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-grey-blue.climacon-lighten-2 .climacon_component-stroke {
+  fill: #6F85AD; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-grey-blue.climacon-lighten-1 .climacon_component-stroke {
+  fill: #78909C; }
+
+/* line 32, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-grey-blue .climacon_component-stroke {
+  fill: #1B2942; }
+
+/* line 35, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-grey-blue .climacon_component-fill {
+  fill: #CFD8DC; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-grey-blue.climacon-darken-1 .climacon_component-stroke {
+  fill: #546E7A; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-grey-blue.climacon-darken-2 .climacon_component-stroke {
+  fill: #404E67; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-grey-blue.climacon-darken-3 .climacon_component-stroke {
+  fill: #37474F; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-grey-blue.climacon-darken-4 .climacon_component-stroke {
+  fill: #263238; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-shades.climacon-black .climacon_component-stroke {
+  fill: #000000; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-shades.climacon-white .climacon_component-stroke {
+  fill: #FFFFFF; }
+
+/* line 42, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-climacon.scss */
+.climacon-shades.climacon-transparent .climacon_component-stroke {
+  fill: transparent; }

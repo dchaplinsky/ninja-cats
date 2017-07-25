@@ -1,0 +1,18 @@
+{% if task %}
+    <form method="POST" action="{{ url_for('done', type_name='dummy') }}">
+        <div>
+            <h2>{{ task.title }}</h2>
+            {{ task.text }}
+        </div>
+        <input type="hidden" id="task_meta"
+               data-payload="{{ task.as_dict()|tojson|forceescape }}"/>
+
+        <div class="clearfix"></div>
+    </form>
+{% else %}
+    <div>
+        <h2>{{ config.THANKS_TASK_MESSAGE }}</h2>
+    </div>
+{% endif %}
+
+

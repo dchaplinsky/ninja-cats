@@ -1,0 +1,1138 @@
+/* line 33, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-white div {
+  background-color: #FFFFFF !important; }
+
+/* line 37, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-white.ball-clip-rotate div {
+  border-color: #FFFFFF !important;
+  border-bottom-color: transparent !important;
+  background-color: transparent !important; }
+
+/* line 45, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-white.ball-clip-rotate-pulse div:first-child {
+  background: #FFFFFF !important; }
+
+/* line 48, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-white.ball-clip-rotate-pulse div:last-child {
+  background: transparent !important;
+  border-color: #FFFFFF transparent #FFFFFF transparent !important; }
+
+/* line 55, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-white.ball-clip-rotate-multiple div {
+  background-color: transparent !important;
+  border-color: transparent #FFFFFF transparent #FFFFFF !important; }
+
+/* line 62, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-white.ball-rotate div:before, .loader-white.ball-rotate div:after {
+  background-color: #FFFFFF !important; }
+
+/* line 68, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-white.ball-triangle-path div {
+  background-color: transparent !important;
+  border-color: #FFFFFF !important; }
+
+/* line 74, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-white.ball-scale-ripple div {
+  background-color: transparent !important;
+  border-color: #FFFFFF !important; }
+
+/* line 80, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-white.ball-scale-ripple-multiple div {
+  background-color: transparent !important;
+  border-color: #FFFFFF !important; }
+
+/* line 86, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-white.triangle-skew-spin div {
+  background-color: transparent !important;
+  border-bottom-color: #FFFFFF !important; }
+
+/* line 92, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-white.semi-circle-spin div {
+  background-image: linear-gradient(transparent 0%, transparent 70%, #FFFFFF 30%, #FFFFFF 100%);
+  background-color: transparent !important; }
+
+/* line 98, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-white.fading-circle div {
+  background-color: transparent !important; }
+  /* line 100, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+  .loader-white.fading-circle div:before {
+    background-color: #FFFFFF !important; }
+
+/* line 106, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-white.folding-cube div {
+  background-color: transparent !important; }
+  /* line 108, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+  .loader-white.folding-cube div:before {
+    background-color: #FFFFFF !important; }
+
+/* line 33, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-black div {
+  background-color: #000000 !important; }
+
+/* line 37, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-black.ball-clip-rotate div {
+  border-color: #000000 !important;
+  border-bottom-color: transparent !important;
+  background-color: transparent !important; }
+
+/* line 45, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-black.ball-clip-rotate-pulse div:first-child {
+  background: #000000 !important; }
+
+/* line 48, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-black.ball-clip-rotate-pulse div:last-child {
+  background: transparent !important;
+  border-color: #000000 transparent #000000 transparent !important; }
+
+/* line 55, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-black.ball-clip-rotate-multiple div {
+  background-color: transparent !important;
+  border-color: transparent #000000 transparent #000000 !important; }
+
+/* line 62, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-black.ball-rotate div:before, .loader-black.ball-rotate div:after {
+  background-color: #000000 !important; }
+
+/* line 68, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-black.ball-triangle-path div {
+  background-color: transparent !important;
+  border-color: #000000 !important; }
+
+/* line 74, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-black.ball-scale-ripple div {
+  background-color: transparent !important;
+  border-color: #000000 !important; }
+
+/* line 80, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-black.ball-scale-ripple-multiple div {
+  background-color: transparent !important;
+  border-color: #000000 !important; }
+
+/* line 86, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-black.triangle-skew-spin div {
+  background-color: transparent !important;
+  border-bottom-color: #000000 !important; }
+
+/* line 92, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-black.semi-circle-spin div {
+  background-image: linear-gradient(transparent 0%, transparent 70%, #000000 30%, #000000 100%);
+  background-color: transparent !important; }
+
+/* line 98, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-black.fading-circle div {
+  background-color: transparent !important; }
+  /* line 100, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+  .loader-black.fading-circle div:before {
+    background-color: #000000 !important; }
+
+/* line 106, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-black.folding-cube div {
+  background-color: transparent !important; }
+  /* line 108, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+  .loader-black.folding-cube div:before {
+    background-color: #000000 !important; }
+
+/* line 33, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-primary div {
+  background-color: #00B5B8 !important; }
+
+/* line 37, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-primary.ball-clip-rotate div {
+  border-color: #00B5B8 !important;
+  border-bottom-color: transparent !important;
+  background-color: transparent !important; }
+
+/* line 45, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-primary.ball-clip-rotate-pulse div:first-child {
+  background: #00B5B8 !important; }
+
+/* line 48, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-primary.ball-clip-rotate-pulse div:last-child {
+  background: transparent !important;
+  border-color: #00B5B8 transparent #00B5B8 transparent !important; }
+
+/* line 55, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-primary.ball-clip-rotate-multiple div {
+  background-color: transparent !important;
+  border-color: transparent #00B5B8 transparent #00B5B8 !important; }
+
+/* line 62, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-primary.ball-rotate div:before, .loader-primary.ball-rotate div:after {
+  background-color: #00B5B8 !important; }
+
+/* line 68, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-primary.ball-triangle-path div {
+  background-color: transparent !important;
+  border-color: #00B5B8 !important; }
+
+/* line 74, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-primary.ball-scale-ripple div {
+  background-color: transparent !important;
+  border-color: #00B5B8 !important; }
+
+/* line 80, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-primary.ball-scale-ripple-multiple div {
+  background-color: transparent !important;
+  border-color: #00B5B8 !important; }
+
+/* line 86, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-primary.triangle-skew-spin div {
+  background-color: transparent !important;
+  border-bottom-color: #00B5B8 !important; }
+
+/* line 92, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-primary.semi-circle-spin div {
+  background-image: linear-gradient(transparent 0%, transparent 70%, #00B5B8 30%, #00B5B8 100%);
+  background-color: transparent !important; }
+
+/* line 98, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-primary.fading-circle div {
+  background-color: transparent !important; }
+  /* line 100, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+  .loader-primary.fading-circle div:before {
+    background-color: #00B5B8 !important; }
+
+/* line 106, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-primary.folding-cube div {
+  background-color: transparent !important; }
+  /* line 108, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+  .loader-primary.folding-cube div:before {
+    background-color: #00B5B8 !important; }
+
+/* line 33, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-success div {
+  background-color: #16D39A !important; }
+
+/* line 37, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-success.ball-clip-rotate div {
+  border-color: #16D39A !important;
+  border-bottom-color: transparent !important;
+  background-color: transparent !important; }
+
+/* line 45, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-success.ball-clip-rotate-pulse div:first-child {
+  background: #16D39A !important; }
+
+/* line 48, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-success.ball-clip-rotate-pulse div:last-child {
+  background: transparent !important;
+  border-color: #16D39A transparent #16D39A transparent !important; }
+
+/* line 55, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-success.ball-clip-rotate-multiple div {
+  background-color: transparent !important;
+  border-color: transparent #16D39A transparent #16D39A !important; }
+
+/* line 62, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-success.ball-rotate div:before, .loader-success.ball-rotate div:after {
+  background-color: #16D39A !important; }
+
+/* line 68, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-success.ball-triangle-path div {
+  background-color: transparent !important;
+  border-color: #16D39A !important; }
+
+/* line 74, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-success.ball-scale-ripple div {
+  background-color: transparent !important;
+  border-color: #16D39A !important; }
+
+/* line 80, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-success.ball-scale-ripple-multiple div {
+  background-color: transparent !important;
+  border-color: #16D39A !important; }
+
+/* line 86, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-success.triangle-skew-spin div {
+  background-color: transparent !important;
+  border-bottom-color: #16D39A !important; }
+
+/* line 92, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-success.semi-circle-spin div {
+  background-image: linear-gradient(transparent 0%, transparent 70%, #16D39A 30%, #16D39A 100%);
+  background-color: transparent !important; }
+
+/* line 98, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-success.fading-circle div {
+  background-color: transparent !important; }
+  /* line 100, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+  .loader-success.fading-circle div:before {
+    background-color: #16D39A !important; }
+
+/* line 106, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-success.folding-cube div {
+  background-color: transparent !important; }
+  /* line 108, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+  .loader-success.folding-cube div:before {
+    background-color: #16D39A !important; }
+
+/* line 33, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-info div {
+  background-color: #2DCEE3 !important; }
+
+/* line 37, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-info.ball-clip-rotate div {
+  border-color: #2DCEE3 !important;
+  border-bottom-color: transparent !important;
+  background-color: transparent !important; }
+
+/* line 45, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-info.ball-clip-rotate-pulse div:first-child {
+  background: #2DCEE3 !important; }
+
+/* line 48, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-info.ball-clip-rotate-pulse div:last-child {
+  background: transparent !important;
+  border-color: #2DCEE3 transparent #2DCEE3 transparent !important; }
+
+/* line 55, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-info.ball-clip-rotate-multiple div {
+  background-color: transparent !important;
+  border-color: transparent #2DCEE3 transparent #2DCEE3 !important; }
+
+/* line 62, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-info.ball-rotate div:before, .loader-info.ball-rotate div:after {
+  background-color: #2DCEE3 !important; }
+
+/* line 68, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-info.ball-triangle-path div {
+  background-color: transparent !important;
+  border-color: #2DCEE3 !important; }
+
+/* line 74, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-info.ball-scale-ripple div {
+  background-color: transparent !important;
+  border-color: #2DCEE3 !important; }
+
+/* line 80, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-info.ball-scale-ripple-multiple div {
+  background-color: transparent !important;
+  border-color: #2DCEE3 !important; }
+
+/* line 86, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-info.triangle-skew-spin div {
+  background-color: transparent !important;
+  border-bottom-color: #2DCEE3 !important; }
+
+/* line 92, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-info.semi-circle-spin div {
+  background-image: linear-gradient(transparent 0%, transparent 70%, #2DCEE3 30%, #2DCEE3 100%);
+  background-color: transparent !important; }
+
+/* line 98, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-info.fading-circle div {
+  background-color: transparent !important; }
+  /* line 100, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+  .loader-info.fading-circle div:before {
+    background-color: #2DCEE3 !important; }
+
+/* line 106, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-info.folding-cube div {
+  background-color: transparent !important; }
+  /* line 108, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+  .loader-info.folding-cube div:before {
+    background-color: #2DCEE3 !important; }
+
+/* line 33, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-warning div {
+  background-color: #FFA87D !important; }
+
+/* line 37, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-warning.ball-clip-rotate div {
+  border-color: #FFA87D !important;
+  border-bottom-color: transparent !important;
+  background-color: transparent !important; }
+
+/* line 45, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-warning.ball-clip-rotate-pulse div:first-child {
+  background: #FFA87D !important; }
+
+/* line 48, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-warning.ball-clip-rotate-pulse div:last-child {
+  background: transparent !important;
+  border-color: #FFA87D transparent #FFA87D transparent !important; }
+
+/* line 55, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-warning.ball-clip-rotate-multiple div {
+  background-color: transparent !important;
+  border-color: transparent #FFA87D transparent #FFA87D !important; }
+
+/* line 62, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-warning.ball-rotate div:before, .loader-warning.ball-rotate div:after {
+  background-color: #FFA87D !important; }
+
+/* line 68, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-warning.ball-triangle-path div {
+  background-color: transparent !important;
+  border-color: #FFA87D !important; }
+
+/* line 74, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-warning.ball-scale-ripple div {
+  background-color: transparent !important;
+  border-color: #FFA87D !important; }
+
+/* line 80, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-warning.ball-scale-ripple-multiple div {
+  background-color: transparent !important;
+  border-color: #FFA87D !important; }
+
+/* line 86, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-warning.triangle-skew-spin div {
+  background-color: transparent !important;
+  border-bottom-color: #FFA87D !important; }
+
+/* line 92, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-warning.semi-circle-spin div {
+  background-image: linear-gradient(transparent 0%, transparent 70%, #FFA87D 30%, #FFA87D 100%);
+  background-color: transparent !important; }
+
+/* line 98, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-warning.fading-circle div {
+  background-color: transparent !important; }
+  /* line 100, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+  .loader-warning.fading-circle div:before {
+    background-color: #FFA87D !important; }
+
+/* line 106, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-warning.folding-cube div {
+  background-color: transparent !important; }
+  /* line 108, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+  .loader-warning.folding-cube div:before {
+    background-color: #FFA87D !important; }
+
+/* line 33, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-danger div {
+  background-color: #FF7588 !important; }
+
+/* line 37, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-danger.ball-clip-rotate div {
+  border-color: #FF7588 !important;
+  border-bottom-color: transparent !important;
+  background-color: transparent !important; }
+
+/* line 45, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-danger.ball-clip-rotate-pulse div:first-child {
+  background: #FF7588 !important; }
+
+/* line 48, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-danger.ball-clip-rotate-pulse div:last-child {
+  background: transparent !important;
+  border-color: #FF7588 transparent #FF7588 transparent !important; }
+
+/* line 55, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-danger.ball-clip-rotate-multiple div {
+  background-color: transparent !important;
+  border-color: transparent #FF7588 transparent #FF7588 !important; }
+
+/* line 62, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-danger.ball-rotate div:before, .loader-danger.ball-rotate div:after {
+  background-color: #FF7588 !important; }
+
+/* line 68, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-danger.ball-triangle-path div {
+  background-color: transparent !important;
+  border-color: #FF7588 !important; }
+
+/* line 74, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-danger.ball-scale-ripple div {
+  background-color: transparent !important;
+  border-color: #FF7588 !important; }
+
+/* line 80, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-danger.ball-scale-ripple-multiple div {
+  background-color: transparent !important;
+  border-color: #FF7588 !important; }
+
+/* line 86, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-danger.triangle-skew-spin div {
+  background-color: transparent !important;
+  border-bottom-color: #FF7588 !important; }
+
+/* line 92, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-danger.semi-circle-spin div {
+  background-image: linear-gradient(transparent 0%, transparent 70%, #FF7588 30%, #FF7588 100%);
+  background-color: transparent !important; }
+
+/* line 98, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-danger.fading-circle div {
+  background-color: transparent !important; }
+  /* line 100, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+  .loader-danger.fading-circle div:before {
+    background-color: #FF7588 !important; }
+
+/* line 106, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-danger.folding-cube div {
+  background-color: transparent !important; }
+  /* line 108, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+  .loader-danger.folding-cube div:before {
+    background-color: #FF7588 !important; }
+
+/* line 33, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-red div {
+  background-color: #F44336 !important; }
+
+/* line 37, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-red.ball-clip-rotate div {
+  border-color: #F44336 !important;
+  border-bottom-color: transparent !important;
+  background-color: transparent !important; }
+
+/* line 45, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-red.ball-clip-rotate-pulse div:first-child {
+  background: #F44336 !important; }
+
+/* line 48, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-red.ball-clip-rotate-pulse div:last-child {
+  background: transparent !important;
+  border-color: #F44336 transparent #F44336 transparent !important; }
+
+/* line 55, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-red.ball-clip-rotate-multiple div {
+  background-color: transparent !important;
+  border-color: transparent #F44336 transparent #F44336 !important; }
+
+/* line 62, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-red.ball-rotate div:before, .loader-red.ball-rotate div:after {
+  background-color: #F44336 !important; }
+
+/* line 68, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-red.ball-triangle-path div {
+  background-color: transparent !important;
+  border-color: #F44336 !important; }
+
+/* line 74, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-red.ball-scale-ripple div {
+  background-color: transparent !important;
+  border-color: #F44336 !important; }
+
+/* line 80, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-red.ball-scale-ripple-multiple div {
+  background-color: transparent !important;
+  border-color: #F44336 !important; }
+
+/* line 86, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-red.triangle-skew-spin div {
+  background-color: transparent !important;
+  border-bottom-color: #F44336 !important; }
+
+/* line 92, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-red.semi-circle-spin div {
+  background-image: linear-gradient(transparent 0%, transparent 70%, #F44336 30%, #F44336 100%);
+  background-color: transparent !important; }
+
+/* line 98, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-red.fading-circle div {
+  background-color: transparent !important; }
+  /* line 100, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+  .loader-red.fading-circle div:before {
+    background-color: #F44336 !important; }
+
+/* line 106, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-red.folding-cube div {
+  background-color: transparent !important; }
+  /* line 108, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+  .loader-red.folding-cube div:before {
+    background-color: #F44336 !important; }
+
+/* line 33, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-pink div {
+  background-color: #E91E63 !important; }
+
+/* line 37, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-pink.ball-clip-rotate div {
+  border-color: #E91E63 !important;
+  border-bottom-color: transparent !important;
+  background-color: transparent !important; }
+
+/* line 45, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-pink.ball-clip-rotate-pulse div:first-child {
+  background: #E91E63 !important; }
+
+/* line 48, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-pink.ball-clip-rotate-pulse div:last-child {
+  background: transparent !important;
+  border-color: #E91E63 transparent #E91E63 transparent !important; }
+
+/* line 55, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-pink.ball-clip-rotate-multiple div {
+  background-color: transparent !important;
+  border-color: transparent #E91E63 transparent #E91E63 !important; }
+
+/* line 62, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-pink.ball-rotate div:before, .loader-pink.ball-rotate div:after {
+  background-color: #E91E63 !important; }
+
+/* line 68, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-pink.ball-triangle-path div {
+  background-color: transparent !important;
+  border-color: #E91E63 !important; }
+
+/* line 74, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-pink.ball-scale-ripple div {
+  background-color: transparent !important;
+  border-color: #E91E63 !important; }
+
+/* line 80, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-pink.ball-scale-ripple-multiple div {
+  background-color: transparent !important;
+  border-color: #E91E63 !important; }
+
+/* line 86, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-pink.triangle-skew-spin div {
+  background-color: transparent !important;
+  border-bottom-color: #E91E63 !important; }
+
+/* line 92, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-pink.semi-circle-spin div {
+  background-image: linear-gradient(transparent 0%, transparent 70%, #E91E63 30%, #E91E63 100%);
+  background-color: transparent !important; }
+
+/* line 98, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-pink.fading-circle div {
+  background-color: transparent !important; }
+  /* line 100, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+  .loader-pink.fading-circle div:before {
+    background-color: #E91E63 !important; }
+
+/* line 106, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-pink.folding-cube div {
+  background-color: transparent !important; }
+  /* line 108, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+  .loader-pink.folding-cube div:before {
+    background-color: #E91E63 !important; }
+
+/* line 33, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-purple div {
+  background-color: #9C27B0 !important; }
+
+/* line 37, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-purple.ball-clip-rotate div {
+  border-color: #9C27B0 !important;
+  border-bottom-color: transparent !important;
+  background-color: transparent !important; }
+
+/* line 45, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-purple.ball-clip-rotate-pulse div:first-child {
+  background: #9C27B0 !important; }
+
+/* line 48, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-purple.ball-clip-rotate-pulse div:last-child {
+  background: transparent !important;
+  border-color: #9C27B0 transparent #9C27B0 transparent !important; }
+
+/* line 55, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-purple.ball-clip-rotate-multiple div {
+  background-color: transparent !important;
+  border-color: transparent #9C27B0 transparent #9C27B0 !important; }
+
+/* line 62, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-purple.ball-rotate div:before, .loader-purple.ball-rotate div:after {
+  background-color: #9C27B0 !important; }
+
+/* line 68, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-purple.ball-triangle-path div {
+  background-color: transparent !important;
+  border-color: #9C27B0 !important; }
+
+/* line 74, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-purple.ball-scale-ripple div {
+  background-color: transparent !important;
+  border-color: #9C27B0 !important; }
+
+/* line 80, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-purple.ball-scale-ripple-multiple div {
+  background-color: transparent !important;
+  border-color: #9C27B0 !important; }
+
+/* line 86, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-purple.triangle-skew-spin div {
+  background-color: transparent !important;
+  border-bottom-color: #9C27B0 !important; }
+
+/* line 92, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-purple.semi-circle-spin div {
+  background-image: linear-gradient(transparent 0%, transparent 70%, #9C27B0 30%, #9C27B0 100%);
+  background-color: transparent !important; }
+
+/* line 98, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-purple.fading-circle div {
+  background-color: transparent !important; }
+  /* line 100, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+  .loader-purple.fading-circle div:before {
+    background-color: #9C27B0 !important; }
+
+/* line 106, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-purple.folding-cube div {
+  background-color: transparent !important; }
+  /* line 108, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+  .loader-purple.folding-cube div:before {
+    background-color: #9C27B0 !important; }
+
+/* line 33, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-blue div {
+  background-color: #2196F3 !important; }
+
+/* line 37, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-blue.ball-clip-rotate div {
+  border-color: #2196F3 !important;
+  border-bottom-color: transparent !important;
+  background-color: transparent !important; }
+
+/* line 45, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-blue.ball-clip-rotate-pulse div:first-child {
+  background: #2196F3 !important; }
+
+/* line 48, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-blue.ball-clip-rotate-pulse div:last-child {
+  background: transparent !important;
+  border-color: #2196F3 transparent #2196F3 transparent !important; }
+
+/* line 55, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-blue.ball-clip-rotate-multiple div {
+  background-color: transparent !important;
+  border-color: transparent #2196F3 transparent #2196F3 !important; }
+
+/* line 62, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-blue.ball-rotate div:before, .loader-blue.ball-rotate div:after {
+  background-color: #2196F3 !important; }
+
+/* line 68, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-blue.ball-triangle-path div {
+  background-color: transparent !important;
+  border-color: #2196F3 !important; }
+
+/* line 74, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-blue.ball-scale-ripple div {
+  background-color: transparent !important;
+  border-color: #2196F3 !important; }
+
+/* line 80, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-blue.ball-scale-ripple-multiple div {
+  background-color: transparent !important;
+  border-color: #2196F3 !important; }
+
+/* line 86, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-blue.triangle-skew-spin div {
+  background-color: transparent !important;
+  border-bottom-color: #2196F3 !important; }
+
+/* line 92, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-blue.semi-circle-spin div {
+  background-image: linear-gradient(transparent 0%, transparent 70%, #2196F3 30%, #2196F3 100%);
+  background-color: transparent !important; }
+
+/* line 98, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-blue.fading-circle div {
+  background-color: transparent !important; }
+  /* line 100, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+  .loader-blue.fading-circle div:before {
+    background-color: #2196F3 !important; }
+
+/* line 106, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-blue.folding-cube div {
+  background-color: transparent !important; }
+  /* line 108, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+  .loader-blue.folding-cube div:before {
+    background-color: #2196F3 !important; }
+
+/* line 33, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-cyan div {
+  background-color: #00BCD4 !important; }
+
+/* line 37, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-cyan.ball-clip-rotate div {
+  border-color: #00BCD4 !important;
+  border-bottom-color: transparent !important;
+  background-color: transparent !important; }
+
+/* line 45, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-cyan.ball-clip-rotate-pulse div:first-child {
+  background: #00BCD4 !important; }
+
+/* line 48, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-cyan.ball-clip-rotate-pulse div:last-child {
+  background: transparent !important;
+  border-color: #00BCD4 transparent #00BCD4 transparent !important; }
+
+/* line 55, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-cyan.ball-clip-rotate-multiple div {
+  background-color: transparent !important;
+  border-color: transparent #00BCD4 transparent #00BCD4 !important; }
+
+/* line 62, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-cyan.ball-rotate div:before, .loader-cyan.ball-rotate div:after {
+  background-color: #00BCD4 !important; }
+
+/* line 68, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-cyan.ball-triangle-path div {
+  background-color: transparent !important;
+  border-color: #00BCD4 !important; }
+
+/* line 74, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-cyan.ball-scale-ripple div {
+  background-color: transparent !important;
+  border-color: #00BCD4 !important; }
+
+/* line 80, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-cyan.ball-scale-ripple-multiple div {
+  background-color: transparent !important;
+  border-color: #00BCD4 !important; }
+
+/* line 86, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-cyan.triangle-skew-spin div {
+  background-color: transparent !important;
+  border-bottom-color: #00BCD4 !important; }
+
+/* line 92, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-cyan.semi-circle-spin div {
+  background-image: linear-gradient(transparent 0%, transparent 70%, #00BCD4 30%, #00BCD4 100%);
+  background-color: transparent !important; }
+
+/* line 98, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-cyan.fading-circle div {
+  background-color: transparent !important; }
+  /* line 100, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+  .loader-cyan.fading-circle div:before {
+    background-color: #00BCD4 !important; }
+
+/* line 106, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-cyan.folding-cube div {
+  background-color: transparent !important; }
+  /* line 108, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+  .loader-cyan.folding-cube div:before {
+    background-color: #00BCD4 !important; }
+
+/* line 33, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-teal div {
+  background-color: #009688 !important; }
+
+/* line 37, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-teal.ball-clip-rotate div {
+  border-color: #009688 !important;
+  border-bottom-color: transparent !important;
+  background-color: transparent !important; }
+
+/* line 45, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-teal.ball-clip-rotate-pulse div:first-child {
+  background: #009688 !important; }
+
+/* line 48, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-teal.ball-clip-rotate-pulse div:last-child {
+  background: transparent !important;
+  border-color: #009688 transparent #009688 transparent !important; }
+
+/* line 55, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-teal.ball-clip-rotate-multiple div {
+  background-color: transparent !important;
+  border-color: transparent #009688 transparent #009688 !important; }
+
+/* line 62, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-teal.ball-rotate div:before, .loader-teal.ball-rotate div:after {
+  background-color: #009688 !important; }
+
+/* line 68, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-teal.ball-triangle-path div {
+  background-color: transparent !important;
+  border-color: #009688 !important; }
+
+/* line 74, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-teal.ball-scale-ripple div {
+  background-color: transparent !important;
+  border-color: #009688 !important; }
+
+/* line 80, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-teal.ball-scale-ripple-multiple div {
+  background-color: transparent !important;
+  border-color: #009688 !important; }
+
+/* line 86, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-teal.triangle-skew-spin div {
+  background-color: transparent !important;
+  border-bottom-color: #009688 !important; }
+
+/* line 92, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-teal.semi-circle-spin div {
+  background-image: linear-gradient(transparent 0%, transparent 70%, #009688 30%, #009688 100%);
+  background-color: transparent !important; }
+
+/* line 98, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-teal.fading-circle div {
+  background-color: transparent !important; }
+  /* line 100, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+  .loader-teal.fading-circle div:before {
+    background-color: #009688 !important; }
+
+/* line 106, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-teal.folding-cube div {
+  background-color: transparent !important; }
+  /* line 108, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+  .loader-teal.folding-cube div:before {
+    background-color: #009688 !important; }
+
+/* line 33, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-yellow div {
+  background-color: #FFEB3B !important; }
+
+/* line 37, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-yellow.ball-clip-rotate div {
+  border-color: #FFEB3B !important;
+  border-bottom-color: transparent !important;
+  background-color: transparent !important; }
+
+/* line 45, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-yellow.ball-clip-rotate-pulse div:first-child {
+  background: #FFEB3B !important; }
+
+/* line 48, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-yellow.ball-clip-rotate-pulse div:last-child {
+  background: transparent !important;
+  border-color: #FFEB3B transparent #FFEB3B transparent !important; }
+
+/* line 55, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-yellow.ball-clip-rotate-multiple div {
+  background-color: transparent !important;
+  border-color: transparent #FFEB3B transparent #FFEB3B !important; }
+
+/* line 62, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-yellow.ball-rotate div:before, .loader-yellow.ball-rotate div:after {
+  background-color: #FFEB3B !important; }
+
+/* line 68, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-yellow.ball-triangle-path div {
+  background-color: transparent !important;
+  border-color: #FFEB3B !important; }
+
+/* line 74, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-yellow.ball-scale-ripple div {
+  background-color: transparent !important;
+  border-color: #FFEB3B !important; }
+
+/* line 80, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-yellow.ball-scale-ripple-multiple div {
+  background-color: transparent !important;
+  border-color: #FFEB3B !important; }
+
+/* line 86, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-yellow.triangle-skew-spin div {
+  background-color: transparent !important;
+  border-bottom-color: #FFEB3B !important; }
+
+/* line 92, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-yellow.semi-circle-spin div {
+  background-image: linear-gradient(transparent 0%, transparent 70%, #FFEB3B 30%, #FFEB3B 100%);
+  background-color: transparent !important; }
+
+/* line 98, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-yellow.fading-circle div {
+  background-color: transparent !important; }
+  /* line 100, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+  .loader-yellow.fading-circle div:before {
+    background-color: #FFEB3B !important; }
+
+/* line 106, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-yellow.folding-cube div {
+  background-color: transparent !important; }
+  /* line 108, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+  .loader-yellow.folding-cube div:before {
+    background-color: #FFEB3B !important; }
+
+/* line 33, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-amber div {
+  background-color: #FFC107 !important; }
+
+/* line 37, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-amber.ball-clip-rotate div {
+  border-color: #FFC107 !important;
+  border-bottom-color: transparent !important;
+  background-color: transparent !important; }
+
+/* line 45, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-amber.ball-clip-rotate-pulse div:first-child {
+  background: #FFC107 !important; }
+
+/* line 48, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-amber.ball-clip-rotate-pulse div:last-child {
+  background: transparent !important;
+  border-color: #FFC107 transparent #FFC107 transparent !important; }
+
+/* line 55, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-amber.ball-clip-rotate-multiple div {
+  background-color: transparent !important;
+  border-color: transparent #FFC107 transparent #FFC107 !important; }
+
+/* line 62, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-amber.ball-rotate div:before, .loader-amber.ball-rotate div:after {
+  background-color: #FFC107 !important; }
+
+/* line 68, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-amber.ball-triangle-path div {
+  background-color: transparent !important;
+  border-color: #FFC107 !important; }
+
+/* line 74, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-amber.ball-scale-ripple div {
+  background-color: transparent !important;
+  border-color: #FFC107 !important; }
+
+/* line 80, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-amber.ball-scale-ripple-multiple div {
+  background-color: transparent !important;
+  border-color: #FFC107 !important; }
+
+/* line 86, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-amber.triangle-skew-spin div {
+  background-color: transparent !important;
+  border-bottom-color: #FFC107 !important; }
+
+/* line 92, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-amber.semi-circle-spin div {
+  background-image: linear-gradient(transparent 0%, transparent 70%, #FFC107 30%, #FFC107 100%);
+  background-color: transparent !important; }
+
+/* line 98, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-amber.fading-circle div {
+  background-color: transparent !important; }
+  /* line 100, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+  .loader-amber.fading-circle div:before {
+    background-color: #FFC107 !important; }
+
+/* line 106, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-amber.folding-cube div {
+  background-color: transparent !important; }
+  /* line 108, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+  .loader-amber.folding-cube div:before {
+    background-color: #FFC107 !important; }
+
+/* line 33, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-blue-grey div {
+  background-color: #607D8B !important; }
+
+/* line 37, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-blue-grey.ball-clip-rotate div {
+  border-color: #607D8B !important;
+  border-bottom-color: transparent !important;
+  background-color: transparent !important; }
+
+/* line 45, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-blue-grey.ball-clip-rotate-pulse div:first-child {
+  background: #607D8B !important; }
+
+/* line 48, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-blue-grey.ball-clip-rotate-pulse div:last-child {
+  background: transparent !important;
+  border-color: #607D8B transparent #607D8B transparent !important; }
+
+/* line 55, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-blue-grey.ball-clip-rotate-multiple div {
+  background-color: transparent !important;
+  border-color: transparent #607D8B transparent #607D8B !important; }
+
+/* line 62, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-blue-grey.ball-rotate div:before, .loader-blue-grey.ball-rotate div:after {
+  background-color: #607D8B !important; }
+
+/* line 68, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-blue-grey.ball-triangle-path div {
+  background-color: transparent !important;
+  border-color: #607D8B !important; }
+
+/* line 74, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-blue-grey.ball-scale-ripple div {
+  background-color: transparent !important;
+  border-color: #607D8B !important; }
+
+/* line 80, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-blue-grey.ball-scale-ripple-multiple div {
+  background-color: transparent !important;
+  border-color: #607D8B !important; }
+
+/* line 86, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-blue-grey.triangle-skew-spin div {
+  background-color: transparent !important;
+  border-bottom-color: #607D8B !important; }
+
+/* line 92, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-blue-grey.semi-circle-spin div {
+  background-image: linear-gradient(transparent 0%, transparent 70%, #607D8B 30%, #607D8B 100%);
+  background-color: transparent !important; }
+
+/* line 98, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-blue-grey.fading-circle div {
+  background-color: transparent !important; }
+  /* line 100, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+  .loader-blue-grey.fading-circle div:before {
+    background-color: #607D8B !important; }
+
+/* line 106, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-blue-grey.folding-cube div {
+  background-color: transparent !important; }
+  /* line 108, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+  .loader-blue-grey.folding-cube div:before {
+    background-color: #607D8B !important; }
+
+/* line 33, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-grey-blue div {
+  background-color: #1B2942 !important; }
+
+/* line 37, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-grey-blue.ball-clip-rotate div {
+  border-color: #1B2942 !important;
+  border-bottom-color: transparent !important;
+  background-color: transparent !important; }
+
+/* line 45, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-grey-blue.ball-clip-rotate-pulse div:first-child {
+  background: #1B2942 !important; }
+
+/* line 48, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-grey-blue.ball-clip-rotate-pulse div:last-child {
+  background: transparent !important;
+  border-color: #1B2942 transparent #1B2942 transparent !important; }
+
+/* line 55, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-grey-blue.ball-clip-rotate-multiple div {
+  background-color: transparent !important;
+  border-color: transparent #1B2942 transparent #1B2942 !important; }
+
+/* line 62, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-grey-blue.ball-rotate div:before, .loader-grey-blue.ball-rotate div:after {
+  background-color: #1B2942 !important; }
+
+/* line 68, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-grey-blue.ball-triangle-path div {
+  background-color: transparent !important;
+  border-color: #1B2942 !important; }
+
+/* line 74, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-grey-blue.ball-scale-ripple div {
+  background-color: transparent !important;
+  border-color: #1B2942 !important; }
+
+/* line 80, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-grey-blue.ball-scale-ripple-multiple div {
+  background-color: transparent !important;
+  border-color: #1B2942 !important; }
+
+/* line 86, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-grey-blue.triangle-skew-spin div {
+  background-color: transparent !important;
+  border-bottom-color: #1B2942 !important; }
+
+/* line 92, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-grey-blue.semi-circle-spin div {
+  background-image: linear-gradient(transparent 0%, transparent 70%, #1B2942 30%, #1B2942 100%);
+  background-color: transparent !important; }
+
+/* line 98, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-grey-blue.fading-circle div {
+  background-color: transparent !important; }
+  /* line 100, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+  .loader-grey-blue.fading-circle div:before {
+    background-color: #1B2942 !important; }
+
+/* line 106, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+.loader-grey-blue.folding-cube div {
+  background-color: transparent !important; }
+  /* line 108, /Users/dchaplinsky/Projects/vulyk/your-time/app-assets/scss/core/colors/palette-loader.scss */
+  .loader-grey-blue.folding-cube div:before {
+    background-color: #1B2942 !important; }

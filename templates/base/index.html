@@ -38,3 +38,20 @@
         <button title="Close (Esc)" type="button" class="mfp-close">×</button>
     </div>
 {% endblock %}
+
+{% block body %}
+    {% if not init %}
+        <div id="warm-welcome" class="cover inner">
+            Site is still uninitialized. Please run <code>./manage.py
+            init ...</code>
+        </div>
+    {% elif user.is_anonymous %}
+        {% if config.SITE_IS_CLOSED %}
+            {% include '_holding_page.html'|app_template %}
+        {% else %}
+            {% include '_not_logged_home.html'|app_template %}
+        {% endif %}
+    {% else %}
+        {% include '_logged_in_home.html'|app_template %}
+    {% endif %}
+{% endblock %}

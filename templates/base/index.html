@@ -55,3 +55,11 @@
         {% include '_logged_in_home.html'|app_template %}
     {% endif %}
 {% endblock %}
+
+{% block body_classes %}
+{% if user.is_anonymous %}
+horizontal-layout horizontal-menu 2-columns steps-page-2 not-logged-in
+{% else %}
+vertical-layout vertical-menu 2-columns fixed-navbar logged-in
+{% endif %}
+{% endblock %}

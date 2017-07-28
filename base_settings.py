@@ -30,7 +30,7 @@ JS_ASSETS = [
 
 
 JS_ASSETS_OUTPUT = ENV('JS_ASSETS_OUTPUT', 'scripts/packed.js')
-JS_ASSETS_FILTERS = ENV('JS_ASSETS_FILTERS', 'yui_js')
+JS_ASSETS_FILTERS = ENV('JS_ASSETS_FILTERS', 'rjsmin')
 
 CSS_ASSETS = [
     "assets/scss/fonts.scss",
@@ -58,5 +58,5 @@ CSS_ASSETS = [
 ]
 
 CSS_ASSETS_OUTPUT = ENV('CSS_ASSETS_OUTPUT', 'styles/packed.css')
-CSS_ASSETS_FILTERS = ENV('CSS_ASSETS_FILTERS', ('scss', 'yui_css', 'cssrewrite'))
+CSS_ASSETS_FILTERS = ENV('CSS_ASSETS_FILTERS', ('scss', 'cssmin', 'cssrewrite'))
 # CSS_ASSETS_FILTERS = ENV('CSS_ASSETS_FILTERS', ('cssrewrite',))

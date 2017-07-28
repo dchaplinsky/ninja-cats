@@ -108,3 +108,6 @@ plugin_css*.css
 plugin_js*.js
 packed.js
 .DS_Store
+
+# Dev.spaces
+.idea/

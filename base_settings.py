@@ -10,6 +10,7 @@ ENABLED_TASKS = {
 TEMPLATES_FOLDER = os.path.join(os.path.dirname(__file__), "templates")
 
 LOGGING_LOCATION = "/tmp/vulyk.log"
+ENABLE_ADMIN = True
 
 STATIC_FOLDER = os.path.join(os.path.dirname(__file__), "static")
 

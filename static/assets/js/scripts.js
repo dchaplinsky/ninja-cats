@@ -13,7 +13,7 @@
         }
     });
 
-    if($('.steps-page-2').length > 0) {
+    if($('.steps-page').length > 0) {
         $('#stepbanner-1-2-3').fsBanner({'trigger':'mouse'});
     }
 

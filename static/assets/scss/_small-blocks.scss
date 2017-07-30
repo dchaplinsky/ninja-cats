@@ -1,0 +1,214 @@
+#user-statistics {
+  h5 {
+    min-height: 38px;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+#fund-list {
+  figure {
+    .card-block {
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+
+      a {
+        display: block;
+        text-align: center;
+      }
+    }
+  }
+}
+
+#block-sociallinksblock {
+  margin-right: 0.5rem;
+  margin-top: 12px; //todo
+
+  ul {
+    li {
+      list-style: none;
+      display: inline-block;
+      margin-left: 3px;
+      margin-right: 3px;
+    }
+  }
+
+  .fa {
+    color: white;
+    height: 32px;
+    width: 32px;
+    //.font-size(20);
+    border-radius: 100%;
+    position: relative;
+
+    &:before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+  }
+
+  .fa-facebook,
+  .fa-vk {
+    background: #4e71a8;
+  }
+
+  .fa-twitter {
+    background: #1cb7eb;
+  }
+
+  .fa-youtube-play {
+    background: #e13f4c;
+  }
+
+  .fa-telegram {
+    font-size: 32px;
+    color: #1cb7eb;
+  }
+
+  .fa-rss {
+    background: #e13f4c;
+  }
+}
+
+#user-achivments {
+  .user-badges-list {
+    img {
+      display: inline-block;
+      float: left;
+      margin-right: 1rem;
+    }
+  }
+}
+
+#top-fund-users {
+  background: none;
+
+  .card-header {
+    background: none;
+  }
+
+  .list-group-item {
+    background: none;
+    border: none;
+
+    color: #dcdcdc; //todo
+  }
+}
+
+#all-tasks-list {
+  h4 a {
+    text-decoration: underline;
+    color: #E53935;
+
+    &:hover {
+      color: #11B0D0 !important;
+    }
+  }
+}
+
+#user-tasks-table_wrapper {
+  .dataTables_length,
+  .dataTables_filter {
+    display: none;
+  }
+
+  .table .table {
+    background: none;
+  }
+
+  #user-tasks-table thead,
+  #user-tasks-table > tbody > tr > td:nth-child(1),
+  #user-tasks-table > tbody > tr > td:nth-child(3),
+  #user-tasks-table > tbody > tr > td:nth-child(4),
+  #user-tasks-table > tbody > tr > td:nth-child(5){
+    display: none;
+  }
+
+  #user-tasks-table > tbody > tr > td {
+    padding-left: 0 !important;
+  }
+}
+
+#user-profile {
+  .nav.navbar-nav {
+    margin-left: 130px;
+
+    button {
+      margin-top: 5px;
+    }
+  }
+
+  .nav-stats {
+    p + p {
+      margin-top: 5px;
+    }
+  }
+}
+
+#stepbanner-1-2-3 {
+  position: relative;
+  overflow: hidden;
+  height: 600px;
+  color: white;
+  font-size: 20px;
+
+  &,
+  & > div > span {
+    display: none;
+  }
+
+  .fsbanner-slide {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+
+    &.slide-1 {
+      background: url(../../app-assets/images/pages/step-1.jpg) no-repeat center center;
+      background-size: cover;
+    }
+
+    &.slide-2 {
+      background: url(../../app-assets/images/pages/step-2.jpg) no-repeat center center;
+      background-size: cover;
+    }
+
+    &.slide-3 {
+      background: url(../../app-assets/images/pages/step-3.jpg) no-repeat center center;
+      background-size: cover;
+    }
+
+    .title {
+      display: block;
+      position: absolute;
+      left: 10px;
+      bottom: 10px;
+
+      .label,
+      .sub-label {
+        @include rft(18, 26);
+      }
+
+      &.minimized {
+        transform: rotate(-90deg);
+        transform-origin: left top 0;
+        bottom: -13px;
+        left: 7px;
+      }
+
+      .step-text {
+        display: none;
+      }
+    }
+
+    &.active {
+      .step-text {
+        display: block;
+      }
+    }
+  }
+}

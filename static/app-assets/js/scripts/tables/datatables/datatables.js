@@ -31,7 +31,6 @@ $(document).ready(function() {
         }
     } );
 
-
     $('#user-tasks-table-controls .show-all').click(function(e){
         e.preventDefault;
         var totalRecords = allTasksListTable.fnSettings().fnRecordsTotal();
@@ -61,7 +60,4 @@ $(document).ready(function() {
         $('.sord-opt').removeClass('active');
         $(this).addClass('active');
     });
-    
-
-
 });

@@ -1,22 +1,43 @@
-<ul id="signin">
-    {% if config.SOCIAL_AUTH_FACEBOOK_KEY %}
-        <li><a class="facebook"
-               href="{{ url_for('social.auth', backend='facebook') }}"
-               title="Facebook">Facebook</a></li>
-    {% endif %}
-    {% if config.SOCIAL_AUTH_TWITTER_KEY %}
-        <li><a class="twitter"
-               href="{{ url_for('social.auth', backend='twitter') }}"
-               title="Twitter">Twitter</a></li>
-    {% endif %}
-    {% if config.SOCIAL_AUTH_GOOGLE_OAUTH2_KEY %}
-        <li><a class="googleplus"
-               href="{{ url_for('social.auth', backend='google-oauth2') }}"
-               title="Google+/Gmail">Google+/Gmail</a></li>
-    {% endif %}
-    {% if config.SOCIAL_AUTH_VK_OAUTH2_KEY %}
-        <li><a class="vkontakte"
-               href="{{ url_for('social.auth', backend='vk-oauth2') }}"
-               title="VK.com">VK.com</a></li>
-    {% endif %}
-</ul>
+<div class="modal fade text-xs-left" id="socialSignin" tabindex="-1" role="dialog" aria-labelledby="socialSigninLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-primary white">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="socialSigninLabel">Увійдіть за допомогою соцмереж:</h4>
+            </div>
+            <div class="modal-body overflow-hidden">
+                <div class="social-buttons">
+                    <div class="form-group mb-0 text-sm-center">
+                        {% if config.SOCIAL_AUTH_FACEBOOK_KEY %}
+                        <a href="{{ url_for('social.auth', backend='facebook') }}" class="btn btn-social width-250 mb-1 btn-facebook">
+                            <span class="fa fa-facebook"></span> Увійти через Facebook
+                        </a>
+                        {% endif %}
+
+                        {% if config.SOCIAL_AUTH_TWITTER_KEY %}
+                        <a href="{{ url_for('social.auth', backend='twitter') }}" class="btn btn-social width-250 mb-1 btn-twitter">
+                            <span class="fa fa-twitter font-medium-3"></span> Увійти через Twitter
+                        </a>
+                        {% endif %}
+
+                        {% if config.SOCIAL_AUTH_GOOGLE_OAUTH2_KEY %}
+                        <a href="{{ url_for('social.auth', backend='google-oauth2') }}" class="btn btn-social width-250 mb-1 btn-google">
+                            <span class="fa fa-google font-medium-3"></span> Увійти через Google+/Gmail
+                        </a>
+                        {% endif %}
+
+                        {% if config.SOCIAL_AUTH_VK_OAUTH2_KEY %}
+                        <a href="{{ url_for('social.auth', backend='vk-oauth2') }}" class="btn btn-social width-250 mb-1 btn-vk">
+                            <span class="fa fa-vk font-medium-3"></span> Увійти через VK.com
+                        </a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

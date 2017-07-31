@@ -60,4 +60,17 @@ CSS_ASSETS = [
 
 CSS_ASSETS_OUTPUT = ENV('CSS_ASSETS_OUTPUT', 'styles/packed.css')
 CSS_ASSETS_FILTERS = ENV('CSS_ASSETS_FILTERS', ('scss', 'cssmin', 'cssrewrite'))
-# CSS_ASSETS_FILTERS = ENV('CSS_ASSETS_FILTERS', ('cssrewrite',))
+
+
+ENABLED_BLUEPRINTS = [
+    {
+        'path': 'vulyk.blueprints.gamification.gamification',
+        'config': {},
+        'url_prefix': 'gamification'
+    },
+    {
+        'path': 'blueprints.cms.cms',
+        'config': {},
+        'url_prefix': 'cms'
+    },
+]

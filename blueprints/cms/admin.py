@@ -20,3 +20,13 @@ class CKTextAreaField(fields.TextAreaField):
 class FAQAdmin(AuthModelView):
     extra_js = ['//cdn.ckeditor.com/4.7.1/standard/ckeditor.js']
     form_overrides = dict(answer=CKTextAreaField)
+
+
+class StaticPageAdmin(AuthModelView):
+    extra_js = ['//cdn.ckeditor.com/4.7.1/standard/ckeditor.js']
+    form_overrides = dict(body=CKTextAreaField)
+
+
+class PromoAdmin(AuthModelView):
+    extra_js = ['//cdn.ckeditor.com/4.7.1/standard/ckeditor.js']
+    form_overrides = dict(body=CKTextAreaField)

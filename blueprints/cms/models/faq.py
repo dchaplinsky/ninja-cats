@@ -3,7 +3,7 @@ from mongoengine import (
     ComplexDateTimeField, StringField, BooleanField
 )
 
-__all__ = ['FAQItem']
+__all__ = ['FAQItem', 'get_faq_on_main']
 
 
 class FAQItem(Document):

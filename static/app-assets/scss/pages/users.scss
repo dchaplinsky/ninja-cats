@@ -2,9 +2,6 @@
 @import "../core/variables/variables";
 @import "../core/variables/app-variables";
 
-// Overrides user variable
-@import "../../../assets/scss/variables/variables";
-@import "../../../assets/scss/variables/app-variables";
 .profile-card-with-stats {
     .btn-float {
         padding: 8px 14px 4px 14px;

@@ -1,0 +1,58 @@
+/*
+X - equal to the letter-tracking value in Photoshop
+S - the font-size in pixels
+*/
+@mixin letter-spacing($x, $s) {
+  letter-spacing: $x * $s / 1000 * 1px;
+}
+
+@mixin rft($mysizeValue-min, $mysizeValue-max) {
+
+  $delta: $mysizeValue-max - $mysizeValue-min;
+  $step: $delta / 3;
+
+  font-size: $mysizeValue-min * 1px;
+
+  @media (min-width: 768px) {
+    font-size: $mysizeValue-max - $step * 2 * 1px;
+  }
+  @media (min-width: 992px) {
+    font-size: ($mysizeValue-max - $step) * 1px;
+  }
+  @media (min-width: 1200px) {
+    font-size: $mysizeValue-max * 1px;
+  }
+}
+
+@mixin blueGradient() {
+  background: #135296;
+  background: -moz-linear-gradient(left, #135296 0%, #2c8ddd 100%);
+  background: -webkit-linear-gradient(left, #135296 0%,#2c8ddd 100%);
+  background: linear-gradient(to right, #135296 0%,#2c8ddd 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#135296', endColorstr='#2c8ddd',GradientType=1 );
+}
+
+
+@mixin gradient-text($gradient) {
+  @supports(mix-blend-mode: lighten) {
+    display: inline-block;
+    position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0; right: 0; bottom: 0; left: 0;
+      background: unquote($gradient);
+      pointer-events: none;
+    }
+
+    color: #000;
+    background: #fff;
+    mix-blend-mode: multiply;
+
+    &::after {
+      mix-blend-mode: screen;
+    }
+  }
+}

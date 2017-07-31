@@ -1,20 +1,4 @@
-// ================================================================================================
-//   File Name: pallette.scss
-//   Description: Custom color system styles, includes background, border and text colors
-//   ----------------------------------------------------------------------------------------------
-//   Item Name: Stack - Responsive Admin Theme
-//   Version: 1.0
-//   Author: PIXINVENT
-//   Author URL: http://www.themeforest.net/user/pixinvent
-// ================================================================================================
-
-//  ================================================================================================
-//  WARNING: PLEASE DO NOT CHANGE THIS VARIABLE FILE.
-//  THIS FILE WILL GET OVERWRITTEN WITH EACH STACK TEMPLATE RELEASE.
-//  TIP:
-//  We suggest you to use this (assets/scss/colors/palette.scss) file for overriding color variables.
-//  ================================================================================================
-
+//  use this (assets/scss/colors/palette.scss) file for overriding color variables.
 
 // usage: color("name_of_color", "type_of_color")
 // to avoid to repeating map-get($colors, ...)
@@ -34,16 +18,6 @@
 @import "palette-variables";
 // Overrides user variable
 @import "../../../../assets/scss/colors/palette-variables";
-
- // Color Classes
- //   Text color: .color .lighten-* / .darken-* / .accent-*
- //   Background: .bg-color .bg-lighten-* / .bg-darken-* / .bg-accent-*
- //   border: .border-color .border-lighten-* / .border-darken-* / .border-accent-*
- //   border-top: .border-top-color .border-top-lighten-* / .border-top-darken-* / .border-top-accent-*
- //   border-bottom: .border-bottom-color .border-bottom-lighten-* / .border-bottom-darken-* / .border-bottom-accent-*
- //   border-left: .border-left-color .border-left-lighten-* / .border-left-darken-* / .border-left-accent-*
- //   border-right: .border-right-color .border-right-lighten-* / .border-right-darken-* / .border-right-accent-*
-
 
 @each $color_name, $color in $colors {
   @each $color_type, $color_value in $color {

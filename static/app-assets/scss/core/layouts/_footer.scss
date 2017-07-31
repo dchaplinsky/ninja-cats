@@ -34,9 +34,7 @@ $pad: 15px;
 	overflow: hidden;
 
 	.footer-container {
-		padding-top: $pad20 * 2;
-		padding-left: 1rem;
-		padding-right: 1rem;
+		padding: $pad20 * 2;
 	}
 
 	a {
@@ -126,6 +124,8 @@ $pad: 15px;
 		}
 
 		&.project-list {
+			margin-bottom: 20px;
+
 			.inline-logo svg {
 				height: 80px;
 				width: 70px;

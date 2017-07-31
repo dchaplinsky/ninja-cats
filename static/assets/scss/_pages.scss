@@ -1,0 +1,127 @@
+@import "../../assets/scss/variables/variables";
+
+/*
+.login-page {
+  background: url(../../app-assets/images/backgrounds/login.jpg) no-repeat center center !important;
+  background-size: cover;
+}
+
+.register-page {
+  background: url(../../app-assets/images/backgrounds/register.jpg) no-repeat center center !important;
+  background-size: cover;
+}
+
+.recover-password-page {
+  background: url(../../app-assets/images/backgrounds/recover-password.jpg) no-repeat center center !important;
+  background-size: cover;
+}
+*/
+
+.offline-page {
+  background: url(../../app-assets/images/backgrounds/hiload.jpg) no-repeat center center !important;
+  background-size: cover;
+}
+
+.error-page {
+  background: #404E67;
+  color: white;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.steps-page {
+  #description {
+    .card-text {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    h1 {
+      text-transform: uppercase;
+      color: white;
+      @include rft(18, 26);
+
+      span {
+        display: inline-block;
+        background: #7f7f7f;
+      }
+    }
+
+    h3 {
+      text-transform: uppercase;
+      color: $light-blue;
+      font-weight: 700;
+      text-align: center;
+      @include rft(35, 56);
+    }
+
+  }
+
+  #site-stats {
+    width: 250px;
+
+    a {
+      display: block;
+      font-size: 20px;
+
+      i,
+      span {
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+
+    .fa {
+      color: white;
+      height: 32px;
+      width: 32px;
+      border-radius: 100%;
+      position: relative;
+
+      &:before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    .stat-user {
+      color: #4e71a8;
+
+      .fa {
+        background: #4e71a8;
+
+        &:before {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .stat-tasks {
+      color: #1cb7eb;
+      margin-top: 5px;
+      margin-bottom: 5px;
+
+      .fa {
+        background: #1cb7eb;
+
+        &:before {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .stat-money {
+      color: #e13f4c;
+      font-size: 16px;
+      line-height: 18px;
+
+      .fa {
+        background: #e13f4c;
+      }
+    }
+  }
+}

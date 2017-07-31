@@ -1,8 +1,4 @@
-
 $(document).ready(function() {
-
-
-
     if($(".sidebar-sticky").length){
         var headerNavbarHeight,
             footerNavbarHeight;
@@ -22,6 +18,5 @@ $(document).ready(function() {
             topSpacing: headerNavbarHeight,
             bottomSpacing: footerNavbarHeight
         });
-
     }
 });

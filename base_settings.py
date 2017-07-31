@@ -34,7 +34,7 @@ JS_ASSETS_OUTPUT = ENV('JS_ASSETS_OUTPUT', 'scripts/packed.js')
 JS_ASSETS_FILTERS = ENV('JS_ASSETS_FILTERS', 'rjsmin')
 
 CSS_ASSETS = [
-    "assets/scss/fonts.scss",
+    "assets/scss/_fonts.scss",
     "app-assets/scss/bootstrap.scss",
     "app-assets/fonts/feather/style.min.css",
     "app-assets/fonts/font-awesome/css/font-awesome.min.css",

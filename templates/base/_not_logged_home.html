@@ -14,7 +14,6 @@
                     <li class="nav-item"><a href="index.html" class="navbar-brand">
                         <h2 class="brand-text">Ж.В.</h2></a>
                     </li>
-                    <li class="nav-item hidden-sm-down"><a href="#" class="nav-link nav-menu-main menu-toggle hidden-xs"><i class="ft-menu"></i></a></li>
                 </ul>
                 <ul class="nav navbar-nav float-xs-right">
                     <li class="nav-item hidden-sm-down text-xs-right white">Платформа суспільної допомоги. <br>Нам не потрібні ваші гроші. Нам потрібно 15 хвилин вашого часу</li>
@@ -37,7 +36,7 @@
                 <a href="#" class="nav-link"><i class="ft-info"></i><span data-i18n="" class="menu-title">Про проект</span></a>
             </li>
             <li class="nav-item float-xs-right btn-group">
-                {% include '_social_signin.html'|app_template %}
+                <button type="button" class="btn btn-info btn-info-light-blue nav-login-button" data-toggle="modal" data-target="#socialSignin"><i class="fa fa-user-o"></i> Увійдіть</button>
             </li>
             <li class="nav-item float-xs-right">
                 <section id="block-sociallinksblock" class="block block-sociallinks-block clearfix">
@@ -261,3 +260,5 @@
         </div>
     </div>
 </div>
+
+{% include '_social_signin.html'|app_template %}

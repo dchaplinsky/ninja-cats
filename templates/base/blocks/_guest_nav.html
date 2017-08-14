@@ -1,0 +1,50 @@
+{% include '_social_signin.html'|app_template %}
+<nav class="header-navbar navbar navbar-with-menu navbar-static-top navbar-dark bg-gradient-x-grey-blue navbar-border navbar-brand-center">
+    <div class="navbar-wrapper">
+        <div class="navbar-header">
+            <ul class="nav navbar-nav">
+                <li class="nav-item hidden-md-up"><a href="index.html" class="navbar-brand">
+                    <h2 class="brand-text">Ж.В.</h2></a>
+                </li>
+                <li class="nav-item mobile-menu hidden-md-up float-xs-left"><a href="#" class="nav-link nav-menu-main menu-toggle hidden-xs"><i class="ft-menu font-large-1"></i></a></li>
+            </ul>
+        </div>
+        <div class="navbar-container container center-layout">
+            <div id="navbar-mobile" class="collapse navbar-toggleable-sm">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item"><a href="index.html" class="navbar-brand">
+                        <h2 class="brand-text">Ж.В.</h2></a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav float-xs-right">
+                    <li class="nav-item hidden-sm-down text-xs-right white">Платформа суспільної допомоги. <br>Нам не потрібні ваші гроші. Нам потрібно 15 хвилин вашого часу</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div role="navigation" data-menu="menu-wrapper" class="header-navbar navbar navbar-horizontal navbar-fixed navbar-light navbar-without-dd-arrow navbar-bordered navbar-shadow menu-border">
+    <div data-menu="menu-container" class="navbar-container main-menu-content container center-layout">
+        <ul id="main-menu-navigation" data-menu="menu-navigation" class="nav navbar-nav">
+            {% for menu in cms_menu_items %}
+            <li data-menu="dropdown" class="dropdown nav-item">
+                <a href="{% if menu.page_link %}{{ url_for('cms.static_page', slug=menu.page_link.slug) }}{% else %}{{ menu.link }}{% endif %}" class="nav-link">{% if menu.icon_class %}<i class="{{ menu.icon_class }}"></i>{% endif %}<span>{{ menu.title }}</span></a>
+            </li>
+            {% endfor %}
+
+            <li class="nav-item float-xs-right btn-group">
+                <button type="button" class="btn btn-info btn-info-light-blue nav-login-button" data-toggle="modal" data-target="#socialSignin"><i class="fa fa-user-o"></i> Увійдіть</button>
+            </li>
+            <li class="nav-item float-xs-right">
+                <section id="block-sociallinksblock" class="block block-sociallinks-block clearfix">
+                    <ul class="pl-0">
+                        <li><a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                    </ul>
+                </section>
+            </li>
+        </ul>
+    </div>
+</div>

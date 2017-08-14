@@ -1,0 +1,47 @@
+{% extends "base/base.html" %}
+
+{% block body_content %}
+    <div class="app-content container center-layout mt-2">
+        <div class="content-wrapper">
+
+            <div class="content-header row">
+                <div class="content-header-left col-md-6 col-xs-12 mb-2">
+                    <div class="row breadcrumbs-top">
+                        <div class="breadcrumb-wrapper col-xs-12">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="/">Домівка</a>
+                                </li>
+                                <li class="breadcrumb-item active">{{ page.title }}
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <h1>{{ page.title }}</h1>
+                </div>
+            </div>
+
+            <div class="content-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card" id="all-tasks-list">
+                            <div class="card-body collapse in">
+                                <div class="card-block">
+                                    {{ page.body|safe }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block body_classes %}
+    {% if user.is_anonymous %}
+    horizontal-layout horizontal-menu steps-page not-logged-in
+    {% else %}
+    vertical-layout vertical-menu fixed-navbar logged-in
+    {% endif %}
+{% endblock %}

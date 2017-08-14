@@ -22,6 +22,16 @@
 
 <!-- navbar-fixed-top-->
 {% block body %}
+    {% if user.is_anonymous %}
+        {% if not config.SITE_IS_CLOSED %}
+            {% include 'blocks/_guest_nav.html'|app_template %}
+        {% endif %}
+    {% else %}
+        {% include 'blocks/_logged_nav.html'|app_template %}
+    {% endif %}
+
+    {% block body_content %}
+    {% endblock %}
 {% endblock %}
 
 

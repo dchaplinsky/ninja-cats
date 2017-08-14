@@ -19,3 +19,6 @@ class StaticPage(Document):
             'slug'
         ]
     }
+
+    def __str__(self):
+        return "{} ({})".format(self.title, self.slug)

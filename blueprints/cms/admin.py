@@ -50,7 +50,7 @@ class MenuAdmin(AuthModelView):
         ]
     }
 
-    column_exclude_list = ['icon_class', ]
+    column_exclude_list = ['icon_class']
 
     form_args = {
         'title': {

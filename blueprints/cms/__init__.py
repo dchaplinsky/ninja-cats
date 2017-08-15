@@ -3,16 +3,17 @@ import flask
 import gridfs
 from bson.objectid import ObjectId
 from mongoengine.connection import get_db
-
-from vulyk import app
 from vulyk.blueprints import VulykModule
+from vulyk.models.user import User
+from vulyk.models.tasks import AbstractTask
+from vulyk.blueprints.gamification.models.events import EventModel
 
 from .admin import FAQAdmin, StaticPageAdmin, PromoAdmin, MenuAdmin
 from .models.faq import FAQItem, get_faq_on_main
 from .models.static import StaticPage
 from .models.promo import PromoItem, get_promos_on_main
 from .models.menu import MenuItem, get_menu
-
+from .utils import ukr_plural
 
 __all__ = [
     'cms'
@@ -22,6 +23,11 @@ __all__ = [
 class CMSModule(VulykModule):
     def register(self, app, options, first_registration=False):
         super().register(app, options, first_registration)
+
+        @app.template_filter("uk_plural")
+        def uk_plural(value, args):
+            args = args.split(',')
+            return ukr_plural(value, *args)
 
         if app.config.get('ENABLE_ADMIN', False):
             app.admin.add_view(FAQAdmin(FAQItem))
@@ -64,6 +70,16 @@ def static_page(slug):
     )
 
 
+def get_stats_on_main():
+    return {
+        "total_tasks": AbstractTask.objects.filter(closed=False).count(),
+        "total_users": User.objects.filter(active=True).count(),
+        "total_money": -EventModel.objects.filter(
+            acceptor_fund__ne=None).sum("coins")
+    }
+
+
 cms.add_context_filler(get_faq_on_main)
 cms.add_context_filler(get_promos_on_main)
 cms.add_context_filler(get_menu)
+cms.add_context_filler(get_stats_on_main)

@@ -101,6 +101,7 @@ ENV/
 .mypy_cache/
 
 venv/
+venv34/
 .local_settings.py
 
 packed.css

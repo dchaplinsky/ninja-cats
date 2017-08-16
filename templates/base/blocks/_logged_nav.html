@@ -16,11 +16,12 @@
                 </ul>
                 <ul class="nav navbar-nav float-xs-right">
                     <li class="nav-item col">
-                        <i class="ft-bar-chart-2"></i> <span>Пожертви: 750 грн.</span> <br>
-                        <span class="">я на 34 рівні <progress class="progress progress-sm progress-success mb-0" value="35" max="50"></progress></span>
+                        {% set state = gamification_stats.state_of_user(current_user) %}
+                        <i class="ft-bar-chart-2"></i> <span>Пожертви: {{ gamification_stats.total_money_donated_by_user(current_user) }} грн.</span> <br>
+                        <span class="">я на {{ state.level }} рівні <progress class="progress progress-sm progress-success mb-0" value="35" max="50"></progress></span>
                     </li>
                     <li class="nav-item col">
-                        <i class="icon-wallet"></i> <span>1000 потенційних грн. <br>500 активних</span>
+                        <i class="icon-wallet"></i> <span>{{ state.potential_coins }} потенційних грн. <br>{{ state.actual_coins }} активних</span>
                     </li>
                     <li class="dropdown dropdown-notification nav-item">
                         <a href="#" data-toggle="dropdown" class="nav-link nav-link-label">
@@ -91,7 +92,7 @@
                         <a href="#" data-toggle="dropdown" class="dropdown-toggle nav-link dropdown-user-link">
                             <span class="avatar avatar-online">
                                 <img src="{{ url_for('static', filename='app-assets/images/portrait/small/avatar-s-1.png') }}" alt="avatar"><i></i></span>
-                            <span class="user-name">Айварас Абромавичюс</span>
+                            <span class="user-name">{{ current_user.username }}</span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right">
                             <a href="#" class="dropdown-item"><i class="ft-user"></i> Редагувати профіль</a>

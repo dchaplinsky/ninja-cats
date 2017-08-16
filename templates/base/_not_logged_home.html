@@ -6,9 +6,13 @@
                 <div class="card-body collapse in">
                     <div class="card-text">
                         <div id="site-stats" class="mb-2">
-                            <a href="" class="stat-user"><i class="fa fa fa-users"></i> <span>{{ cms_total_users }} {{ cms_total_users|uk_plural("учасник,учасника,учасників") }}</span></a>
-                            <a href="" class="stat-tasks"><i class="fa fa-check-square-o"></i> <span>{{ cms_total_tasks }} {{ cms_total_tasks|uk_plural("завдання,завдання,завдань") }}</span></a>
-                            <a href="" class="stat-money"><i class="fa fa-thumbs-o-up"></i> <span>{{ cms_total_money }} грн.<br>передано до фондів</span></a>
+                            {% set total_users = gamification_stats.total_number_of_users() %}
+                            {% set total_tasks = gamification_stats.total_number_of_open_tasks() %}
+                            {% set total_money_donated = gamification_stats.total_money_donated() %}
+
+                            <a href="" class="stat-user"><i class="fa fa fa-users"></i> <span>{{ total_users }} {{ total_users|uk_plural("учасник,учасника,учасників") }}</span></a>
+                            <a href="" class="stat-tasks"><i class="fa fa-check-square-o"></i> <span>{{ total_tasks }} {{ total_tasks|uk_plural("завдання,завдання,завдань") }}</span></a>
+                            <a href="" class="stat-money"><i class="fa fa-thumbs-o-up"></i> <span>{{ total_money_donated }} грн.<br>передано до фондів</span></a>
                         </div>
 
                         <div class="intro-text mt-1">

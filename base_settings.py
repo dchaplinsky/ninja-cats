@@ -59,7 +59,7 @@ CSS_ASSETS = [
 ]
 
 CSS_ASSETS_OUTPUT = ENV('CSS_ASSETS_OUTPUT', 'styles/packed.css')
-CSS_ASSETS_FILTERS = ENV('CSS_ASSETS_FILTERS', ('scss', 'cssmin', 'cssrewrite'))
+CSS_ASSETS_FILTERS = ENV('CSS_ASSETS_FILTERS', ('scss', 'cssrewrite'))
 
 
 ENABLED_BLUEPRINTS = [

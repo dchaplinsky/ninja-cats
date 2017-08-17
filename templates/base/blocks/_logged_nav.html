@@ -16,8 +16,8 @@
                 </ul>
                 <ul class="nav navbar-nav float-xs-right">
                     <li class="nav-item col">
-                        {% set state = gamification_stats.state_of_user(current_user) %}
-                        <i class="ft-bar-chart-2"></i> <span>Пожертви: {{ gamification_stats.total_money_donated_by_user(current_user) }} грн.</span> <br>
+                        {% set state = gamification_stats_service.state_of_user(current_user) %}
+                        <i class="ft-bar-chart-2"></i> <span>Пожертви: {{ gamification_stats_service.total_money_donated_by_user(current_user) }} грн.</span> <br>
                         <span class="">я на {{ state.level }} рівні <progress class="progress progress-sm progress-success mb-0" value="35" max="50"></progress></span>
                     </li>
                     <li class="nav-item col">

@@ -1,3 +1,7 @@
+@import "../../assets/scss/variables/variables";
+@import "../../assets/scss/colors/palette-variables";
+@import "_mixins";
+
 #user-statistics {
   h5 {
     min-height: 38px;
@@ -152,7 +156,7 @@
 #stepbanner-1-2-3 {
   position: relative;
   overflow: hidden;
-  height: 600px;
+  height: 500px;
   color: white;
   font-size: 20px;
 

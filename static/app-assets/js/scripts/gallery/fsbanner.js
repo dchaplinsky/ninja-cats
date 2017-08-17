@@ -5,9 +5,10 @@ var fsBanner = function(container,options) {
         'showName':true,
         'toUpdate':{},
         'whenEmpty':{},
-        'trigger':'click',
+        'trigger':'mouse',
         'hideParent':null,
-        'onChanged':null
+        'onChanged':null,
+        'parent': 'body'
     }
 
     this.options = $.extend({}, defaults, options);
@@ -15,14 +16,13 @@ var fsBanner = function(container,options) {
     this.ilast = -1;
 
     this.setup = function() {
+        var parentWidth = $(this.options.parent).width();
         this.container = $(container);
         this.items = this.container.find('div');
 
-        if (!this.container.width()) this.container.width(this.container.parent().width());
-
-        this.part = this.container.width() / this.items.length;
+        this.part = parentWidth / this.items.length;
         this.mini = this.part/3;
-        this.widmain = this.container.width() - (this.mini*this.items.length-1);
+        this.widmain = parentWidth - (this.mini*this.items.length-1);
 
         this.items.css({'height':this.container.height(),'width':this.widmain+this.mini});    
 
@@ -128,6 +128,13 @@ var fsBanner = function(container,options) {
     };
 
     this.setup();
+
+    $(window).resize(function() {
+        clearTimeout(window.resizedFinished);
+        window.resizedFinished = setTimeout(function(){
+            self.setup();
+        }, 250);
+    });
 };
 
 $.fn.fsBanner = function(options) {

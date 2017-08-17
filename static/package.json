@@ -1,0 +1,18 @@
+{
+  "name": "Ninja-cats",
+  "version": "1.0.0",
+  "authors": [
+    "Andrey Turik <andreyturik@gmail.com>"
+  ],
+  "description": "Node tasks Ninja-cats",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-svgstore": "^1.0.0",
+    "jit-grunt": "^0.10.0"
+  },
+  "scripts": {
+    "grunt": "grunt"
+  }
+}

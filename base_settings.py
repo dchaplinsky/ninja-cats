@@ -56,6 +56,8 @@ CSS_ASSETS = [
     "app-assets/scss/pages/login-register.scss",
     "app-assets/scss/pages/users.scss",
     "assets/scss/style.scss",
+    "assets/scss/_small-blocks.scss",
+    "assets/scss/_pages.scss",
 ]
 
 CSS_ASSETS_OUTPUT = ENV('CSS_ASSETS_OUTPUT', 'styles/packed.css')

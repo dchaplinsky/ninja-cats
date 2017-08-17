@@ -112,7 +112,7 @@
       if (currentBreakpoint) {
         switch (currentBreakpoint.name) {
           case 'xl':
-          case 'lg':
+
             if(menuType === 'vertical-overlay-menu'){
               this.hide();
             }
@@ -120,6 +120,7 @@
               this.expand();
             }
             break;
+          case 'lg':
           case 'md':
             if(menuType === 'vertical-overlay-menu'){
               this.hide();
@@ -519,8 +520,9 @@
 
       switch (currentBreakpoint.name) {
         case 'xl':
-        case 'lg':
-        case 'md':
+
+          console.log(currentBreakpoint.name);
+       // case 'md':
           if(expanded === true){
             if(menu == 'vertical-overlay-menu'){
               this.hide();
@@ -538,7 +540,10 @@
             }
           }
           break;
+        case 'lg':
+        case 'md':
         case 'sm':
+          console.log(currentBreakpoint.name);
           if (hidden === true) {
             this.open();
           } else {

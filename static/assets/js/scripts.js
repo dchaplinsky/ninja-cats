@@ -14,7 +14,7 @@
     });
 
     if($('.steps-page').length > 0) {
-        $('#stepbanner-1-2-3').fsBanner({'trigger':'mouse'});
+        $('#stepbanner-1-2-3').fsBanner();
     }
 
 })(window, document, jQuery);

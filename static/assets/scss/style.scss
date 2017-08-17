@@ -286,3 +286,16 @@ body.vertical-layout.vertical-menu.menu-collapsed {
     border-radius: 0;
   }
 }
+
+.navbar-brand {
+  padding: 0;
+
+  .brand-text {
+    margin-bottom: 0;
+  }
+
+  .svg-image.logo {
+    width: 75px;
+    height: 50px;
+  }
+}

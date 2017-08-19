@@ -258,12 +258,6 @@ nav.navbar-fixed + .app-content {
   }
 }
 
-body.vertical-layout.vertical-menu.menu-collapsed {
-  .hidden-collapsed {
-    display: none;
-  }
-}
-
 .my-gallery {
   .grid-hover {
     figure {
@@ -297,5 +291,22 @@ body.vertical-layout.vertical-menu.menu-collapsed {
   .svg-image.logo {
     width: 75px;
     height: 50px;
+  }
+}
+
+body.vertical-layout {
+  &.vertical-menu.menu-collapsed {
+    .hidden-collapsed {
+      display: none;
+    }
+  }
+
+  .header-navbar .navbar-header .navbar-brand {
+    padding: 6px;
+
+    .svg-image.logo {
+      height: 40px;
+      width: 50px;
+    }
   }
 }

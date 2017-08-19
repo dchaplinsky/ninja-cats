@@ -113,6 +113,7 @@ body.vertical-layout{
             }
             // Main menu collapsed
             .main-menu {
+                background: green;
                 width: $menu-collapsed-width;
                 transform: translateZ(-160px) translateX(-160px);
                 transform: translate3d(0, 0, 0);

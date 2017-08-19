@@ -6,7 +6,8 @@
                 <li class="nav-item">
                     <a href="/" class="navbar-brand">
                         <h2 class="brand-text">
-                            <span class="svg-image logo"><svg preserveAspectRatio="xMidYMid" focusable="false"><use xlink:href="{{ url_for('static', filename='app-assets/images/svg/svg-logo-sprite.svg') }}#kotiki"></use></svg></span>
+                            <span class="svg-image logo"><svg preserveAspectRatio="xMidYMid" focusable="false"><use xlink:href="{{ url_for('static', filename='app-assets/images/svg/svg-logo-sprite.svg') }}#kotiki-inline"></use></svg></span>
+                            <span class="svg-image logo logo-small"><svg preserveAspectRatio="xMidYMid" focusable="false"><use xlink:href="{{ url_for('static', filename='app-assets/images/svg/svg-logo-sprite.svg') }}#kotiki-small"></use></svg></span>
                         </h2>
                     </a>
                 </li>
@@ -20,12 +21,12 @@
                     <li class="nav-item hidden-sm-down"><a href="#" class="nav-link nav-link-expand"><i class="ficon ft-maximize"></i></a></li>
                 </ul>
                 <ul class="nav navbar-nav float-xs-right">
-                    <li class="nav-item col">
+                    <li class="nav-block-donats nav-item col">
                         {% set state = gamification_stats_service.state_of_user(current_user) %}
                         <i class="ft-bar-chart-2"></i> <span>Пожертви: {{ gamification_stats_service.total_money_donated_by_user(current_user) }} грн.</span> <br>
                         <span class="">я на {{ state.level }} рівні <progress class="progress progress-sm progress-success mb-0" value="35" max="50"></progress></span>
                     </li>
-                    <li class="nav-item col">
+                    <li class="nav-block-money nav-item col">
                         <i class="icon-wallet"></i> <span>{{ state.potential_coins }} потенційних грн. <br>{{ state.actual_coins }} активних</span>
                     </li>
                     <li class="dropdown dropdown-notification nav-item">

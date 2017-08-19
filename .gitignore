@@ -112,3 +112,5 @@ packed.js
 
 # Dev.spaces
 .idea/
+
+node_modules/

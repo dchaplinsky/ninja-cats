@@ -91,6 +91,7 @@
 	}
 	.navigation{
 		background: $theme-bg;
+
 		.navigation-header{
 			color: $theme-color;
 			padding: 24px 20px 8px 20px;
@@ -100,21 +101,22 @@
 			}
 		}
 		li{
-			a{
+			a,
+			.menu-item {
 				color: $theme-color;
 				span.menu-sub-title{
 					color: lighten($theme-color, 30%);
 				}
 			}
 			&.hover,&.open,&.active{
-				> a{
+				> a,
+				.menu-item {
 					color: $white;
 				}
 			}
 		}
 
 		> li {
-			padding: 0;
 			border-left: 4px solid transparent;
 			> a {
 				padding: $menu-padding;
@@ -160,10 +162,11 @@
 				}
 			}
 			&.active {
-				> a {
+				> a,
+				.menu-item {
 					// background-color: $main-menu-top-active-head-bg;
 					// border-left: 4px solid $brand-primary;
-					color:$brand-primary;;
+					color:$brand-primary;
 					font-weight: 400;
 				}
 			}
@@ -193,8 +196,10 @@
 				li {
 					color: $main-menu-sub-color;
 					background: transparent;
-			        > a{
+			        > a,
+					.menu-item {
 						padding: $menu-second-level-padding;
+						//padding: 0;
 			        }
 				}
 				.has-sub {

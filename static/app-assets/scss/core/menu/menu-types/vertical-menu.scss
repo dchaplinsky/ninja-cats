@@ -237,6 +237,11 @@ body.vertical-layout{
         }
     }
 }
+
+body.vertical-layout.vertical-menu.menu-collapsed .main-menu .main-menu-content > ul.menu-content {
+    margin-top: -5px;
+}
+
 // Collapsed menu RTL
 [data-textdirection="rtl"] body.vertical-layout{
     &.vertical-menu.menu-collapsed{

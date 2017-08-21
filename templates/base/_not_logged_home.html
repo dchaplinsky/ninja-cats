@@ -10,9 +10,9 @@
                             {% set total_tasks = gamification_stats_service.total_number_of_open_tasks() %}
                             {% set total_money_donated = gamification_stats_service.total_money_donated() %}
 
-                            <a href="" class="stat-user"><i class="fa fa fa-users"></i> <span>{{ total_users }} {{ total_users|uk_plural("учасник,учасника,учасників") }}</span></a>
-                            <a href="" class="stat-tasks"><i class="fa fa-check-square-o"></i> <span>{{ total_tasks }} {{ total_tasks|uk_plural("завдання,завдання,завдань") }}</span></a>
-                            <a href="" class="stat-money"><i class="fa fa-thumbs-o-up"></i> <span>{{ total_money_donated }} грн.<br>передано до фондів</span></a>
+                            <div class="stat-item stat-user"><i class="fa fa fa-users"></i> <span>{{ total_users }} {{ total_users|uk_plural("учасник,учасника,учасників") }}</span></div>
+                            <div class="stat-item stat-tasks"><i class="fa fa-check-square-o"></i> <span>{{ total_tasks }} {{ total_tasks|uk_plural("завдання,завдання,завдань") }}</span></div>
+                            <div class="stat-item stat-money"><i class="fa fa-thumbs-o-up"></i> <span>{{ total_money_donated }} грн.<br>передано до фондів</span></div>
                         </div>
 
                         <div class="intro-text mt-1">

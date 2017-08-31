@@ -4,7 +4,7 @@ import gridfs
 from bson.objectid import ObjectId
 from mongoengine.connection import get_db
 from vulyk.blueprints import VulykModule
-from vulyk.blueprints.gamification.models.events import EventModel
+from vulyk.blueprints.gamification.models.foundations import FundModel
 
 from .admin import FAQAdmin, StaticPageAdmin, PromoAdmin, MenuAdmin
 from .models.faq import FAQItem, get_faq_on_main
@@ -68,6 +68,16 @@ def static_page(slug):
     )
 
 
+def get_foundations():
+    return {
+        "foundations": map(
+            lambda f: f.to_dict(),
+            FundModel.get_funds()
+        )
+    }
+
+
 cms.add_context_filler(get_faq_on_main)
 cms.add_context_filler(get_promos_on_main)
 cms.add_context_filler(get_menu)
+cms.add_context_filler(get_foundations)

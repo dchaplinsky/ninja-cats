@@ -1,47 +1,89 @@
+{% macro _task_card(task, icon) %}
+    <table class="table mb-0 borderless">
+        <tbody>
+        <tr>
+            <td>
+                <i class="fa {{ icon }} icon-bg-circle"></i>
+                {% if task.has_tasks %}
+                    <h6 class="media-heading teal">
+                        <a href="{{ url_for("task_home", type_name=task.type) }}" title="{{ task.description }}">{{ task.name }}</a>
+                    </h6>
+                {% else %}
+                    <h6 class="media-heading grey-blue lighten-4">
+                        {{ task.name }}
+                    </h6>
+                {% endif %}
+            </td>
+            <td class="text-xs-center font-small-2">
+                {% if task.points_per_task %}
+                    {{ task.points_per_task }} {{ task.points_per_task|int|uk_plural("бал,бала,балів") }}
+                {% endif %}
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="notification-text font-small-3 text-muted">{{ task.description }}</p>
+            </td>
+            <td class="text-xs-center font-small-2">
+                {% if task.coins_per_task %}
+                    {{ task.coins_per_task }} {{ task.coins_per_task|int|uk_plural("гривня,гривні,гривен") }}
+                {% endif %}
+            </td>
+        </tr>
+        <tr>
+            <td>
+                {% set task_closed = task.tasks - task.open_tasks %}
+                <span class="text-xs-center font-small-2">Виконано {{ task_closed }} {{ task_closed|uk_plural("завдання,завдання,завдань") }} <progress class="progress progress-sm progress-teal mt-0 mb-0" value="{{ task_closed }}" max="{{ task.tasks }}"></progress></span>
+            </td>
+            <td class="text-xs-center font-small-2">
+                <span class="decl svg-image logo" title="Канцелярська сотня"><svg preserveAspectRatio="xMidYMid" focusable="false"><use xlink:href="{{ url_for('static', filename='app-assets/images/svg/svg-logo-sprite.svg') }}#decl"></use></svg></span>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+{% endmacro %}
+
+{% macro vip_task_card(task) %}
+    <div class="card-block vip-task">
+        <div class="list-group-item">
+            {{ _task_card(task, "fa-thumb-tack bg-teal") }}
+        </div>
+    </div>
+{% endmacro %}
+
+{% macro just_task_card(task, i) %}
+    <tr>
+        <td>{{ i }}</td>
+        <td>
+            <div class="list-group-item">
+                {{ _task_card(task, "fa-puzzle-piece bg-yellow bg-darken-3") }}
+            </div>
+        </td>
+        <td>{{ task.coins_per_task|default(0) }}</td>
+        <td>{{ task.points_per_task|default(0) }}</td>
+    </tr>
+{% endmacro %}
+
 <div class="app-content content container-fluid">
     <div class="content-wrapper">
         <div class="content-detached content-left">
             <div class="content-body">
                 <div class="row">
                     <div class="col-md-6">
+                        {% set important_task = task_types|selectattr("batch_info")|selectattr("batch_info.is_important", "equalto", True)|list|random %}
+
                         <!-- USERS TASKS LIST -->
+                        {% if important_task %}
                         <div class="card">
                             <div class="card-header">
                                 <h4 class="card-title"><i class="ft-alert-circle"></i> Важливе завдання</h4>
                                 <a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
                             </div>
                             <div class="card-body collapse in">
-                                <div class="card-block vip-task">
-                                    <div class="list-group-item">
-                                        <table class="table mb-0 borderless">
-                                            <tbody>
-                                            <tr>
-                                                <td>
-                                                    <i class="fa fa-thumb-tack icon-bg-circle bg-teal"></i>
-                                                    <h6 class="media-heading teal">Знайди гарну хату</h6>
-                                                </td>
-                                                <td class="text-xs-center font-small-2">5 балів</td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p class="notification-text font-small-3 text-muted">Розшифруй декларацію, та ми додамо її у базу</p>
-                                                </td>
-                                                <td class="text-xs-center font-small-2">10 гривень</td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <span class="text-xs-center font-small-2">Виконано 5 завданнь <progress class="progress progress-sm progress-teal mt-0 mb-0" value="5" max="100"></progress></span>
-                                                </td>
-                                                <td class="text-xs-center font-small-2">
-                                                    <a href="#" title="Канцелярська сотня"><span class="garnahata svg-image logo"><svg preserveAspectRatio="xMidYMid" focusable="false"><use xlink:href="{{ url_for('static', filename='app-assets/images/svg/svg-logo-sprite.svg') }}#garnahata"></use></svg></span></a>
-                                                </td>
-                                            </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
+                                {{ vip_task_card(important_task) }}
                             </div>
                         </div>
+                        {% endif %}
                         <div class="card" id="all-tasks-list">
                             <div class="card-header" id="user-tasks-table-controls">
                                 <h4 class="card-title">
@@ -50,7 +92,7 @@
                                 <a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
                                 <div class="heading-elements">
                                     <ul class="list-inline mb-0">
-                                        <li><a class="sord-opt sort-by-user" title="Твої завдання"><i class="ft-heart"></i></a></li>
+                                        {# <li><a class="sord-opt sort-by-user" title="Твої завдання"><i class="ft-heart"></i></a></li> #}
                                         <li><a class="sord-opt sort-by-points" title="Найбільше балів"><i class="ft-award"></i></a></li>
                                         <li><a class="sord-opt sort-by-money" title="Найдорожчі">$</a></li>
                                         <li><a data-action="expand"><i class="ft-maximize"></i></a></li>
@@ -66,339 +108,12 @@
                                             <th>Завдання</th>
                                             <th>Бали</th>
                                             <th>Гривні</th>
-                                            <th>Скільки виконав я</th>
                                         </tr>
                                         </thead>
                                         <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td> <div class="list-group-item">
-                                                <table class="table mb-0 borderless">
-                                                    <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <i class="fa fa-user-plus icon-bg-circle bg-red bg-darken-1" aria-hidden="true"></i>
-                                                            <h6 class="media-heading red darken-1">Запроси друга</h6>
-                                                        </td>
-                                                        <td class="text-xs-center font-small-2">5 балів</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <p class="notification-text font-small-3 text-muted">Отримай 2 гривні за кожного запрошенного</p>
-                                                        </td>
-                                                        <td class="text-xs-center font-small-2">2 гривні</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <span class="text-xs-center font-small-2">Виконано 52 завдання <progress class="progress progress-sm progress-danger mt-0 mb-0" value="52" max="100"></progress></span>
-                                                        </td>
-                                                        <td class="text-xs-center font-small-2">
-                                                            <a href="#" title="Канцелярська сотня"><span class="wh100 svg-image logo"><svg preserveAspectRatio="xMidYMid" focusable="false"><use xlink:href="{{ url_for('static', filename='app-assets/images/svg/svg-logo-sprite.svg') }}#wh100"></use></svg></span></a>
-                                                        </td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div> </td>
-                                            <td>5</td>
-                                            <td>2</td>
-                                            <td>52</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td><div class="list-group-item">
-                                                <table class="table mb-0 borderless">
-                                                    <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <i class="fa fa-plus-square icon-bg-circle bg-info"></i>
-                                                            <h6 class="media-heading info darken-4">Додай декларацію</h6>
-                                                        </td>
-                                                        <td class="text-xs-center font-small-2">15 балів</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <p class="notification-text font-small-3 text-muted">Ми все ще розшукуємо декларації за попередні роки</p>
-                                                        </td>
-                                                        <td class="text-xs-center font-small-2">5 гривень</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <span class="text-xs-center font-small-2">Виконано 14 завданнь <progress class="progress progress-sm progress-primary mt-0 mb-0" value="14" max="100"></progress></span>
-                                                        </td>
-                                                        <td class="text-xs-center font-small-2">
-                                                            <a href="#" title="Канцелярська сотня"><span class="decl svg-image logo"><svg preserveAspectRatio="xMidYMid" focusable="false"><use xlink:href="{{ url_for('static', filename='app-assets/images/svg/svg-logo-sprite.svg') }}#decl"></use></svg></span></a>
-                                                        </td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div> </td>
-                                            <td>15</td>
-                                            <td>5</td>
-                                            <td>14</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td> <div class="list-group-item">
-                                                <table class="table mb-0 borderless">
-                                                    <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <i class="fa fa-puzzle-piece icon-bg-circle bg-yellow bg-darken-3"></i> <h6 class="media-heading yellow darken-2">Розшифруй декларацію</h6>
-                                                        </td>
-                                                        <td class="text-xs-center font-small-2">10 балів</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <p class="notification-text font-small-3 text-muted">Розшифруй декларацію, та ми додамо її у базу</p>
-                                                        </td>
-                                                        <td class="text-xs-center font-small-2">3 гривні</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <span class="text-xs-center font-small-2">Виконано 112 завданнь <progress class="progress progress-sm progress-yellow mt-0 mb-0" value="112" max="100"></progress></span>
-                                                        </td>
-                                                        <td class="text-xs-center font-small-2">
-                                                            <a href="#" title="Канцелярська сотня"><span class="decl svg-image logo"><svg preserveAspectRatio="xMidYMid" focusable="false"><use xlink:href="{{ url_for('static', filename='app-assets/images/svg/svg-logo-sprite.svg') }}#decl"></use></svg></span></a>
-                                                        </td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div> </td>
-                                            <td>10</td>
-                                            <td>3</td>
-                                            <td>112</td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td> <div class="list-group-item">
-                                                <table class="table mb-0 borderless">
-                                                    <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <i class="fa fa-thumb-tack icon-bg-circle bg-teal"></i>
-                                                            <h6 class="media-heading teal">Знайди гарну хату</h6>
-                                                        </td>
-                                                        <td class="text-xs-center font-small-2">5 балів</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <p class="notification-text font-small-3 text-muted">Розшифруй декларацію, та ми додамо її у базу</p>
-                                                        </td>
-                                                        <td class="text-xs-center font-small-2">10 гривень</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <span class="text-xs-center font-small-2">Виконано 5 завданнь <progress class="progress progress-sm progress-teal mt-0 mb-0" value="5" max="100"></progress></span>
-                                                        </td>
-                                                        <td class="text-xs-center font-small-2">
-                                                            <a href="#" title="Канцелярська сотня"><span class="garnahata svg-image logo"><svg preserveAspectRatio="xMidYMid" focusable="false"><use xlink:href="{{ url_for('static', filename='app-assets/images/svg/svg-logo-sprite.svg') }}#garnahata"></use></svg></span></a>
-                                                        </td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div> </td>
-                                            <td>5</td>
-                                            <td>10</td>
-                                            <td>5</td>
-                                        </tr>
-                                        <tr>
-                                            <td>5</td>
-                                            <td><div class="list-group-item">
-                                                <table class="table mb-0 borderless">
-                                                    <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <i class="fa fa-user-plus icon-bg-circle bg-red bg-darken-1" aria-hidden="true"></i>
-                                                            <h6 class="media-heading red darken-1">Запроси друга</h6>
-                                                        </td>
-                                                        <td class="text-xs-center font-small-2">5 балів</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <p class="notification-text font-small-3 text-muted">Отримай 2 гривні за кожного запрошенного</p>
-                                                        </td>
-                                                        <td class="text-xs-center font-small-2">2 гривні</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <span class="text-xs-center font-small-2">Виконано 52 завдання <progress class="progress progress-sm progress-danger mt-0 mb-0" value="52" max="100"></progress></span>
-                                                        </td>
-                                                        <td class="text-xs-center font-small-2">
-                                                            <a href="#" title="Канцелярська сотня"><span class="wh100 svg-image logo"><svg preserveAspectRatio="xMidYMid" focusable="false"><use xlink:href="{{ url_for('static', filename='app-assets/images/svg/svg-logo-sprite.svg') }}#wh100"></use></svg></span></a>
-                                                        </td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div> </td>
-                                            <td>5</td>
-                                            <td>2</td>
-                                            <td>52</td>
-                                        </tr>
-                                        <tr>
-                                            <td>6</td>
-                                            <td> <div class="list-group-item">
-                                                <table class="table mb-0 borderless">
-                                                    <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <i class="fa fa-user-plus icon-bg-circle bg-red bg-darken-1" aria-hidden="true"></i>
-                                                            <h6 class="media-heading red darken-1">Запроси друга</h6>
-                                                        </td>
-                                                        <td class="text-xs-center font-small-2">5 балів</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <p class="notification-text font-small-3 text-muted">Отримай 2 гривні за кожного запрошенного</p>
-                                                        </td>
-                                                        <td class="text-xs-center font-small-2">2 гривні</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <span class="text-xs-center font-small-2">Виконано 52 завдання <progress class="progress progress-sm progress-danger mt-0 mb-0" value="52" max="100"></progress></span>
-                                                        </td>
-                                                        <td class="text-xs-center font-small-2">
-                                                            <a href="#" title="Канцелярська сотня"><span class="wh100 svg-image logo"><svg preserveAspectRatio="xMidYMid" focusable="false"><use xlink:href="{{ url_for('static', filename='app-assets/images/svg/svg-logo-sprite.svg') }}#wh100"></use></svg></span></a>
-                                                        </td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div> </td>
-                                            <td>5</td>
-                                            <td>2</td>
-                                            <td>52</td>
-                                        </tr>
-                                        <tr>
-                                            <td>7</td>
-                                            <td><div class="list-group-item">
-                                                <table class="table mb-0 borderless">
-                                                    <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <i class="fa fa-plus-square icon-bg-circle bg-info"></i>
-                                                            <h6 class="media-heading info darken-4">Додай декларацію</h6>
-                                                        </td>
-                                                        <td class="text-xs-center font-small-2">15 балів</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <p class="notification-text font-small-3 text-muted">Ми все ще розшукуємо декларації за попередні роки</p>
-                                                        </td>
-                                                        <td class="text-xs-center font-small-2">5 гривень</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <span class="text-xs-center font-small-2">Виконано 14 завданнь <progress class="progress progress-sm progress-primary mt-0 mb-0" value="14" max="100"></progress></span>
-                                                        </td>
-                                                        <td class="text-xs-center font-small-2">
-                                                            <a href="#" title="Канцелярська сотня"><span class="decl svg-image logo"><svg preserveAspectRatio="xMidYMid" focusable="false"><use xlink:href="{{ url_for('static', filename='app-assets/images/svg/svg-logo-sprite.svg') }}#decl"></use></svg></span></a>
-                                                        </td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div> </td>
-                                            <td>15</td>
-                                            <td>5</td>
-                                            <td>14</td>
-                                        </tr>
-                                        <tr>
-                                            <td>8</td>
-                                            <td> <div class="list-group-item">
-                                                <table class="table mb-0 borderless">
-                                                    <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <i class="fa fa-puzzle-piece icon-bg-circle bg-yellow bg-darken-3"></i>
-                                                            <h6 class="media-heading yellow darken-2">Розшифруй декларацію</h6>
-                                                        </td>
-                                                        <td class="text-xs-center font-small-2">10 балів</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <p class="notification-text font-small-3 text-muted">Розшифруй декларацію, та ми додамо її у базу</p>
-                                                        </td>
-                                                        <td class="text-xs-center font-small-2">3 гривні</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <span class="text-xs-center font-small-2">Виконано 112 завданнь <progress class="progress progress-sm progress-yellow mt-0 mb-0" value="112" max="100"></progress></span>
-                                                        </td>
-                                                        <td class="text-xs-center font-small-2">
-                                                            <a href="#" title="Канцелярська сотня"><span class="decl svg-image logo"><svg preserveAspectRatio="xMidYMid" focusable="false"><use xlink:href="{{ url_for('static', filename='app-assets/images/svg/svg-logo-sprite.svg') }}#decl"></use></svg></span></a>
-                                                        </td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div> </td>
-                                            <td>10</td>
-                                            <td>3</td>
-                                            <td>112</td>
-                                        </tr>
-                                        <tr>
-                                            <td>9</td>
-                                            <td> <div class="list-group-item">
-                                                <table class="table mb-0 borderless">
-                                                    <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <i class="fa fa-thumb-tack icon-bg-circle bg-teal"></i>
-                                                            <h6 class="media-heading teal">Знайди гарну хату</h6>
-                                                        </td>
-                                                        <td class="text-xs-center font-small-2">5 балів</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <p class="notification-text font-small-3 text-muted">Розшифруй декларацію, та ми додамо її у базу</p>
-                                                        </td>
-                                                        <td class="text-xs-center font-small-2">10 гривень</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <span class="text-xs-center font-small-2">Виконано 5 завданнь <progress class="progress progress-sm progress-teal mt-0 mb-0" value="5" max="100"></progress></span>
-                                                        </td>
-                                                        <td class="text-xs-center font-small-2">
-                                                            <a href="#" title="Канцелярська сотня"><span class="garnahata svg-image logo"><svg preserveAspectRatio="xMidYMid" focusable="false"><use xlink:href="{{ url_for('static', filename='app-assets/images/svg/svg-logo-sprite.svg') }}#garnahata"></use></svg></span></a>
-                                                        </td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div> </td>
-                                            <td>5</td>
-                                            <td>10</td>
-                                            <td>5</td>
-                                        </tr>
-                                        <tr>
-                                            <td>10</td>
-                                            <td><div class="list-group-item">
-                                                <table class="table mb-0 borderless">
-                                                    <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <i class="fa fa-user-plus icon-bg-circle bg-red bg-darken-1" aria-hidden="true"></i>
-                                                            <h6 class="media-heading red darken-1">Запроси друга</h6>
-                                                        </td>
-                                                        <td class="text-xs-center font-small-2">5 балів</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <p class="notification-text font-small-3 text-muted">Отримай 2 гривні за кожного запрошенного</p>
-                                                        </td>
-                                                        <td class="text-xs-center font-small-2">2 гривні</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <span class="text-xs-center font-small-2">Виконано 52 завдання <progress class="progress progress-sm progress-danger mt-0 mb-0" value="52" max="100"></progress></span>
-                                                        </td>
-                                                        <td class="text-xs-center font-small-2">
-                                                            <a href="#" title="Канцелярська сотня"><span class="wh100 svg-image logo"><svg preserveAspectRatio="xMidYMid" focusable="false"><use xlink:href="{{ url_for('static', filename='app-assets/images/svg/svg-logo-sprite.svg') }}#wh100"></use></svg></span></a>
-                                                        </td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div> </td>
-                                            <td>5</td>
-                                            <td>2</td>
-                                            <td>52</td>
-                                        </tr>
+                                            {% for task in task_types|sort(reverse=True, attribute="has_tasks") %}
+                                                {{ just_task_card(task, loop.index) }}
+                                            {% endfor %}
                                         </tbody>
                                     </table>
                                 </div>

@@ -76,3 +76,5 @@ ENABLED_BLUEPRINTS = [
         'url_prefix': 'cms'
     },
 ]
+
+REDIRECT_USER_AFTER_LOGIN = False

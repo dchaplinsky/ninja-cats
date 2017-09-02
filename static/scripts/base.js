@@ -70,17 +70,22 @@ var Vulyk = Vulyk || {
             var vu = this,
                 vus = vu.State;
 
-            if (typeof(ga) !== "undefined") {
-                ga('send', 'event', 'Task', 'Save', vus.task_type);
-            }
+            if (typeof(result) !== "undefined") {
+                if (typeof(ga) !== "undefined") {
+                    ga('send', 'event', 'Task', 'Save', vus.task_type);
+                }
 
-            $.post(
-                "/type/" + vus.task_type + "/done/" + vus.task_id,
-                {result: JSON.stringify(result)},
-                function (data) {
-                    vu.load_next();
-                });
+                $.post(
+                    "/type/" + vus.task_type + "/done/" + vus.task_id,
+                    {result: JSON.stringify(result)},
+                    function (data) {
+                        vu.load_next();
+                    });
+            } else {
+                $("a#save-button, a#skip-button").removeClass("disabled");
+            }
         },
+
         /* http://xkcd.com/292/ */
         init: function () {
             var vu = this,
@@ -91,7 +96,6 @@ var Vulyk = Vulyk || {
             $(function () {
                 vus.workplace = $(".site-wrapper");
                 vus.body = $(document.body);
-                vus.stats = $("#user-stats");
                 vus.task_wrapper = vus.workplace.find("#current_task");
                 vu.event_handlers();
 
@@ -102,14 +106,6 @@ var Vulyk = Vulyk || {
 
                 vus.body.on("vulyk.next", function (e, data) {
                     $("a#save-button, a#skip-button").removeClass("disabled");
-                    vus.stats
-                        .find("dd:eq(0)")
-                        .html(data.result.stats.total)
-                        .end()
-                        .find("dd:eq(1)")
-                        .html(data.result.stats.position)
-                        .end()
-                        .show();
                 });
 
                 $('.popup-with-zoom-anim').magnificPopup({

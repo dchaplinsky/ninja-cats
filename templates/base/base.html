@@ -15,12 +15,11 @@
     {% endassets %}
     {% block extra_css %}
     {% endblock %}
-
 </head>
 
 <body class="{% block body_classes %}horizontal-layout horizontal-menu steps-page not-logged-in{% endblock %}">
 <div id="fb-root"></div>
-
+<div class="site-wrapper">
 <script>(function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
@@ -284,6 +283,6 @@
         ga('send', 'pageview');
     </script>
 {% endif %}
-
+</div>
 </body>
 </html>

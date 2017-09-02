@@ -13,7 +13,9 @@
             {% include '_not_logged_home.html'|app_template %}
         {% endif %}
     {% else %}
-        {% include '_logged_in_home.html'|app_template %}
+        {% block task %}
+            {% include '_logged_in_home.html'|app_template %}
+        {% endblock %}
     {% endif %}
 {% endblock %}
 

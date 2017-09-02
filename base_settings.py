@@ -26,6 +26,10 @@ JS_ASSETS = [
     "app-assets/js/scripts/gallery/fsbanner.js",
     "app-assets/js/scripts/tables/datatables/datatables.js",
     "assets/js/scripts.js",
+    'vendor/jquery.cookie/jquery.cookie.js',
+    'vendor/jquery.hotkeys/jquery.hotkeys.js',
+    'vendor/jquery.magnific-popup/jquery.magnific-popup.js',
+    'scripts/base.js',
     "assets/js/user-stats.js",
 ]
 
@@ -58,6 +62,8 @@ CSS_ASSETS = [
     "assets/scss/style.scss",
     "assets/scss/_small-blocks.scss",
     "assets/scss/_pages.scss",
+    'vendor/jquery.magnific-popup/jquery.magnific-popup.css',
+    'styles/style.css'
 ]
 
 CSS_ASSETS_OUTPUT = ENV('CSS_ASSETS_OUTPUT', 'styles/packed.css')

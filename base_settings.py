@@ -31,6 +31,7 @@ JS_ASSETS = [
     'vendor/jquery.magnific-popup/jquery.magnific-popup.js',
     'scripts/base.js',
     "assets/js/user-stats.js",
+    "assets/js/user-events.js"
 ]
 
 

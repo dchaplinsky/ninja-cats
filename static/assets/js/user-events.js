@@ -19,12 +19,18 @@
             })
     }
 
-    function generateEventHtml(className, points, pointsText, /*pointsHistory,*/ pointsDate) {
+    function generateEventHtml(className, points, pointsText, pointsHistory, pointsDate) {
+        var hiddenClass = '';
+
+        if (pointsHistory.length === 0) {
+            hiddenClass = ' hidden-xs-up';
+        }
+
         var html = '<div class="list-group-item ' + className + '"><div class="media">'
             + '<div class="media-left valign-middle"></div>'
             + '<div class="media-body">'
             + '<h6 class="media-heading">' + points + ' ' + pointsText + '</h6>'
-            //+ '<p class="notification-text font-small-3 text-muted">' + pointsHistory + '</p>'
+            + '<p class="notification-text font-small-3 text-muted' + hiddenClass + '">' + pointsHistory + '</p>'
             + '<small><time datetime="' + pointsDate + '" class="media-meta text-muted">' + pointsDate + '</time></small>'
             + '</div></div></div>';
 
@@ -38,28 +44,38 @@
 
     function fillUserEvents(events) {
         var eventsCount = 0,
+            badgesCount,
             coins,
             points,
             level,
             $container = $('nav .dropdown-notification'),
             $containerList = $container.find('.dropdown-menu .list-group');
 
+        if (events.achievements && events.achievements.length > 0) {
+            badgesCount = events.achievements.length;
+            eventsCount = eventsCount + badgesCount;
+
+            for (var i=0; i < badgesCount; i++) {
+                $containerList.append(generateEventHtml('badge', '', 'отримано новий бейдж', events.achievements[i].name, formateDate(events.timestamp)));
+            }
+        }
+
         if (events.coins) {
             eventsCount++;
             coins = events.coins;
-            $containerList.append(generateEventHtml('coins', coins, 'потенційних гривень зароблено', /*'опис тексту за що'*/ formateDate(events.timestamp)));
+            $containerList.append(generateEventHtml('coins', coins, 'потенційних гривень зароблено', '', formateDate(events.timestamp)));
         }
 
         if (events.level_given) {
             eventsCount++;
             level = events.level_given;
-            $containerList.append(generateEventHtml('level', level, 'рівень здобуто', /*'опис тексту за що'*/ formateDate(events.timestamp)));
+            $containerList.append(generateEventHtml('level', level, 'рівень здобуто', '', formateDate(events.timestamp)));
         }
 
         if (events.points_given) {
             eventsCount++;
             points = events.points_given;
-            $containerList.append(generateEventHtml('points', points, 'балів зароблено', /*'опис тексту за що'*/ formateDate(events.timestamp)));
+            $containerList.append(generateEventHtml('points', points, 'балів зароблено', '', formateDate(events.timestamp)));
         }
 
         if (eventsCount > 0) {

@@ -292,6 +292,14 @@ nav.navbar-fixed + .app-content {
     }
   }
 
+  .badge {
+    color: #448AFF;
+
+    .media-left:after {
+      content: '\e028';
+    }
+  }
+
   .coins {
     color: #00897B;
 

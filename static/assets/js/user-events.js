@@ -4,10 +4,8 @@
     function getUserEvents() {
         var userEventsJson = '/gamification/events/all',
             userEvents = $.getJSON( userEventsJson, function() {
-                //console.log( "run" );
             })
             .done(function( data ) {
-                console.log(data);
                 var isViewed = data.result.events[0].viewed;
 
                 if(!isViewed) {

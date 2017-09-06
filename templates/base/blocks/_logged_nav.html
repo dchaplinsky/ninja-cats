@@ -67,7 +67,7 @@
     <div class="main-menu-content">
         <ul id="main-menu-navigation" data-menu="menu-navigation" class="navigation navigation-main">
             <li class="active nav-item"><a href="#"><i class="ft-home"></i><span data-i18n="" class="menu-title">Головна</span></a></li>
-            <li class=" nav-item"><a href="#"><i class="ft-user"></i><span data-i18n="" class="menu-title">Профіль</span></a>
+            <li class="nav-item"><a href="#"><i class="ft-user"></i><span data-i18n="" class="menu-title">Профіль</span></a>
                 <ul class="menu-content">
                     <li>
                         <form action="{{ url_for('logout') }}" method="post">
@@ -76,7 +76,7 @@
                     </li>
                 </ul>
             </li>
-            <li class=" nav-item"><a href="#"><i class="ft-check-square"></i><span data-i18n="" class="menu-title">Список завдань</span><span class="tag tag-danger tag-pill float-xs-right mr-2">New</span></a>
+            <li class="nav-item"><a href="#"><i class="ft-check-square"></i><span data-i18n="" class="menu-title">Список завдань</span><span class="tag tag-danger tag-pill float-xs-right mr-2">New</span></a>
                 <ul class="menu-content">
                     <li><a href="#" class="menu-item">Запросити друга +5</a></li>
                     <li><a href="#" class="menu-item">Додати декларацію +15</a></li>
@@ -84,13 +84,8 @@
                     <li><a href="#" class="menu-item">Знайти гарну хату +5</a></li>
                 </ul>
             </li>
-            <li class=" nav-item"><a href="#"><i class="ft-heart"></i><span data-i18n="" class="menu-title">Список фондів</span><span class="tag tag-warning tag-pill float-xs-right mr-2">+3</span></a>
-                <ul class="menu-content">
-                    <li><a href="#" class="menu-item">Таблеточки</a></li>
-                    <li><a href="#" class="menu-item">Повернись живим</a></li>
-                    <li><a href="#" class="menu-item">Крила</a></li>
-                    <li><a href="#" class="menu-item">Азов</a></li>
-                </ul>
+            <li class="nav-item hidden-xs-up" id="sidebar-fund-list"><a href="#"><i class="ft-heart"></i><span data-i18n="" class="menu-title">Список фондів</span></a>
+                <ul class="menu-content"></ul>
             </li>
             {% for menu in cms_registered_menu_items %}
             <li class="nav-item">

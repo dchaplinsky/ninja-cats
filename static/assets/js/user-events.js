@@ -6,11 +6,7 @@
             userEvents = $.getJSON( userEventsJson, function() {
             })
             .done(function( data ) {
-                var isViewed = data.result.events[0].viewed;
-
-                if(!isViewed) {
-                    fillUserEvents(data.result.events[0]);
-                }
+                fillUserEvents(data.result.events);
             })
             .fail(function() {
                 console.log( "error geeting user events" );
@@ -49,35 +45,43 @@
             $container = $('nav .dropdown-notification'),
             $containerList = $container.find('.dropdown-menu .list-group');
 
-        if (events.achievements && events.achievements.length > 0) {
-            badgesCount = events.achievements.length;
-            eventsCount = eventsCount + badgesCount;
+        for (var e = 0; e < events.length; e++) {
+            var isViewed = events[e].viewed;
 
-            for (var i=0; i < badgesCount; i++) {
-                $containerList.append(generateEventHtml('badge', '', 'отримано новий бейдж', events.achievements[i].name, formateDate(events.timestamp)));
+            if(!isViewed) {
+                if (events[e].achievements && events[e].achievements.length > 0) {
+                    badgesCount = events[e].achievements.length;
+                    eventsCount = eventsCount + badgesCount;
+
+                    for (var i=0; i < badgesCount; i++) {
+                        $containerList.append(generateEventHtml('badge', '', 'отримано новий бейдж', events[e].achievements[i].name, formateDate(events[e].timestamp)));
+                    }
+                }
+
+                if (events[e].coins) {
+                    eventsCount++;
+                    coins = events[e].coins;
+                    $containerList.append(generateEventHtml('coins', coins, 'потенційних гривень зароблено', '', formateDate(events[e].timestamp)));
+                }
+
+                if (events[e].level_given) {
+                    eventsCount++;
+                    level = events[e].level_given;
+                    if (level !== null) {
+                        $containerList.append(generateEventHtml('level', level, 'рівень здобуто', '', formateDate(events[e].timestamp)));
+                    }
+                }
+
+                if (events[e].points_given) {
+                    eventsCount++;
+                    points = events[e].points_given;
+                    $containerList.append(generateEventHtml('points', points, 'балів зароблено', '', formateDate(events[e].timestamp)));
+                }
+
+                if (eventsCount > 0) {
+                    $container.find('.tag-pill').removeClass('hidden-xs-up').html(eventsCount);
+                }
             }
-        }
-
-        if (events.coins) {
-            eventsCount++;
-            coins = events.coins;
-            $containerList.append(generateEventHtml('coins', coins, 'потенційних гривень зароблено', '', formateDate(events.timestamp)));
-        }
-
-        if (events.level_given) {
-            eventsCount++;
-            level = events.level_given;
-            $containerList.append(generateEventHtml('level', level, 'рівень здобуто', '', formateDate(events.timestamp)));
-        }
-
-        if (events.points_given) {
-            eventsCount++;
-            points = events.points_given;
-            $containerList.append(generateEventHtml('points', points, 'балів зароблено', '', formateDate(events.timestamp)));
-        }
-
-        if (eventsCount > 0) {
-            $container.find('.tag-pill').removeClass('hidden-xs-up').html(eventsCount);
         }
     }
 

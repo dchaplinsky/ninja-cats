@@ -76,12 +76,15 @@
                     </li>
                 </ul>
             </li>
-            <li class="nav-item"><a href="#"><i class="ft-check-square"></i><span data-i18n="" class="menu-title">Список завдань</span><span class="tag tag-danger tag-pill float-xs-right mr-2">New</span></a>
+            <li class="nav-item"><a href="#"><i class="ft-check-square"></i><span data-i18n="" class="menu-title">Список завдань</span></a>
                 <ul class="menu-content">
-                    <li><a href="#" class="menu-item">Запросити друга +5</a></li>
-                    <li><a href="#" class="menu-item">Додати декларацію +15</a></li>
-                    <li><a href="#" class="menu-item" title="Розшифрувати декларацію +10">Розшифрувати декларацію +10</a></li>
-                    <li><a href="#" class="menu-item">Знайти гарну хату +5</a></li>
+                    {% for task in task_types|sort(reverse=True, attribute="has_tasks") %}
+                        <li>
+                            <a href="#" class="menu-item" title="{{task.name }}">
+                                {{task.description }}
+                            </a>
+                        </li>
+                    {% endfor %}
                 </ul>
             </li>
             <li class="nav-item hidden-xs-up" id="sidebar-fund-list"><a href="#"><i class="ft-heart"></i><span data-i18n="" class="menu-title">Список фондів</span></a>

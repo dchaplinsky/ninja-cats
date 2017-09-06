@@ -19,13 +19,13 @@
             })
     }
 
-    function generateEventHtml(iconClass, points, pointsText, /*pointsHistory,*/ pointsDate) {
-        var html = '<div class="list-group-item"><div class="media">'
-            + '<div class="media-left valign-middle"><i class="icon-bg-circle ' + iconClass + '"></i></div>'
+    function generateEventHtml(className, points, pointsText, /*pointsHistory,*/ pointsDate) {
+        var html = '<div class="list-group-item ' + className + '"><div class="media">'
+            + '<div class="media-left valign-middle"></div>'
             + '<div class="media-body">'
-            + '<h6 class="media-heading yellow darken-3">' + points + ' ' + pointsText + '</h6>'
+            + '<h6 class="media-heading">' + points + ' ' + pointsText + '</h6>'
             //+ '<p class="notification-text font-small-3 text-muted">' + pointsHistory + '</p>'
-            + '<small><time datetime="2015-06-11T18:29:20+08:00" class="media-meta text-muted">' + pointsDate + '</time></small>'
+            + '<small><time datetime="' + pointsDate + '" class="media-meta text-muted">' + pointsDate + '</time></small>'
             + '</div></div></div>';
 
         return html;
@@ -47,12 +47,23 @@
         if (events.coins) {
             eventsCount++;
             coins = events.coins;
-            $containerList.append(generateEventHtml('ft-plus-circle bg-yellow bg-darken-3', coins, 'потенційних гривень зароблено', /*'опис тексту за що'*/ formateDate(events.timestamp)));
+            $containerList.append(generateEventHtml('coins', coins, 'потенційних гривень зароблено', /*'опис тексту за що'*/ formateDate(events.timestamp)));
+        }
+
+        if (events.level_given) {
+            eventsCount++;
+            level = events.level_given;
+            $containerList.append(generateEventHtml('level', level, 'рівень здобуто', /*'опис тексту за що'*/ formateDate(events.timestamp)));
+        }
+
+        if (events.points_given) {
+            eventsCount++;
+            points = events.points_given;
+            $containerList.append(generateEventHtml('points', points, 'балів зароблено', /*'опис тексту за що'*/ formateDate(events.timestamp)));
         }
 
         if (eventsCount > 0) {
             $container.find('.tag-pill').removeClass('hidden-xs-up').html(eventsCount);
-            $container.find('.notification-tag').html('Нових подій: ' + eventsCount);
         }
     }
 

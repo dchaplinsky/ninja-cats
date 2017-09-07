@@ -24,23 +24,22 @@ svg:not(:root) {
   padding-top: 0;
 }
 
-.fa {
-  &.icon-bg-circle {
-    position: relative;
-    display: inline-block;
-    width: 2em;
-    height: 2em;
-    line-height: 2em;
-    vertical-align: middle;
+.icon-bg-circle {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+  box-sizing: content-box;
 
-    &::before {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      width: 100%;
-      text-align: center;
-      transform: translate(-50%,-50%);
-    }
+  &::before {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translate(-50%,-50%);
   }
 }
 
@@ -90,16 +89,34 @@ ol li {
   border: #00B5B8 2px solid;
 }
 
-.card {
-  &.transparent-card {
-    background: transparent;
-  }
+.transparent-bg {
+  background: transparent !important;
 }
 
 .list-group-item {
   &.transparent {
     background: none;
     border: none;
+  }
+}
+
+.card {
+  .heading-elements {
+    .icon-size-actual {
+      display: none;
+    }
+  }
+
+  &.card-fullscreen {
+    .heading-elements {
+      .icon-size-actual {
+        display: inline;
+      }
+
+      .icon-size-fullscreen {
+        display: none;
+      }
+    }
   }
 }
 
@@ -114,6 +131,16 @@ nav {
     left: 0;
     top: 0;
     border-radius: 0;
+  }
+
+  .nav-link-expand {
+    .icon-size-fullscreen {
+      &.icon-contract {
+        &:before {
+          content: "\e058";
+        }
+      }
+    }
   }
 }
 
@@ -394,12 +421,7 @@ body.vertical-layout {
 #user-statistics {
   margin-bottom: 1.875rem;
 
-  .card-header {
-    //margin-bottom: 1.875rem;
-  }
-
   .card {
-    //border-top: #11B0D0 1px dashed;
     margin-bottom: 0;
   }
 }

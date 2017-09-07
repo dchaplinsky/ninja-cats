@@ -79,11 +79,36 @@
 }
 
 #user-achivments {
+
   .user-badges-list {
     img {
       display: inline-block;
       float: left;
       margin-right: 1rem;
+    }
+  }
+
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  @media (min-width: 460px) and (max-width: 767px),
+  (min-width: 1580px){
+    .row {
+      display: flex;
+      margin-bottom: 1.875rem;
+    }
+
+    .badge {
+      width: 50%;
+      padding-right: 15px;
+      padding-left: 15px;
+
+      .card {
+        margin-bottom: 0;
+        height: 100%;
+      }
     }
   }
 }

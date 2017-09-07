@@ -2,7 +2,7 @@
     <div class="navbar-wrapper">
         <div class="navbar-header">
             <ul class="nav navbar-nav">
-                <li class="nav-item mobile-menu hidden-md-up float-xs-left"><a href="#" class="nav-link nav-menu-main menu-toggle hidden-xs"><i class="ft-menu font-large-1"></i></a></li>
+                <li class="nav-item mobile-menu hidden-md-up float-xs-left"><a href="#" class="nav-link nav-menu-main menu-toggle hidden-xs"><i class="icon-list font-large-1"></i></a></li>
                 <li class="nav-item">
                     <a href="/" class="navbar-brand">
                         <h2 class="brand-text">
@@ -17,21 +17,22 @@
         <div class="navbar-container content container-fluid">
             <div id="navbar-mobile" class="collapse navbar-toggleable-sm">
                 <ul class="nav navbar-nav">
-                    <li class="nav-item hidden-sm-down"><a href="#" class="nav-link nav-menu-main menu-toggle hidden-xs"><i class="ft-menu"></i></a></li>
-                    <li class="nav-item hidden-sm-down"><a href="#" class="nav-link nav-link-expand"><i class="ficon ft-maximize"></i></a></li>
+                    <li class="nav-item hidden-sm-down"><a href="#" class="nav-link nav-menu-main menu-toggle hidden-xs"><i class="icon-list"></i></a></li>
+                    <li class="nav-item hidden-sm-down"><a href="#" class="nav-link nav-link-expand"><i class="icon-frame"></i></a></li>
                 </ul>
                 <ul class="nav navbar-nav float-xs-right">
                     <li class="nav-block-donats nav-item col">
                         {% set state = gamification_stats_service.state_of_user(current_user) %}
-                        <i class="ft-bar-chart-2"></i> <span>Пожертви: {{ gamification_stats_service.total_money_donated_by_user(current_user) }} грн.</span> <br>
-                        <span class="">я на {{ state.level }} рівні <progress class="progress progress-sm progress-success mb-0" value="35" max="50"></progress></span>
+                        <i class="icon-heart"></i> <span>Пожертви: {{ gamification_stats_service.total_money_donated_by_user(current_user) }} грн.</span> <br>
+                        <i class="icon-rocket"></i> <span>я на {{ state.level }} рівні </span>
                     </li>
                     <li class="nav-block-money nav-item col">
-                        <i class="icon-wallet"></i> <span>{{ state.potential_coins }} потенційних грн. <br>{{ state.actual_coins }} активних</span>
+                        <i class="icon-wallet"></i> <span>{{ state.potential_coins }} / {{ state.actual_coins }}</span><br>
+                        <i class="icon-info hidden-xs-up"></i> <span>потенційних / активних грн.</span>
                     </li>
                     <li class="dropdown dropdown-notification nav-item">
                         <a href="#" data-toggle="dropdown" class="nav-link nav-link-label">
-                            <i class="ficon ft-bell"></i>
+                            <i class="icon-bell"></i>
                             <span class="tag tag-pill tag-default tag-danger tag-default tag-up hidden-xs-up"></span>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
@@ -53,7 +54,7 @@
                         <div class="dropdown-menu dropdown-menu-right">
                             <div class="dropdown-divider"></div>
                             <form action="{{ url_for('logout') }}" method="post">
-                                <button type="submit" class="btn btn-link dropdown-item w-100"><i class="ft-power"></i> Вихід</a></button>
+                                <button type="submit" class="btn btn-link dropdown-item w-100"><i class="icon-power"></i> Вихід</a></button>
                             </form>
                         </div>
                     </li>
@@ -66,17 +67,17 @@
 <div data-scroll-to-active="true" class="main-menu menu-fixed menu-dark menu-accordion menu-shadow">
     <div class="main-menu-content">
         <ul id="main-menu-navigation" data-menu="menu-navigation" class="navigation navigation-main">
-            <li class="active nav-item"><a href="#"><i class="ft-home"></i><span data-i18n="" class="menu-title">Головна</span></a></li>
-            <li class="nav-item"><a href="#"><i class="ft-user"></i><span data-i18n="" class="menu-title">Профіль</span></a>
+            <li class="active nav-item"><a href="#"><i class="icon-home"></i><span data-i18n="" class="menu-title">Головна</span></a></li>
+            <li class="nav-item"><a href="#"><i class="icon-user"></i><span data-i18n="" class="menu-title">Профіль</span></a>
                 <ul class="menu-content">
                     <li>
                         <form action="{{ url_for('logout') }}" method="post">
-                            <button type="submit" class="btn btn-link menu-item"><i class="ft-power"></i> Вихід</a></button>
+                            <button type="submit" class="btn btn-link menu-item"><i class="icon-power"></i> Вихід</a></button>
                         </form>
                     </li>
                 </ul>
             </li>
-            <li class="nav-item"><a href="#"><i class="ft-check-square"></i><span data-i18n="" class="menu-title">Список завдань</span></a>
+            <li class="nav-item"><a href="#"><i class="icon-check"></i><span data-i18n="" class="menu-title">Список завдань</span></a>
                 <ul class="menu-content">
                     {% for task in task_types|sort(reverse=True, attribute="has_tasks") %}
                         <li>
@@ -87,7 +88,7 @@
                     {% endfor %}
                 </ul>
             </li>
-            <li class="nav-item hidden-xs-up" id="sidebar-fund-list"><a href="#"><i class="ft-heart"></i><span data-i18n="" class="menu-title">Список фондів</span></a>
+            <li class="nav-item hidden-xs-up" id="sidebar-fund-list"><a href="#"><i class="icon-heart"></i><span data-i18n="" class="menu-title">Список фондів</span></a>
                 <ul class="menu-content"></ul>
             </li>
             {% for menu in cms_registered_menu_items %}

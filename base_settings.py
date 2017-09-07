@@ -41,7 +41,6 @@ JS_ASSETS_FILTERS = ENV('JS_ASSETS_FILTERS', 'rjsmin')
 CSS_ASSETS = [
     "assets/scss/_fonts.scss",
     "app-assets/scss/bootstrap.scss",
-    "app-assets/fonts/feather/style.min.css",
     "app-assets/fonts/font-awesome/css/font-awesome.min.css",
     "app-assets/fonts/simple-line-icons/style.css",
     "app-assets/vendors/css/extensions/pace.css",

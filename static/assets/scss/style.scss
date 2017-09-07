@@ -267,7 +267,7 @@ nav.navbar-fixed + .app-content {
 }
 
 .nav-block-donats {
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .nav-block-money {
@@ -388,5 +388,18 @@ body.vertical-layout {
         }
       }
     }
+  }
+}
+
+#user-statistics {
+  margin-bottom: 1.875rem;
+
+  .card-header {
+    //margin-bottom: 1.875rem;
+  }
+
+  .card {
+    //border-top: #11B0D0 1px dashed;
+    margin-bottom: 0;
   }
 }

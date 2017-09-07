@@ -92,10 +92,10 @@
                                 <a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
                                 <div class="heading-elements">
                                     <ul class="list-inline mb-0">
-                                        {# <li><a class="sord-opt sort-by-user" title="Твої завдання"><i class="ft-heart"></i></a></li> #}
-                                        <li><a class="sord-opt sort-by-points" title="Найбільше балів"><i class="ft-award"></i></a></li>
+                                        {# <li><a class="sord-opt sort-by-user" title="Твої завдання"><i class="icon-heart"></i></a></li> #}
+                                        <li><a class="sord-opt sort-by-points" title="Найбільше балів"><i class="icon-badge"></i></a></li>
                                         <li><a class="sord-opt sort-by-money" title="Найдорожчі">$</a></li>
-                                        <li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+                                        <li><a data-action="expand"><i class="icon-frame"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -124,57 +124,76 @@
 
                     <div class="col-md-6">
                         <!-- USER Statistics -->
-                        <div class="card" id="user-statistics">
+                        <div class="" id="user-statistics">
                             <div class="card-header">
                                 <h4 class="card-title">Статистика</h4>
                                 <a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
-                                <div class="heading-elements">
-                                    <ul class="list-inline mb-0">
-                                        <li><a data-action="expand"><i class="ft-maximize"></i></a></li>
-                                    </ul>
-                                </div>
                             </div>
-                            <div class="card-body collapse in">
-                                <div class="card-block">
-                                    <div class="my-1 text-xs-center col-md-6 pl-0 pr-0">
-                                        <div class="card-header mb-0 pt-0 pb-0">
-                                            <h5 class="primary t tn">Виконано завдань</h5>
-                                            <h3 class="font-large-2 text-bold-200">210</h3>
-                                        </div>
-                                        <div class="card-body">
-                                            <input type="text" value="85" class="knob hide-value responsive angle-offset" data-angleOffset="40" data-thickness=".15" data-linecap="round" data-width="100" data-height="100" data-inputColor="#BABFC7" data-readOnly="true" data-fgColor="#00B5B8" data-knob-icon="icon-list">
-                                        </div>
-                                    </div>
-                                    <div class="my-1 text-xs-center col-md-6 pl-0 pr-0">
-                                        <div class="card-header mb-0 pt-0 pb-0">
-                                            <h5 class="danger t tn">Проектів</h5>
-                                            <h3 class="font-large-2 text-bold-200">3</h3>
-                                        </div>
-                                        <div class="card-body">
-                                            <input type="text" value="15" class="knob hide-value responsive angle-offset" data-angleOffset="0" data-thickness=".15" data-linecap="round" data-width="100" data-height="100" data-inputColor="#BABFC7" data-readOnly="true" data-fgColor="#FF7588" data-knob-icon="icon-star">
-                                        </div>
-                                    </div>
-                                    <div class="text-xs-center col-md-6 pl-0 pr-0 mb-0">
-                                        <div class="card-header mb-0 pt-0 pb-0">
-                                            <h5 class="warning t tn">Витрачено часу</h5>
-                                            <h3 class="font-large-2 text-bold-200">180 <span class="font-medium-1 grey darken-1 text-bold-400">годин</span></h3>
-                                        </div>
-                                        <div class="card-body">
-                                            <input type="text" value="50" class="knob hide-value responsive angle-offset" data-angleOffset="20" data-thickness=".15" data-linecap="round" data-width="100" data-height="100" data-inputColor="#BABFC7" data-readOnly="true" data-fgColor="#FFA87D" data-knob-icon="icon-clock">
-                                        </div>
-                                    </div>
-                                    <div class="text-xs-center col-md-6 pl-0 pr-0 mb-0">
-                                        <div class="card-header mb-0 pt-0 pb-0">
-                                            <h5 class="success t tn">Зароблено всього</h5>
-                                            <h3 class="font-large-2 text-bold-200">1500 <span class="font-medium-1 grey darken-1 text-bold-400">грн.</span></h3>
-                                        </div>
-                                        <div class="card-body">
-                                            <input type="text" value="65" class="knob hide-value responsive angle-offset" data-angleOffset="20" data-thickness=".15" data-linecap="round" data-width="100" data-height="100" data-inputColor="#BABFC7" data-readOnly="true" data-fgColor="#16D39A" data-knob-icon="icon-wallet">
-                                            <p class="notification-text font-small-3 text-muted">1000 потенційних / 500 активних</p>
+
+                            <div class="card bg-primary">
+                                <div class="card-body">
+                                    <div class="card-block">
+                                        <div class="media">
+                                            <div class="media-left media-middle">
+                                                <i class="icon-list white font-large-2 float-xs-left"></i>
+                                            </div>
+                                            <div class="media-body white text-xs-right">
+                                                <h3 class="font-large-1">278</h3>
+                                                <span>Виконано завдань</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="card bg-success">
+                                <div class="card-body">
+                                    <div class="card-block">
+                                        <div class="media">
+                                            <div class="media-left media-middle">
+                                                <i class="icon-briefcase white font-large-2 float-xs-left"></i>
+                                            </div>
+                                            <div class="media-body white text-xs-right">
+                                                <h3 class="font-large-1">278</h3>
+                                                <span>Проектів</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card bg-warning">
+                                <div class="card-body">
+                                    <div class="card-block">
+                                        <div class="media">
+                                            <div class="media-left media-middle">
+                                                <i class="icon-clock white font-large-2 float-xs-left"></i>
+                                            </div>
+                                            <div class="media-body white text-xs-right">
+                                                <h3 class="font-large-1">278</h3>
+                                                <span>Витрачено часу</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card bg-danger">
+                                <div class="card-body">
+                                    <div class="card-block">
+                                        <div class="media">
+                                            <div class="media-left media-middle">
+                                                <i class="icon-wallet white font-large-2 float-xs-left"></i>
+                                            </div>
+                                            <div class="media-body white text-xs-right">
+                                                <h3 class="font-large-1">1000 / 5000</h3>
+                                                <span>потенційних / активних гривень</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                         <!-- END OF USER Statistics -->
 
@@ -185,7 +204,7 @@
                                 <a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
                                 <div class="heading-elements">
                                     <ul class="list-inline mb-0">
-                                        <li><a data-action="close"><i class="ft-x"></i></a></li>
+                                        <li><a data-action="close"><i class="icon-close"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -210,17 +229,26 @@
                                 <a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
                                 <div class="heading-elements">
                                     <ul class="list-inline mb-0">
-                                        <li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+                                        <li><a data-action="expand"><i class="icon-frame"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="card-body collapse in">
                                 <div class="card-block">
                                     <div class="card card border-grey border-lighten-2">
-                                        <div class="text-xs-center">
-                                            <div class="card-block">
-                                                <h4 class="card-title mb-0">Крутий чувак</h4>
-                                                <a href="#" class="text-xs-center font-small-2">я на 34 рівні <progress class="progress progress-sm progress-success mb-0" value="35" max="50"></progress></a>
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="card-block">
+                                                    <div class="media">
+                                                        <div class="media-body text-xs-left">
+                                                            <h3 class="danger">Крутий чувак</h3>
+                                                            <span>Я на 1-му рівні</span>
+                                                        </div>
+                                                        <div class="media-right media-middle">
+                                                            <i class="icon-rocket danger font-large-2 float-xs-right"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="list-group list-group-flush user-badges-list">

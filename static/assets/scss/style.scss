@@ -301,57 +301,6 @@ nav.navbar-fixed + .app-content {
   margin-top: 10px;
 }
 
-.dropdown-notification {
-  .scrollable-container {
-    .list-group-item .media-left {
-      &:after {
-        font-family: Simple-Line-Icons!important;
-        speak: none;
-        font-style: normal;
-        font-weight: 400;
-        font-variant: normal;
-        text-transform: none;
-        line-height: 1;
-        -webkit-font-smoothing: antialiased;
-        font-size: 2rem;
-        margin-right: 0.5rem;;
-      }
-    }
-  }
-
-  .badge {
-    color: #448AFF;
-
-    .media-left:after {
-      content: '\e028';
-    }
-  }
-
-  .coins {
-    color: #00897B;
-
-    .media-left:after {
-      content: '\e043';
-    }
-  }
-
-  .level {
-    color: #E53935;
-
-    .media-left:after {
-      content: '\e05c';
-    }
-  }
-
-  .points {
-    color: #F9A825;
-
-    .media-left:after {
-      content: '\e01b';
-    }
-  }
-}
-
 .header-navbar.navbar-brand-center .navbar-header {
   width: 230px;
 }

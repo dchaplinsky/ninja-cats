@@ -4,6 +4,7 @@ import gridfs
 from bson.objectid import ObjectId
 from mongoengine.connection import get_db
 from vulyk.blueprints import VulykModule
+from vulyk import utils
 from vulyk.blueprints.gamification.models.foundations import FundModel
 
 from .admin import FAQAdmin, StaticPageAdmin, PromoAdmin, MenuAdmin
@@ -40,13 +41,16 @@ cms = CMSModule('cms', __name__)
 @cms.route('/thumbnail/<coll>/<pk>')
 def api_file_view(coll, pk):
     if not pk or not coll:
-        flask.abort(404)
+        flask.abort(utils.HTTPStatus.NOT_FOUND)
+
+    if coll not in ["images"]:
+        flask.abort(utils.HTTPStatus.FORBIDDEN)
 
     fs = gridfs.GridFS(get_db("default"), coll)
 
     data = fs.get(ObjectId(pk))
     if not data:
-        flask.abort(404)
+        flask.abort(utils.HTTPStatus.NOT_FOUND)
 
     return flask.Response(
         data.read(),
@@ -60,11 +64,24 @@ def static_page(slug):
     try:
         page = StaticPage.objects.get(slug=slug)
     except StaticPage.DoesNotExist:
-        flask.abort(404)
+        flask.abort(utils.HTTPStatus.NOT_FOUND)
 
     return flask.render_template(
         "base/static_page.html",
         page=page
+    )
+
+
+@cms.route('/foundation/<fund_id>')
+def fund_page(fund_id):
+    fund = FundModel.find_by_id(fund_id)
+
+    if fund is None:
+        flask.abort(utils.HTTPStatus.NOT_FOUND)
+
+    return flask.render_template(
+        "base/fund_page.html",
+        fund=fund
     )
 
 

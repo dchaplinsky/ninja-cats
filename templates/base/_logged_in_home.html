@@ -247,90 +247,24 @@
                         <div class="card-body collapse in">
                             <div class="card-body collapse in">
                                 <div class="card-block  py-0 px-0">
+                                    {% for foundation_row in cms_foundations|batch(2) %}
                                     <div class="card-deck-wrapper">
                                         <div class="card-deck">
+                                            {% for foundation in foundation_row %}
                                             <figure class="card card-img-top border-grey border-lighten-2">
-                                                <a href="#" data-toggle="modal" data-target="#primary"><img class="gallery-thumbnail card-img-top" src="http://lorempixel.com/400/300/cats/1" itemprop="thumbnail" alt="Image description"></a>
+                                                <a href="{{ url_for('cms.fund_page', fund_id=foundation.id) }}"><img class="gallery-thumbnail card-img-top" src="{{ url_for('gamification.fund_logo', fund_id=foundation.id) }}" itemprop="thumbnail" alt="{{ foundation.name }}"></a>
                                                 <div class="card-block px-0">
-                                                    <a href="#" class="notification-text font-small-3 text-muted">Про фонд</a>
+                                                    <a href="#" class="notification-text font-small-3 text-muted">Про фонд {{ foundation.name }}</a>
                                                 </div>
                                             </figure>
-                                            <figure class="card card-img-top border-grey border-lighten-2">
-                                                <a href="#"><img class="gallery-thumbnail card-img-top" src="http://lorempixel.com/400/300/cats/2" itemprop="thumbnail" alt="Image description"></a>
-                                                <div class="card-block px-0">
-                                                    <a href="#" class="notification-text font-small-3 text-muted">Про фонд</a>
-                                                </div>
-                                            </figure>
+                                            {% endfor %}
                                         </div>
                                     </div>
-                                    <div class="card-deck-wrapper">
-                                        <div class="card-deck">
-                                            <figure class="card card-img-top border-grey border-lighten-2">
-                                                <a href="#"><img class="gallery-thumbnail card-img-top" src="http://lorempixel.com/400/300/cats/3" itemprop="thumbnail" alt="Image description"></a>
-                                                <div class="card-block px-0">
-                                                    <a href="#" class="notification-text font-small-3 text-muted">Про фонд</a>
-                                                </div>
-                                            </figure>
-                                            <figure class="card card-img-top border-grey border-lighten-2">
-                                                <a href=""><img class="gallery-thumbnail card-img-top" src="http://lorempixel.com/400/300/cats/4" itemprop="thumbnail" alt="Image description"></a>
-                                                <div class="card-block px-0">
-                                                    <a href="#" class="notification-text font-small-3 text-muted">Про фонд</a>
-                                                </div>
-                                            </figure>
-                                        </div>
-                                    </div>
+                                    {% endfor %}
                                     <div class="card-deck-wrapper mb-2">
                                         <div class="card-deck">
                                             <figure class="card card-img-top border-grey border-lighten-2">
                                                 <a href="#"><img class="gallery-thumbnail card-img-top" src="https://dummyimage.com/600x200/ccc/ffffff.png&text=Важливе+повідомлення" itemprop="thumbnail" alt="Image description"></a>
-                                            </figure>
-                                        </div>
-                                    </div>
-                                    <div class="card-deck-wrapper">
-                                        <div class="card-deck">
-                                            <figure class="card card-img-top border-grey border-lighten-2">
-                                                <a href="#"><img class="gallery-thumbnail card-img-top" src="http://lorempixel.com/400/300/cats/5" itemprop="thumbnail" alt="Image description"></a>
-                                                <div class="card-block px-0">
-                                                    <a href="#" class="notification-text font-small-3 text-muted">Про фонд</a>
-                                                </div>
-                                            </figure>
-                                            <figure class="card card-img-top border-grey border-lighten-2">
-                                                <a href="#"><img class="gallery-thumbnail card-img-top" src="http://lorempixel.com/400/300/cats/10" itemprop="thumbnail" alt="Image description"></a>
-                                                <div class="card-block px-0">
-                                                    <a href="#" class="notification-text font-small-3 text-muted">Про фонд</a>
-                                                </div>
-                                            </figure>
-                                        </div>
-                                    </div>
-                                    <div class="card-deck-wrapper">
-                                        <div class="card-deck">
-                                            <figure class="card card-img-top border-grey border-lighten-2">
-                                                <a href="#"><img class="gallery-thumbnail card-img-top" src="http://lorempixel.com/400/300/cats/6" itemprop="thumbnail" alt="Image description"></a>
-                                                <div class="card-block px-0">
-                                                    <a href="#" class="notification-text font-small-3 text-muted">Про фонд</a>
-                                                </div>
-                                            </figure>
-                                            <figure class="card card-img-top border-grey border-lighten-2">
-                                                <a href="#"><img class="gallery-thumbnail card-img-top" src="http://lorempixel.com/400/300/cats/7" itemprop="thumbnail" alt="Image description"></a>
-                                                <div class="card-block px-0">
-                                                    <a href="#" class="notification-text font-small-3 text-muted">Про фонд</a>
-                                                </div>
-                                            </figure>
-                                        </div>
-                                    </div>
-                                    <div class="card-deck-wrapper">
-                                        <div class="card-deck">
-                                            <figure class="card card-img-top border-grey border-lighten-2">
-                                                <a href="#"><img class="gallery-thumbnail card-img-top" src="http://lorempixel.com/400/300/cats/8" itemprop="thumbnail" alt="Image description"></a>
-                                                <div class="card-block px-0">
-                                                    <a href="#" class="notification-text font-small-3 text-muted">Про фонд</a>
-                                                </div>
-                                            </figure>
-                                            <figure class="card card-img-top border-grey border-lighten-2">
-                                                <a href="#"><img class="gallery-thumbnail card-img-top" src="http://lorempixel.com/400/300/cats/9" itemprop="thumbnail" alt="Image description"></a>
-                                                <div class="card-block px-0">
-                                                    <a href="#" class="notification-text font-small-3 text-muted">Про фонд</a>
-                                                </div>
                                             </figure>
                                         </div>
                                     </div>
@@ -339,43 +273,6 @@
                         </div>
                     </div>
                     <!--/ Project Users -->
-                </div>
-
-                <div class="modal fade text-xs-left" id="primary" tabindex="-1" role="dialog" aria-labelledby="myModalLabel8" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header bg-primary white">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                                <h4 class="modal-title" id="myModalLabel8">Перерахувати до фонду "Таблєточки"</h4>
-                            </div>
-                            <div class="modal-body">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="media">
-                                            <div class="p-2 text-xs-center bg-primary media-left media-middle">
-                                                <i class="icon-basket-loaded font-large-2 white"></i>
-                                            </div>
-                                            <div class="p-2 media-body">
-                                                <div class="input-group">
-                                                    <input type="text" class="form-control" placeholder="500 грн." aria-describedby="button-addon2">
-                                                    <span class="input-group-btn" id="button-addon2">
-                                                        <button class="btn btn-primary border-primary" type="button">Добре</button>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <h5>Всього перераховано 5000 грн.</h5>
-                                <progress class="progress progress-sm progress-success mt-1 mb-0" value="75" max="100"></progress>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn grey btn-outline-secondary" data-dismiss="modal">Закрити</button>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>

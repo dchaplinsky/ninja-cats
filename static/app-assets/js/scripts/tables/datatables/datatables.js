@@ -1,8 +1,17 @@
 $(document).ready(function() {
 
-    var allTasksListTable, tSettings;
+    var allTasksListTable,
+        tSettings,
+        $table = $('#user-tasks-table'),
+        rowsNum = $table.find(' > tbody > tr'),
+        rowsPerPage = 5,
+        displayPaging = false;
 
-    allTasksListTable = $('#user-tasks-table').dataTable( {
+    if (rowsNum > rowsPerPage) {
+        displayPaging = true;
+    }
+
+    allTasksListTable = $table.dataTable( {
         "language": {
             "sProcessing":   "Зачекайте...",
             "sLengthMenu":   "Показати _MENU_ записів",
@@ -24,7 +33,9 @@ $(document).ready(function() {
                 "sSortDescending": ": активувати для сортування стовпців за спаданням"
             }
         },
-        "pageLength": 5,
+        "pageLength": rowsPerPage,
+        "info": false,
+        "paging": displayPaging,
         "pagingType": "simple",
         "drawCallback": function( settings ) {
              tSettings = new $.fn.dataTable.Api( settings );

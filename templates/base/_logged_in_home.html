@@ -65,7 +65,7 @@
 {% endmacro %}
 
 {% set state = gamification_stats_service.state_of_user(current_user) %}
-<div class="app-content content container-fluid">
+<div class="app-content content container-fluid gamification-stats">
     <div class="content-wrapper">
         <div class="content-detached content-left">
             <div class="content-body">
@@ -203,42 +203,6 @@
                                 <h4 class="card-title"><i class="icon-badge"></i> Мої досягнення</h4>
                                 <a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
                             </div>
-
-                            <div class="row">
-                                <div class="badge">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <div class="media">
-                                                <div class="p-2 text-xs-center bg-primary media-left media-middle">
-                                                    <img src="{{ url_for('static', filename='app-assets/images/badges/01.png') }}" class="height-75 ib float-xs-left" alt="Card image" />
-                                                </div>
-                                                <div class="p-2 media-body">
-                                                    <h5>Я від Кононенка</h5>
-                                                    <h5 class="text-bold-400">За щось</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="badge">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <div class="media">
-                                                <div class="p-2 text-xs-center bg-danger media-left media-middle">
-                                                    <img src="{{ url_for('static', filename='app-assets/images/badges/02.png') }}" class="height-75 ib float-xs-left" alt="Card image" />
-                                                </div>
-                                                <div class="p-2 media-body">
-                                                    <h5>Рання пташка</h5>
-                                                    <h5 class="text-bold-400">За щось</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div><!-- row -->
-
                         </div>
                         <!-- END OF USER achivments -->
 

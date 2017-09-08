@@ -1,0 +1,14 @@
+.badge {
+  //todo
+  &.badge-1 {
+    .media-left {
+      background: #00B5B8 !important;
+    }
+  }
+
+  &.badge-2 {
+    .media-left {
+      background-color: #FF7588 !important;
+    }
+  }
+}

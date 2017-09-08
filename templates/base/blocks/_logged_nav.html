@@ -2,7 +2,7 @@
     <div class="navbar-wrapper">
         <div class="navbar-header">
             <ul class="nav navbar-nav">
-                <li class="nav-item mobile-menu hidden-md-up float-xs-left"><a href="#" class="nav-link nav-menu-main menu-toggle hidden-xs"><i class="ft-menu font-large-1"></i></a></li>
+                <li class="nav-item mobile-menu hidden-md-up float-xs-left"><a href="#" class="nav-link nav-menu-main menu-toggle hidden-xs"><i class="icon-list font-large-1"></i></a></li>
                 <li class="nav-item">
                     <a href="/" class="navbar-brand">
                         <h2 class="brand-text">
@@ -17,80 +17,31 @@
         <div class="navbar-container content container-fluid">
             <div id="navbar-mobile" class="collapse navbar-toggleable-sm">
                 <ul class="nav navbar-nav">
-                    <li class="nav-item hidden-sm-down"><a href="#" class="nav-link nav-menu-main menu-toggle hidden-xs"><i class="ft-menu"></i></a></li>
-                    <li class="nav-item hidden-sm-down"><a href="#" class="nav-link nav-link-expand"><i class="ficon ft-maximize"></i></a></li>
+                    <li class="nav-item hidden-sm-down"><a href="#" class="nav-link nav-menu-main menu-toggle hidden-xs"><i class="icon-list"></i></a></li>
+                    <li class="nav-item hidden-sm-down"><a href="#" class="nav-link nav-link-expand"><i class="icon-size-fullscreen"></i></a></li>
                 </ul>
                 <ul class="nav navbar-nav float-xs-right">
                     <li class="nav-block-donats nav-item col">
                         {% set state = gamification_stats_service.state_of_user(current_user) %}
-                        <i class="ft-bar-chart-2"></i> <span>Пожертви: {{ gamification_stats_service.total_money_donated_by_user(current_user) }} грн.</span> <br>
-                        <span class="">я на {{ state.level }} рівні <progress class="progress progress-sm progress-success mb-0" value="35" max="50"></progress></span>
+                        <i class="icon-heart"></i> <span>Пожертви: {{ gamification_stats_service.total_money_donated_by_user(current_user) }} грн.</span> <br>
+                        <i class="icon-rocket"></i> <span>я на {{ state.level }} рівні </span>
                     </li>
                     <li class="nav-block-money nav-item col">
-                        <i class="icon-wallet"></i> <span>{{ state.potential_coins }} потенційних грн. <br>{{ state.actual_coins }} активних</span>
+                        <i class="icon-wallet"></i> <span>{{ state.potential_coins }} / {{ state.actual_coins }}</span><br>
+                        <i class="icon-info hidden-xs-up"></i> <span>потенційних / активних грн.</span>
                     </li>
                     <li class="dropdown dropdown-notification nav-item">
                         <a href="#" data-toggle="dropdown" class="nav-link nav-link-label">
-                            <i class="ficon ft-bell"></i>
-                            <span class="tag tag-pill tag-default tag-danger tag-default tag-up">5</span>
+                            <i class="icon-bell"></i>
+                            <span class="tag tag-pill tag-default tag-danger tag-default tag-up hidden-xs-up"></span>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
                             <li class="dropdown-menu-header">
                                 <h6 class="dropdown-header m-0">
                                     <span class="grey darken-2">Останні досягнення</span>
-                                    <span class="notification-tag tag tag-default tag-danger float-xs-right m-0">5 Нових</span>
                                 </h6>
                             </li>
-                            <li class="list-group scrollable-container">
-                                <a href="javascript:void(0)" class="list-group-item">
-                                    <div class="media">
-                                        <div class="media-left valign-middle"><i class="ft-plus-square icon-bg-circle bg-cyan"></i></div>
-                                        <div class="media-body">
-                                            <h6 class="media-heading">+5 балів за декларашки</h6>
-                                            <p class="notification-text font-small-3 text-muted">Lorem ipsum dolor sit amet, consectetuer elit.</p><small>
-                                            <time datetime="2015-06-11T18:29:20+08:00" class="media-meta text-muted">30 хв. тому</time></small>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="javascript:void(0)" class="list-group-item">
-                                    <div class="media">
-                                        <div class="media-left valign-middle"><i class="ft-download-cloud icon-bg-circle bg-red bg-darken-1"></i></div>
-                                        <div class="media-body">
-                                            <h6 class="media-heading red darken-1">+10 грн. за щось</h6>
-                                            <p class="notification-text font-small-3 text-muted">Aliquam tincidunt mauris eu risus.</p><small>
-                                            <time datetime="2015-06-11T18:29:20+08:00" class="media-meta text-muted">День тому</time></small>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="javascript:void(0)" class="list-group-item">
-                                    <div class="media">
-                                        <div class="media-left valign-middle"><i class="ft-alert-triangle icon-bg-circle bg-yellow bg-darken-3"></i></div>
-                                        <div class="media-body">
-                                            <h6 class="media-heading yellow darken-3">+ 25 балів за друзів</h6>
-                                            <p class="notification-text font-small-3 text-muted">Vestibulum auctor dapibus neque.</p><small>
-                                            <time datetime="2015-06-11T18:29:20+08:00" class="media-meta text-muted">Два дні тому</time></small>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="javascript:void(0)" class="list-group-item">
-                                    <div class="media">
-                                        <div class="media-left valign-middle"><i class="ft-check-circle icon-bg-circle bg-cyan"></i></div>
-                                        <div class="media-body">
-                                            <h6 class="media-heading">+100 грн ти передав фонду "Крила"</h6><small>
-                                            <time datetime="2015-06-11T18:29:20+08:00" class="media-meta text-muted">На тому тижні</time></small>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="javascript:void(0)" class="list-group-item">
-                                    <div class="media">
-                                        <div class="media-left valign-middle"><i class="ft-file icon-bg-circle bg-teal"></i></div>
-                                        <div class="media-body">
-                                            <h6 class="media-heading">Ти отримав новий бейдж</h6><small>
-                                            <time datetime="2015-06-11T18:29:20+08:00" class="media-meta text-muted">Місяць тому</time></small>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
+                            <li class="list-group scrollable-container"></li>
                             <li class="dropdown-menu-footer"><a href="javascript:void(0)" class="dropdown-item text-muted text-xs-center">Продивитись всі</a></li>
                         </ul>
                     </li>
@@ -103,7 +54,7 @@
                         <div class="dropdown-menu dropdown-menu-right">
                             <div class="dropdown-divider"></div>
                             <form action="{{ url_for('logout') }}" method="post">
-                                <button type="submit" class="btn btn-link dropdown-item w-100"><i class="ft-power"></i> Вихід</a></button>
+                                <button type="submit" class="btn btn-link dropdown-item w-100"><i class="icon-power"></i> Вихід</a></button>
                             </form>
                         </div>
                     </li>
@@ -116,31 +67,29 @@
 <div data-scroll-to-active="true" class="main-menu menu-fixed menu-dark menu-accordion menu-shadow">
     <div class="main-menu-content">
         <ul id="main-menu-navigation" data-menu="menu-navigation" class="navigation navigation-main">
-            <li class="active nav-item"><a href="#"><i class="ft-home"></i><span data-i18n="" class="menu-title">Головна</span></a></li>
-            <li class=" nav-item"><a href="#"><i class="ft-user"></i><span data-i18n="" class="menu-title">Профіль</span></a>
+            <li class="active nav-item"><a href="#"><i class="icon-home"></i><span data-i18n="" class="menu-title">Головна</span></a></li>
+            <li class="nav-item"><a href="#"><i class="icon-user"></i><span data-i18n="" class="menu-title">Профіль</span></a>
                 <ul class="menu-content">
                     <li>
                         <form action="{{ url_for('logout') }}" method="post">
-                            <button type="submit" class="btn btn-link menu-item"><i class="ft-power"></i> Вихід</a></button>
+                            <button type="submit" class="btn btn-link menu-item"><i class="icon-power"></i> Вихід</a></button>
                         </form>
                     </li>
                 </ul>
             </li>
-            <li class=" nav-item"><a href="#"><i class="ft-check-square"></i><span data-i18n="" class="menu-title">Список завдань</span><span class="tag tag-danger tag-pill float-xs-right mr-2">New</span></a>
+            <li class="nav-item"><a href="#"><i class="icon-check"></i><span data-i18n="" class="menu-title">Список завдань</span></a>
                 <ul class="menu-content">
-                    <li><a href="#" class="menu-item">Запросити друга +5</a></li>
-                    <li><a href="#" class="menu-item">Додати декларацію +15</a></li>
-                    <li><a href="#" class="menu-item" title="Розшифрувати декларацію +10">Розшифрувати декларацію +10</a></li>
-                    <li><a href="#" class="menu-item">Знайти гарну хату +5</a></li>
+                    {% for task in task_types|sort(reverse=True, attribute="has_tasks") %}
+                        <li>
+                            <a href="#" class="menu-item" title="{{task.name }}">
+                                {{task.description }}
+                            </a>
+                        </li>
+                    {% endfor %}
                 </ul>
             </li>
-            <li class=" nav-item"><a href="#"><i class="ft-heart"></i><span data-i18n="" class="menu-title">Список фондів</span><span class="tag tag-warning tag-pill float-xs-right mr-2">+3</span></a>
-                <ul class="menu-content">
-                    <li><a href="#" class="menu-item">Таблеточки</a></li>
-                    <li><a href="#" class="menu-item">Повернись живим</a></li>
-                    <li><a href="#" class="menu-item">Крила</a></li>
-                    <li><a href="#" class="menu-item">Азов</a></li>
-                </ul>
+            <li class="nav-item hidden-xs-up" id="sidebar-fund-list"><a href="#"><i class="icon-heart"></i><span data-i18n="" class="menu-title">Список фондів</span></a>
+                <ul class="menu-content"></ul>
             </li>
             {% for menu in cms_registered_menu_items %}
             <li class="nav-item">

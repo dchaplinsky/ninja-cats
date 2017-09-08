@@ -2,6 +2,57 @@
 @import "../../assets/scss/colors/palette-variables";
 @import "_mixins";
 
+.dropdown-notification {
+  .scrollable-container {
+    .list-group-item .media-left {
+      &:after {
+        font-family: Simple-Line-Icons!important;
+        speak: none;
+        font-style: normal;
+        font-weight: 400;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        font-size: 2rem;
+        margin-right: 0.5rem;;
+      }
+    }
+  }
+
+  .badge {
+    color: #448AFF;
+
+    .media-left:after {
+      content: '\e028';
+    }
+  }
+
+  .coins {
+    color: #00897B;
+
+    .media-left:after {
+      content: '\e02a';
+    }
+  }
+
+  .level {
+    color: #E53935;
+
+    .media-left:after {
+      content: '\e05c';
+    }
+  }
+
+  .points {
+    color: #F9A825;
+
+    .media-left:after {
+      content: '\e01b';
+    }
+  }
+}
+
 #user-statistics {
   h5 {
     min-height: 38px;
@@ -79,11 +130,36 @@
 }
 
 #user-achivments {
+
   .user-badges-list {
     img {
       display: inline-block;
       float: left;
       margin-right: 1rem;
+    }
+  }
+
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  @media (min-width: 460px) and (max-width: 767px),
+  (min-width: 1580px){
+    .row {
+      display: flex;
+      margin-bottom: 1.875rem;
+    }
+
+    .badge {
+      width: 50%;
+      padding-right: 15px;
+      padding-left: 15px;
+
+      .card {
+        margin-bottom: 0;
+        height: 100%;
+      }
     }
   }
 }

@@ -3,7 +3,7 @@
         <tbody>
         <tr>
             <td>
-                <i class="fa {{ icon }} icon-bg-circle"></i>
+                <i class="{{ icon }} icon-bg-circle"></i>
                 {% if task.has_tasks %}
                     <h6 class="media-heading teal">
                         <a href="{{ url_for("task_home", type_name=task.type) }}" title="{{ task.description }}">{{ task.name }}</a>
@@ -46,7 +46,7 @@
 {% macro vip_task_card(task) %}
     <div class="card-block vip-task">
         <div class="list-group-item">
-            {{ _task_card(task, "fa-thumb-tack bg-teal") }}
+            {{ _task_card(task, "icon-magic-wand bg-teal") }} <!--todo in project-id + css -->
         </div>
     </div>
 {% endmacro %}
@@ -56,7 +56,7 @@
         <td>{{ i }}</td>
         <td>
             <div class="list-group-item">
-                {{ _task_card(task, "fa-puzzle-piece bg-yellow bg-darken-3") }}
+                {{ _task_card(task, "icon-puzzle bg-yellow bg-darken-3") }} <!--todo in project-id + css -->
             </div>
         </td>
         <td>{{ task.coins_per_task|default(0) }}</td>
@@ -64,6 +64,7 @@
     </tr>
 {% endmacro %}
 
+{% set state = gamification_stats_service.state_of_user(current_user) %}
 <div class="app-content content container-fluid">
     <div class="content-wrapper">
         <div class="content-detached content-left">
@@ -92,10 +93,10 @@
                                 <a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
                                 <div class="heading-elements">
                                     <ul class="list-inline mb-0">
-                                        {# <li><a class="sord-opt sort-by-user" title="Твої завдання"><i class="ft-heart"></i></a></li> #}
-                                        <li><a class="sord-opt sort-by-points" title="Найбільше балів"><i class="ft-award"></i></a></li>
-                                        <li><a class="sord-opt sort-by-money" title="Найдорожчі">$</a></li>
-                                        <li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+                                        {# <li><a class="sord-opt sort-by-user" title="Твої завдання"><i class="icon-heart"></i></a></li> #}
+                                        <li><a class="sord-opt sort-by-points" title="Найбільше балів"><i class="icon-game-controller"></i></a></li>
+                                        <li><a class="sord-opt sort-by-money" title="Найдорожчі"><i class="icon-wallet"></i></a></li>
+                                        <li><a data-action="expand"><i class="icon-size-fullscreen"></i><i class="icon-size-actual"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -124,68 +125,131 @@
 
                     <div class="col-md-6">
                         <!-- USER Statistics -->
-                        <div class="card" id="user-statistics">
-                            <div class="card-header">
-                                <h4 class="card-title">Статистика</h4>
-                                <a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
-                                <div class="heading-elements">
-                                    <ul class="list-inline mb-0">
-                                        <li><a data-action="expand"><i class="ft-maximize"></i></a></li>
-                                    </ul>
-                                </div>
+                        <div id="user-statistics">
+                            <div class="card-header transparent-bg pl-0">
+                                <h4 class="card-title"><i class="icon-graph"></i> Статистика</h4>
                             </div>
-                            <div class="card-body collapse in">
-                                <div class="card-block">
-                                    <div class="my-1 text-xs-center col-md-6 pl-0 pr-0">
-                                        <div class="card-header mb-0 pt-0 pb-0">
-                                            <h5 class="primary t tn">Виконано завдань</h5>
-                                            <h3 class="font-large-2 text-bold-200">210</h3>
-                                        </div>
-                                        <div class="card-body">
-                                            <input type="text" value="85" class="knob hide-value responsive angle-offset" data-angleOffset="40" data-thickness=".15" data-linecap="round" data-width="100" data-height="100" data-inputColor="#BABFC7" data-readOnly="true" data-fgColor="#00B5B8" data-knob-icon="icon-list">
-                                        </div>
-                                    </div>
-                                    <div class="my-1 text-xs-center col-md-6 pl-0 pr-0">
-                                        <div class="card-header mb-0 pt-0 pb-0">
-                                            <h5 class="danger t tn">Проектів</h5>
-                                            <h3 class="font-large-2 text-bold-200">3</h3>
-                                        </div>
-                                        <div class="card-body">
-                                            <input type="text" value="15" class="knob hide-value responsive angle-offset" data-angleOffset="0" data-thickness=".15" data-linecap="round" data-width="100" data-height="100" data-inputColor="#BABFC7" data-readOnly="true" data-fgColor="#FF7588" data-knob-icon="icon-star">
-                                        </div>
-                                    </div>
-                                    <div class="text-xs-center col-md-6 pl-0 pr-0 mb-0">
-                                        <div class="card-header mb-0 pt-0 pb-0">
-                                            <h5 class="warning t tn">Витрачено часу</h5>
-                                            <h3 class="font-large-2 text-bold-200">180 <span class="font-medium-1 grey darken-1 text-bold-400">годин</span></h3>
-                                        </div>
-                                        <div class="card-body">
-                                            <input type="text" value="50" class="knob hide-value responsive angle-offset" data-angleOffset="20" data-thickness=".15" data-linecap="round" data-width="100" data-height="100" data-inputColor="#BABFC7" data-readOnly="true" data-fgColor="#FFA87D" data-knob-icon="icon-clock">
-                                        </div>
-                                    </div>
-                                    <div class="text-xs-center col-md-6 pl-0 pr-0 mb-0">
-                                        <div class="card-header mb-0 pt-0 pb-0">
-                                            <h5 class="success t tn">Зароблено всього</h5>
-                                            <h3 class="font-large-2 text-bold-200">1500 <span class="font-medium-1 grey darken-1 text-bold-400">грн.</span></h3>
-                                        </div>
-                                        <div class="card-body">
-                                            <input type="text" value="65" class="knob hide-value responsive angle-offset" data-angleOffset="20" data-thickness=".15" data-linecap="round" data-width="100" data-height="100" data-inputColor="#BABFC7" data-readOnly="true" data-fgColor="#16D39A" data-knob-icon="icon-wallet">
-                                            <p class="notification-text font-small-3 text-muted">1000 потенційних / 500 активних</p>
+
+                            <div class="card bg-primary">
+                                <div class="card-body">
+                                    <div class="card-block">
+                                        <div class="media">
+                                            <div class="media-left media-middle">
+                                                <i class="icon-rocket white font-large-2 float-xs-left"></i>
+                                            </div>
+                                            <div class="media-body white text-xs-right">
+                                                <h3 class="font-large-1">Крутий чувак</h3>
+                                                <span>Я на {{ state.level }}-му рівні</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="card bg-success">
+                                <div class="card-body">
+                                    <div class="card-block">
+                                        <div class="media">
+                                            <div class="media-left media-middle">
+                                                <i class="icon-check white font-large-2 float-xs-left"></i>
+                                            </div>
+                                            <div class="media-body white text-xs-right">
+                                                <h3 class="font-large-1">278</h3>
+                                                <span>Виконано завдань</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card bg-warning">
+                                <div class="card-body">
+                                    <div class="card-block">
+                                        <div class="media">
+                                            <div class="media-left media-middle">
+                                                <i class="icon-game-controller white font-large-2 float-xs-left"></i>
+                                            </div>
+                                            <div class="media-body white text-xs-right">
+                                                <h3 class="font-large-1">{{ state.points }}</h3>
+                                                <span>Зароблено балів</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card bg-danger">
+                                <div class="card-body">
+                                    <div class="card-block">
+                                        <div class="media">
+                                            <div class="media-left media-middle">
+                                                <i class="icon-wallet white font-large-2 float-xs-left"></i>
+                                            </div>
+                                            <div class="media-body white text-xs-right">
+                                                <h3 class="font-large-1">{{ state.potential_coins }} / {{ state.actual_coins }}</h3>
+                                                <span>потенційних / активних гривень</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                         <!-- END OF USER Statistics -->
 
                         <!-- USER achivments -->
+                        <div id="user-achivments">
+                            <div class="card-header transparent-bg pl-0">
+                                <h4 class="card-title"><i class="icon-badge"></i> Мої досягнення</h4>
+                                <a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
+                            </div>
+
+                            <div class="row">
+                                <div class="badge">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="media">
+                                                <div class="p-2 text-xs-center bg-primary media-left media-middle">
+                                                    <img src="{{ url_for('static', filename='app-assets/images/badges/01.png') }}" class="height-75 ib float-xs-left" alt="Card image" />
+                                                </div>
+                                                <div class="p-2 media-body">
+                                                    <h5>Я від Кононенка</h5>
+                                                    <h5 class="text-bold-400">За щось</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="badge">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="media">
+                                                <div class="p-2 text-xs-center bg-danger media-left media-middle">
+                                                    <img src="{{ url_for('static', filename='app-assets/images/badges/02.png') }}" class="height-75 ib float-xs-left" alt="Card image" />
+                                                </div>
+                                                <div class="p-2 media-body">
+                                                    <h5>Рання пташка</h5>
+                                                    <h5 class="text-bold-400">За щось</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div><!-- row -->
+
+                        </div>
+                        <!-- END OF USER achivments -->
+
+                        <!-- USER help -->
                         <div class="card" id="user-help">
                             <div class="card-header">
                                 <h4 class="card-title">Ти допоміг</h4>
                                 <a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
                                 <div class="heading-elements">
                                     <ul class="list-inline mb-0">
-                                        <li><a data-action="close"><i class="ft-x"></i></a></li>
+                                        <li><a data-action="close"><i class="icon-close"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -201,39 +265,8 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- END OF USER achivments -->
+                        <!-- END OF USER help -->
 
-                        <!-- USER achivments -->
-                        <div class="card" id="user-achivments">
-                            <div class="card-header">
-                                <h4 class="card-title">Мої досягнення</h4>
-                                <a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
-                                <div class="heading-elements">
-                                    <ul class="list-inline mb-0">
-                                        <li><a data-action="expand"><i class="ft-maximize"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="card-body collapse in">
-                                <div class="card-block">
-                                    <div class="card card border-grey border-lighten-2">
-                                        <div class="text-xs-center">
-                                            <div class="card-block">
-                                                <h4 class="card-title mb-0">Крутий чувак</h4>
-                                                <a href="#" class="text-xs-center font-small-2">я на 34 рівні <progress class="progress progress-sm progress-success mb-0" value="35" max="50"></progress></a>
-                                            </div>
-                                        </div>
-                                        <div class="list-group list-group-flush user-badges-list">
-                                            <a href="#" class="list-group-item t tn col-md-6 pl-0 pr-0"><img src="{{ url_for('static', filename='app-assets/images/badges/01.png') }}" class="height-50 ib" alt="Card image"> <span>Я від Кононенка</span></a>
-                                            <a href="#" class="list-group-item t tn col-md-6 pr-0"><img src="{{ url_for('static', filename='app-assets/images/badges/02.png') }}" class="height-50 ib" alt="Card image"> <span>Рання пташка</span></a>
-                                            <a href="#" class="list-group-item t tn col-md-6 pl-0 pr-0"><img src="{{ url_for('static', filename='app-assets/images/badges/03.png') }}" class="height-50 ib" alt="Card image"> <span>Кльовий пацан</span></a>
-                                            <a href="#" class="list-group-item t tn col-md-6 pr-0"><img src="{{ url_for('static', filename='app-assets/images/badges/04.png') }}" class="height-50 ib" alt="Card image"> <span>Сумлінний декларант</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- END OF USER achivments -->
                     </div>
                 </div>
             </div>

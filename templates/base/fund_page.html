@@ -132,14 +132,14 @@
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
-                                <h4 class="modal-title" id="myModalLabel8">Перерахувати до фонду "Таблєточки"</h4>
+                                <h4 class="modal-title" id="myModalLabel8">Перерахувати до фонду "{{ fund.name }}"</h4>
                             </div>
                             <div class="modal-body">
                                 <div class="card">
                                     <div class="card-body">
                                         <div class="media">
-                                            <div class="p-2 text-xs-center bg-primary media-left media-middle">
-                                                <i class="icon-basket-loaded font-large-2 white"></i>
+                                            <div class="p-2 text-xs-center media-left media-middle">
+                                                <img src="{{ url_for('gamification.fund_logo', fund_id=fund.id) }}" class="img-border height-100" alt="Card image">
                                             </div>
                                             <div class="p-2 media-body">
                                                 <div class="input-group">
@@ -152,8 +152,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <h5>Всього перераховано 5000 грн.</h5>
-                                <progress class="progress progress-sm progress-success mt-1 mb-0" value="75" max="100"></progress>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn grey btn-outline-secondary" data-dismiss="modal">Закрити</button>

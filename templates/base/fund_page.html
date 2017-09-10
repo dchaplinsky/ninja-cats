@@ -1,6 +1,7 @@
 {% extends "base/base.html" %}
 
 {% block body_content %}
+{% set state = gamification_stats_service.state_of_user(current_user) %}
 <div class="app-content content container-fluid">
     <div class="content-wrapper">
         <div class="content-detached content-left">
@@ -8,7 +9,12 @@
                 <div class="row" id="user-profile">
                     <div class="col-xs-12">
                         <div class="card profile-with-cover">
-                            <div class="card-img-top img-fluid bg-cover height-200" style="background: url('../../../app-assets/images/carousel/tabletochki.jpg') 50%;"></div>
+                            {% if fund_cover %}
+                                <div class="card-img-top img-fluid bg-cover height-200" style="background-image: url({{ url_for('gamification.fund_logo', fund_id=fund.id) }})"></div>
+                            {% else %}
+                                <div class="card-img-top img-fluid bg-cover height-200 no-image"></div>
+                            {% endif %}
+
                             <div class="cover-shadow"></div>
                             <div class="media profil-cover-details">
                                 <div class="media-left pl-2 pt-2">
@@ -27,7 +33,7 @@
                                 <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
                                     <ul class="nav navbar-nav">
                                         <li class="nav-item">
-                                            <button data-toggle="modal" data-target="#primary" type="button" class="btn btn-danger btn-sm"><i class="icon-magic-wand"></i> Зробити внесок</button>
+                                            <button data-toggle="modal" data-target="#primary" type="button" class="btn btn-danger btn-sm"><i class="icon-basket-loaded"></i> Зробити внесок</button>
                                         </li>
                                         {#<li class="float-xs-right fund-nav-stats">
                                             <p class="font-small-2 mb-0">Я перерахував <span class="tag tag tag-pill tag-success">350 грн.</span></p>
@@ -128,34 +134,37 @@
                 <div class="modal fade text-xs-left" id="primary" tabindex="-1" role="dialog" aria-labelledby="myModalLabel8" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
-                            <div class="modal-header bg-primary white">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                                <h4 class="modal-title" id="myModalLabel8">Перерахувати до фонду "{{ fund.name }}"</h4>
-                            </div>
-                            <div class="modal-body">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="media">
-                                            <div class="p-2 text-xs-center media-left media-middle">
-                                                <img src="{{ url_for('gamification.fund_logo', fund_id=fund.id) }}" class="img-border height-100" alt="Card image">
-                                            </div>
-                                            <div class="p-2 media-body">
-                                                <div class="input-group">
-                                                    <input type="text" class="form-control" placeholder="500 грн." aria-describedby="button-addon2">
-                                                    <span class="input-group-btn" id="button-addon2">
-                                                        <button class="btn btn-primary border-primary" type="button">Добре</button>
-                                                    </span>
+                            <form action="/gamification/donations" method="post" accept-charset="UTF-8" novalidate>
+                                <div class="modal-header bg-primary white">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <h4 class="modal-title" id="myModalLabel8">Перерахувати до фонду "{{ fund.name }}"</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="media">
+                                                <div class="p-2 text-xs-center media-left media-top">
+                                                    <img src="{{ url_for('gamification.fund_logo', fund_id=fund.id) }}" class="img-border height-100" alt="Card image">
+                                                </div>
+                                                <div class="p-2 media-body">
+                                                    <input type="hidden" name="fund_id" value="{{ fund.id }}">
+                                                    <div class="form-group">
+                                                        <div class="controls">
+                                                            <input type="text" name="amount" max="{{ state.actual_coins }}" required data-validation-required-message="Потрібно ввести суму" data-validation-max-message="Ви можете пожертвувати максимум {{ state.actual_coins }} грн." class="form-control" placeholder="500 грн." aria-describedby="button-addon2" >
+                                                        </div>
+                                                    </div>
+                                                    <h5>Доступно на рахунку: {{ state.actual_coins }} грн.</h5>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn grey btn-outline-secondary" data-dismiss="modal">Закрити</button>
-                            </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-primary border-primary" type="submit" name="donate" value="Добре">Добре <i class="fa fa-thumbs-o-up position-right"></i></button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>

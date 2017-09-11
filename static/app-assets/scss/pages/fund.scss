@@ -9,6 +9,14 @@
 }
 
 .profile-with-cover {
+    .bg-cover {
+        background-position: center center;
+
+        &.no-image {
+            background-image: url('../../images/carousel/fund-page.jpg');
+        }
+    }
+
     .cover-shadow {
         content: '';
         display: block;
@@ -22,7 +30,6 @@
 }
 
 .profile-card-with-cover {
-
     .card-profile-image {
         position: absolute;
         top: 130px;
@@ -42,6 +49,7 @@
         .profil-cover-details {
             position: absolute;
             margin-top: -90px;
+
             .profile-image {
                 img.img-border {
                     border: 5px solid #fff;
@@ -62,7 +70,22 @@
         }
     }
     .navbar-profile {
-        //margin-left: 130px;
         border-radius: 0;
+    }
+
+    .nav.navbar-nav {
+        margin-left: 130px;
+
+        button {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+    }
+
+    .nav-stats {
+        p + p {
+            margin-top: 5px;
+        }
     }
 }

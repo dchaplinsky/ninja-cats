@@ -24,10 +24,10 @@
                     <li class="nav-block-donats nav-item col">
                         {% set state = gamification_stats_service.state_of_user(current_user) %}
                         <i class="icon-heart"></i> <span>Пожертви: {{ gamification_stats_service.total_money_donated_by_user(current_user) }} грн.</span> <br>
-                        <i class="icon-rocket"></i> <span>я на {{ state.level }} рівні </span>
+                        <i class="icon-rocket"></i> <span>я на <span class="current-level">{{ state.level }}</span>-му рівні </span>
                     </li>
                     <li class="nav-block-money nav-item col">
-                        <i class="icon-wallet"></i> <span>{{ state.potential_coins }} / {{ state.actual_coins }}</span><br>
+                        <i class="icon-wallet"></i> <span><span class="potential-coins">{{ state.potential_coins }}</span> / <span class="actual-coins">{{ state.actual_coins }}</span></span><br>
                         <i class="icon-info hidden-xs-up"></i> <span>потенційних / активних грн.</span>
                     </li>
                     <li class="dropdown dropdown-notification nav-item">

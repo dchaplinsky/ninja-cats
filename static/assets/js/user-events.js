@@ -1,8 +1,11 @@
 (function(window, document, $) {
     'use strict';
 
+    //todo: limit and sort date desc
+    //todo: clear by FE event
+
     function getUserEvents() {
-        var userEventsJson = '/gamification/events/all',
+        var userEventsJson = '/gamification/events/unseen',
             userEvents = $.getJSON( userEventsJson, function() {
             })
             .done(function( data ) {
@@ -61,6 +64,7 @@
                 if (events[e].coins) {
                     eventsCount++;
                     coins = events[e].coins;
+                    //todo verbose гривень/гривні
                     $containerList.append(generateEventHtml('coins', coins, 'потенційних гривень зароблено', '', formateDate(events[e].timestamp)));
                 }
 
@@ -75,6 +79,7 @@
                 if (events[e].points_given) {
                     eventsCount++;
                     points = events[e].points_given;
+                    //todo verbose балів/бали
                     $containerList.append(generateEventHtml('points', points, 'балів зароблено', '', formateDate(events[e].timestamp)));
                 }
 

@@ -152,14 +152,16 @@
                                                     <input type="hidden" name="fund_id" value="{{ fund.id }}">
                                                     <div class="form-group">
                                                         <div class="controls">
-                                                            <input type="text" name="amount" max="{{ state.actual_coins }}"
+                                                            <input type="text" name="amount" min="1" max="{{ state.actual_coins }}"
                                                                    required data-validation-required-message="Потрібно ввести суму"
+                                                                   data-validation-min-message="Мінімальна сумма 1 грн."
                                                                    data-validation-max-message="Ви можете пожертвувати максимум {{ state.actual_coins }} грн."
                                                                    data-validation-containsnumber-regex="(\d)+"
                                                                    data-validation-containsnumber-message="Потрібно ввести суму"
                                                                    class="form-control" placeholder="500 грн." aria-describedby="button-addon2" >
                                                         </div>
                                                     </div>
+                                                    <input type="hidden" name="fund_name" value="{{ fund.name }}">
                                                     <h5>Доступно на рахунку: {{ state.actual_coins }} грн.</h5>
                                                 </div>
                                             </div>

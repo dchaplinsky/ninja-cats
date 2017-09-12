@@ -1,6 +1,6 @@
 (function(window, document, $) {
 
-    var donateStatus,
+    var donateStatus = null,
         amountTransfer,
         fund;
 
@@ -39,10 +39,15 @@
     });
 
     $('.modal').on('hidden.bs.modal', function (e) {
-        if (donateStatus === 'good') {
-            toastr.info('Ви відправили ' + amountTransfer + ' грн. фонду ' + fund, 'Дякуємо!');
-        } else {
-            toastr.error('Не вдалося перевести кошти', 'Помилка!'); //todo
+
+        if (donateStatus !== null) {
+            if (donateStatus === 'good') {
+                toastr.info('Ви відправили ' + amountTransfer + ' грн. фонду ' + fund, 'Дякуємо!');
+            } else {
+                toastr.error('Не вдалося перевести кошти', 'Помилка!'); //todo
+            }
+
+            donateStatus = null;
         }
     })
 

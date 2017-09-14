@@ -19,12 +19,15 @@
                         points = points = data.result.state.points;
                         level = data.result.state.level;
                     } else {
-                        console.log(data.result.state.achievements);
+                        //console.log(data.result.state.achievements);
                         var newBadgesCount = data.result.state.achievements.length,
                             newPotentialCoins = data.result.state.potential_coins,
                             newActualCoins = data.result.state.actual_coins,
                             newPoints = points = data.result.state.points,
                             newLevel = data.result.state.level;
+
+                        //update notification dropdown
+                        getUserEvents();
 
                         if(newPotentialCoins > potentialCoins) {
                             var delta = newPotentialCoins - potentialCoins;
@@ -55,8 +58,6 @@
                         if(newBadgesCount > badgesCount) {
                             var delta = newBadgesCount - badgesCount;
                             //toastr.info('Ви щойно здобули ' + delta + ' активних грн.', 'Вітаємо!', {"showMethod": "slideDown", "hideMethod": "slideUp", timeOut: 2000});
-
-
                             badgesCount = newBadgesCount;
                         }
                     }
@@ -66,15 +67,14 @@
                 })
     }
 
-    $( document ).ready(function() {
-        if ($('.logged-in').length > 0) {
-            getUserStats(true);
-        }
-    });
-
     $('body').on('vulyk.next', function(event) {
         console.log('next task');
-        getUserStats();
+
+        if (typeof points === 'undefined') {
+            getUserStats(true);
+        } else {
+            getUserStats();
+        }
     });
 
 })(window, document, jQuery);

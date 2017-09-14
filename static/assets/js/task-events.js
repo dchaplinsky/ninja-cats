@@ -28,7 +28,7 @@
 
                         if(newPotentialCoins > potentialCoins) {
                             var delta = newPotentialCoins - potentialCoins;
-                            toastr.success('Ви щойно заробили ' + delta + ' потенціальних грн.', 'Вітаємо!', {"showMethod": "slideDown", "hideMethod": "slideUp", timeOut: 2000});
+                            toastr.success('Ви щойно заробили ' + delta + ' потенційних грн.', 'Вітаємо!', {"showMethod": "slideDown", "hideMethod": "slideUp", timeOut: 2000});
                             potentialCoins = newPotentialCoins;
                             $('.nav-block-money .potential-coins').html(potentialCoins);
                         }

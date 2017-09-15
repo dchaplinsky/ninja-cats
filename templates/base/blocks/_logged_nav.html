@@ -81,7 +81,7 @@
                 <ul class="menu-content">
                     {% for task in task_types|sort(reverse=True, attribute="has_tasks") %}
                         <li>
-                            <a href="#" class="menu-item" title="{{task.name }}">
+                            <a href="{{ url_for("task_home", type_name=task.type) }}" class="menu-item" title="{{task.name }}">
                                 {{task.description }}
                             </a>
                         </li>
@@ -89,7 +89,15 @@
                 </ul>
             </li>
             <li class="nav-item" id="sidebar-fund-list"><a href="#"><i class="icon-heart"></i><span data-i18n="" class="menu-title">Список фондів</span></a>
-                <ul class="menu-content"></ul>
+                <ul class="menu-content">
+                    {% for foundation in cms_foundations %}
+                    <li>
+                        <a href="{{ url_for('cms.fund_page', fund_id=foundation.id) }}" class="menu-item" title="{{ foundation.name }}">
+                            {{ foundation.name }}
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
             </li>
             {% for menu in cms_registered_menu_items %}
             <li class="nav-item">

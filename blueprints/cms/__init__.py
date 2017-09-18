@@ -87,10 +87,10 @@ def fund_page(fund_id):
 
 def get_foundations():
     return {
-        "foundations": map(
+        "foundations": list(map(
             lambda f: f.to_dict(),
             FundModel.get_funds()
-        )
+        ))
     }
 
 

@@ -29,10 +29,6 @@
         if($('.steps-page').length > 0) {
             $('#stepbanner-1-2-3').fsBanner();
         }
-
-        if ($fundsContainer.length > 0) {
-            populateFundList($fundsContainer);
-        }
     });
 
     $(window).load(function() {

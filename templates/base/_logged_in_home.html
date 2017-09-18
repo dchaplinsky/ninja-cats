@@ -154,7 +154,8 @@
                                                 <i class="icon-check white font-large-2 float-xs-left"></i>
                                             </div>
                                             <div class="media-body white text-xs-right">
-                                                <h3 class="font-large-1">278</h3>
+                                                {% set tasks_done = gamification_stats_service.tasks_done_by_user(current_user) %}
+                                                <h3 class="font-large-1">{{ tasks_done }}</h3>
                                                 <span>Виконано завдань</span>
                                             </div>
                                         </div>

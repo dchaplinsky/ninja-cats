@@ -24,10 +24,10 @@
                     <li class="nav-block-donats nav-item col">
                         {% set state = gamification_stats_service.state_of_user(current_user) %}
                         <i class="icon-heart"></i> <span>Пожертви: {{ gamification_stats_service.total_money_donated_by_user(current_user) }} грн.</span> <br>
-                        <i class="icon-rocket"></i> <span>я на {{ state.level }} рівні </span>
+                        <i class="icon-rocket"></i> <span>я на <span class="current-level">{{ state.level }}</span>-му рівні </span>
                     </li>
                     <li class="nav-block-money nav-item col">
-                        <i class="icon-wallet"></i> <span>{{ state.potential_coins }} / {{ state.actual_coins }}</span><br>
+                        <i class="icon-wallet"></i> <span><span class="potential-coins">{{ state.potential_coins }}</span> / <span class="actual-coins">{{ state.actual_coins }}</span></span><br>
                         <i class="icon-info hidden-xs-up"></i> <span>потенційних / активних грн.</span>
                     </li>
                     <li class="dropdown dropdown-notification nav-item">
@@ -38,11 +38,11 @@
                         <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
                             <li class="dropdown-menu-header">
                                 <h6 class="dropdown-header m-0">
-                                    <span class="grey darken-2">Останні досягнення</span>
+                                    <span class="grey darken-2">Виконайте завдання!</span>
                                 </h6>
                             </li>
                             <li class="list-group scrollable-container"></li>
-                            <li class="dropdown-menu-footer"><a href="javascript:void(0)" class="dropdown-item text-muted text-xs-center">Продивитись всі</a></li>
+                            <li class="dropdown-menu-footer"><a id="clear-events-list" href="javascript:void(0)" class="dropdown-item text-muted text-xs-center">Очистити список</a></li>
                         </ul>
                     </li>
                     <li class="dropdown dropdown-user nav-item">
@@ -79,17 +79,25 @@
             </li>
             <li class="nav-item"><a href="#"><i class="icon-check"></i><span data-i18n="" class="menu-title">Список завдань</span></a>
                 <ul class="menu-content">
-                    {% for task in task_types|sort(reverse=True, attribute="has_tasks") %}
+                    {% for task in cms_task_types|sort(reverse=True, attribute="has_tasks") %}
                         <li>
-                            <a href="#" class="menu-item" title="{{task.name }}">
-                                {{task.description }}
+                            <a href="{{ url_for("task_home", type_name=task.type) }}" class="menu-item" title="{{task.name }}">
+                                {{ task.description }}
                             </a>
                         </li>
                     {% endfor %}
                 </ul>
             </li>
-            <li class="nav-item hidden-xs-up" id="sidebar-fund-list"><a href="#"><i class="icon-heart"></i><span data-i18n="" class="menu-title">Список фондів</span></a>
-                <ul class="menu-content"></ul>
+            <li class="nav-item" id="sidebar-fund-list"><a href="#"><i class="icon-heart"></i><span data-i18n="" class="menu-title">Список фондів</span></a>
+                <ul class="menu-content">
+                    {% for foundation in cms_foundations %}
+                    <li>
+                        <a href="{{ url_for('cms.fund_page', fund_id=foundation.id) }}" class="menu-item" title="{{ foundation.name }}">
+                            {{ foundation.name }}
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
             </li>
             {% for menu in cms_registered_menu_items %}
             <li class="nav-item">

@@ -94,7 +94,23 @@ def get_foundations():
     }
 
 
+def get_tasks():
+    from vulyk.app import TASKS_TYPES
+    user = flask.g.user
+
+    if user.is_authenticated:
+        return {
+            "task_types": [
+                x.to_dict() for x in TASKS_TYPES.values()
+                if user.is_eligible_for(x.type_name)
+            ]
+        }
+    else:
+        return {}
+
+
 cms.add_context_filler(get_faq_on_main)
 cms.add_context_filler(get_promos_on_main)
 cms.add_context_filler(get_menu)
 cms.add_context_filler(get_foundations)
+cms.add_context_filler(get_tasks)

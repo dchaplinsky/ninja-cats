@@ -245,33 +245,7 @@
                         <div class="card-header mb-0">
                             <h4 class="card-title">Допоможи їм</h4>
                         </div>
-                        <div class="card-body collapse in">
-                            <div class="card-body collapse in">
-                                <div class="card-block  py-0 px-0">
-                                    {% for foundation_row in cms_foundations|batch(2) %}
-                                    <div class="card-deck-wrapper">
-                                        <div class="card-deck">
-                                            {% for foundation in foundation_row %}
-                                            <figure class="card card-img-top border-grey border-lighten-2">
-                                                <a href="{{ url_for('cms.fund_page', fund_id=foundation.id) }}"><img class="gallery-thumbnail card-img-top" src="{{ url_for('gamification.fund_logo', fund_id=foundation.id) }}" itemprop="thumbnail" alt="{{ foundation.name }}"></a>
-                                                <div class="card-block px-0">
-                                                    <a href="{{ url_for('cms.fund_page', fund_id=foundation.id) }}" class="notification-text font-small-3 text-muted">Про фонд {{ foundation.name }}</a>
-                                                </div>
-                                            </figure>
-                                            {% endfor %}
-                                        </div>
-                                    </div>
-                                    {% endfor %}
-                                    <div class="card-deck-wrapper mb-2">
-                                        <div class="card-deck">
-                                            <figure class="card card-img-top border-grey border-lighten-2">
-                                                <a href="#"><img class="gallery-thumbnail card-img-top" src="https://dummyimage.com/600x200/ccc/ffffff.png&text=Важливе+повідомлення" itemprop="thumbnail" alt="Image description"></a>
-                                            </figure>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        {% include "base/_funds_bar.html" %}
                     </div>
                     <!--/ Project Users -->
                 </div>

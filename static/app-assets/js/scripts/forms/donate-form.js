@@ -4,6 +4,11 @@
         amountTransfer,
         fund;
 
+
+    if (window.location.hash == "#fundDonateModal"){
+        $('#fundDonateModal').modal()
+    }
+
     $('.donate-form').find('input,select,textarea').not('[type=submit]').jqBootstrapValidation({
         submitSuccess: function ($form, event) {
             $.ajax({

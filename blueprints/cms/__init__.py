@@ -72,6 +72,14 @@ def static_page(slug):
     )
 
 
+@cms.route('/faq')
+def faq_page():
+    return flask.render_template(
+        "base/faq_page.html",
+        faq_items=FAQItem.objects.all()
+    )
+
+
 @cms.route('/foundation/<fund_id>')
 def fund_page(fund_id):
     fund = FundModel.find_by_id(fund_id)

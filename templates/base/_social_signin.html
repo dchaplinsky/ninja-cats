@@ -8,7 +8,7 @@
                 <h4 class="modal-title" id="socialSigninLabel">Увійдіть за допомогою соцмереж:</h4>
             </div>
             <div class="modal-body overflow-hidden">
-                <div class="social-buttons">
+                <div>
                     <div class="form-group mb-0 text-sm-center">
                         {% if config.SOCIAL_AUTH_FACEBOOK_KEY %}
                         <a href="{{ url_for('social.auth', backend='facebook') }}" class="btn btn-social width-250 mb-1 btn-facebook">

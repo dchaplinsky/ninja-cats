@@ -1,7 +1,11 @@
 {% extends "base/base.html" %}
 
 {% block body_content %}
-{% set state = gamification_stats_service.state_of_user(current_user) %}
+
+{% if user.is_authenticated %}
+    {% set state = gamification_stats_service.state_of_user(current_user) %}
+{% endif %}
+
 <div class="app-content content container-fluid">
     <div class="content-wrapper">
         <div class="content-detached content-left">
@@ -9,11 +13,7 @@
                 <div class="row" id="user-profile">
                     <div class="col-xs-12">
                         <div class="card profile-with-cover">
-                            {% if fund_cover %}
-                                <div class="card-img-top img-fluid bg-cover height-200" style="background-image: url({{ url_for('gamification.fund_logo', fund_id=fund.id) }})"></div>
-                            {% else %}
-                                <div class="card-img-top img-fluid bg-cover height-200 no-image"></div>
-                            {% endif %}
+                            <div class="card-img-top img-fluid bg-cover height-200 no-image"></div>
 
                             <div class="cover-shadow"></div>
                             <div class="media profil-cover-details">
@@ -33,12 +33,12 @@
                                 <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
                                     <ul class="nav navbar-nav">
                                         <li class="nav-item">
-                                            <button data-toggle="modal" data-target="#fundDonateModal" type="button" class="btn btn-danger btn-sm"><i class="icon-basket-loaded"></i> Зробити внесок</button>
+                                            {% if user.is_authenticated %}
+                                                <button data-toggle="modal" data-target="#fundDonateModal" type="button" class="btn btn-danger btn-sm"><i class="icon-basket-loaded"></i> Зробити внесок</button>
+                                            {% else %}
+                                                <button data-toggle="modal" data-target="#socialSignin" type="button" class="btn btn-danger btn-sm"><i class="icon-basket-loaded"></i> Зареєструватися та допомогти</button>
+                                            {% endif %}
                                         </li>
-                                        {#<li class="float-xs-right fund-nav-stats">
-                                            <p class="font-small-2 mb-0">Я перерахував <span class="tag tag tag-pill tag-success">350 грн.</span></p>
-                                            <p class="font-small-2 mb-0">Всього зібрано <span class="tag tag-info tag-pill float-xs-right">500 000 грн.</span></p>
-                                        </li>#}
                                     </ul>
                                 </div>
                             </nav>
@@ -131,6 +131,7 @@
                     <!--/ Project Users -->
                 </div>
 
+                {% if user.is_authenticated %}
                 <div class="modal fade text-xs-left" id="fundDonateModal" tabindex="-1" role="dialog" aria-labelledby="fundDonate" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
@@ -175,6 +176,7 @@
                         </div>
                     </div>
                 </div>
+                {% endif %}
             </div>
         </div>
     </div>

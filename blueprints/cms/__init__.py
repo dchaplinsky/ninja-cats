@@ -76,7 +76,7 @@ def static_page(slug):
 def faq_page():
     return flask.render_template(
         "base/faq_page.html",
-        faq_items=FAQItem.objects.all()
+        faq_items=FAQItem.objects.all().order_by("order")
     )
 
 

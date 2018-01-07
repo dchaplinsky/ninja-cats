@@ -9,7 +9,7 @@ from vulyk.blueprints.gamification.models.foundations import FundModel
 
 from .admin import FAQAdmin, StaticPageAdmin, PromoAdmin, MenuAdmin
 from .models.faq import FAQItem, get_faq_on_main
-from .models.static import StaticPage
+from .models.static import StaticPage, get_task_pages
 from .models.promo import PromoItem, get_promos_on_main
 from .models.menu import MenuItem, get_menu
 from .utils import ukr_plural
@@ -122,3 +122,4 @@ cms.add_context_filler(get_promos_on_main)
 cms.add_context_filler(get_menu)
 cms.add_context_filler(get_foundations)
 cms.add_context_filler(get_tasks)
+cms.add_context_filler(get_task_pages)

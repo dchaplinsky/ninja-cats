@@ -247,6 +247,7 @@
 
     // Page full screen
     $('.nav-link-expand').on('click', function(e) {
+        e.preventDefault();
         if (typeof screenfull != 'undefined'){
             if (screenfull.enabled) {
                 screenfull.toggle();

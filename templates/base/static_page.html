@@ -28,6 +28,14 @@
                             <div class="card-body collapse in">
                                 <div class="card-block">
                                     {{ page.body|safe }}
+
+                                    {% if page.task_type %}
+                                        {% if user.is_authenticated %}
+                                            <a href="{{ url_for("task_home", type_name=page.task_type) }}" class="btn btn-danger btn-sm"><i class="icon-trophy"></i> Долучитися до виконання</a>
+                                        {% else %}
+                                            <button data-toggle="modal" data-target="#socialSignin" type="button" class="btn btn-danger btn-sm"><i class="icon-trophy"></i> Долучитися до виконання</button>
+                                        {% endif %}
+                                    {% endif %}
                                 </div>
                             </div>
                         </div>

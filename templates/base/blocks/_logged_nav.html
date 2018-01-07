@@ -19,6 +19,9 @@
                 <ul class="nav navbar-nav">
                     <li class="nav-item hidden-sm-down"><a href="#" class="nav-link nav-menu-main menu-toggle hidden-xs"><i class="icon-list"></i></a></li>
                     <li class="nav-item hidden-sm-down"><a href="#" class="nav-link nav-link-expand"><i class="icon-size-fullscreen"></i></a></li>
+                    {% if task_type and task_type.type_name in cms_task_pages %}
+                    <li class="nav-item hidden-sm-down"><a href="{{ url_for('cms.static_page', slug=cms_task_pages[task_type.type_name].slug) }}" class="nav-link" target="_blank"><i class="icon-info"></i></a></li>
+                    {% endif %}
                 </ul>
                 <ul class="nav navbar-nav float-xs-right">
                     <li class="nav-block-donats nav-item col">
@@ -81,7 +84,7 @@
                 <ul class="menu-content">
                     {% for task in cms_task_types|sort(reverse=True, attribute="has_tasks") %}
                         <li>
-                            <a href="{{ url_for("task_home", type_name=task.type) }}" class="menu-item" title="{{task.name }}">
+                            <a href="{{ url_for("task_home", type_name=task.type) }}" class="menu-item" title="{{ task.name }}">
                                 {{ task.description }}
                             </a>
                         </li>

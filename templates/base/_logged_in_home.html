@@ -26,7 +26,7 @@
             </td>
             <td class="text-xs-center font-small-2">
                 {% if task.coins_per_task %}
-                    {{ task.coins_per_task }} {{ task.coins_per_task|int|uk_plural("гривня,гривні,гривен") }}
+                    {{ task.coins_per_task }} {{ task.coins_per_task|int|uk_plural("котик,котика,котиків") }}
                 {% endif %}
             </td>
         </tr>
@@ -108,7 +108,7 @@
                                             <th>ID</th>
                                             <th>Завдання</th>
                                             <th>Бали</th>
-                                            <th>Гривні</th>
+                                            <th>Котикі</th>
                                         </tr>
                                         </thead>
                                         <tbody>
@@ -188,7 +188,7 @@
                                             </div>
                                             <div class="media-body white text-xs-right">
                                                 <h3 class="font-large-1">{{ state.potential_coins }} / {{ state.actual_coins }}</h3>
-                                                <span>потенційних / активних гривень</span>
+                                                <span>потенційних / активних котиків</span>
                                             </div>
                                         </div>
                                     </div>

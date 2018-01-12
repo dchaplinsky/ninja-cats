@@ -12,12 +12,12 @@
 
                             <div class="stat-item stat-user"><i class="fa fa fa-users"></i> <span>{{ total_users }} {{ total_users|uk_plural("учасник,учасника,учасників") }}</span></div>
                             <div class="stat-item stat-tasks"><i class="fa fa-check-square-o"></i> <span>{{ total_tasks }} {{ total_tasks|uk_plural("завдання,завдання,завдань") }}</span></div>
-                            <div class="stat-item stat-money"><i class="fa fa-thumbs-o-up"></i> <span>{{ total_money_donated }} грн.<br>передано до фондів</span></div>
+                            <div class="stat-item stat-money"><i class="fa fa-thumbs-o-up"></i> <span>{{ total_money_donated }} {{ total_money_donated|uk_plural("котик,котика,котиків") }}<br>передано до фондів</span></div>
                         </div>
 
                         <div class="intro-text mt-1">
-                            <h1><span>Допомогати — просто!</span></h1>
-                            <h3 class="mb-0">Ось три прості кроки:</h3>
+                            {# <h1><span>Три прості кроки для допомоги!</span></h1> #}
+                            <h3 class="mb-0">Три прості кроки<br/> для допомоги!</h3>
                         </div>
                     </div>
 
@@ -31,30 +31,20 @@
     <div class="fsbanner-slide slide-1">
           <span class="title">
                <span class="label amber lighten-1">Крок 1:</span>
-               <span class="sub-label t tn amber lighten-1"><i class="fa fa-list-ol" aria-hidden="true"></i> Увійди та обери завдання</span>
-               <span class="step-text">
-                    <p>Після реєстрації/логіну оберіть одне із завдань на свій смак. Вони не складні.</p>
-               </span>
-          </span>
-
+               <span class="sub-label t tn amber lighten-1"><i class="fa fa-list-ol" aria-hidden="true"></i> Зареєструйся та обери<br /> просте завдання</span>
+            </span>
     </div>
     <div class="fsbanner-slide slide-2">
           <span class="title">
               <span class="label pink lighten-2">Крок 2:</span>
-              <span class="sub-label t tn pink lighten-2"><i class="fa fa-check-square-o" aria-hidden="true"></i> Виконай його</span>
-              <span class="step-text">
-                    <p>Виконання завдання потребує від 5 секунд до 15 хвилин в залежності від типу та складності. За кожне ви отримуєте бали та віртуальні гроші.</p>
-              </span>
+              <span class="sub-label t tn pink lighten-2"><i class="fa fa-check-square-o" aria-hidden="true"></i> Виконай завдання та<br /> отримай "котиків"</span>
           </span>
 
     </div>
     <div class="fsbanner-slide slide-3">
           <span class="title">
               <span class="label">Крок 3:</span>
-              <span class="sub-label t tn"><i class="fa fa-handshake-o" aria-hidden="true"></i> Отримай кошти</span>
-              <span class="step-text">
-                    <p>та обери фонд, куди їх передати.</p>
-              </span>
+              <span class="sub-label t tn"><i class="fa fa-handshake-o" aria-hidden="true"></i> Передай своїх <br/> "котиків"на добрі справи</span>
           </span>
 
     </div>

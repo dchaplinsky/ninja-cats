@@ -89,3 +89,7 @@ ENABLED_BLUEPRINTS = [
 ]
 
 REDIRECT_USER_AFTER_LOGIN = False
+
+SOCIAL_AUTH_FACEBOOK_PROFILE_EXTRA_PARAMS = {
+    'fields': 'id, name, email, age_range'
+}

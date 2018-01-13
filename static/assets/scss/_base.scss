@@ -286,6 +286,7 @@ nav.navbar-fixed + .app-content {
   }
 }
 
+
 .nav-block-donats {
   margin-top: 10px;
 }
@@ -296,6 +297,30 @@ nav.navbar-fixed + .app-content {
 
 .header-navbar.navbar-brand-center .navbar-header {
   width: 230px;
+}
+
+.navigation li {
+  &.nav-item--nav-login-button {
+    @media (max-width: 767px) {
+      float: none !important;
+      padding-left: 20px;
+    }
+  }
+
+  &.nav-item--sociallinks {
+    @media (max-width: 767px) {
+      padding-left: 20px;
+
+      #block-sociallinksblock {
+        padding-right: 0;
+        float: none !important;
+
+        a {
+          padding: 0;
+        }
+      }
+    }
+  }
 }
 
 .nav-login-button {

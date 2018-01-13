@@ -127,3 +127,15 @@
     }
   }
 }
+
+.static-page {
+  .content-body {
+    .card-block {
+      padding: 2.5rem;
+
+      @media (min-width: 992px) {
+        padding: 4rem;
+      }
+    }
+  }
+}

@@ -37,7 +37,14 @@
   #description {
     .card-text {
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
+
+      @media (min-width: 560px) {
+        justify-content: space-between;
+        flex-direction: row;
+        align-content: flex-start;
+        align-items: center;
+      }
     }
 
     h1 {
@@ -55,14 +62,22 @@
       text-transform: uppercase;
       color: $light-blue;
       font-weight: 700;
-      text-align: center;
+      text-align: left;
       @include rft(26, 45);
+
+      @media (min-width: 560px) {
+        text-align: center;
+      }
     }
 
   }
 
   #site-stats {
     width: 250px;
+
+    @media (max-width: 559px) {
+      margin-bottom: 20px;
+    }
 
     .stat-item {
       display: block;

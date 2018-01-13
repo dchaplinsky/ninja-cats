@@ -1,3 +1,9 @@
+.container {
+  @media (max-width: 767px) {
+    width: 100% !important;
+  }
+}
+
 svg:not(:root) {
   overflow: hidden;
   max-width: 100%;
@@ -309,11 +315,11 @@ nav.navbar-fixed + .app-content {
 
   &.nav-item--sociallinks {
     @media (max-width: 767px) {
+      float: none !important;
       padding-left: 20px;
 
       #block-sociallinksblock {
         padding-right: 0;
-        float: none !important;
 
         a {
           padding: 0;
@@ -348,6 +354,12 @@ nav.navbar-fixed + .app-content {
 }
 
 body.vertical-layout {
+  &.vertical-menu .main-menu {
+    @media (max-width: 991px) {
+      width: auto;
+    }
+  }
+
   .header-navbar .navbar-header .navbar-brand {
     padding: 6px;
 

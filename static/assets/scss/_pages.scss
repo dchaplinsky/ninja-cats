@@ -139,3 +139,13 @@
     }
   }
 }
+
+.fund-page {
+  .content-body {
+    .heading-elements-toggle {
+      @media (max-width: 991px) {
+        display: none;
+      }
+    }
+  }
+}

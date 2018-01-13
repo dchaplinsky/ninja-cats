@@ -127,3 +127,25 @@
     }
   }
 }
+
+.static-page {
+  .content-body {
+    .card-block {
+      padding: 2.5rem;
+
+      @media (min-width: 992px) {
+        padding: 4rem;
+      }
+    }
+  }
+}
+
+.fund-page {
+  .content-body {
+    .heading-elements-toggle {
+      @media (max-width: 991px) {
+        display: none;
+      }
+    }
+  }
+}

@@ -47,6 +47,7 @@ CSS_ASSETS = [
     "app-assets/scss/bootstrap.scss",
     "app-assets/fonts/simple-line-icons/style.css",
     "app-assets/fonts/font-awesome/css/font-awesome.min.css",
+    "app-assets/fonts/feather/style.css",
     "app-assets/vendors/css/extensions/pace.css",
     "app-assets/vendors/css/forms/icheck/icheck.css",
     "app-assets/vendors/css/forms/icheck/custom.css",

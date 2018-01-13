@@ -2,10 +2,10 @@
     <div class="content-wrapper">
         <div class="content-body">
             <!-- Description -->
-            <section id="description" class="card transparent-bg mb-0">
+            <section id="description" class="card transparent-bg">
                 <div class="card-body collapse in">
                     <div class="card-text">
-                        <div id="site-stats" class="mb-2">
+                        <div id="site-stats">
                             {% set total_users = gamification_stats_service.total_number_of_users() %}
                             {% set total_tasks = gamification_stats_service.total_number_of_open_tasks() %}
                             {% set total_money_donated = gamification_stats_service.total_money_donated() %}

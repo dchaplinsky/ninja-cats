@@ -130,7 +130,6 @@
 }
 
 #user-achivments {
-
   .user-badges-list {
     img {
       display: inline-block;
@@ -271,10 +270,12 @@
       }
 
       &.minimized {
-        transform: rotate(-90deg);
-        transform-origin: left top 0;
-        bottom: -13px;
-        left: 7px;
+        @media (min-width: 992px) {
+          transform: rotate(-90deg);
+          transform-origin: left top 0;
+          bottom: -13px;
+          left: 7px;
+        }
       }
 
       .step-text {

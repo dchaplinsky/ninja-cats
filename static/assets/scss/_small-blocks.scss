@@ -233,29 +233,70 @@
 
     @media (max-width: 991px) {
       width: 100% !important;
-      height: 400px !important;
+      height: 300px !important;
       left: 0 !important;
+
+      &.slide-1 {
+        img {
+          left: 10%;
+        }
+      }
+
+      &.slide-2 {
+        img {
+          right: 10%;
+          left: auto;
+        }
+      }
+
+      &.slide-3 {
+        img {
+          left: 10%;
+        }
+      }
     }
 
     @media (min-width: 992px) {
       position: absolute;
       top: 0;
       left: 0;
+
+      &.slide-1 {
+        img {
+          left: 5%;
+        }
+      }
+
+      &.slide-2 {
+        img {
+          left: 30%;
+        }
+      }
+
+      &.slide-3 {
+        img {
+          left: 30%;
+        }
+      }
+    }
+
+    img {
+      height: 80%;
+      position: absolute;
+      width: auto;
+      top: 10%;
     }
 
     &.slide-1 {
-      background: url(../../app-assets/images/pages/step-1.jpg) no-repeat center center;
-      background-size: cover;
+      background: url(../../app-assets/images/pages/bkg1.png) repeat;
     }
 
     &.slide-2 {
-      background: url(../../app-assets/images/pages/step-2.jpg) no-repeat center center;
-      background-size: cover;
+      background: url(../../app-assets/images/pages/bkg2.png) repeat;
     }
 
     &.slide-3 {
-      background: url(../../app-assets/images/pages/step-3.jpg) no-repeat center center;
-      background-size: cover;
+      background: url(../../app-assets/images/pages/bkg3.png) repeat;
     }
 
     .title {

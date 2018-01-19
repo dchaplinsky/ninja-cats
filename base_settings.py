@@ -66,7 +66,7 @@ CSS_ASSETS = [
     "app-assets/scss/pages/login-register.scss",
     "app-assets/scss/pages/fund.scss",
     "assets/scss/style.scss",
-    "assets/scss/_small-blocks.scss",
+
     "assets/scss/_pages.scss",
     'vendor/jquery.magnific-popup/jquery.magnific-popup.css',
     'styles/style.css'

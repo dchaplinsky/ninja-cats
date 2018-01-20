@@ -13,7 +13,9 @@
                 <div class="row" id="user-profile">
                     <div class="col-xs-12">
                         <div class="card profile-with-cover">
-                            <div class="card-img-top img-fluid bg-cover height-200 no-image"></div>
+                            <div class="card-img-top img-fluid bg-cover height-200">
+                                <img src="/static/app-assets/images/backgrounds/funds-bg-rnd/{{ range(1, 16) | random }}.jpg" class="">
+                            </div>
 
                             <div class="cover-shadow"></div>
                             <div class="media profil-cover-details">
@@ -55,7 +57,7 @@
                                 </div>
                             </div>
                             <div class="card-body collapse in" aria-expanded="true">
-                                <div class="card-block">
+                                <div class="card-block fund-desc">
                                     {{ fund.description|safe }}
                                 </div>
                             </div>

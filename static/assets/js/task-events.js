@@ -7,6 +7,18 @@
         points,
         level;
 
+    function generateBadgeAlertHtml(id, name, desc, url) {
+
+        var html = '<div class="badge badge-' + id + '"><div class="card"><div class="card-body"><div class="media"><div class="p-2 text-xs-center media-left media-middle">'
+            + '<img src="' + url + '" class="ib float-xs-left" alt="" />'
+            + '</div><div class="p-2 media-body text-sm-left">'
+            + '<h5>' + name + '</h5>'
+            + '<h5 class="text-bold-400">' + desc + '</h5>'
+            + '</div></div></div></div></div>';
+
+        return html;
+    }
+
     function getUserStats(firstFun) {
         var userEventsJson = '/gamification/users/me/state',
             userEvents = $.getJSON( userEventsJson, function() {
@@ -57,8 +69,23 @@
 
                         if(newBadgesCount > badgesCount) {
                             var delta = newBadgesCount - badgesCount;
-                            //toastr.info('Ви щойно здобули ' + delta + ' активних грн.', 'Вітаємо!', {"showMethod": "slideDown", "hideMethod": "slideUp", timeOut: 2000});
                             badgesCount = newBadgesCount;
+
+                            var name = data.result.state.achievements[badgesCount-1].name,
+                                desc = data.result.state.achievements[badgesCount-1].description,
+                                id = data.result.state.achievements[badgesCount-1].id,
+                                url = '/static/app-assets/images/badges/0' + id + '.png';
+
+                            swal({
+                                title: 'Ви отримали новий бейдж!',
+                                type: 'success',
+                                html: true,
+                                text: generateBadgeAlertHtml(id, name, desc, url),
+                                showCloseButton: true
+                            });
+
+                            var snd = new Audio("/static/app-assets/sounds/tada.mp3"); // buffers automatically when created
+                            snd.play();
                         }
                     }
                 })

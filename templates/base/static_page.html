@@ -48,8 +48,8 @@
 
 {% block body_classes %}
     {% if user.is_anonymous %}
-    horizontal-layout horizontal-menu steps-page not-logged-in
+    horizontal-layout horizontal-menu steps-page not-logged-in static-page
     {% else %}
-    vertical-layout vertical-menu fixed-navbar logged-in
+    vertical-layout vertical-menu fixed-navbar logged-in static-page
     {% endif %}
 {% endblock %}

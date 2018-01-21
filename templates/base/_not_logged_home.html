@@ -2,10 +2,10 @@
     <div class="content-wrapper">
         <div class="content-body">
             <!-- Description -->
-            <section id="description" class="card transparent-bg mb-0">
+            <section id="description" class="card transparent-bg">
                 <div class="card-body collapse in">
                     <div class="card-text">
-                        <div id="site-stats" class="mb-2">
+                        <div id="site-stats">
                             {% set total_users = gamification_stats_service.total_number_of_users() %}
                             {% set total_tasks = gamification_stats_service.total_number_of_open_tasks() %}
                             {% set total_money_donated = gamification_stats_service.total_money_donated() %}
@@ -15,7 +15,7 @@
                             <div class="stat-item stat-money"><i class="fa fa-thumbs-o-up"></i> <span>{{ total_money_donated }} {{ total_money_donated|uk_plural("котик,котика,котиків") }}<br>передано до фондів</span></div>
                         </div>
 
-                        <div class="intro-text mt-1">
+                        <div class="intro-text">
                             {# <h1><span>Три прості кроки для допомоги!</span></h1> #}
                             <h3 class="mb-0">Три прості кроки<br/> для допомоги!</h3>
                         </div>
@@ -29,24 +29,13 @@
 
 <section class="fsbanner" id="stepbanner-1-2-3">
     <div class="fsbanner-slide slide-1">
-          <span class="title">
-               <span class="label amber lighten-1">Крок 1:</span>
-               <span class="sub-label t tn amber lighten-1"><i class="fa fa-list-ol" aria-hidden="true"></i> Зареєструйся та обери<br /> просте завдання</span>
-            </span>
+        <img src="/static/app-assets/images/pages/illustration_oval1.png" />
     </div>
     <div class="fsbanner-slide slide-2">
-          <span class="title">
-              <span class="label pink lighten-2">Крок 2:</span>
-              <span class="sub-label t tn pink lighten-2"><i class="fa fa-check-square-o" aria-hidden="true"></i> Виконай завдання та<br /> отримай "котиків"</span>
-          </span>
-
+        <img src="/static/app-assets/images/pages/illustration_oval2.png" />
     </div>
     <div class="fsbanner-slide slide-3">
-          <span class="title">
-              <span class="label">Крок 3:</span>
-              <span class="sub-label t tn"><i class="fa fa-handshake-o" aria-hidden="true"></i> Передай своїх <br/> "котиків"на добрі справи</span>
-          </span>
-
+        <img src="/static/app-assets/images/pages/illustration_oval3.png" />
     </div>
 </section>
 

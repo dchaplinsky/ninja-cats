@@ -129,8 +129,7 @@
   }
 }
 
-#user-achivments {
-
+#user-achievements {
   .user-badges-list {
     img {
       display: inline-block;
@@ -215,10 +214,13 @@
 
 #stepbanner-1-2-3 {
   position: relative;
-  overflow: hidden;
-  height: 500px;
   color: white;
   font-size: 20px;
+
+  @media (min-width: 992px) {
+    overflow: hidden;
+    height: 500px;
+  }
 
   &,
   & > div > span {
@@ -226,24 +228,75 @@
   }
 
   .fsbanner-slide {
-    position: absolute;
     cursor: pointer;
-    top: 0;
-    left: 0;
+    position: relative;
+
+    @media (max-width: 991px) {
+      width: 100% !important;
+      height: 300px !important;
+      left: 0 !important;
+
+      &.slide-1 {
+        img {
+          left: 10%;
+        }
+      }
+
+      &.slide-2 {
+        img {
+          right: 10%;
+          left: auto;
+        }
+      }
+
+      &.slide-3 {
+        img {
+          left: 10%;
+        }
+      }
+    }
+
+    @media (min-width: 992px) {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      &.slide-1 {
+        img {
+          left: 5%;
+        }
+      }
+
+      &.slide-2 {
+        img {
+          left: 30%;
+        }
+      }
+
+      &.slide-3 {
+        img {
+          left: 30%;
+        }
+      }
+    }
+
+    img {
+      height: 80%;
+      position: absolute;
+      width: auto;
+      top: 10%;
+    }
 
     &.slide-1 {
-      background: url(../../app-assets/images/pages/step-1.jpg) no-repeat center center;
-      background-size: cover;
+      background: url(../../app-assets/images/pages/bkg1.png) repeat;
     }
 
     &.slide-2 {
-      background: url(../../app-assets/images/pages/step-2.jpg) no-repeat center center;
-      background-size: cover;
+      background: url(../../app-assets/images/pages/bkg2.png) repeat;
     }
 
     &.slide-3 {
-      background: url(../../app-assets/images/pages/step-3.jpg) no-repeat center center;
-      background-size: cover;
+      background: url(../../app-assets/images/pages/bkg3.png) repeat;
     }
 
     .title {
@@ -258,10 +311,12 @@
       }
 
       &.minimized {
-        transform: rotate(-90deg);
-        transform-origin: left top 0;
-        bottom: -13px;
-        left: 7px;
+        @media (min-width: 992px) {
+          transform: rotate(-90deg);
+          transform-origin: left top 0;
+          bottom: -13px;
+          left: 7px;
+        }
       }
 
       .step-text {
@@ -274,5 +329,52 @@
         display: block;
       }
     }
+  }
+}
+
+#fund-list {
+  .card-deck-wrapper {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .card-deck {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 544px) {
+      flex-direction: row;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-content: flex-start;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+
+      @media (min-width: 544px) {
+        width: 50%;
+        min-width: 50%;
+        max-width: 50%;
+      }
+
+      .donation-cta {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+#accordionWrap1 {
+  @media (max-width: 1199px) {
+    width: 100%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 }

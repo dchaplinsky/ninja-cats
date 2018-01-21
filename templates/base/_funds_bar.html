@@ -6,10 +6,12 @@
                 <div class="card-deck">
                     {% for foundation in foundation_row %}
                     <figure class="card card-img-top border-grey border-lighten-2">
-                        <a href="{{ url_for('cms.fund_page', fund_id=foundation.id) }}"><img class="gallery-thumbnail card-img-top" src="{{ url_for('gamification.fund_logo', fund_id=foundation.id) }}" itemprop="thumbnail" alt="{{ foundation.name }}"></a>
+                        <a href="{{ url_for('cms.fund_page', fund_id=foundation.id) }}">
+                            <img class="gallery-thumbnail card-img-top" src="{{ url_for('gamification.fund_logo', fund_id=foundation.id) }}" itemprop="thumbnail" alt="{{ foundation.name }}">
+                        </a>
                         {% if user.is_authenticated %}
                             {% if foundation.donatable %}
-                                <a href="{{ url_for('cms.fund_page', fund_id=foundation.id) }}#fundDonateModal" class="btn btn-danger btn-sm"><i class="icon-basket-loaded"></i> Віддати котиків</a>
+                                <a href="{{ url_for('cms.fund_page', fund_id=foundation.id) }}#fundDonateModal" class="donation-cta btn btn-danger btn-sm"><i class="icon-basket-loaded"></i> Віддати котиків</a>
                             {% endif %}
                         {% endif %}
                     </figure>

@@ -36,7 +36,7 @@
             potentialCoins,
             points,
             level,
-            $container = $('#user-achivments');
+            $container = $('#user-achievements');
 
         if (state.actual_coins) {
             actualCoins = state.actual_coins;

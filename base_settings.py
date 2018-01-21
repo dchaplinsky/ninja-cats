@@ -22,6 +22,7 @@ JS_ASSETS = [
     "app-assets/vendors/js/ui/jquery.sticky.js",
     "app-assets/vendors/js/forms/validation/jqBootstrapValidation.js",
     "app-assets/vendors/js/extensions/toastr.min.js",
+    "app-assets/vendors/js/extensions/sweetalert.min.js",
     "app-assets/js/core/app-menu.js",
     "app-assets/js/core/app.js",
     "app-assets/js/scripts/gallery/fsbanner.js",
@@ -47,6 +48,7 @@ CSS_ASSETS = [
     "app-assets/scss/bootstrap.scss",
     "app-assets/fonts/simple-line-icons/style.css",
     "app-assets/fonts/font-awesome/css/font-awesome.min.css",
+    "app-assets/fonts/feather/style.css",
     "app-assets/vendors/css/extensions/pace.css",
     "app-assets/vendors/css/forms/icheck/icheck.css",
     "app-assets/vendors/css/forms/icheck/custom.css",
@@ -65,7 +67,7 @@ CSS_ASSETS = [
     "app-assets/scss/pages/login-register.scss",
     "app-assets/scss/pages/fund.scss",
     "assets/scss/style.scss",
-    "assets/scss/_small-blocks.scss",
+
     "assets/scss/_pages.scss",
     'vendor/jquery.magnific-popup/jquery.magnific-popup.css',
     'styles/style.css'

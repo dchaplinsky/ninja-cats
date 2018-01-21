@@ -22,6 +22,7 @@ JS_ASSETS = [
     "app-assets/vendors/js/ui/jquery.sticky.js",
     "app-assets/vendors/js/forms/validation/jqBootstrapValidation.js",
     "app-assets/vendors/js/extensions/toastr.min.js",
+    "app-assets/vendors/js/extensions/sweetalert.min.js",
     "app-assets/js/core/app-menu.js",
     "app-assets/js/core/app.js",
     "app-assets/js/scripts/gallery/fsbanner.js",

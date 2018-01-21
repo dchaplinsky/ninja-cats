@@ -1,4 +1,5 @@
 from flask_mongoengine import Document
+from random import shuffle
 from mongoengine import (
     ComplexDateTimeField, StringField, BooleanField, ImageField
 )
@@ -21,6 +22,11 @@ class PromoItem(Document):
 
 
 def get_promos_on_main():
+    promo_items = list(PromoItem.objects.all())
+    random_promo_items = promo_items.copy()
+    shuffle(random_promo_items)
+
     return {
-        "promo_items": PromoItem.objects.all()
+        "promo_items": promo_items,
+        "random_promo_items": random_promo_items,
     }

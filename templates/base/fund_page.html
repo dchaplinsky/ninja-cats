@@ -72,7 +72,7 @@
                                 <div class="card-block my-gallery" itemscope="" itemtype="http://schema.org/ImageGallery">
                                     <div class="row">
                                         <div class="grid-hover">
-                                            {% for promo_item in cms_promo_items %}
+                                            {% for promo_item in cms_random_promo_items[:3] %}
                                             <div class="col-sm-4 col-xs-12">
                                                 <figure class="effect-sarah">
                                                     <img src="{{ url_for('cms.api_file_view', coll="images", pk=promo_item.image.thumbnail_id) }}" alt="img02">

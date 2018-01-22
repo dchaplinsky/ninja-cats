@@ -76,11 +76,16 @@ CSS_ASSETS = [
 CSS_ASSETS_OUTPUT = ENV('CSS_ASSETS_OUTPUT', 'styles/packed.css')
 CSS_ASSETS_FILTERS = ENV('CSS_ASSETS_FILTERS', ('scss', 'cssrewrite'))
 
+BADGE_PATH = "static/badges"
 
 ENABLED_BLUEPRINTS = [
     {
         'path': 'vulyk.blueprints.gamification.gamification',
         'config': {
+            "badges": [
+                (os.path.join(BADGE_PATH, f), f)
+                for f in os.listdir(BADGE_PATH) if os.path.isfile(os.path.join(BADGE_PATH, f))
+            ],
             "levels": {
                 1: 5,
                 2: 20,

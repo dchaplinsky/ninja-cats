@@ -71,10 +71,10 @@
                             var delta = newBadgesCount - badgesCount;
                             badgesCount = newBadgesCount;
 
-                            var name = data.result.state.achievements[badgesCount-1].name,
-                                desc = data.result.state.achievements[badgesCount-1].description,
-                                id = data.result.state.achievements[badgesCount-1].id,
-                                url = '/static/app-assets/images/badges/0' + id + '.png';
+                            var name = data.result.state.achievements[badgesCount - 1].name,
+                                desc = data.result.state.achievements[badgesCount - 1].description,
+                                id = data.result.state.achievements[badgesCount - 1].id,
+                                url = "/" + data.result.state.achievements[badgesCount - 1].badge;
 
                             swal({
                                 title: 'Ви отримали новий бейдж!',

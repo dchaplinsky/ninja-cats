@@ -2,6 +2,7 @@
     'use strict';
 
     var badgesCount,
+        badges,
         actualCoins,
         potentialCoins,
         points,
@@ -26,6 +27,7 @@
                 .done(function( data ) {
                     if(firstFun) {
                         badgesCount = data.result.state.achievements.length;
+                        badges = data.result.state.achievements;
                         potentialCoins = data.result.state.potential_coins;
                         actualCoins = data.result.state.actual_coins;
                         points = points = data.result.state.points;
@@ -33,6 +35,7 @@
                     } else {
                         //console.log(data.result.state.achievements);
                         var newBadgesCount = data.result.state.achievements.length,
+                            newBadges = data.result.state.achievements,
                             newPotentialCoins = data.result.state.potential_coins,
                             newActualCoins = data.result.state.actual_coins,
                             newPoints = points = data.result.state.points,
@@ -69,23 +72,35 @@
 
                         if(newBadgesCount > badgesCount) {
                             var delta = newBadgesCount - badgesCount;
-                            badgesCount = newBadgesCount;
-
-                            var name = data.result.state.achievements[0].name,
-                                desc = data.result.state.achievements[0].description,
-                                id = data.result.state.achievements[0].id,
-                                url = "/" + data.result.state.achievements[0].badge;
-
-                            swal({
-                                title: 'Ви отримали новий бейдж!',
-                                type: 'success',
-                                html: true,
-                                text: generateBadgeAlertHtml(id, name, desc, url),
-                                showCloseButton: true
+                            var oldBadgesID = $.map(badges, function( val, i ) { return val.id });
+                            var newBadgesIndexes = $.map(newBadges, function( val, i ) {
+                                if (oldBadgesID.indexOf(val.id) != -1) {
+                                    return null;
+                                }
+                                return i;
                             });
 
-                            var snd = new Audio("/static/app-assets/sounds/purr.mp3"); // buffers automatically when created
-                            snd.play();
+                            console.log(newBadgesIndexes);
+                            if (newBadgesIndexes.length) {
+                                badgesCount = newBadgesCount;
+                                badges = newBadges;
+
+                                var name = data.result.state.achievements[newBadgesIndexes[0]].name,
+                                    desc = data.result.state.achievements[newBadgesIndexes[0]].description,
+                                    id = data.result.state.achievements[newBadgesIndexes[0]].id,
+                                    url = "/" + data.result.state.achievements[newBadgesIndexes[0]].badge;
+
+                                swal({
+                                    title: 'Ви отримали новий бейдж!',
+                                    type: 'success',
+                                    html: true,
+                                    text: generateBadgeAlertHtml(id, name, desc, url),
+                                    showCloseButton: true
+                                });
+
+                                var snd = new Audio("/static/app-assets/sounds/purr.mp3"); // buffers automatically when created
+                                snd.play();
+                            }
                         }
                     }
                 })

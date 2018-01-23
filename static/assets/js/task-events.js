@@ -7,14 +7,12 @@
         points,
         level;
 
-    function generateBadgeAlertHtml(id, name, desc, url) {
+    function generateBadgeAlertHtml(id, desc, url) {
 
-        var html = '<div class="badge badge-' + id + '"><div class="card"><div class="card-body"><div class="media"><div class="p-2 text-xs-center media-left media-middle">'
-            + '<img src="' + url + '" class="ib float-xs-left" alt="" />'
-            + '</div><div class="p-2 media-body text-sm-left">'
-            + '<h5>' + name + '</h5>'
+        var html = '<div class="badge badge-' + id + '">'
+            + '<img src="' + url + '" />'
             + '<h5 class="text-bold-400">' + desc + '</h5>'
-            + '</div></div></div></div></div>';
+            + '</div>';
 
         return html;
     }
@@ -31,7 +29,6 @@
                         points = points = data.result.state.points;
                         level = data.result.state.level;
                     } else {
-                        //console.log(data.result.state.achievements);
                         var newBadgesCount = data.result.state.achievements.length,
                             newPotentialCoins = data.result.state.potential_coins,
                             newActualCoins = data.result.state.actual_coins,
@@ -42,22 +39,22 @@
                         getUserEvents();
 
                         if(newPotentialCoins > potentialCoins) {
-                            var delta = newPotentialCoins - potentialCoins;
-                            toastr.success('Ви щойно заробили ' + delta + ' потенційних грн.', 'Вітаємо!', {"showMethod": "slideDown", "hideMethod": "slideUp", timeOut: 2000});
+                            var deltaPC = newPotentialCoins - potentialCoins;
+                            toastr.success('Ви щойно заробили ' + deltaPC + ' потенційних грн.', 'Вітаємо!', {"showMethod": "slideDown", "hideMethod": "slideUp", timeOut: 2000});
                             potentialCoins = newPotentialCoins;
                             $('.nav-block-money .potential-coins').html(potentialCoins);
                         }
 
                         if(newActualCoins > actualCoins) {
-                            var delta = newActualCoins - actualCoins;
-                            toastr.success('Ви щойно заробили ' + delta + ' активних грн.', 'Вітаємо!', {"showMethod": "slideDown", "hideMethod": "slideUp", timeOut: 2000});
+                            var deltaAC = newActualCoins - actualCoins;
+                            toastr.success('Ви щойно заробили ' + deltaAC + ' активних грн.', 'Вітаємо!', {"showMethod": "slideDown", "hideMethod": "slideUp", timeOut: 2000});
                             actualCoins = newActualCoins;
                             $('.nav-block-money .actual-coins').html(actualCoins);
                         }
 
                         if(newPoints > points) {
-                            var delta = newPoints - points;
-                            toastr.info('Ви щойно здобули ' + delta + ' активних грн.', 'Вітаємо!', {"showMethod": "slideDown", "hideMethod": "slideUp", timeOut: 2000});
+                            var deltaP = newPoints - points;
+                            toastr.info('Ви щойно здобули ' + deltaP + ' активних грн.', 'Вітаємо!', {"showMethod": "slideDown", "hideMethod": "slideUp", timeOut: 2000});
                             points = newPoints;
                         }
 
@@ -68,7 +65,7 @@
                         }
 
                         if(newBadgesCount > badgesCount) {
-                            var delta = newBadgesCount - badgesCount;
+                            //var bDelta = newBadgesCount - badgesCount;
                             badgesCount = newBadgesCount;
 
                             var name = data.result.state.achievements[badgesCount-1].name,
@@ -77,14 +74,14 @@
                                 url = '/static/app-assets/images/badges/0' + id + '.png';
 
                             swal({
-                                title: 'Ви отримали новий бейдж!',
+                                title: 'Ви отримали новий бейдж: <br>"' + name + '"!',
                                 type: 'success',
                                 html: true,
-                                text: generateBadgeAlertHtml(id, name, desc, url),
+                                text: generateBadgeAlertHtml(id, desc, url),
                                 showCloseButton: true
                             });
 
-                            var snd = new Audio("/static/app-assets/sounds/tada.mp3"); // buffers automatically when created
+                            var snd = new Audio("/static/app-assets/sounds/tada.mp3");
                             snd.play();
                         }
                     }
@@ -95,8 +92,6 @@
     }
 
     $('body').on('vulyk.next', function(event) {
-        console.log('next task');
-
         if (typeof points === 'undefined') {
             getUserStats(true);
         } else {

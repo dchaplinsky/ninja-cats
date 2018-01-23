@@ -71,10 +71,10 @@
                             var delta = newBadgesCount - badgesCount;
                             badgesCount = newBadgesCount;
 
-                            var name = data.result.state.achievements[badgesCount - 1].name,
-                                desc = data.result.state.achievements[badgesCount - 1].description,
-                                id = data.result.state.achievements[badgesCount - 1].id,
-                                url = "/" + data.result.state.achievements[badgesCount - 1].badge;
+                            var name = data.result.state.achievements[0].name,
+                                desc = data.result.state.achievements[0].description,
+                                id = data.result.state.achievements[0].id,
+                                url = "/" + data.result.state.achievements[0].badge;
 
                             swal({
                                 title: 'Ви отримали новий бейдж!',
@@ -84,7 +84,7 @@
                                 showCloseButton: true
                             });
 
-                            var snd = new Audio("/static/app-assets/sounds/tada.mp3"); // buffers automatically when created
+                            var snd = new Audio("/static/app-assets/sounds/purr.mp3"); // buffers automatically when created
                             snd.play();
                         }
                     }

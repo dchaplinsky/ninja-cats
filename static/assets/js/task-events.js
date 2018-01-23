@@ -80,7 +80,6 @@
                                 return i;
                             });
 
-                            console.log(newBadgesIndexes);
                             if (newBadgesIndexes.length) {
                                 badgesCount = newBadgesCount;
                                 badges = newBadges;

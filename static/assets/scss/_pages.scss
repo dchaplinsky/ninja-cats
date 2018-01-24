@@ -72,14 +72,16 @@
   }
 
   #site-stats {
-    width: 250px;
+    padding-top: 5px;
+    margin-left: 13px;
 
     @media (max-width: 559px) {
       margin-bottom: 20px;
     }
 
     .stat-item {
-      display: block;
+      display: inline-block;
+      margin-right: 20px;
       font-size: 20px;
 
       i,

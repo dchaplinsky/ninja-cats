@@ -77,7 +77,7 @@
   }
 }
 
-#block-sociallinksblock {
+.block-sociallinks-block {
   margin-right: 0.5rem;
   margin-top: 12px; //todo
 
@@ -108,7 +108,13 @@
 
   .fa-facebook,
   .fa-vk {
-    background: #4e71a8;
+    color: #4e71a8;
+    background: white;
+
+    &.inv {
+      color: white;
+      background: #4e71a8;
+    }
   }
 
   .fa-twitter {
@@ -279,22 +285,8 @@
         margin-left: 400px;
       }
 
-      &.slide-1 {
-        img {
-          left: 5%;
-        }
-      }
-
-      &.slide-2 {
-        img {
-          left: 10%;
-        }
-      }
-
-      &.slide-3 {
-        img {
-          left: 10%;
-        }
+      img {
+        left: 11%;
       }
     }
 

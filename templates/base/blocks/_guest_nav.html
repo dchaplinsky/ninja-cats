@@ -24,8 +24,21 @@
                         </a>
                     </li>
                 </ul>
-                <ul class="nav navbar-nav float-xs-right">
-                    <li class="nav-item hidden-sm-down text-xs-right white mt-1">Суспільна корисна платформа. <br>Обміняй свій час на допомогу</li>
+                <ul class="nav navbar-nav">
+                    <li class="nav-item hidden-sm-down white mt-1 site-slogan">Суспільна корисна платформа. <br>Обміняй свій час на допомогу</li>
+                </ul>
+                <ul  class="nav navbar-nav float-xs-right">
+                    <li class="nav-item float-xs-right btn-group nav-item--nav-login-button">
+                        <button type="button" class="btn btn-info btn-info-light-blue nav-login-button" data-toggle="modal" data-target="#socialSignin"><i class="fa fa-user-o"></i> Увійдіть</button>
+                    </li>
+                    <li class="nav-item float-xs-right nav-item--sociallinks">
+                        <section class="block block-sociallinks-block clearfix">
+                            <ul class="pl-0">
+                                <li><a href="https://www.facebook.com/bihus.info/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.youtube.com/channel/UCkUe2e1YuRtBRRaP2XTupwg" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </section>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -34,24 +47,27 @@
 
 <div role="navigation" data-menu="menu-wrapper" class="header-navbar navbar navbar-horizontal navbar-fixed navbar-light navbar-without-dd-arrow navbar-bordered navbar-shadow menu-border">
     <div data-menu="menu-container" class="navbar-container main-menu-content container center-layout">
-        <ul id="main-menu-navigation" data-menu="menu-navigation" class="nav navbar-nav">
-            {% for menu in cms_guest_menu_items %}
-            <li class="nav-item">
-                <a href="{% if menu.page_link %}{{ url_for('cms.static_page', slug=menu.page_link.slug) }}{% else %}{{ menu.link }}{% endif %}" class="nav-link">{% if menu.icon_class %}<i class="{{ menu.icon_class }}"></i>{% endif %}<span>{{ menu.title }}</span></a>
-            </li>
-            {% endfor %}
-
-            <li class="nav-item float-xs-right btn-group nav-item--nav-login-button">
+        <ul class="nav navbar-nav hidden-md-up ml-1 mb-1">
+            <li class="nav-item btn-group nav-item--nav-login-button">
                 <button type="button" class="btn btn-info btn-info-light-blue nav-login-button" data-toggle="modal" data-target="#socialSignin"><i class="fa fa-user-o"></i> Увійдіть</button>
             </li>
-            <li class="nav-item float-xs-right nav-item--sociallinks">
-                <section id="block-sociallinksblock" class="block block-sociallinks-block clearfix">
+            <li class="nav-item nav-item--sociallinks">
+                <section class="block block-sociallinks-block clearfix">
                     <ul class="pl-0">
-                        <li><a href="https://www.facebook.com/bihus.info/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.facebook.com/bihus.info/" target="_blank"><i class="inv fa fa-facebook" aria-hidden="true"></i></a></li>
                         <li><a href="https://www.youtube.com/channel/UCkUe2e1YuRtBRRaP2XTupwg" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
                     </ul>
                 </section>
             </li>
         </ul>
+        <div id="site-stats">
+            {% set total_users = gamification_stats_service.total_number_of_users() %}
+            {% set total_tasks = gamification_stats_service.total_number_of_open_tasks() %}
+            {% set total_money_donated = gamification_stats_service.total_money_donated() %}
+
+            <div class="stat-item stat-user"><i class="fa fa fa-users"></i> <span>{{ total_users }} {{ total_users|uk_plural("учасник,учасника,учасників") }}</span></div>
+            <div class="stat-item stat-tasks"><i class="fa fa-check-square-o"></i> <span>{{ total_tasks }} {{ total_tasks|uk_plural("завдання,завдання,завдань") }}</span></div>
+            <div class="stat-item stat-money"><i class="fa fa-thumbs-o-up"></i> <span>{{ total_money_donated }} {{ total_money_donated|uk_plural("котик,котика,котиків") }}передано до фондів</span></div>
+        </div>
     </div>
 </div>

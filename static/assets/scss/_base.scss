@@ -318,7 +318,7 @@ nav.navbar-fixed + .app-content {
       float: none !important;
       padding-left: 20px;
 
-      #block-sociallinksblock {
+      .block-sociallinks-block {
         padding-right: 0;
 
         a {
@@ -352,6 +352,12 @@ nav.navbar-fixed + .app-content {
     height: 50px;
     padding: 3px 0 0 0;
   }
+}
+
+.site-slogan {
+  padding-left: 20px;
+  margin-left: 5px;
+  border-left: 2px solid white;
 }
 
 body.vertical-layout {

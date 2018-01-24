@@ -348,8 +348,9 @@ nav.navbar-fixed + .app-content {
   }
 
   .svg-image.logo {
-    width: 75px;
+    width: 150px;
     height: 50px;
+    padding: 3px 0 0 0;
   }
 }
 
@@ -361,11 +362,11 @@ body.vertical-layout {
   }
 
   .header-navbar .navbar-header .navbar-brand {
-    padding: 6px;
+    padding: 3px 0 0 0;
 
     .svg-image.logo {
-      height: 40px;
-      width: auto;
+      width: 150px;
+      height: 50px;
 
       &.logo-small {
         display: none;
@@ -376,6 +377,10 @@ body.vertical-layout {
   &.vertical-menu.menu-collapsed {
     .hidden-collapsed {
       display: none;
+    }
+
+    .header-navbar .navbar-header {
+      padding-left: 8px;
     }
 
     .header-navbar .navbar-header .navbar-brand {

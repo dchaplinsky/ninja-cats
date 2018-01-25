@@ -15,8 +15,8 @@
                 {% endif %}
             </td>
             <td class="text-xs-center font-small-2">
-                {% if task.points_per_task %}
-                    {{ task.points_per_task }} {{ task.points_per_task|int|uk_plural("бал,бала,балів") }}
+                {% if task.batch_info.points_per_task %}
+                    {{ task.batch_info.points_per_task }} {{ task.batch_info.points_per_task|int|uk_plural("бал,бала,балів") }}
                 {% endif %}
             </td>
         </tr>
@@ -25,8 +25,8 @@
                 <p class="notification-text font-small-3 text-muted">{{ task.description }}</p>
             </td>
             <td class="text-xs-center font-small-2">
-                {% if task.coins_per_task %}
-                    {{ task.coins_per_task }} {{ task.coins_per_task|int|uk_plural("котик,котика,котиків") }}
+                {% if task.batch_info.coins_per_task %}
+                    {{ task.batch_info.coins_per_task }} {{ task.batch_info.coins_per_task|int|uk_plural("котик,котика,котиків") }}
                 {% endif %}
             </td>
         </tr>
@@ -59,8 +59,8 @@
                 {{ _task_card(task, "icon-puzzle bg-yellow bg-darken-3") }} <!--todo in project-id + css -->
             </div>
         </td>
-        <td>{{ task.coins_per_task|default(0) }}</td>
-        <td>{{ task.points_per_task|default(0) }}</td>
+        <td>{{ task.batch_info.coins_per_task|default(0) }}</td>
+        <td>{{ task.batch_info.points_per_task|default(0) }}</td>
     </tr>
 {% endmacro %}
 

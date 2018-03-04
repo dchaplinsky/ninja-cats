@@ -62,7 +62,7 @@ function fillUserEvents(events) {
                 eventsCount++;
                 coins = events[e].coins;
                 //todo verbose гривень/гривні
-                $containerList.prepend(generateEventHtml('coins', coins, 'потенційних гривень зароблено', '', formateDate(events[e].timestamp)));
+                $containerList.prepend(generateEventHtml('coins', coins, 'потенційних котиків зароблено', '', formateDate(events[e].timestamp)));
             }
 
             if (events[e].level_given) {

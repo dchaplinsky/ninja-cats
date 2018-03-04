@@ -37,10 +37,14 @@
                             <img src="{{ url_for('cms.api_file_view', coll="images", pk=promo_item.image.thumbnail_id) }}" alt="img02">
                             <figcaption>
                                 <h2>{{ promo_item.title }}</h2>
-                                {# {{ promo_item.body|safe }} #}
-                                <a href="{{ promo_item.link }}">View more</a>
+                                {{ promo_item.body|safe|truncate(150) }}
+                                <a href="{{ promo_item.link }}">Детальніше</a>
                             </figcaption>
                         </figure>
+                        <div class="mobile-description">
+                            {{ promo_item.body|safe|truncate(150) }}
+                            <a href="{{ promo_item.link }}">Детальніше</a>
+                        </div>
                     </div>
                     {% endfor %}
                 </div>
@@ -51,7 +55,7 @@
 
 <div id="accordionWrap1" role="tablist" aria-multiselectable="true" class="container center-layout">
     <div class="card-header">
-        <h4 class="card-title">Важливі деталі</h4>
+        <h4 class="card-title">Важливі деталі:</h4>
     </div>
 
     <div class="card collapse-icon accordion-icon-rotate">

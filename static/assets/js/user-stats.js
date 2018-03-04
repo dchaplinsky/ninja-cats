@@ -27,7 +27,7 @@
 
     function formateDate(unixTime) {
         var date = new Date(unixTime * 1000);
-        return date.getDate() + '.' + date.getDate() + '.' +  date.getFullYear() + ' ' + date.getHours() + ':' + date.getMinutes();
+        return date.getDate() + '.' + date.getMonth() + '.' +  date.getFullYear() + ' ' + date.getHours() + ':' + (date.getMinutes()<10?'0':'') + date.getMinutes();
     }
 
     function fillUserStats(state) {

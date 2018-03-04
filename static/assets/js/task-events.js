@@ -43,21 +43,21 @@
 
                         if(newPotentialCoins > potentialCoins) {
                             var deltaPC = newPotentialCoins - potentialCoins;
-                            toastr.success('Ви щойно заробили ' + deltaPC + ' потенційних грн.', 'Вітаємо!', {"showMethod": "slideDown", "hideMethod": "slideUp", timeOut: 2000});
+                            toastr.success('Ви щойно заробили ' + deltaPC + ' потенційних кткв.', 'Вітаємо!', {"showMethod": "slideDown", "hideMethod": "slideUp", timeOut: 2000});
                             potentialCoins = newPotentialCoins;
                             $('.nav-block-money .potential-coins').html(potentialCoins);
                         }
 
                         if(newActualCoins > actualCoins) {
                             var deltaAC = newActualCoins - actualCoins;
-                            toastr.success('Ви щойно заробили ' + deltaAC + ' активних грн.', 'Вітаємо!', {"showMethod": "slideDown", "hideMethod": "slideUp", timeOut: 2000});
+                            toastr.success('Ви щойно заробили ' + deltaAC + ' активних кткв.', 'Вітаємо!', {"showMethod": "slideDown", "hideMethod": "slideUp", timeOut: 2000});
                             actualCoins = newActualCoins;
                             $('.nav-block-money .actual-coins').html(actualCoins);
                         }
 
                         if(newPoints > points) {
                             var deltaP = newPoints - points;
-                            toastr.info('Ви щойно здобули ' + deltaP + ' активних грн.', 'Вітаємо!', {"showMethod": "slideDown", "hideMethod": "slideUp", timeOut: 2000});
+                            toastr.info('Ви щойно здобули ' + deltaP + ' активних кткв.', 'Вітаємо!', {"showMethod": "slideDown", "hideMethod": "slideUp", timeOut: 2000});
                             points = newPoints;
                         }
 

@@ -5,7 +5,7 @@
     <meta property="og:title" content="Досягнення {{ rule.name }}" />
     <meta property="og:url" content="{{ cms_SITE_URL }}{{ url_for('cms.achievement_page', rule_id=rule.id) }}" />
     <meta property="og:image" content="{{ cms_SITE_URL }}/{{ rule.badge }}" />
-    <meta property="og:description" content="{{ rule.description }}" />
+    <meta property="og:description" content="{{ rule.description|safe|striptags }}" />
 {% endblock %}
 
 {% block body_content %}

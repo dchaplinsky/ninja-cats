@@ -43,4 +43,18 @@
         }
     });
 
+    $(".share_on_fb").on("click", function(e) {
+        e.preventDefault();
+
+        var el = $(this);
+        FB.ui({
+                method: 'share',
+                display: 'popup',
+                quote: el.attr("title") || "",
+                href: el.attr("href"),
+                hashtag: "#Котики"
+            },
+            function(response){}
+        );
+    })
 })(window, document, jQuery);

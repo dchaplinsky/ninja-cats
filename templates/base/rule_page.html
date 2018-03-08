@@ -1,0 +1,105 @@
+{% extends "base/base.html" %}
+
+{% block extra_tags %}
+    {{ super() }}
+    <meta property="og:title" content="Досягнення {{ rule.name }}" />
+    <meta property="og:url" content="{{ cms_SITE_URL }}{{ url_for('cms.achievement_page', rule_id=rule.id) }}" />
+    <meta property="og:image" content="{{ cms_SITE_URL }}{{ rule.badge }}" />
+{% endblock %}
+
+{% block body_content %}
+
+{% if user.is_authenticated %}
+    {% set state = gamification_stats_service.state_of_user(current_user) %}
+{% endif %}
+
+<div class="app-content content container-fluid">
+    <div class="content-wrapper">
+        <div class="content-detached content-left">
+            <div class="content-body">
+                <div class="row" id="user-profile">
+                    <div class="col-xs-12">
+                        <div class="card profile-with-cover">
+                            <div class="card-img-top img-fluid bg-cover height-200">
+                                <img src="/static/app-assets/images/backgrounds/funds-bg-rnd/{{ range(1, 16) | random }}.jpg" class="">
+                            </div>
+
+                            <div class="cover-shadow"></div>
+                            <div class="media profil-cover-details">
+                                <div class="media-left pl-2 pt-2">
+                                    <img src="/{{ rule.badge }}" class="img-border height-100" alt="Card image">
+                                </div>
+
+                                <div class="media-body media-middle row">
+                                    <div class="col-xs-6">
+                                        <h3 class="card-title">{{ rule.name }}</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
+                                <div class="heading-elements">
+                                    <ul class="list-inline mb-0">
+                                        <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-body collapse in" aria-expanded="true">
+                                <div class="card-block fund-desc">
+                                    {{ rule.description|safe }}
+                                    <a href="{{ cms_SITE_URL }}{{ url_for('cms.achievement_page', rule_id=rule.id) }}" title="Диви, що я зробив!" class="share_on_fb">Поділитися на фейсбук</a>
+
+                                    <img src="/{{ rule.badge }}" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" id="fund-projects">
+                    <div class="col-xs-12">
+                        <section class="card">
+                            <div class="card-body collapse in">
+                                <div class="card-block my-gallery" itemscope="" itemtype="http://schema.org/ImageGallery">
+                                    <div class="row">
+                                        <div class="grid-hover">
+                                            {% for promo_item in cms_random_promo_items[:3] %}
+                                            <div class="col-sm-4 col-xs-12">
+                                                <figure class="effect-sarah">
+                                                    <img src="{{ url_for('cms.api_file_view', coll="images", pk=promo_item.image.thumbnail_id) }}" alt="img02">
+                                                    <figcaption>
+                                                        <h2>{{ promo_item.title }}</h2>
+                                                        {{ promo_item.body|safe }}
+                                                        <a href="{{ promo_item.link }}">View more</a>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                            {% endfor %}
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar-detached sidebar-right">
+            <div class="sidebar">
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block body_classes %}
+    {% if user.is_anonymous %}
+    horizontal-layout horizontal-menu steps-page not-logged-in fund-page
+    {% else %}
+    vertical-layout vertical-menu fixed-navbar logged-in fund-page
+    {% endif %}
+{% endblock %}

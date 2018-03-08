@@ -199,6 +199,8 @@ ENABLED_BLUEPRINTS = [
 ]
 
 REDIRECT_USER_AFTER_LOGIN = False
+SITE_URL = "https://kotyky.org.ua"
+SITE_FB_APP_ID = "https://kotyky.org.ua"
 
 SOCIAL_AUTH_FACEBOOK_PROFILE_EXTRA_PARAMS = {
     'fields': 'id, name, email, age_range'

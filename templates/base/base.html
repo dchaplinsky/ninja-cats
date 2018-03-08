@@ -15,18 +15,40 @@
     {% endassets %}
     {% block extra_css %}
     {% endblock %}
+    {% block extra_tags %}
+        <meta property="og:site_name" content="Котики" />
+    {% endblock %}
 </head>
 
 <body class="{% block body_classes %}horizontal-layout horizontal-menu steps-page not-logged-in{% endblock %}">
-<div id="fb-root"></div>
+
 <div class="site-wrapper">
-<script>(function(d, s, id) {
+{# <script>(function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
     js = d.createElement(s); js.id = id;
     js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=137769152977340";
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+ #}
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId            : '{{ SITE_FB_APP_ID }}',
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v2.12'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
 
 <!-- navbar-fixed-top-->
 {% block body %}

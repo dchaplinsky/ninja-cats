@@ -6,6 +6,7 @@ from mongoengine.connection import get_db
 from vulyk.blueprints import VulykModule
 from vulyk import utils
 from vulyk.blueprints.gamification.models.foundations import FundModel
+from vulyk.blueprints.gamification.models.rules import RuleModel
 
 from .admin import FAQAdmin, StaticPageAdmin, PromoAdmin, MenuAdmin
 from .models.faq import FAQItem, get_faq_on_main
@@ -22,6 +23,7 @@ __all__ = [
 class CMSModule(VulykModule):
     def register(self, app, options, first_registration=False):
         super().register(app, options, first_registration)
+        self.app = app
 
         @app.template_filter("uk_plural")
         def uk_plural(value, args):
@@ -92,6 +94,19 @@ def fund_page(fund_id):
         fund=fund
     )
 
+@cms.route('/achievement/<rule_id>')
+def achievement_page(rule_id):
+    result = None
+
+    try:
+        rule = RuleModel.objects.get(id=rule_id).to_rule()
+    except RuleModel.DoesNotExist:
+        flask.abort(utils.HTTPStatus.NOT_FOUND)
+
+    return flask.render_template(
+        "base/rule_page.html",
+        rule=rule
+    )
 
 def get_foundations():
     return {
@@ -101,6 +116,11 @@ def get_foundations():
         ))
     }
 
+def get_site_url():
+    return {
+        "SITE_URL": cms.app.config.get('SITE_URL', False),
+        "SITE_FB_APP_ID": cms.app.config.get('SITE_FB_APP_ID', False)
+    }
 
 def get_tasks():
     from vulyk.app import TASKS_TYPES
@@ -122,4 +142,5 @@ cms.add_context_filler(get_promos_on_main)
 cms.add_context_filler(get_menu)
 cms.add_context_filler(get_foundations)
 cms.add_context_filler(get_tasks)
+cms.add_context_filler(get_site_url)
 cms.add_context_filler(get_task_pages)

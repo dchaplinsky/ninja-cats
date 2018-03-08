@@ -46,7 +46,7 @@
     $('.modal').on('hidden.bs.modal', function (e) {
         if (donateStatus !== null) {
             if (donateStatus === 'good') {
-                toastr.success('Ви відправили ' + amountTransfer + ' грн. фонду ' + fund, 'Дякуємо!');
+                toastr.success('Ви відправили ' + amountTransfer + ' кткв. фонду ' + fund, 'Дякуємо!');
                 //todo update personal user donate.info at header and at fund page
             } else {
                 toastr.error('Не вдалося перевести кошти', 'Помилка!'); //todo

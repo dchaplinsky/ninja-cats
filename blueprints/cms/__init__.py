@@ -4,7 +4,7 @@ import gridfs
 from bson.objectid import ObjectId
 from mongoengine.connection import get_db
 from vulyk.blueprints import VulykModule
-from vulyk import utils
+from vulyk.utils import HTTPStatus
 from vulyk.blueprints.gamification.models.foundations import FundModel
 from vulyk.blueprints.gamification.models.rules import RuleModel
 
@@ -43,16 +43,16 @@ cms = CMSModule('cms', __name__)
 @cms.route('/thumbnail/<coll>/<pk>')
 def api_file_view(coll, pk):
     if not pk or not coll:
-        flask.abort(utils.HTTPStatus.NOT_FOUND)
+        flask.abort(HTTPStatus.NOT_FOUND)
 
     if coll not in ["images"]:
-        flask.abort(utils.HTTPStatus.FORBIDDEN)
+        flask.abort(HTTPStatus.FORBIDDEN)
 
     fs = gridfs.GridFS(get_db("default"), coll)
 
     data = fs.get(ObjectId(pk))
     if not data:
-        flask.abort(utils.HTTPStatus.NOT_FOUND)
+        flask.abort(HTTPStatus.NOT_FOUND)
 
     return flask.Response(
         data.read(),
@@ -66,7 +66,7 @@ def static_page(slug):
     try:
         page = StaticPage.objects.get(slug=slug)
     except StaticPage.DoesNotExist:
-        flask.abort(utils.HTTPStatus.NOT_FOUND)
+        flask.abort(HTTPStatus.NOT_FOUND)
 
     return flask.render_template(
         "base/static_page.html",
@@ -87,7 +87,7 @@ def fund_page(fund_id):
     fund = FundModel.find_by_id(fund_id)
 
     if fund is None:
-        flask.abort(utils.HTTPStatus.NOT_FOUND)
+        flask.abort(HTTPStatus.NOT_FOUND)
 
     return flask.render_template(
         "base/fund_page.html",
@@ -101,7 +101,7 @@ def achievement_page(rule_id):
     try:
         rule = RuleModel.objects.get(id=rule_id).to_rule()
     except RuleModel.DoesNotExist:
-        flask.abort(utils.HTTPStatus.NOT_FOUND)
+        flask.abort(HTTPStatus.NOT_FOUND)
 
     return flask.render_template(
         "base/rule_page.html",

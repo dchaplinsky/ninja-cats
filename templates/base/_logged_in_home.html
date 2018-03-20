@@ -33,7 +33,7 @@
         <tr>
             <td>
                 {% set task_closed = task.tasks - task.open_tasks %}
-                <span class="text-xs-center font-small-2">Виконано {{ task_closed }} {{ task_closed|uk_plural("завдання,завдання,завдань") }} <progress class="progress progress-sm progress-teal mt-0 mb-0" value="{{ task_closed }}" max="{{ task.tasks }}"></progress></span>
+                <span class="text-xs-center font-small-2">Користувачі виконали {{ task_closed }} {{ task_closed|uk_plural("завдання,завдання,завдань") }} з цього пакету<progress class="progress progress-sm progress-teal mt-0 mb-0" value="{{ task_closed }}" max="{{ task.tasks }}"></progress></span>
             </td>
             <td class="text-xs-center font-small-2">
                 <span class="decl svg-image logo" title="Канцелярська сотня"><svg preserveAspectRatio="xMidYMid" focusable="false"><use xlink:href="{{ url_for('static', filename='app-assets/images/svg/svg-logo-sprite.svg') }}#decl"></use></svg></span>

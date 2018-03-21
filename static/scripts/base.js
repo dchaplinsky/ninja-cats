@@ -79,6 +79,7 @@ var Vulyk = Vulyk || {
                     "/type/" + vus.task_type + "/done/" + vus.task_id,
                     {result: JSON.stringify(result)},
                     function (data) {
+                        toastr.success('Надіслано, дякуємо.', 'Рушаймо далі', {"showMethod": "slideDown", "hideMethod": "slideUp", timeOut: 3000});
                         vu.load_next();
                     });
             } else {

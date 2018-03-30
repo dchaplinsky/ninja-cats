@@ -205,3 +205,6 @@ SITE_FB_APP_ID = "1394419294211706"
 SOCIAL_AUTH_FACEBOOK_PROFILE_EXTRA_PARAMS = {
     'fields': 'id, name, email, age_range'
 }
+
+
+SOCIAL_AUTH_NEW_USER_REDIRECT_URL = "/cms/onboarding"

@@ -12,7 +12,7 @@ from vulyk.blueprints.gamification.models.foundations import FundModel
 from vulyk.blueprints.gamification.models.rules import RuleModel
 
 from vulyk.models.user import User
-from vulyk.models.tasks import AbstractAnswer
+from vulyk.signals import on_task_done
 from vulyk.blueprints.gamification.core.events import Event
 from vulyk.blueprints.gamification.core.state import UserState
 from vulyk.blueprints.gamification.models.events import EventModel
@@ -132,9 +132,9 @@ def achievement_page(rule_id):
         rule=rule
     )
 
-@cms.route('/onboarding')
-@login.login_required
-def onboarding_page():
+
+@on_task_done.connect
+def track_affiliates(sender, answer):
     affiliate_id = flask.request.cookies.get('affiliate_id')
     user = flask.g.user
 
@@ -144,7 +144,7 @@ def onboarding_page():
             invitee=user).first()
 
         if u is not None and existing_referal is None and u.id != user.id:
-            dt = datetime.now()  # TODO: TZ Aware?
+            dt = datetime.utcnow()  # TODO: TZ Aware?
             state = UserStateModel.get_or_create_by_user(u)
 
             UserStateModel.update_state(
@@ -175,8 +175,6 @@ def onboarding_page():
                 invitee=user
             )
 
-    return flask.redirect(flask.url_for('index'))
-
 
 def get_foundations():
     return {
@@ -185,6 +183,7 @@ def get_foundations():
             FundModel.get_funds()
         ))
     }
+
 
 def get_site_url():
     res = {

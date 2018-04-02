@@ -30,7 +30,7 @@ function generateEventHtml(className, points, pointsText, pointsHistory, pointsD
 
 function formateDate(unixTime) {
     var date = new Date(unixTime * 1000);
-    return date.getDate() + '.' + date.getDate() + '.' +  date.getFullYear() + ' ' + date.getHours() + ':' + date.getMinutes();
+    return date.getDate() + '.' + (date.getMonth() + 1) + '.' +  date.getFullYear() + ' ' + date.getHours() + ':' + date.getMinutes();
 }
 
 function fillUserEvents(events) {

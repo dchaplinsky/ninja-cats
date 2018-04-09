@@ -1,7 +1,7 @@
 {% include '_social_signin.html'|app_template %}
 <nav class="header-navbar navbar navbar-with-menu navbar-static-top navbar-dark bg-gradient-x-grey-blue navbar-border navbar-brand-center">
     <div class="navbar-wrapper">
-        <div class="navbar-header">
+        <div class="navbar-header hidden-md-up">
             <ul class="nav navbar-nav">
                 <li class="nav-item hidden-md-up">
                     <a href="/" class="navbar-brand">
@@ -26,6 +26,7 @@
                 </ul>
                 <ul class="nav navbar-nav">
                     <li class="nav-item hidden-sm-down white mt-1 site-slogan">Суспільна корисна платформа. <br>Обміняй свій час на допомогу</li>
+                    <li class="nav-item hidden-sm-down white mt-1"><button data-toggle="modal" data-target="#inviteFriendModal" type="button" class="btn btn-danger btn-sm"><i class="icon-basket-loaded"></i> Запросити друга</button></li>
                 </ul>
                 <ul  class="nav navbar-nav float-xs-right">
                     <li class="nav-item float-xs-right btn-group nav-item--nav-login-button">

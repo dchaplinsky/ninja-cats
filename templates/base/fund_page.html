@@ -1,5 +1,14 @@
 {% extends "base/base.html" %}
 
+{% block extra_tags %}
+    <meta property="fb:app_id" content="{{ cms_SITE_FB_APP_ID }}" />
+    <meta property="og:url"                content="{{ request.url }}" />
+    <meta property="og:type"               content="article" />
+    <meta property="og:title"              content="{{ fund.name }}" />
+    <meta property="og:description"        content="Цей фонд потребує вашої допомоги. Реєструйся, виконуй прості завдання та допомагай!" />
+    <meta property="og:image"              content="http://dev.sotnya.org.ua:5000/static/app-assets/images/backgrounds/fb.png" />
+{% endblock %}
+
 {% block body_content %}
 
 {% if user.is_authenticated %}
@@ -40,6 +49,9 @@
                                             {% else %}
                                                 <button data-toggle="modal" data-target="#socialSignin" type="button" class="btn btn-danger btn-sm"><i class="icon-basket-loaded"></i> Зареєструватися та допомогти</button>
                                             {% endif %}
+                                        </li>
+                                        <li class="nav-item fb-share">
+                                            <div class="fb-share-button" data-href="{{ request.url }}" data-layout="button_count"></div>
                                         </li>
                                     </ul>
                                 </div>

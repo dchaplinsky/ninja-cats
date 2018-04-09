@@ -86,6 +86,17 @@
                             </div>
                         </div>
                         {% endif %}
+
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title"><i class="ft-alert-circle"></i> Надважливе завдання</h4>
+                                <a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
+                            </div>
+                            <div class="card-body collapse in">
+                                <button style="width: 100%" data-toggle="modal" data-target="#inviteFriendModal" type="button" class=" btn btn-info btn-info-light-blue nav-login-button"><i class="icon-user-follow"></i> Запросити друга</button>
+                            </div>
+                        </div>
+
                         <div class="card" id="all-tasks-list">
                             <div class="card-header" id="user-tasks-table-controls">
                                 <h4 class="card-title">
@@ -180,22 +191,6 @@
                                 </div>
                             </div>
 
-                            <div class="card bg-danger">
-                                <div class="card-body">
-                                    <div class="card-block">
-                                        <div class="media">
-                                            <div class="media-left media-middle">
-                                                <i class="icon-wallet white font-large-2 float-xs-left"></i>
-                                            </div>
-                                            <div class="media-body white text-xs-right">
-                                                <h3 class="font-large-1">{{ state.potential_coins }} / {{ state.actual_coins }}</h3>
-                                                <span>потенційних / активних котиків</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
                         <!-- END OF USER Statistics -->
 
@@ -215,6 +210,22 @@
 
         <div class="sidebar-detached sidebar-right">
             <div class="sidebar">
+                <div class="card bg-danger">
+                    <div class="card-body">
+                        <div class="card-block">
+                            <div class="media">
+                                <div class="media-left media-middle">
+                                    <i class="icon-wallet white font-large-2 float-xs-left"></i>
+                                </div>
+                                <div class="media-body white text-xs-right">
+                                    <h3 class="font-large-1">{{ state.potential_coins }} / {{ state.actual_coins }}</h3>
+                                    <span>потенційних / активних котиків</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div id="fund-list">
                     <!-- Project Users -->
                     <div class="card">

@@ -111,4 +111,10 @@
     }
 }
 
+.grid-col {
+    @media (min-width: 992px) and (max-width: 1600px) {
+        width: 50%;
+    }
+}
+
 

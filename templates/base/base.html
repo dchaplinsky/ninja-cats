@@ -261,22 +261,19 @@
                     <div class="modal-body">
                         <div class="card">
                             <div class="card-body">
-                                <img src="/static/app-assets/images/backgrounds/funds-bg-rnd/{{ range(1, 16) | random }}.jpg" class="img-border height-100" alt="Card image">
+                                <img src="/static/app-assets/images/backgrounds/invite.jpg" class="img-border height-200">
                                 <h5>Твій реферальний лінк:</h5>
-
                                 <div class="form-group">
                                     <div class="controls">
-                                        <input type="text" name="code" class="form-control" aria-describedby="button-addon2" value="123456">
+                                        <input type="text" name="code" class="form-control" aria-describedby="button-addon2" value="{{ cms_AFFILIATE_URL }}">
                                     </div>
-                                    <button class="btn btn-primary border-primary" name="donate" value="Копіювати">Копіювати <i class="fa fa-thumbs-o-up position-right"></i></button>
+                                    <span class="copy-notice">Лінк скопійовано!</span>
                                 </div>
-
-
                             </div>
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button class="btn btn-primary border-primary" type="submit" name="donate" value="Добре">Добре <i class="fa fa-thumbs-o-up position-right"></i></button>
+                        <button type="button" class="btn btn-primary border-primary" data-dismiss="modal">Добре <i class="fa fa-thumbs-o-up position-right"></i></button>
                     </div>
                 </form>
             </div>

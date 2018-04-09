@@ -23,6 +23,18 @@
                 })
     }
 
+    $('#inviteFriendModal input').on("click", function(e) {
+        $(this).select();
+        document.execCommand("copy");
+        $('#inviteFriendModal .copy-notice').show();
+    });
+
+    $('#inviteFriendModal').on('hidden.bs.modal', function (e) {
+        $('#inviteFriendModal .copy-notice').hide();
+        $('#inviteFriendModal input').select();
+        document.execCommand("copy");
+    });
+
     $( document ).ready(function() {
         var $fundsContainer = $('#sidebar-fund-list');
 

@@ -397,3 +397,30 @@
     padding-right: 1.5rem;
   }
 }
+
+#inviteFriendModal {
+  img {
+    width: auto;
+    height: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+  }
+
+  h5 {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .copy-notice {
+    display: none;
+    line-height: 30px;
+    font-style: italic;
+  }
+
+  .form .form-group,
+  .card {
+    margin-bottom: 0;
+  }
+}

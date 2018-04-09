@@ -1,5 +1,14 @@
 {% extends "base/base.html" %}
 
+{% block extra_tags %}
+    <meta property="fb:app_id" content="{{ cms_SITE_FB_APP_ID }}" />
+    <meta property="og:url"                content="{{ request.url }}" />
+    <meta property="og:type"               content="article" />
+    <meta property="og:title"              content="{{ fund.name }}" />
+    <meta property="og:description"        content="Цей фонд потребує вашої допомоги. Реєструйся, виконуй прості завдання та допомагай!" />
+    <meta property="og:image"              content="http://dev.sotnya.org.ua:5000/static/app-assets/images/backgrounds/fb.png" />
+{% endblock %}
+
 {% block body_content %}
 
 {% if user.is_authenticated %}
@@ -41,6 +50,9 @@
                                                 <button data-toggle="modal" data-target="#socialSignin" type="button" class="btn btn-danger btn-sm"><i class="icon-basket-loaded"></i> Зареєструватися та допомогти</button>
                                             {% endif %}
                                         </li>
+                                        <li class="nav-item fb-share">
+                                            <div class="fb-share-button" data-href="{{ request.url }}" data-layout="button_count"></div>
+                                        </li>
                                     </ul>
                                 </div>
                             </nav>
@@ -71,15 +83,20 @@
                                     <div class="row">
                                         <div class="grid-hover">
                                             {% for promo_item in cms_random_promo_items[:3] %}
-                                            <div class="col-sm-4 col-xs-12">
+
+                                            <div class="grid-col col-md-4 col-sm-6 col-xs-12">
                                                 <figure class="effect-sarah">
-                                                    <img src="{{ url_for('cms.api_file_view', coll="images", pk=promo_item.image.thumbnail_id) }}" alt="img02">
+                                                    <img src="{{ url_for('cms.api_file_view', coll="images", pk=promo_item.image.thumbnail_id) }}" alt="{{ promo_item.title }}">
                                                     <figcaption>
                                                         <h2>{{ promo_item.title }}</h2>
-                                                        {{ promo_item.body|safe }}
-                                                        <a href="{{ promo_item.link }}">View more</a>
+                                                        {{ promo_item.body|safe|truncate(150) }}
+                                                        <a href="{{ promo_item.link }}">Детальніше</a>
                                                     </figcaption>
                                                 </figure>
+                                                <div class="mobile-description">
+                                                    {{ promo_item.body|safe|truncate(150) }}
+                                                    <a href="{{ promo_item.link }}">Детальніше</a>
+                                                </div>
                                             </div>
                                             {% endfor %}
                                         </div>

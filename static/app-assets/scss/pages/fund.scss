@@ -82,6 +82,10 @@
     }
     .navbar-profile {
         border-radius: 0;
+
+        .fb-share {
+            margin-top: 6px;
+        }
     }
 
     .nav.navbar-nav {
@@ -104,6 +108,12 @@
 .fund-page {
     .fund-desc {
         padding: 3rem !important;
+    }
+}
+
+.grid-col {
+    @media (min-width: 992px) and (max-width: 1600px) {
+        width: 50%;
     }
 }
 

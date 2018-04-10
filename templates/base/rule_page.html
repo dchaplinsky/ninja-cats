@@ -38,7 +38,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card badge-container">
                             <div class="card-header">
                                 <a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
                                 <div class="heading-elements">
@@ -50,7 +50,7 @@
                             <div class="card-body collapse in" aria-expanded="true">
                                 <div class="card-block fund-desc">
                                     {{ rule.description|safe }}
-                                    <a href="{{ cms_SITE_URL }}{{ url_for('cms.achievement_page', rule_id=rule.id) }}" title="Диви, що я зробив!" class="share_on_fb">Поділитися на фейсбук</a>
+                                    <a href="{{ cms_SITE_URL }}{{ url_for('cms.achievement_page', rule_id=rule.id) }}" title="Диви, що я зробив!" class="btn btn-info share_on_fb">Поділитися на фейсбук</a>
 
                                     <img src="/{{ rule.badge }}" />
                                 </div>

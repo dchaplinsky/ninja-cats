@@ -166,9 +166,27 @@
   }
 }
 
-.badge-container img {
-  max-width: 500px;
-  display: block;
-  height: auto;
-  margin: 40px auto 0 auto;
+.badge-page {
+  .badge-container img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    height: auto;
+    margin: 40px auto 0 auto;
+  }
+
+  .my-gallery {
+    .grid-hover {
+     padding-top: 0;
+
+      > div {
+        margin-bottom: 25px;
+      }
+
+      figure {
+        margin-top: 0;
+      }
+    }
+  }
 }
+

@@ -354,6 +354,14 @@ nav.navbar-fixed + .app-content {
   }
 }
 
+.main-menu .fb-share-button {
+  padding: 10px 30px 10px 20px;
+}
+
+body.vertical-layout.vertical-menu.menu-collapsed .main-menu .fb-share-button {
+  display: none;
+}
+
 .site-slogan {
   padding-left: 20px;
   margin-left: 5px;
@@ -414,4 +422,8 @@ body.vertical-layout {
   .card {
     margin-bottom: 0;
   }
+}
+
+.login-container {
+  text-align: center;
 }

@@ -20,11 +20,9 @@
     </div>
 </section>
 
-<div class="text-xs-center mt-2 mb-1">
-    <div class="btn-group">
-        {% include '_social_signin.html'|app_template %}
-    </div>
-</div>
+<div class="login-container text-xs-center mt-2 mb-1"><button type="button" class="btn btn-info btn-info-light-blue nav-login-button" data-toggle="modal" data-target="#socialSignin"><i class="fa fa-user-o"></i> Увійдіть</button></div>
+
+{% include '_social_signin.html'|app_template %}
 
 <section id="image-grid" class="card transparent-bg">
     <div class="card-body collapse in">

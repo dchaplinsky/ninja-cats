@@ -22,8 +22,8 @@
                 <div class="row" id="user-profile">
                     <div class="col-xs-12">
                         <div class="card profile-with-cover">
-                            <div class="card-img-top img-fluid bg-cover height-200">
-                                <img src="/static/app-assets/images/backgrounds/funds-bg-rnd/{{ range(1, 16) | random }}.jpg" class="">
+                            {% set rnd = range(1, 4) | random | string %}
+                            <div class="card-img-top img-fluid height-200" style="background: url({{ url_for('static', filename='app-assets/images/pages/bkg' + rnd + '.png') }}) repeat">
                             </div>
 
                             <div class="cover-shadow"></div>

@@ -118,10 +118,9 @@ def fund_page(fund_id):
         fund=fund
     )
 
+
 @cms.route('/achievement/<rule_id>')
 def achievement_page(rule_id):
-    result = None
-
     try:
         rule = RuleModel.objects.get(id=rule_id).to_rule()
     except RuleModel.DoesNotExist:

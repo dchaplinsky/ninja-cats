@@ -15,12 +15,12 @@
 
     function generateBadgeHtml(id, name, desc, url) {
 
-        var html = '<div class="badge badge-' + id + '"><div class="card"><div class="card-body"><div class="media"><div class="p-2 text-xs-center media-left media-middle">'
+        var html = '<div class="badge badge-' + id + '"><a title="Поділитись бейджем у Facebook" class="card" href="/cms/achievement/' + id + '"><div class="card-body"><div class="media"><div class="p-2 text-xs-center media-left media-middle">'
             + '<img src="' + url + '" class="height-75 ib float-xs-left" alt="" />'
             + '</div><div class="p-2 media-body">'
             + '<h5>' + name + '</h5>'
             + '<h5 class="text-bold-400">' + desc + '</h5>'
-            + '</div></div></div></div></div>';
+            + '</div></div></div></a></div>';
 
         return html;
     }
@@ -36,7 +36,7 @@
             potentialCoins,
             points,
             level,
-            $container = $('#user-achievements');
+            $container = $('#user-achievements .vertical-scroll');
 
         if (state.actual_coins) {
             actualCoins = state.actual_coins;
@@ -61,7 +61,7 @@
                 var name = state.achievements[i].name,
                     desc = state.achievements[i].description,
                     id = state.achievements[i].id,
-                    url = '/static/app-assets/images/badges/0' + id + '.png';
+                    url = state.achievements[i].badge;
                 $container.append(generateBadgeHtml(id, name, desc, url));
             }
 

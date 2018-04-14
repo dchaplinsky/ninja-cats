@@ -50,8 +50,9 @@
                             <div class="card-body collapse in" aria-expanded="true">
                                 <div class="card-block fund-desc">
                                     {{ rule.description|safe }}
-                                    <a href="{{ cms_SITE_URL }}{{ url_for('cms.achievement_page', rule_id=rule.id) }}" title="Диви, що я зробив!" class="btn btn-info share_on_fb">Поділитися на фейсбук</a>
-
+                                    <a href="{{ cms_SITE_URL }}{{ url_for('cms.achievement_page', rule_id=rule.id) }}"
+                                       title="Диви, що я зробив!"
+                                       class="btn btn-social btn-min-width btn-facebook share_on_fb pr-1"><i class="fa fa-facebook"></i> Поділитись на Facebook</a>
                                     <img src="/{{ rule.badge }}" />
                                 </div>
                             </div>

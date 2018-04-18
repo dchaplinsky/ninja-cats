@@ -13,6 +13,7 @@
         var html = '<div class="badge badge-' + id + '">'
             + '<img src="' + url + '" />'
             + '<h5 class="text-bold-400">' + desc + '</h5>'
+            + '<a href="/cms/achievement/' + id + '" class="btn btn-social btn-min-width  mt-1 btn-facebook share_on_fb" title="Диви, що я зробив!"><i class="fa fa-facebook"></i> Поділитись на Facebook</a>'
             + '</div>';
 
         return html;

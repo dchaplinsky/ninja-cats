@@ -41,6 +41,13 @@
         if($('.steps-page').length > 0) {
             $('#stepbanner-1-2-3').fsBanner();
         }
+
+        $('.vertical-scroll').perfectScrollbar({
+            suppressScrollX : true,
+            theme: 'dark',
+            wheelPropagation: true
+        });
+
     });
 
     $(window).load(function() {

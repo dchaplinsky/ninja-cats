@@ -99,12 +99,18 @@
             }
         }
     }
+
     .navbar-profile {
         border-radius: 0;
 
         .fb-share {
             margin-top: 6px;
         }
+    }
+
+    .navbar-toggleable-xs {
+        position: relative;
+        z-index: 10;
     }
 
     .nav.navbar-nav {

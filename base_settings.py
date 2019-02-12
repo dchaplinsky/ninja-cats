@@ -1,18 +1,22 @@
 import os
 import os.path
 
-ENV = os.environ.get
+def get_env_str(k, default):
+    return os.environ.get(k, default)
 
-ENABLED_TASKS = {
-    'vulyk_declaration': 'DeclarationTaskType',
-}
+def get_env_str_list(k, default=""):
+    if os.environ.get(k) is not None:
+        return os.environ.get(k).strip().split(" ")
+    return default
+
+ENV = os.environ.get
 
 TEMPLATES_FOLDER = os.path.join(os.path.dirname(__file__), "templates")
 
 LOGGING_LOCATION = "/tmp/vulyk.log"
 ENABLE_ADMIN = True
 
-STATIC_FOLDER = os.path.join(os.path.dirname(__file__), "static")
+STATIC_FOLDER = get_env_str('STATIC_ROOT', os.path.join(os.path.dirname(__file__), "static"))
 
 JS_ASSETS = [
     "app-assets/vendors/js/vendors.min.js",
@@ -200,8 +204,50 @@ ENABLED_BLUEPRINTS = [
 
 REDIRECT_USER_AFTER_LOGIN = False
 SITE_URL = "https://kotyky.org.ua"
+SITE_NAME = "Котики"
 SITE_FB_APP_ID = "1394419294211706"
 
 SOCIAL_AUTH_FACEBOOK_PROFILE_EXTRA_PARAMS = {
     'fields': 'id, name, email, age_range'
 }
+SOCIAL_AUTH_REDIRECT_IS_HTTPS = True
+
+SENTRY_DSN = get_env_str('SENTRY_DSN', None)
+
+WARM_WELCOME = u"""<h3>Вас вітає Канцелярська сотня.</h3>
+<p>Сайт <a href="http://sotnya.org.ua">sotnya.org.ua</a>, це місце спільної роботи волонтерів над масштабними проектами, які складаються з невеличких зусиль кожного. Сьогодні Канцелярська сотня займається розшифровкою та переведенням у електронну форму декларацій чиновників, депутатів, правоохоронців та інших державних службовців.</p>
+<p>Після входу на сайт (кнопка Фейсбук справа), система запропонує вам скачати декларацію про доходи, та внести дані з неї у спеціально розроблену форму.</p>
+<p>Зробіть це будь-ласка. Ви вкладетесь у максимум 15 хвилин часу. А ваша робота дозволить нам зробити автоматичний аналіз даних.</p>
+<p>Якщо у вас є більше часу - система із задоволенням надасть вам ще одну декларацію. І ще. І ще. Ми будемо щасливі, якщо ви заповните кілька десятків, адже цього року чиновники мають оприлюднити майже мільйон декларацій.</p>
+<p>Результати розшифровки відкрито доступні на сайті <a href="http://declarations.com.ua">declarations.com.ua</a>.</p>"""
+
+GA = get_env_str('GA', None)
+
+SOCIAL_AUTH_FACEBOOK_KEY = get_env_str('SOCIAL_AUTH_FACEBOOK_KEY', None)
+SOCIAL_AUTH_FACEBOOK_SECRET = get_env_str('SOCIAL_AUTH_FACEBOOK_SECRET', None)
+
+SOCIAL_AUTH_TWITTER_KEY = get_env_str('SOCIAL_AUTH_TWITTER_KEY', None)
+SOCIAL_AUTH_TWITTER_SECRET = get_env_str('SOCIAL_AUTH_TWITTER_SECRET', None)
+
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = get_env_str('SOCIAL_AUTH_GOOGLE_OAUTH2_KEY', None)
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = get_env_str('SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET', None)
+
+DEBUG_TB_PANELS = [ ]
+
+COLLECT_STATIC_ROOT = get_env_str('STATIC_ROOT', STATIC_FOLDER)
+COLLECT_STORAGE = 'vulyk.ext.storage'
+
+ENABLED_TASKS = {
+    'vulyk_declaration': 'DeclarationTaskType',
+    'vulyk_judges': 'JudgesTaskType'
+}
+
+MONGODB_SETTINGS = {
+    'HOST': get_env_str('DB_HOST', "localhost"),
+    'DB': get_env_str('DB_NAME', "ninja_cats"),
+    'USERNAME': get_env_str('DB_USER', "ninja_cats"),
+    'PASSWORD': get_env_str('DB_PASS', "irDJrZ7EMmiZ"),
+    'PORT': int(get_env_str('DB_PASS', "27017")),
+}
+
+LOG_TO_STDERR = ENV('LOG_TO_FILE', "False").lower() in ("true", "t", "1")

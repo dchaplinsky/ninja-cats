@@ -2,3 +2,4 @@
 -e git+https://github.com/hotsyk/vulyk-declaration#egg=declaration-master
 -e git+https://github.com/hotsyk/vulyk-declaration@1169cdaf50b8b8f4283e3bd0e78a07d2f0b066a5#egg=vulyk_declaration
 -e git+https://github.com/dchaplinsky/vulyk-judges@c571dc50cab769ebde650221171d59b58c2b2613#egg=vulyk_judges
+raven==6.0.0

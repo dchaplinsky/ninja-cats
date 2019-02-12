@@ -247,7 +247,7 @@ MONGODB_SETTINGS = {
     'DB': get_env_str('DB_NAME', "ninja_cats"),
     'USERNAME': get_env_str('DB_USER', "ninja_cats"),
     'PASSWORD': get_env_str('DB_PASS', "irDJrZ7EMmiZ"),
-    'PORT': int(get_env_str('DB_PASS', "27017")),
+    'PORT': int(get_env_str('DB_PORT', "27017")),
 }
 
 LOG_TO_STDERR = ENV('LOG_TO_FILE', "False").lower() in ("true", "t", "1")

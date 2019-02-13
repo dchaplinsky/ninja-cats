@@ -33,7 +33,7 @@ COPY . ${root}/
 COPY docker-entrypoint.sh /usr/local/bin/
 
 RUN rm -f docker-entrypoint.sh \
-		python -m compileall ${root} \
+		&& python -m compileall ${root} \
 		&& mkdir -p ${MEDIA_ROOT} ${STATIC_ROOT_SOURCE} ${LOG_ROOT} \
 		# build static in the STATIC_ROOT and then move to STATIC_ROOT_SOURCE
 		# then before start copy all these files over host-mounted STATIC_ROOT

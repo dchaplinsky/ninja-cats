@@ -117,3 +117,7 @@ site
 **/node_modules/
 
 build.sh
+Dockerfile
+.dockerignore
+**/.git*
+requirements_local.txt

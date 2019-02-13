@@ -1,7 +1,6 @@
 #!/bin/sh
 set -e
 
-version_file="${STATIC_ROOT}/.version"
 user=app
 
 if [ "$1" = 'gunicorn' -a "$(id -u)" = '0' ]; then
@@ -16,6 +15,9 @@ fi
 
 if [ "$#" -eq 1 ] && [ "$1" = 'gunicorn' ]; then
   command="$1 -w ${APP_WORKERS} --keep-alive 120 --access-logfile - --error-logfile - -t 120 --chdir ${PREFIX} --bind 0.0.0.0:8000 ${APP_NAME}"
+  # copy static files over
+  cp -a ${STATIC_ROOT_SOURCE}/* ${STATIC_ROOT}/
+  chown ${user} -R ${STATIC_ROOT}
 else
   command="$@"
 fi

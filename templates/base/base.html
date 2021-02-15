@@ -260,7 +260,8 @@
     </div>
 </footer>
 
-<div class="modal fade text-xs-left" id="inviteFriendModal" tabindex="-1" role="dialog" aria-labelledby="inviteFriendModal" aria-hidden="true">
+    <div class="modal fade text-xs-left" id="inviteFriendModal" tabindex="-1" role="dialog"
+         aria-labelledby="inviteFriendModal" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <form class="donate-form" action="/" method="post" accept-charset="UTF-8" novalidate>
@@ -273,11 +274,13 @@
                     <div class="modal-body">
                         <div class="card">
                             <div class="card-body">
-                                <img src="/static/app-assets/images/backgrounds/invite.jpg" class="img-border height-200">
+                                <img src="/static/app-assets/images/backgrounds/invite.jpg"
+                                     class="img-border height-200">
                                 <h5>Твій реферальний лінк:</h5>
                                 <div class="form-group">
                                     <div class="controls">
-                                        <input type="text" name="code" class="form-control" aria-describedby="button-addon2" value="{{ cms_AFFILIATE_URL }}">
+                                        <input type="text" name="code" class="form-control"
+                                               aria-describedby="button-addon2" value="{{ cms_AFFILIATE_URL }}">
                                     </div>
                                     <span class="copy-notice">Лінк скопійовано!</span>
                                 </div>
@@ -287,8 +290,12 @@
                     <div class="modal-footer">
                         <table>
                             <tr>
-                                <td><p class="text-md-left">Опублікуй цей лінк і отримай по "котику" за кожного друга, який зареєструється за ним і виконає хоча б одне завдання.</p></td>
-                                <td><button type="button" class="btn btn-primary border-primary" data-dismiss="modal">Добре <i class="fa fa-thumbs-o-up position-right"></i></button></td>
+                                <td><p class="text-md-left">Опублікуй цей лінк і отримай по "котику" за кожного друга,
+                                    який зареєструється за ним і виконає хоча б одне завдання.</p></td>
+                                <td>
+                                    <button type="button" class="btn btn-primary border-primary" data-dismiss="modal">
+                                        Добре <i class="fa fa-thumbs-o-up position-right"></i></button>
+                                </td>
                             </tr>
                         </table>
                     </div>
@@ -296,6 +303,28 @@
             </div>
         </div>
     </div>
+
+    <div class="modal fade text-xs-left" id="subscribePopup" data-yt-id="bbInADcDFMk" tabindex="-1" role="dialog"
+         aria-labelledby="subscribePopup" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+
+                <div class="modal-header bg-primary white">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title">Заголовок або назва від Бігуса</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bbInADcDFMk" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
 
 <script type="text/javascript">
     window.user = '{{ user.username }}';
